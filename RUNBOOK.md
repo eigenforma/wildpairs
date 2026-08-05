@@ -106,6 +106,21 @@ sha256sum /mnt/coldstore/wildpairs/enwiki/* /mnt/coldstore/wildpairs/rfc-text/rf
 
 DAC option (operator-confirmed): at sweep time Forge mounts coldstore read-only over the 40GbE link (`setup_dac_nfs.sh` precedent) so the 3090 streams hosts at NVMe-class speed; fallback is pre-sharded tar-pipe.
 
+### Storage tiering (settled 2026-08-05, operator + census)
+
+Agora's virtual disk grown +1 TB at the Proxmox layer (sda now 1.3 T; underlying NVMe 1.88 T). Policy: **NVMe = hot** (active models incl. the 120b arbitration weapon, frozen sweep inputs, results in flight); **coldstore spinner = cold** (raw dumps, corpus archives, model backups — sequential one-pass reads only; never stream sweep inputs from it). The `bench_staging` copy to `/mnt/coldstore/models/` (125 GB, running) is a **backup, not an eviction** — nothing gets deleted from NVMe now that the disk is grown. enwiki-20210701 verified byte-exact vs archive.org content-length (19,773,796,684); sha256 running, manifest entry on completion.
+
+**⚡ TRIGGER (open): claim the +1 TB in the guest** (sudo is password-gated, operator runs):
+
+```sh
+ssh agora
+sudo growpart /dev/sda 3          # if growpart missing: sudo apt-get install -y cloud-guest-utils
+sudo pvresize /dev/sda3
+sudo lvextend -l +100%FREE /dev/ubuntu-vg/ubuntu-lv
+sudo resize2fs /dev/mapper/ubuntu--vg-ubuntu--lv
+df -h /                           # should read ~1.3T
+```
+
 ## R6 — E2-P4 embedding sweep, sharded over the 40GbE DAC
 
 Trigger: after `prereg-e2` tag. Shard by anchor id, odd→Forge even→Agora; identical script, identical config hashes.
