@@ -1,0 +1,22 @@
+{
+  "snapshot_entries": 7991,
+  "pairs_emitted": 5701,
+  "identical_after_whitespace_norm_excluded": 91,
+  "code_primary_pairs": 1005,
+  "strata": {
+    "Held for Document Update|Editorial|code": 145,
+    "Held for Document Update|Editorial|prose": 1196,
+    "Held for Document Update|Technical|code": 160,
+    "Held for Document Update|Technical|prose": 673,
+    "Verified|Editorial|code": 255,
+    "Verified|Editorial|prose": 1402,
+    "Verified|Technical|code": 445,
+    "Verified|Technical|prose": 1425
+  },
+  "verified_prose_changed_slot_distribution": {
+    "1": 2246,
+    "2": 360,
+    "3plus": 221
+  },
+  "algorithm": "whitespace-norm; sentence split (?<=[.!?])\\s+; SequenceMatcher opcodes; slots = max(a-span, b-span) summed over non-equal ops"
+}

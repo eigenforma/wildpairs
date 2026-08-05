@@ -35,7 +35,15 @@ All obsoletes/obsoleted-by families from the frozen `rfc-index.xml`; alignment t
 
 ## 6. Computed before this draft (disclosed, encoder-blind, all lexical)
 
-From the frozen snapshot via `scripts/verify_snapshot.py`, as a two-source check against the 2026-08-05 independent workflow-verifier parse: entry/status/type counts; both-texts-non-empty counts per class; RFC-2119 keyword-multiset-change and number-multiset-change counts; token-Jaccard distributions per class with medians, Cliff's δ, permutation p. These informed H2's stratification clause and the H3 class choices; they involve no embedding, no cosine, no encoder.
+All values recomputed by the named scripts from the frozen snapshot (sha256 `7e086e85fd5f…`); two-source checks against the 2026-08-05 independent workflow-verifier parse matched exactly on every count. No embedding, no cosine, no encoder has touched any errata text.
+
+- **Population** (`scripts/verify_snapshot.py`): 7,991 entries; Verified 3,710 / Held 2,412 / Rejected 1,151 / Reported 718; Verified with both texts: **1,895 Technical, 1,683 Editorial**.
+- **Edit-class counts** (same script): RFC-2119 keyword-multiset changes **122**; number-multiset changes **782** (Verified-Technical).
+- **Overlap coupling** (same script; informs H2's stratification clause): token-Jaccard median **0.8889 (T)** vs **0.9130 (E)**; means 0.7959/0.8265; **Cliff's δ = −0.1005** (negligible by convention, benign direction — Technical slightly MORE reworded); permutation p = 1e-4 (mean-diff, 20,000 perms, seed 20260805). The coupling is small but statistically detectable: the corpus is *near*-matched by nature, so decile-stratified reporting stays mandatory and H2's <0.05 movement clause is the certification test.
+- **Granularity build** (`harness/e1/build_granularities.py`): 5,701 pairs emitted (91 pure-whitespace corrections excluded); primary Verified-prose corpus **1,425 Technical vs 1,402 Editorial**; code-primary stratum 1,005 pairs total (445 Verified-Technical — reported separately per §1); Held-prose sensitivity stratum 673 T / 1,196 E. Changed-sentence localization (Verified prose): **1 slot: 2,246 (79.4%)**, 2 slots: 360, ≥3: 221.
+- **g3 relocation** (`harness/e1/locate_sections.py`, best-effort arm, run on the frozen coldstore RFC corpus): overall match rate **0.8292** (4,727/5,701); Verified-prose: Technical **86.3%**, Editorial **89.1%** — inside the pre-registered 70–90% expectation, predominantly full-quote matches. g3 failures drop from g3 analyses only.
+
+These numbers informed H2's stratification clause and H3's class choices. Nothing else was computed.
 
 ## 7. Freeze protocol
 

@@ -1,0 +1,31 @@
+{
+  "pairs": 5701,
+  "g3_found": 4727,
+  "match_rate": 0.8292,
+  "detail": {
+    "found-anchor-12tok|Held for Document Update|Editorial|code": 7,
+    "found-anchor-12tok|Held for Document Update|Editorial|prose": 100,
+    "found-anchor-12tok|Held for Document Update|Technical|code": 18,
+    "found-anchor-12tok|Held for Document Update|Technical|prose": 68,
+    "found-anchor-12tok|Verified|Editorial|code": 12,
+    "found-anchor-12tok|Verified|Editorial|prose": 98,
+    "found-anchor-12tok|Verified|Technical|code": 19,
+    "found-anchor-12tok|Verified|Technical|prose": 116,
+    "found-full-quote|Held for Document Update|Editorial|code": 93,
+    "found-full-quote|Held for Document Update|Editorial|prose": 799,
+    "found-full-quote|Held for Document Update|Technical|code": 120,
+    "found-full-quote|Held for Document Update|Technical|prose": 459,
+    "found-full-quote|Verified|Editorial|code": 199,
+    "found-full-quote|Verified|Editorial|prose": 1151,
+    "found-full-quote|Verified|Technical|code": 354,
+    "found-full-quote|Verified|Technical|prose": 1114,
+    "nomatch|Held for Document Update|Editorial|code": 45,
+    "nomatch|Held for Document Update|Editorial|prose": 297,
+    "nomatch|Held for Document Update|Technical|code": 22,
+    "nomatch|Held for Document Update|Technical|prose": 146,
+    "nomatch|Verified|Editorial|code": 44,
+    "nomatch|Verified|Editorial|prose": 153,
+    "nomatch|Verified|Technical|code": 72,
+    "nomatch|Verified|Technical|prose": 195
+  }
+}
