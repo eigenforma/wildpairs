@@ -8,14 +8,13 @@ Live state, verified: **Forge** — rebooted by operator 2026-08-05, RTX 3090 24
 
 Control: **SSH from Wu is passwordless to forge and agora** (`ssh scott@10.1.20.223`, `ssh scott@10.1.20.207`) — verified. Fleet convention (`sync_node.sh`): nodes are pull-consumers, never push; Wu orchestrates via `deploy_secrets.ps1`. Known nit: `/forge/status` GPU telemetry fields are null while `nvidia-smi` works over SSH — fix in Project_Intern before overnight thermal watches.
 
-**⚡ TRIGGER 1 (open): give Wu a key to Lear** (Wu→Lear and Agora→Lear both currently refused; one password entry, then Wu commands the whole fleet):
+**TRIGGER 1 — RESOLVED 2026-08-05.** Lear's automation identity is `aiuser` (by design: `aiuser_scopedown.sh`); Wu's ssh config already maps `lear`→aiuser+id_intern. Operator authorized Tailscale SSH; the `id_intern` key was then installed into aiuser's `authorized_keys`, so **both paths now answer in BatchMode**: `ssh lear` (Tailscale MagicDNS) and `ssh aiuser@10.1.20.201` (LAN fallback, what the lifeboat scripts use).
 
-```powershell
-type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh scott@10.1.20.201 "cat >> ~/.ssh/authorized_keys"
-# verify: ssh -o BatchMode=yes scott@10.1.20.201 hostname
-```
+**TRIGGER 2 — RESOLVED 2026-08-05.** Nodes hold no GitHub credentials (`git ls-remote` fails on forge and agora) and Wu's Git Bash has no rsync — transport is a **tar-pipe from Wu**, credential-free, matching the fleet's pull-consumer/Wu-orchestrates convention. The R1 deploy line below is the canonical sync; re-run it after any Wu-side commit. (A GitHub deploy key per node remains an option if we later want node-side `git pull`.)
 
-**TRIGGER 2 (open, one-word answer):** wildpairs transport to nodes — `rsync` from Wu (recommended: no credentials ever land on nodes, matches deploy_secrets pattern) or a GitHub deploy key per node. Model placement needs no ruling: Forge=120B arbitration, Agora=20B + mining, Lear fleet=bulk labeling matches the cascade as designed.
+**Scheduler ruling (operator asked; answered from `ops_api/routes/runs.py` + `controller.py`):** `/runs/start` launches the AutomationController — Project Intern *agent-cycle* machinery (`mode`/`scope` are display-only; `include_distiller/agora/forge` gates thread into `_execute_run()`), and `/runs/start-planned` drives triad-planned directives. **Not a batch-job scheduler; wildpairs does not use it.** wildpairs jobs run via `ssh + nohup` from Wu; the Ops API serves power (`/power/*`), readiness (`/health/ready`), and GPU telemetry (`/test/gpu-status`).
+
+**Model placement policy (operator ruling, 2026-08-05, verbatim intent):** any model in the grid can host anywhere; **evict the last model before the next one loads**; system-RAM offload is welcome — set long timeouts and spend time as a resource. Cascade default remains Forge=120B arbitration, Agora=20B + mining, Lear fleet=bulk labeling, with per-stage swaps freely allowed under evict-before-load.
 
 ---
 
@@ -46,15 +45,16 @@ ls ⟨ENCODER_CHECKPOINT_DIR⟩ 2>/dev/null   # where the pinned polaritycheck e
 
 Also answer in prose: (1) can this Windows box ssh into each system (`ssh ⟨user⟩@⟨host⟩ hostname`)? (2) preferred repo transport — git pull from the private GitHub remote, or rsync/scp from this box? (3) does the Agora Ops API already schedule jobs, and what does a job submission look like?
 
-## R1 — repo onto each box (after R0 decides transport)
+## R1 — repo onto each box — **DONE fleet-wide 2026-08-05** (re-run after any Wu commit)
 
 ```sh
-# git route (needs a token or deploy key on the box):
-git clone https://github.com/eigenforma/wildpairs ~/wildpairs-work && cd ~/wildpairs-work
-# rsync route (from this Windows box, per system):
-# rsync -av --exclude .git /c/Users/poeti/wildpairs/ ⟨user⟩@⟨host⟩:~/wildpairs-work/
-python3 -m venv .venv && . .venv/bin/activate && pip install -r requirements.txt
-python3 scripts/verify_snapshot.py --manifest    # must print ALL OK before any job runs
+# canonical sync, from Wu (Git Bash), per node (forge | agora | lear):
+cd /c/Users/poeti && tar -cf - --exclude=.git --exclude=__pycache__ wildpairs | \
+  ssh $NODE "rm -rf ~/wildpairs-work && mkdir -p ~/wildpairs-work && \
+             tar -xf - -C ~/wildpairs-work --strip-components=1 && \
+             cd ~/wildpairs-work && python3 scripts/verify_snapshot.py --manifest"
+# must end ALL OK — 2026-08-05: ALL OK on forge, agora, and lear (frozen corpus bit-identical on all three)
+# venv + pip: deferred until the encoder harness lands (requirements are stdlib-only at E1-P0)
 ```
 
 ## R2 — E1-P3 labeling cascade (Lear bulk pass, then 120B arbitration)
