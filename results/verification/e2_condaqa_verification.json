@@ -1,0 +1,83 @@
+{
+  "rows_per_split": {
+    "train": 5832,
+    "dev": 1110,
+    "test": 7240
+  },
+  "total_rows": 14182,
+  "unique_passages_train": 474,
+  "unique_passages_dev": 115,
+  "unique_passages_test": 700,
+  "passage_id_overlap_across_splits": 0,
+  "unique_passages_total": 1289,
+  "rows_per_edit_id": {
+    "0": 3603,
+    "1": 3592,
+    "2": 3438,
+    "3": 3549
+  },
+  "original_vs_edit_pairs_measured": 3829,
+  "yield_by_edit_type": {
+    "edit1_paraphrase": {
+      "pairs": 1280,
+      "changed_1_sentence": 1164,
+      "changed_2_sentences": 100,
+      "changed_3plus": 16,
+      "changed_0_sentences_identical_split": 0,
+      "single_sentence_rate": 0.9094
+    },
+    "edit2_scope": {
+      "pairs": 1271,
+      "changed_1_sentence": 1004,
+      "changed_2_sentences": 204,
+      "changed_3plus": 63,
+      "changed_0_sentences_identical_split": 0,
+      "single_sentence_rate": 0.7899
+    },
+    "edit3_affirmative": {
+      "pairs": 1278,
+      "changed_1_sentence": 977,
+      "changed_2_sentences": 223,
+      "changed_3plus": 78,
+      "changed_0_sentences_identical_split": 0,
+      "single_sentence_rate": 0.7645
+    }
+  },
+  "anchor_sets_with_para_and_affirm": 1273,
+  "anchor_sets_both_single_sentence": 960,
+  "anchor_yield_rate": 0.7541,
+  "payload_sentence_words": {
+    "n": 1285,
+    "mean": 24.7,
+    "median": 23,
+    "p90": 39,
+    "max": 73
+  },
+  "two_source_check": {
+    "total_rows": {
+      "ours": 14182,
+      "second_source": 14182,
+      "delta": 0
+    },
+    "unique_passages_total": {
+      "ours": 1289,
+      "second_source": 1289,
+      "delta": 0
+    },
+    "unique_passages_train": {
+      "ours": 474,
+      "second_source": 474,
+      "delta": 0
+    },
+    "unique_passages_dev": {
+      "ours": 115,
+      "second_source": 115,
+      "delta": 0
+    },
+    "unique_passages_test": {
+      "ours": 700,
+      "second_source": 700,
+      "delta": 0
+    }
+  }
+}

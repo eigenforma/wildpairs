@@ -7,6 +7,30 @@
       "bytes": 11598489,
       "sha256": "7e086e85fd5fe7a899bc0df707f139a0eba23347ce6bda968d4fbe7f287583b0",
       "role": "E1 primary corpus: RFC Editor errata database"
+    },
+    {
+      "path": "corpus/e2_dilution/condaqa_train.json",
+      "source_url": "https://raw.githubusercontent.com/AbhilashaRavichander/CondaQA/main/data/condaqa_train.json",
+      "retrieved_utc": "2026-08-05T18:01:35+00:00",
+      "bytes": 11054568,
+      "sha256": "f5f8a9d1b64a6c3b111b00d2e125f1d7f4da8b50acfdbc788d2901e2e43d79ec",
+      "role": "E2 payload corpus: CondaQA (EMNLP 2022), Apache-2.0, canonical GitHub distribution"
+    },
+    {
+      "path": "corpus/e2_dilution/condaqa_dev.json",
+      "source_url": "https://raw.githubusercontent.com/AbhilashaRavichander/CondaQA/main/data/condaqa_dev.json",
+      "retrieved_utc": "2026-08-05T18:01:36+00:00",
+      "bytes": 2130332,
+      "sha256": "b9ec9ab7453fbdc61fbed988119c03f507341ac495f1f5f95b13b27f59e639a2",
+      "role": "E2 payload corpus: CondaQA (EMNLP 2022), Apache-2.0, canonical GitHub distribution"
+    },
+    {
+      "path": "corpus/e2_dilution/condaqa_test.json",
+      "source_url": "https://raw.githubusercontent.com/AbhilashaRavichander/CondaQA/main/data/condaqa_test.json",
+      "retrieved_utc": "2026-08-05T18:01:37+00:00",
+      "bytes": 13839047,
+      "sha256": "ffd7f4ad85689b2317283430a226cd759c3ccc40070e6a32652e7ae84ae90e8e",
+      "role": "E2 payload corpus: CondaQA (EMNLP 2022), Apache-2.0, canonical GitHub distribution"
     }
   ]
 }
