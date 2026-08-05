@@ -1,0 +1,30 @@
+{
+  "candidates_with_0_1_3": 1273,
+  "anchors_frozen": 959,
+  "with_scope_control": 903,
+  "same_sentence_edited_rate": 1.0,
+  "per_split": {
+    "train": 363,
+    "dev": 86,
+    "test": 510
+  },
+  "payload_jaccard": {
+    "para": {
+      "n": 959,
+      "median": 0.7692,
+      "mean": 0.6759
+    },
+    "affirm": {
+      "n": 959,
+      "median": 0.7667,
+      "mean": 0.7147
+    },
+    "scope": {
+      "n": 903,
+      "median": 0.8,
+      "mean": 0.7574
+    }
+  },
+  "imported_confounder_gap_median_affirm_minus_para": -0.0025,
+  "algorithm": "single changed slot via SequenceMatcher over (?<=[.!?])\\s+ sentences; substitution-only (1:1 slot)"
+}

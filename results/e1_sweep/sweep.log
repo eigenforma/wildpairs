@@ -1,0 +1,15 @@
+[15:08:47] pairs: g1=5701 g2=5701 g3=4727; configs=9
+[15:09:48] sentence-transformers/all-MiniLM-L6-v2 :: g1 done (5701 pairs, 55s)
+[15:11:01] pairs: g1=5701 g2=5701 g3=4727; configs=9
+[15:12:01] sentence-transformers/all-MiniLM-L6-v2 :: g1 done (5701 pairs, 54s)
+[15:13:05] sentence-transformers/all-MiniLM-L6-v2 :: g2 done (5701 pairs, 64s)
+[15:15:12] sentence-transformers/all-MiniLM-L6-v2 :: g3 done (4727 pairs, 127s)
+[15:15:12] FROZEN sentence-transformers_all-MiniLM-L6-v2.json
+[15:22:07] sentence-transformers/all-mpnet-base-v2 :: g1 done (5701 pairs, 415s)
+[15:30:18] sentence-transformers/all-mpnet-base-v2 :: g2 done (5701 pairs, 491s)
+[15:49:33] sentence-transformers/all-mpnet-base-v2 :: g3 done (4727 pairs, 1155s)
+[15:49:33] FROZEN sentence-transformers_all-mpnet-base-v2.json
+[15:56:31] BAAI/bge-base-en-v1.5 :: g1 done (5701 pairs, 418s)
+[16:04:47] BAAI/bge-base-en-v1.5 :: g2 done (5701 pairs, 497s)
+[16:26:46] BAAI/bge-base-en-v1.5 :: g3 done (4727 pairs, 1319s)
+[16:26:46] FROZEN BAAI_bge-base-en-v1.5.json
