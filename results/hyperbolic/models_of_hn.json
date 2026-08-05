@@ -1,0 +1,120 @@
+{
+  "n_vectors": 400,
+  "dim": 256,
+  "n_pairs": 79800,
+  "seed": 20260805,
+  "curvatures": {
+    "0.1": {
+      "ball": {
+        "radius_spread": 4.440892098500626e-16,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "lorentz": {
+        "height_spread": 0.0,
+        "closed_form_max_dev": 1.9984014443252818e-15,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "klein": {
+        "radius_spread": 6.661338147750939e-16,
+        "max_dev_vs_ball": 6.664001874625056e-08,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "halfspace": {
+        "isometry_max_dev_vs_ball": 2.6645352591003757e-15,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      }
+    },
+    "0.5": {
+      "ball": {
+        "radius_spread": 2.220446049250313e-16,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "lorentz": {
+        "height_spread": 0.0,
+        "closed_form_max_dev": 5.16191365590357e-08,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "klein": {
+        "radius_spread": 2.220446049250313e-16,
+        "max_dev_vs_ball": 1.0323827311807136e-07,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "halfspace": {
+        "isometry_max_dev_vs_ball": 2.6645352591003757e-15,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      }
+    },
+    "1.0": {
+      "ball": {
+        "radius_spread": 2.220446049250313e-16,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "lorentz": {
+        "height_spread": 0.0,
+        "closed_form_max_dev": 4.712160915387241e-08,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "klein": {
+        "radius_spread": 3.3306690738754696e-16,
+        "max_dev_vs_ball": 1.3657139822709072e-07,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "halfspace": {
+        "isometry_max_dev_vs_ball": 2.6645352591003757e-15,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      }
+    },
+    "2.0": {
+      "ball": {
+        "radius_spread": 2.220446049250313e-16,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "lorentz": {
+        "height_spread": 0.0,
+        "closed_form_max_dev": 4.7121609153872403e-08,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "klein": {
+        "radius_spread": 2.220446049250313e-16,
+        "max_dev_vs_ball": 2.1900144899933056e-07,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      },
+      "halfspace": {
+        "isometry_max_dev_vs_ball": 3.9968028886505635e-15,
+        "monotone_decreasing": true,
+        "strict_fraction": 1.0,
+        "rank_identical": true
+      }
+    }
+  }
+}
