@@ -1,0 +1,12 @@
+{
+  "files": [
+    {
+      "path": "corpus/e1_errata/errata.json",
+      "source_url": "https://www.rfc-editor.org/errata.json",
+      "retrieved_utc": "2026-08-05T17:26:36+00:00",
+      "bytes": 11598489,
+      "sha256": "7e086e85fd5fe7a899bc0df707f139a0eba23347ce6bda968d4fbe7f287583b0",
+      "role": "E1 primary corpus: RFC Editor errata database"
+    }
+  ]
+}

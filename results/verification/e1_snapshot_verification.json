@@ -1,0 +1,79 @@
+{
+  "snapshot_sha256": "7e086e85fd5fe7a899bc0df707f139a0eba23347ce6bda968d4fbe7f287583b0",
+  "snapshot_bytes": 11598489,
+  "total_entries": 7991,
+  "status_Verified": 3710,
+  "status_Held for Document Update": 2412,
+  "status_Rejected": 1151,
+  "status_Reported": 718,
+  "verified_both_texts_Technical": 1895,
+  "verified_both_texts_Editorial": 1683,
+  "verified_missing_text_excluded": 132,
+  "kw2119_multiset_changes_technical": 122,
+  "number_multiset_changes_technical": 782,
+  "jaccard_median_Technical": 0.8889,
+  "jaccard_median_Editorial": 0.913,
+  "jaccard_mean_Technical": 0.7959,
+  "jaccard_mean_Editorial": 0.8265,
+  "cliffs_delta_T_vs_E": -0.1005,
+  "perm_mean_diff_T_minus_E": -0.0306,
+  "perm_p_two_sided": 0.0001,
+  "perm_spec": "mean-diff statistic, 20000 permutations, seed 20260805",
+  "two_source_check": {
+    "total_entries": {
+      "ours": 7991,
+      "second_source": 7991,
+      "delta": 0
+    },
+    "status_Verified": {
+      "ours": 3710,
+      "second_source": 3710,
+      "delta": 0
+    },
+    "status_Held for Document Update": {
+      "ours": 2412,
+      "second_source": 2412,
+      "delta": 0
+    },
+    "status_Rejected": {
+      "ours": 1151,
+      "second_source": 1151,
+      "delta": 0
+    },
+    "status_Reported": {
+      "ours": 718,
+      "second_source": 718,
+      "delta": 0
+    },
+    "verified_both_texts_Technical": {
+      "ours": 1895,
+      "second_source": 1895,
+      "delta": 0
+    },
+    "verified_both_texts_Editorial": {
+      "ours": 1683,
+      "second_source": 1683,
+      "delta": 0
+    },
+    "kw2119_multiset_changes_technical": {
+      "ours": 122,
+      "second_source": 122,
+      "delta": 0
+    },
+    "number_multiset_changes_technical": {
+      "ours": 782,
+      "second_source": 782,
+      "delta": 0
+    },
+    "jaccard_median_Technical": {
+      "ours": 0.8889,
+      "second_source": 0.889,
+      "delta": -0.0001
+    },
+    "jaccard_median_Editorial": {
+      "ours": 0.913,
+      "second_source": 0.912,
+      "delta": 0.001
+    }
+  }
+}
