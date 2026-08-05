@@ -101,6 +101,30 @@ def verify_manifest() -> None:
     manifest = json.loads(MANIFEST.read_text())
     bad = 0
     for f in manifest["files"]:
+        if f.get("external"):
+            # Corpus lives on a lab host (f["host"], under f["mount"]). Verify locally when
+            # that mount is present (i.e. we ARE that host), over ssh with --external from Wu,
+            # and otherwise skip without failing -- nodes cannot all reach each other.
+            full = Path(f["mount"]) / f["path"]
+            if full.exists():
+                sha = hashlib.sha256(full.read_bytes()).hexdigest()
+                ok = sha == f["sha256"]
+                bad += 0 if ok else 1
+                print(f"{'OK     ' if ok else 'CORRUPT'} {f['host']}:{full} (local mount)")
+            elif "--external" in sys.argv:
+                import subprocess
+
+                r = subprocess.run(
+                    ["ssh", "-o", "BatchMode=yes", f["host"], f"sha256sum '{full}'"],
+                    capture_output=True, text=True, timeout=1800,
+                )
+                sha = r.stdout.split()[0] if r.returncode == 0 and r.stdout else ""
+                ok = sha == f["sha256"]
+                bad += 0 if ok else 1
+                print(f"{'OK     ' if ok else 'CORRUPT'} {f['host']}:{full} (ssh)")
+            else:
+                print(f"EXTERN  {f['host']}:{full} (skipped; use --external to verify over ssh)")
+            continue
         p = ROOT / f["path"]
         if not p.exists():
             print(f"MISSING {f['path']}")
