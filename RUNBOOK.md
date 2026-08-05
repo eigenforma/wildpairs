@@ -16,6 +16,8 @@ Control: **SSH from Wu is passwordless to forge and agora** (`ssh scott@10.1.20.
 
 **Model placement policy (operator ruling, 2026-08-05, verbatim intent):** any model in the grid can host anywhere; **evict the last model before the next one loads**; system-RAM offload is welcome — set long timeouts and spend time as a resource. Cascade default remains Forge=120B arbitration, Agora=20B + mining, Lear fleet=bulk labeling, with per-stage swaps freely allowed under evict-before-load.
 
+**Model format policy (settled 2026-08-05).** Format follows workload: **encoders = safetensors** via sentence-transformers (the pinned polaritycheck checkpoints — already the paved road at 33M–435M params); **LLM labeling tier = GGUF** via llama.cpp/ollama (the only runtime honoring RAM-offload-with-long-timeouts); **EXL2** only for dense models that fully fit VRAM and need speed (it cannot RAM-spill); **AWQ** only if a vLLM batch-labeling bench wins on throughput; **ONNX** has real upside for the ~1–2M-call embedding sweeps (CPU sharding on Agora beside Forge's GPU) but is a *different configuration* by the audit's own validity discipline — it may substitute a pinned encoder **only after a parity gate** (cosine delta ≤ 1e-5 on a frozen probe set), else it enters as its own named configuration arm.
+
 ---
 
 Exact lines to run on the lab systems, in trigger order. Placeholders are marked `⟨LIKE THIS⟩` and exist only until R0 output locks them. Rules of the road: every job writes only under `~/wildpairs-work/results/<hostname>/`; nothing overwrites a frozen file; every result file is followed by a `sha256sum` line appended to `results/<hostname>/CHECKSUMS`; jobs that die get re-run, never hand-patched.
