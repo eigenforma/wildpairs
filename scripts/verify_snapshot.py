@@ -105,9 +105,9 @@ def verify_manifest() -> None:
             # Corpus lives on a lab host (f["host"], under f["mount"]). Verify locally when
             # that mount is present (i.e. we ARE that host), over ssh with --external from Wu,
             # and otherwise skip without failing -- nodes cannot all reach each other.
-            full = Path(f["mount"]) / f["path"]
-            if full.exists():
-                sha = hashlib.sha256(full.read_bytes()).hexdigest()
+            full = f["mount"].rstrip("/") + "/" + f["path"]  # POSIX path on the lab host, never os-local
+            if Path(full).exists():
+                sha = hashlib.sha256(Path(full).read_bytes()).hexdigest()
                 ok = sha == f["sha256"]
                 bad += 0 if ok else 1
                 print(f"{'OK     ' if ok else 'CORRUPT'} {f['host']}:{full} (local mount)")
