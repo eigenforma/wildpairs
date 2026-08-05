@@ -1,5 +1,22 @@
 # RUNBOOK — operator command triggers for the wildpairs program
 
+## R0 census — RUN 2026-08-05 from the Windows box (partial; two items remain)
+
+Found, verified live: all five hostnames resolve and ping (`forge`/`macbeth`, `agora`/`othello`, `lear`). **Agora**: llama-server :8080 healthy (loaded: `gpt-oss-20b-Q4_K_M.gguf`), Ops API :8000 healthy — it is the Project Intern Ops API, with `/power/wake`, `/power/status`, `/forge/status`, `/test/gpu-status`, `/test/inference`, `/runs/start|pause`, `/repo_scout/*`. **Lear**: ollama :11434 healthy, ten models installed: mistral-small:24b, qwq:32b, qwen2.5-coder:32b, advisor, gemma2:27b, qwen3.5, qwen3:30b-a3b, themis, qwen3:14b, gemma4. **Forge: OFFLINE** (`/forge/status` → online:false; 10.1.20.223:8080 times out from Agora too — asleep, not misconfigured).
+
+**⚡ TRIGGER 1 (open): wake Forge.** `/power/wake` requires your `x-ops-api-key` (server reads `OPS_API_KEY` env; the value stays with you — not retrieved by the agent, by design):
+
+```sh
+curl -X POST http://agora:8000/power/wake -H "x-ops-api-key: $OPS_API_KEY" \
+  -H "Content-Type: application/json" -d '{"target": "forge"}'
+# body schema if that 422s: http://agora:8000/docs → Power Wake
+# confirm: curl -s http://agora:8000/forge/status
+```
+
+**TRIGGER 2 (open):** answer the R0 prose questions — ssh reachability from this box, preferred repo transport (git-with-token vs rsync), whether `/runs/start` is the intended scheduler for wildpairs jobs, and whether the 120B MoE should replace gpt-oss-20b on Agora for arbitration duty or run on Forge only.
+
+---
+
 Exact lines to run on the lab systems, in trigger order. Placeholders are marked `⟨LIKE THIS⟩` and exist only until R0 output locks them. Rules of the road: every job writes only under `~/wildpairs-work/results/<hostname>/`; nothing overwrites a frozen file; every result file is followed by a `sha256sum` line appended to `results/<hostname>/CHECKSUMS`; jobs that die get re-run, never hand-patched.
 
 ## R0 — connectivity census (run once, paste full output back; unblocks everything below)
