@@ -1,19 +1,21 @@
 # RUNBOOK — operator command triggers for the wildpairs program
 
-## R0 census — RUN 2026-08-05 from the Windows box (partial; two items remain)
+## R0 census — COMPLETE 2026-08-05 (from Wu; Project_Intern/scripts + live probes)
 
-Found, verified live: all five hostnames resolve and ping (`forge`/`macbeth`, `agora`/`othello`, `lear`). **Agora**: llama-server :8080 healthy (loaded: `gpt-oss-20b-Q4_K_M.gguf`), Ops API :8000 healthy — it is the Project Intern Ops API, with `/power/wake`, `/power/status`, `/forge/status`, `/test/gpu-status`, `/test/inference`, `/runs/start|pause`, `/repo_scout/*`. **Lear**: ollama :11434 healthy, ten models installed: mistral-small:24b, qwq:32b, qwen2.5-coder:32b, advisor, gemma2:27b, qwen3.5, qwen3:30b-a3b, themis, qwen3:14b, gemma4. **Forge: OFFLINE** (`/forge/status` → online:false; 10.1.20.223:8080 times out from Agora too — asleep, not misconfigured).
+Topology locked (`Project_Intern/scripts/start_lab.ps1`, fleet on 10.1.20.0/24, Tailscale alternates exist): **Wu** = this Windows box, the authoring workstation. **macbeth** (10.1.20.2) / **othello** (10.1.20.101) = Proxmox hosts. **forge** (10.1.20.223) / **agora** (10.1.20.207) = their VMs. **lear** (10.1.20.201) = Mac workstation. **puck** (10.1.20.20) = sentinel.
 
-**⚡ TRIGGER 1 (open): wake Forge.** `/power/wake` requires your `x-ops-api-key` (server reads `OPS_API_KEY` env; the value stays with you — not retrieved by the agent, by design):
+Live state, verified: **Forge** — rebooted by operator 2026-08-05, RTX 3090 24 GB, `gpt-oss-120b-mxfp4` resident (20.6/24.6 GB), 36 °C idle, `llama-forge` systemd active, `/mnt/weight_vault` 1.4 TB free (E2 host corpora fit here). **Agora** — up 13 d, llama-server (`gpt-oss-20b-Q4_K_M`, ctx 32768) + Project Intern Ops API (`/runs/start|pause`, `/power/*`, `/forge/status`) both healthy as systemd services. **Lear** — ollama :11434 healthy, ten models: mistral-small:24b, qwq:32b, qwen2.5-coder:32b, advisor, gemma2:27b, qwen3.5, qwen3:30b-a3b, themis, qwen3:14b, gemma4.
 
-```sh
-curl -X POST http://agora:8000/power/wake -H "x-ops-api-key: $OPS_API_KEY" \
-  -H "Content-Type: application/json" -d '{"target": "forge"}'
-# body schema if that 422s: http://agora:8000/docs → Power Wake
-# confirm: curl -s http://agora:8000/forge/status
+Control: **SSH from Wu is passwordless to forge and agora** (`ssh scott@10.1.20.223`, `ssh scott@10.1.20.207`) — verified. Fleet convention (`sync_node.sh`): nodes are pull-consumers, never push; Wu orchestrates via `deploy_secrets.ps1`. Known nit: `/forge/status` GPU telemetry fields are null while `nvidia-smi` works over SSH — fix in Project_Intern before overnight thermal watches.
+
+**⚡ TRIGGER 1 (open): give Wu a key to Lear** (Wu→Lear and Agora→Lear both currently refused; one password entry, then Wu commands the whole fleet):
+
+```powershell
+type $env:USERPROFILE\.ssh\id_ed25519.pub | ssh scott@10.1.20.201 "cat >> ~/.ssh/authorized_keys"
+# verify: ssh -o BatchMode=yes scott@10.1.20.201 hostname
 ```
 
-**TRIGGER 2 (open):** answer the R0 prose questions — ssh reachability from this box, preferred repo transport (git-with-token vs rsync), whether `/runs/start` is the intended scheduler for wildpairs jobs, and whether the 120B MoE should replace gpt-oss-20b on Agora for arbitration duty or run on Forge only.
+**TRIGGER 2 (open, one-word answer):** wildpairs transport to nodes — `rsync` from Wu (recommended: no credentials ever land on nodes, matches deploy_secrets pattern) or a GitHub deploy key per node. Model placement needs no ruling: Forge=120B arbitration, Agora=20B + mining, Lear fleet=bulk labeling matches the cascade as designed.
 
 ---
 
