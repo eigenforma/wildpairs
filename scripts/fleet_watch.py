@@ -41,7 +41,8 @@ def snapshot() -> None:
     ts = datetime.now().strftime("%H:%M:%S")
     for host in ("forge", "agora"):
         llama = "llama:UP" if http_ok(f"http://{host}:8080/health") else "llama:DOWN"
-        disk = sh(host, "df -h --output=avail /mnt/weight_vault 2>/dev/null | tail -1 || df -h --output=avail ~ | tail -1")
+        vol = "/mnt/weight_vault" if host == "forge" else "/mnt/coldstore"
+        disk = sh(host, f"df -h --output=avail {vol} 2>/dev/null | tail -1 || df -h --output=avail ~ | tail -1")
         print(f"[{ts}] {host:6s} {gpu_line(host):28s} {llama}  free:{disk.strip()}")
     try:
         with urllib.request.urlopen("http://lear:11434/api/tags", timeout=5) as r:

@@ -89,17 +89,22 @@ nohup python3 harness/e1/bis_mine.py --index corpus/e1_errata/rfc-index.xml \
 tail -f logs/bis_mine.log   # progress; safe to disconnect, job survives logout via nohup
 ```
 
-## R5 — E2-P1 host corpus acquisition (Agora NVMe; egress-budget aware, resumable)
+## R5 — E2-P1 host corpus acquisition — **STARTED 2026-08-05** (Agora `/mnt/coldstore`, operator-provisioned 1 TB volume)
+
+Layout: `/mnt/coldstore/wildpairs/{enwiki,pmc,rfc-text,results}` (created, writable as scott). Status: **rfc-text COMPLETE (550 MB via rsync)**; **enwiki-20210701-pages-articles-multistream.xml.bz2 downloading** (`wget -c`, nohup, survives disconnects — resume by re-running the same line); PMC deferred until `prereg-e2` fixes the slice.
 
 ```sh
-# RFC full text (shared frozen snapshot with E1), ~175 MB:
-rsync -avz rsync.rfc-editor.org::rfcs-text-only /data/rfc-text/
-# enwiki-20210701 (CondaQA's source snapshot) from archive.org, ~19 GB — resumable:
-wget -c https://archive.org/download/enwiki-20210701/⟨DUMP_FILE⟩ -P /data/enwiki/
-# PMC OA CC-BY slice via AWS mirror (FTP retires 2026-08):
-aws s3 sync s3://pmc-oa-opendata/oa_comm/txt/ /data/pmc/ --no-sign-request --exclude "*" --include "⟨SLICE⟩"
-sha256sum /data/rfc-text/rfc-index.xml /data/enwiki/* >> results/agora/CHECKSUMS
+# already run (repeat = resume, both idempotent):
+ssh agora
+cd /mnt/coldstore/wildpairs/rfc-text  && rsync -az rsync.rfc-editor.org::rfcs-text-only .
+cd /mnt/coldstore/wildpairs/enwiki    && wget -c https://archive.org/download/enwiki-20210701/enwiki-20210701-pages-articles-multistream.xml.bz2
+# PMC OA CC-BY slice via AWS mirror (FTP retires 2026-08) — after prereg-e2 defines ⟨SLICE⟩:
+aws s3 sync s3://pmc-oa-opendata/oa_comm/txt/ /mnt/coldstore/wildpairs/pmc/ --no-sign-request --exclude "*" --include "⟨SLICE⟩"
+# freeze when a transfer completes (external-corpus manifest entry, recorded on Wu):
+sha256sum /mnt/coldstore/wildpairs/enwiki/* /mnt/coldstore/wildpairs/rfc-text/rfc-index.xml
 ```
+
+DAC option (operator-confirmed): at sweep time Forge mounts coldstore read-only over the 40GbE link (`setup_dac_nfs.sh` precedent) so the 3090 streams hosts at NVMe-class speed; fallback is pre-sharded tar-pipe.
 
 ## R6 — E2-P4 embedding sweep, sharded over the 40GbE DAC
 
