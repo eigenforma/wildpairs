@@ -53,6 +53,72 @@
       "bytes": null,
       "sha256": "3949c746cace2dd8a4bbf98ae1094e659988990ef5fb91b18c2b009ef73a34d6",
       "role": "E1/E2 shared RFC text corpus: deterministic digest file (sorted sha256 of all 10,048 files in wildpairs/rfc-text/); verifying this file transitively pins the directory"
+    },
+    {
+      "path": "wildpairs/e3_composed/multinli_1.0.zip",
+      "host": "10.1.20.207",
+      "mount": "/mnt/coldstore",
+      "external": true,
+      "source_url": "https://cims.nyu.edu/~sbowman/multinli/multinli_1.0.zip",
+      "retrieved_utc": "2026-08-07T01:06:00+00:00",
+      "bytes": null,
+      "sha256": "049f507b9e36b1fcb756cfd5aeb3b7a0cfcb84bf023793652987f7e7e0957822",
+      "role": "E3 composed-factorial source (brand-name benchmark, frozen)"
+    },
+    {
+      "path": "wildpairs/e3_composed/QQP-clean.zip",
+      "host": "10.1.20.207",
+      "mount": "/mnt/coldstore",
+      "external": true,
+      "source_url": "https://dl.fbaipublicfiles.com/glue/data/QQP-clean.zip",
+      "retrieved_utc": "2026-08-07T01:06:00+00:00",
+      "bytes": null,
+      "sha256": "40e7c862c04eb26ee04b67fd900e76c45c6ba8e6d8fab4f8f1f8072a1a3fbae0",
+      "role": "E3 composed-factorial source (brand-name benchmark, frozen)"
+    },
+    {
+      "path": "wildpairs/e3_composed/snli_1.0.zip",
+      "host": "10.1.20.207",
+      "mount": "/mnt/coldstore",
+      "external": true,
+      "source_url": "https://nlp.stanford.edu/projects/snli/snli_1.0.zip",
+      "retrieved_utc": "2026-08-07T01:06:00+00:00",
+      "bytes": null,
+      "sha256": "afb3d70a5af5d8de0d9d81e2637e0fb8c22d1235c2749d83125ca43dab0dbd3e",
+      "role": "E3 composed-factorial source (brand-name benchmark, frozen)"
+    },
+    {
+      "path": "wildpairs/e3_composed/paws_labeled_final_test.parquet",
+      "host": "10.1.20.207",
+      "mount": "/mnt/coldstore",
+      "external": true,
+      "source_url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/main/labeled_final/test-00000-of-00001.parquet",
+      "retrieved_utc": "2026-08-07T01:06:00+00:00",
+      "bytes": null,
+      "sha256": "ae342ff12bb84b84b95f468abf5db6cb7c7bd578271299fe9c99be75b8132f4d",
+      "role": "E3 composed-factorial source (brand-name benchmark, frozen)"
+    },
+    {
+      "path": "wildpairs/e3_composed/paws_labeled_final_train.parquet",
+      "host": "10.1.20.207",
+      "mount": "/mnt/coldstore",
+      "external": true,
+      "source_url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/main/labeled_final/train-00000-of-00001.parquet",
+      "retrieved_utc": "2026-08-07T01:06:00+00:00",
+      "bytes": null,
+      "sha256": "8dc9ad3e5f30ad9a86b290fe236d528ef23a5751fec9a35d99cbacf68ba277cf",
+      "role": "E3 composed-factorial source (brand-name benchmark, frozen)"
+    },
+    {
+      "path": "wildpairs/e3_composed/paws_labeled_final_validation.parquet",
+      "host": "10.1.20.207",
+      "mount": "/mnt/coldstore",
+      "external": true,
+      "source_url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/main/labeled_final/validation-00000-of-00001.parquet",
+      "retrieved_utc": "2026-08-07T01:06:00+00:00",
+      "bytes": null,
+      "sha256": "7760d829453764ba342a6f562809a8ed21c2c3eec3fd9ffa544089f145d42f6d",
+      "role": "E3 composed-factorial source (brand-name benchmark, frozen)"
     }
   ]
 }
