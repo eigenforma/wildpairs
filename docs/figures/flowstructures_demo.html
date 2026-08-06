@@ -83,6 +83,7 @@
     <div class="cell">
       <svg viewBox="0 0 200 74" role="img" aria-label="Vessel primitive: an open container receiving flow">
         <path d="M70 20 v30 a6 6 0 0 0 6 6 h48 a6 6 0 0 0 6 -6 v-30" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <g stroke="currentColor" opacity="0.45" stroke-width="1"><line x1="73" y1="28" x2="79" y2="28"/><line x1="73" y1="36" x2="79" y2="36"/><line x1="73" y1="44" x2="79" y2="44"/></g>
         <rect x="73" y="40" width="54" height="13" style="fill:var(--flow)" opacity="0.55"/>
         <line x1="14" y1="30" x2="58" y2="30" style="stroke:var(--flow)" stroke-width="2.5"/>
         <polygon points="58,25 70,30 58,35" style="fill:var(--flow)"/>
@@ -90,7 +91,7 @@
       <div class="name">vessel</div><div class="gram">patient / object — what the flow lands in</div>
     </div>
     <div class="cell">
-      <svg viewBox="0 0 200 74" role="img" aria-label="Polarity valve primitive, shown open and closed">
+      <svg viewBox="0 0 200 74" role="img" aria-label="Polarity valve primitive: open passing flow, and crossed with a red arrow carrying the flow back reversed">
         <line x1="8" y1="37" x2="34" y2="37" style="stroke:var(--flow)" stroke-width="2.5"/>
         <circle cx="52" cy="37" r="14" fill="none" stroke="currentColor" stroke-width="1.8"/>
         <line x1="44" y1="45" x2="60" y2="29" stroke="currentColor" stroke-width="1.8"/>
@@ -100,8 +101,10 @@
         <circle cx="150" cy="37" r="14" fill="none" style="stroke:var(--blocked)" stroke-width="1.8"/>
         <line x1="141" y1="28" x2="159" y2="46" style="stroke:var(--blocked)" stroke-width="1.8"/>
         <line x1="141" y1="46" x2="159" y2="28" style="stroke:var(--blocked)" stroke-width="1.8"/>
+        <line x1="138" y1="56" x2="118" y2="56" style="stroke:var(--blocked)" stroke-width="2"/>
+        <polygon points="118,52 108,56 118,60" style="fill:var(--blocked)"/>
       </svg>
-      <div class="name">polarity valve</div><div class="gram">negation / reversal — open passes, crossed blocks or reverses</div>
+      <div class="name">polarity valve</div><div class="gram">negation / reversal — open passes; crossed blocks, and the red arrow is the flow sent back reversed</div>
     </div>
     <div class="cell">
       <svg viewBox="0 0 200 74" role="img" aria-label="Force regulator primitive: modal strength as conduit bore">
@@ -116,14 +119,14 @@
       <div class="name">force regulator</div><div class="gram">modal — bore width is obligation; the dashed bypass is permission to deviate</div>
     </div>
     <div class="cell">
-      <svg viewBox="0 0 200 74" role="img" aria-label="Gauge primitive: quantity as a dial on the conduit">
-        <line x1="14" y1="50" x2="186" y2="50" stroke="currentColor" stroke-width="1.5"/>
-        <circle cx="100" cy="30" r="17" fill="none" stroke="currentColor" stroke-width="1.8"/>
-        <line x1="100" y1="30" x2="110" y2="20" stroke="currentColor" stroke-width="1.6"/>
-        <line x1="100" y1="47" x2="100" y2="50" stroke="currentColor" stroke-width="1.6"/>
-        <text x="132" y="34" font-size="11" font-family="monospace" fill="currentColor">= 30</text>
+      <svg viewBox="0 0 200 74" role="img" aria-label="Graduated vessel primitive: quantity read at the fill line, in units">
+        <path d="M70 16 v34 a6 6 0 0 0 6 6 h48 a6 6 0 0 0 6 -6 v-34" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <g stroke="currentColor" opacity="0.45" stroke-width="1"><line x1="73" y1="24" x2="79" y2="24"/><line x1="73" y1="32" x2="79" y2="32"/><line x1="73" y1="40" x2="79" y2="40"/><line x1="73" y1="48" x2="79" y2="48"/></g>
+        <rect x="73" y="32" width="54" height="22" style="fill:var(--flow)" opacity="0.55"/>
+        <line x1="73" y1="32" x2="127" y2="32" style="stroke:var(--flow)" stroke-width="1.2"/>
+        <text x="136" y="36" font-size="11" font-family="monospace" fill="currentColor">50 mg</text>
       </svg>
-      <div class="name">gauge</div><div class="gram">quantity / unit — a number the structure meters</div>
+      <div class="name">graduations</div><div class="gram">quantity / unit — read at the fill line; the gauge is retired</div>
     </div>
   </div>
 
@@ -143,6 +146,7 @@
         <line x1="162" y1="85" x2="182" y2="65" style="stroke:var(--blocked)" stroke-width="2"/>
         <text x="172" y="45" text-anchor="middle" font-size="11" font-family="monospace" style="fill:var(--blocked)">withhold</text>
         <path d="M272 52 v36 a6 6 0 0 0 6 6 h52 a6 6 0 0 0 6 -6 v-36" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <g stroke="currentColor" opacity="0.45" stroke-width="1"><line x1="275" y1="61" x2="282" y2="61"/><line x1="275" y1="69" x2="282" y2="69"/><line x1="275" y1="77" x2="282" y2="77"/><line x1="275" y1="85" x2="282" y2="85"/></g>
         <text x="304" y="112" text-anchor="middle" font-size="11" font-family="monospace" fill="currentColor">participant</text>
       </svg>
       <figcaption><span class="sent">“Withhold the study drug from any participant who reports chest tightness.”</span> The vessel stays empty: the valve is crossed.</figcaption>
@@ -160,6 +164,7 @@
         <line x1="189" y1="75" x2="258" y2="75" style="stroke:var(--flow)" stroke-width="2.5"/>
         <polygon points="258,70 270,75 258,80" style="fill:var(--flow)"/>
         <path d="M272 52 v36 a6 6 0 0 0 6 6 h52 a6 6 0 0 0 6 -6 v-36" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <g stroke="currentColor" opacity="0.45" stroke-width="1"><line x1="275" y1="61" x2="282" y2="61"/><line x1="275" y1="69" x2="282" y2="69"/><line x1="275" y1="77" x2="282" y2="77"/><line x1="275" y1="85" x2="282" y2="85"/></g>
         <rect x="275" y="56.4" width="58" height="35.6" style="fill:var(--flow)" opacity="0.55"/>
         <line x1="275" y1="56.4" x2="333" y2="56.4" style="stroke:var(--flow)" stroke-width="1.2"/>
         <text x="340" y="60" font-size="9" font-family="monospace" fill="currentColor">.96</text>
@@ -177,16 +182,15 @@
   <div class="rowlabel">II·b — Faithful restatement: new silhouette, same flow</div>
   <div class="row">
     <figure>
-      <svg viewBox="0 0 360 150" role="img" aria-label="Active instruction: source, open conduit, dose gauge, vessel">
+      <svg viewBox="0 0 360 150" role="img" aria-label="Active instruction: source, open conduit, graduated vessel labeled 50 milligrams">
         <rect x="18" y="58" width="64" height="34" rx="5" fill="currentColor" opacity="0.82"/>
         <line x1="82" y1="66" x2="268" y2="66" stroke="currentColor" stroke-width="1.5"/>
         <line x1="82" y1="84" x2="268" y2="84" stroke="currentColor" stroke-width="1.5"/>
-        <circle cx="172" cy="42" r="14" fill="none" stroke="currentColor" stroke-width="1.6"/>
-        <line x1="172" y1="42" x2="180" y2="34" stroke="currentColor" stroke-width="1.4"/>
-        <text x="202" y="46" font-size="11" font-family="monospace" fill="currentColor">50 mg</text>
+        <text x="304" y="45" text-anchor="middle" font-size="11" font-family="monospace" fill="currentColor">50 mg</text>
         <line x1="88" y1="75" x2="258" y2="75" style="stroke:var(--flow)" stroke-width="2.5"/>
         <polygon points="258,70 270,75 258,80" style="fill:var(--flow)"/>
         <path d="M272 52 v36 a6 6 0 0 0 6 6 h52 a6 6 0 0 0 6 -6 v-36" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <g stroke="currentColor" opacity="0.45" stroke-width="1"><line x1="275" y1="61" x2="282" y2="61"/><line x1="275" y1="69" x2="282" y2="69"/><line x1="275" y1="77" x2="282" y2="77"/><line x1="275" y1="85" x2="282" y2="85"/></g>
         <rect x="275" y="54" width="58" height="38" style="fill:var(--flow)" opacity="0.55"/>
       </svg>
       <figcaption><span class="sent">“Administer 50 mg before surgery.”</span></figcaption>
@@ -194,12 +198,11 @@
     <figure>
       <svg viewBox="0 0 360 150" role="img" aria-label="Passive restatement: mirrored arrangement, identical flow topology">
         <path d="M18 52 v36 a6 6 0 0 0 6 6 h52 a6 6 0 0 0 6 -6 v-36" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <g stroke="currentColor" opacity="0.45" stroke-width="1"><line x1="21" y1="61" x2="28" y2="61"/><line x1="21" y1="69" x2="28" y2="69"/><line x1="21" y1="77" x2="28" y2="77"/><line x1="21" y1="85" x2="28" y2="85"/></g>
         <rect x="21" y="54" width="58" height="38" style="fill:var(--flow)" opacity="0.55"/>
         <line x1="88" y1="66" x2="274" y2="66" stroke="currentColor" stroke-width="1.5"/>
         <line x1="88" y1="84" x2="274" y2="84" stroke="currentColor" stroke-width="1.5"/>
-        <circle cx="188" cy="42" r="14" fill="none" stroke="currentColor" stroke-width="1.6"/>
-        <line x1="188" y1="42" x2="196" y2="34" stroke="currentColor" stroke-width="1.4"/>
-        <text x="218" y="46" font-size="11" font-family="monospace" fill="currentColor">50 mg</text>
+        <text x="53" y="44" text-anchor="middle" font-size="11" font-family="monospace" fill="currentColor">50 mg</text>
         <line x1="268" y1="75" x2="104" y2="75" style="stroke:var(--flow)" stroke-width="2.5"/>
         <polygon points="104,70 92,75 104,80" style="fill:var(--flow)"/>
         <rect x="278" y="58" width="64" height="34" rx="5" fill="currentColor" opacity="0.82"/>
@@ -225,6 +228,7 @@
         <line x1="88" y1="75" x2="258" y2="75" style="stroke:var(--flow)" stroke-width="3"/>
         <polygon points="258,69 271,75 258,81" style="fill:var(--flow)"/>
         <path d="M272 52 v36 a6 6 0 0 0 6 6 h52 a6 6 0 0 0 6 -6 v-36" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <g stroke="currentColor" opacity="0.45" stroke-width="1"><line x1="275" y1="61" x2="282" y2="61"/><line x1="275" y1="69" x2="282" y2="69"/><line x1="275" y1="77" x2="282" y2="77"/><line x1="275" y1="85" x2="282" y2="85"/></g>
         <rect x="275" y="53" width="58" height="39" style="fill:var(--flow)" opacity="0.55"/>
         <text x="304" y="112" text-anchor="middle" font-size="11" font-family="monospace" fill="currentColor">validate</text>
       </svg>
@@ -249,6 +253,7 @@
         <line x1="88" y1="75" x2="258" y2="75" style="stroke:var(--flow)" stroke-width="1.6"/>
         <polygon points="258,71 269,75 258,79" style="fill:var(--flow)"/>
         <path d="M272 52 v36 a6 6 0 0 0 6 6 h52 a6 6 0 0 0 6 -6 v-36" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <g stroke="currentColor" opacity="0.45" stroke-width="1"><line x1="275" y1="61" x2="282" y2="61"/><line x1="275" y1="69" x2="282" y2="69"/><line x1="275" y1="77" x2="282" y2="77"/><line x1="275" y1="85" x2="282" y2="85"/></g>
         <rect x="275" y="53" width="58" height="39" fill="url(#doubtGrad)"/>
         <text x="304" y="112" text-anchor="middle" font-size="11" font-family="monospace" fill="currentColor">validate</text>
       </svg>
@@ -264,31 +269,29 @@
   <div class="rowlabel">II·d — Quantity drift: same structure, the gauge relabeled</div>
   <div class="row">
     <figure>
-      <svg viewBox="0 0 360 150" role="img" aria-label="Retry structure, gauge at 30 seconds: the flow is a wave of ten cycles - high repeat frequency">
+      <svg viewBox="0 0 360 150" role="img" aria-label="Retry structure: graduated vessel labeled 30 seconds; the flow is a wave of ten cycles - high repeat frequency">
         <rect x="18" y="58" width="64" height="34" rx="5" fill="currentColor" opacity="0.82"/>
         <line x1="82" y1="66" x2="268" y2="66" stroke="currentColor" stroke-width="1.5"/>
         <line x1="82" y1="84" x2="268" y2="84" stroke="currentColor" stroke-width="1.5"/>
-        <circle cx="172" cy="40" r="16" fill="none" stroke="currentColor" stroke-width="1.8"/>
-        <line x1="172" y1="40" x2="181" y2="31" stroke="currentColor" stroke-width="1.6"/>
-        <text x="206" y="44" font-size="12" font-family="monospace" fill="currentColor">30 s</text>
+        <text x="304" y="45" text-anchor="middle" font-size="12" font-family="monospace" fill="currentColor">30 s</text>
         <path d="M88 75 q4.25 -9 8.5 0 q4.25 9 8.5 0 q4.25 -9 8.5 0 q4.25 9 8.5 0 q4.25 -9 8.5 0 q4.25 9 8.5 0 q4.25 -9 8.5 0 q4.25 9 8.5 0 q4.25 -9 8.5 0 q4.25 9 8.5 0 q4.25 -9 8.5 0 q4.25 9 8.5 0 q4.25 -9 8.5 0 q4.25 9 8.5 0 q4.25 -9 8.5 0 q4.25 9 8.5 0 q4.25 -9 8.5 0 q4.25 9 8.5 0 q4.25 -9 8.5 0 q4.25 9 8.5 0" fill="none" style="stroke:var(--flow)" stroke-width="2"/>
         <polygon points="258,70 270,75 258,80" style="fill:var(--flow)"/>
         <path d="M272 52 v36 a6 6 0 0 0 6 6 h52 a6 6 0 0 0 6 -6 v-36" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <g stroke="currentColor" opacity="0.45" stroke-width="1"><line x1="275" y1="61" x2="282" y2="61"/><line x1="275" y1="69" x2="282" y2="69"/><line x1="275" y1="77" x2="282" y2="77"/><line x1="275" y1="85" x2="282" y2="85"/></g>
         <rect x="275" y="54" width="58" height="38" style="fill:var(--flow)" opacity="0.55"/>
       </svg>
       <figcaption><span class="sent">“Retry after 30 seconds.”</span></figcaption>
     </figure>
     <figure>
-      <svg viewBox="0 0 360 150" role="img" aria-label="Identical structure, gauge at 300 seconds: the same span carries exactly one cycle - one tenth the frequency">
+      <svg viewBox="0 0 360 150" role="img" aria-label="Identical structure, vessel labeled 300 seconds: the same span carries exactly one cycle - one tenth the frequency">
         <rect x="18" y="58" width="64" height="34" rx="5" fill="currentColor" opacity="0.82"/>
         <line x1="82" y1="66" x2="268" y2="66" stroke="currentColor" stroke-width="1.5"/>
         <line x1="82" y1="84" x2="268" y2="84" stroke="currentColor" stroke-width="1.5"/>
-        <circle cx="172" cy="40" r="16" fill="none" stroke="currentColor" stroke-width="1.8"/>
-        <line x1="172" y1="40" x2="161" y2="31" style="stroke:var(--blocked)" stroke-width="1.6"/>
-        <text x="206" y="44" font-size="12" font-family="monospace" style="fill:var(--blocked)">300 s</text>
+        <text x="304" y="45" text-anchor="middle" font-size="12" font-family="monospace" style="fill:var(--blocked)">300 s</text>
         <path d="M88 75 q42.5 -18 85 0 q42.5 18 85 0" fill="none" style="stroke:var(--flow)" stroke-width="2"/>
         <polygon points="258,70 270,75 258,80" style="fill:var(--flow)"/>
         <path d="M272 52 v36 a6 6 0 0 0 6 6 h52 a6 6 0 0 0 6 -6 v-36" fill="none" stroke="currentColor" stroke-width="1.8"/>
+        <g stroke="currentColor" opacity="0.45" stroke-width="1"><line x1="275" y1="61" x2="282" y2="61"/><line x1="275" y1="69" x2="282" y2="69"/><line x1="275" y1="77" x2="282" y2="77"/><line x1="275" y1="85" x2="282" y2="85"/></g>
         <rect x="275" y="54" width="58" height="38" style="fill:var(--flow)" opacity="0.55"/>
       </svg>
       <figcaption><span class="sent">“Retry after 300 seconds.”</span> Ten cycles become one across the same span. The needle swings an order of magnitude; the silhouette never moves.</figcaption>
