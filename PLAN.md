@@ -68,6 +68,7 @@ Operator ruling: worth the fleet time; Paper B runs at a higher threshold with s
 | E3-P2 | `prereg-e3` freeze: bars, sampling (balanced n≥2,000/source), caliper spec, **numerics pin: fp32 on CUDA/MPS, one pinned device per config, assignments fixed pre-sweep** (the E1 CPU-only ruling binds E1's reference path, not a fresh experiment's) | this box | pending P1 |
 | E3-P3 | The sweep, full regiment: **Forge (3090)**: mxbai, bge, e5×2 · **Agora (16 GB)**: nomic-clustering, gte · **Lear (MPS)**: MiniLM, mpnet · **Wu**: production router only (its deps live here; coordination otherwise). Evict-before-load both llama-servers; restore after | fleet | pending P2; short texts — GPU-minutes per config |
 | E3-P4 | Analysis (pre-committed before sweep): per-source naive vs stratified/caliper AUROC; shipped-threshold balanced accuracy; coupling-orientation table; the reserve becomes the flank guard | Wu | pending |
+| **E4** | **The Floor Lemma survey (APPROVED 2026-08-06** — operator: partner science): embedding pass with vectors retained across all frozen registers × 9 configs; cone widths → hard + practical floors (cos 2θ); vacuity table vs the six operating points; machine check; bars B1–B3 pre-registered before the pass. Proposal: `docs/proposals/floor_lemma_2026-08-06.md` | fleet (GPU-minutes) | queued behind E3-P3; shares the E3 device pins |
 
 ## 4. Swarm job matrix and control triggers
 
