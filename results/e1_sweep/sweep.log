@@ -27,3 +27,11 @@
 [22:04:11] FROZEN e5-base-v2__NO_prefix___sensitivity_variant_.json
 [00:47:35] mixedbread-ai/mxbai-embed-large-v1 :: g1 done (5701 pairs, 9805s)
 [03:46:49] mixedbread-ai/mxbai-embed-large-v1 :: g2 done (5701 pairs, 10754s)
+[11:49:10] mixedbread-ai/mxbai-embed-large-v1 :: g3 done (4727 pairs, 28941s)
+[11:49:10] FROZEN mixedbread-ai_mxbai-embed-large-v1.json
+[11:59:38] nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:] :: g1 done (5701 pairs, 627s)
+[12:10:59] nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:] :: g2 done (5701 pairs, 681s)
+[14:41:46] nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:] :: g3 done (4727 pairs, 9047s)
+[14:41:46] FROZEN nomic-embed-text-v1.5_MRL-256__PRODUCTION_PATH__search_document__.json
+[14:41:46] SKIP (done): nomic-embed-text-v1.5 [clustering: — documented symmetric prefix]
+[14:41:46] SWEEP COMPLETE

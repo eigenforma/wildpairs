@@ -1,0 +1,109 @@
+{
+  "H1": {
+    "bar": ">=90% of Verified-Technical above cosine 0.80 at g2; median T >= 0.95",
+    "per_config": {
+      "BAAI/bge-base-en-v1.5": {
+        "ge_080": 0.9509,
+        "ge_085": 0.9179,
+        "ge_095": 0.7305,
+        "median_T": 0.9821
+      },
+      "e5-base-v2 [NO prefix \u2014 sensitivity variant]": {
+        "ge_080": 0.974,
+        "ge_085": 0.9656,
+        "ge_095": 0.8589,
+        "median_T": 0.9903
+      },
+      "e5-base-v2 [query: \u2014 card's symmetric convention]": {
+        "ge_080": 0.974,
+        "ge_085": 0.9656,
+        "ge_095": 0.8393,
+        "median_T": 0.9887
+      },
+      "mixedbread-ai/mxbai-embed-large-v1": {
+        "ge_080": 0.9467,
+        "ge_085": 0.9158,
+        "ge_095": 0.7284,
+        "median_T": 0.9834
+      },
+      "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": {
+        "ge_080": 0.9677,
+        "ge_085": 0.9572,
+        "ge_095": 0.8421,
+        "median_T": 0.9916
+      },
+      "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": {
+        "ge_080": 0.9691,
+        "ge_085": 0.9593,
+        "ge_095": 0.8611,
+        "median_T": 0.994
+      },
+      "sentence-transformers/all-MiniLM-L6-v2": {
+        "ge_080": 0.8926,
+        "ge_085": 0.8589,
+        "ge_095": 0.6632,
+        "median_T": 0.9772
+      },
+      "sentence-transformers/all-mpnet-base-v2": {
+        "ge_080": 0.8968,
+        "ge_085": 0.8582,
+        "ge_095": 0.6772,
+        "median_T": 0.981
+      },
+      "thenlper/gte-base": {
+        "ge_080": 0.9811,
+        "ge_085": 0.9698,
+        "ge_095": 0.8849,
+        "median_T": 0.9922
+      }
+    },
+    "pass": false
+  },
+  "H2": {
+    "bar": "marginal AUROC in [0.45,0.65] for ALL configs at g2 AND movement < 0.05",
+    "marginals": {
+      "BAAI/bge-base-en-v1.5": 0.5596,
+      "e5-base-v2 [NO prefix \u2014 sensitivity variant]": 0.558,
+      "e5-base-v2 [query: \u2014 card's symmetric convention]": 0.5693,
+      "mixedbread-ai/mxbai-embed-large-v1": 0.5592,
+      "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": 0.5596,
+      "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": 0.5556,
+      "sentence-transformers/all-MiniLM-L6-v2": 0.5625,
+      "sentence-transformers/all-mpnet-base-v2": 0.5525,
+      "thenlper/gte-base": 0.5587
+    },
+    "movements": {
+      "BAAI/bge-base-en-v1.5": 0.05,
+      "e5-base-v2 [NO prefix \u2014 sensitivity variant]": 0.0482,
+      "e5-base-v2 [query: \u2014 card's symmetric convention]": 0.0456,
+      "mixedbread-ai/mxbai-embed-large-v1": 0.0498,
+      "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": 0.0466,
+      "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": 0.046,
+      "sentence-transformers/all-MiniLM-L6-v2": 0.0495,
+      "sentence-transformers/all-mpnet-base-v2": 0.05,
+      "thenlper/gte-base": 0.05
+    },
+    "pass_range": true,
+    "pass_movement": false
+  },
+  "H3": {
+    "bar": "kw2119+number are the top-2 Technical classes by median cosine, each >=0.97, in >=7/9 configs",
+    "hits": 0,
+    "of": 9,
+    "pass": false
+  },
+  "H4": {
+    "status": "PENDING bis corpus (E1-P6)"
+  },
+  "H5": {
+    "bar": "mean AUROC decays monotonically g1->g2->g3, total drop >= 0.10",
+    "mean_auroc_by_granularity": {
+      "g1": 0.5733,
+      "g2": 0.5594,
+      "g3": 0.5546
+    },
+    "pass": false
+  }
+}
+
+configs analyzed: 9 (of 9 expected)

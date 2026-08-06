@@ -1,0 +1,1913 @@
+{
+  "seed": 20260805,
+  "n_boot": 10000,
+  "configs": {
+    "BAAI/bge-base-en-v1.5": {
+      "family": "bge",
+      "granularities": {
+        "g1": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5755,
+          "auroc_ci95": [
+            0.551,
+            0.5994
+          ],
+          "auroc_stratified": 0.5332,
+          "stratification_movement": 0.0423,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0028,
+              "editorial_passed": 0.9993,
+              "balanced_accuracy": 0.501,
+              "technical_above_threshold": 0.9972
+            },
+            "0.6": {
+              "technical_flagged": 0.0337,
+              "editorial_passed": 0.9772,
+              "balanced_accuracy": 0.5054,
+              "technical_above_threshold": 0.9663
+            },
+            "0.8": {
+              "technical_flagged": 0.0807,
+              "editorial_passed": 0.933,
+              "balanced_accuracy": 0.5068,
+              "technical_above_threshold": 0.9193
+            },
+            "0.85": {
+              "technical_flagged": 0.1235,
+              "editorial_passed": 0.9066,
+              "balanced_accuracy": 0.515,
+              "technical_above_threshold": 0.8765
+            },
+            "0.95": {
+              "technical_flagged": 0.3382,
+              "editorial_passed": 0.7418,
+              "balanced_accuracy": 0.54,
+              "technical_above_threshold": 0.6618
+            }
+          },
+          "median_cosine_T": 0.974,
+          "median_cosine_E": 0.9839,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.8983
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9671
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9805
+            }
+          }
+        },
+        "g2": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5596,
+          "auroc_ci95": [
+            0.5358,
+            0.5835
+          ],
+          "auroc_stratified": 0.5096,
+          "stratification_movement": 0.05,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0028,
+              "editorial_passed": 0.9993,
+              "balanced_accuracy": 0.501,
+              "technical_above_threshold": 0.9972
+            },
+            "0.6": {
+              "technical_flagged": 0.0253,
+              "editorial_passed": 0.9843,
+              "balanced_accuracy": 0.5048,
+              "technical_above_threshold": 0.9747
+            },
+            "0.8": {
+              "technical_flagged": 0.0491,
+              "editorial_passed": 0.9536,
+              "balanced_accuracy": 0.5014,
+              "technical_above_threshold": 0.9509
+            },
+            "0.85": {
+              "technical_flagged": 0.0821,
+              "editorial_passed": 0.9351,
+              "balanced_accuracy": 0.5086,
+              "technical_above_threshold": 0.9179
+            },
+            "0.95": {
+              "technical_flagged": 0.2695,
+              "editorial_passed": 0.7882,
+              "balanced_accuracy": 0.5288,
+              "technical_above_threshold": 0.7305
+            }
+          },
+          "median_cosine_T": 0.9821,
+          "median_cosine_E": 0.9882,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9434
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9784
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9868
+            }
+          }
+        },
+        "g3": {
+          "n_T": 1230,
+          "n_E": 1249,
+          "auroc_marginal": 0.5486,
+          "auroc_ci95": [
+            0.5225,
+            0.5741
+          ],
+          "auroc_stratified": 0.5304,
+          "stratification_movement": 0.0182,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.0016,
+              "editorial_passed": 0.9984,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 0.9984
+            },
+            "0.85": {
+              "technical_flagged": 0.0016,
+              "editorial_passed": 0.9976,
+              "balanced_accuracy": 0.4996,
+              "technical_above_threshold": 0.9984
+            },
+            "0.95": {
+              "technical_flagged": 0.0073,
+              "editorial_passed": 0.9936,
+              "balanced_accuracy": 0.5005,
+              "technical_above_threshold": 0.9927
+            }
+          },
+          "median_cosine_T": 0.9994,
+          "median_cosine_E": 0.9998,
+          "edit_classes": {
+            "kw2119": {
+              "n": 97,
+              "median_cosine": 0.9958
+            },
+            "number": {
+              "n": 387,
+              "median_cosine": 0.9993
+            },
+            "other": {
+              "n": 746,
+              "median_cosine": 0.9997
+            }
+          }
+        }
+      }
+    },
+    "e5-base-v2 [NO prefix \u2014 sensitivity variant]": {
+      "family": "e5",
+      "granularities": {
+        "g1": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5709,
+          "auroc_ci95": [
+            0.5464,
+            0.5954
+          ],
+          "auroc_stratified": 0.528,
+          "stratification_movement": 0.0429,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.0323,
+              "editorial_passed": 0.9772,
+              "balanced_accuracy": 0.5047,
+              "technical_above_threshold": 0.9677
+            },
+            "0.85": {
+              "technical_flagged": 0.0519,
+              "editorial_passed": 0.9593,
+              "balanced_accuracy": 0.5056,
+              "technical_above_threshold": 0.9481
+            },
+            "0.95": {
+              "technical_flagged": 0.1853,
+              "editorial_passed": 0.8702,
+              "balanced_accuracy": 0.5277,
+              "technical_above_threshold": 0.8147
+            }
+          },
+          "median_cosine_T": 0.9865,
+          "median_cosine_E": 0.9917,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9398
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9838
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.99
+            }
+          }
+        },
+        "g2": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.558,
+          "auroc_ci95": [
+            0.534,
+            0.5814
+          ],
+          "auroc_stratified": 0.5098,
+          "stratification_movement": 0.0482,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.026,
+              "editorial_passed": 0.9829,
+              "balanced_accuracy": 0.5044,
+              "technical_above_threshold": 0.974
+            },
+            "0.85": {
+              "technical_flagged": 0.0344,
+              "editorial_passed": 0.9743,
+              "balanced_accuracy": 0.5044,
+              "technical_above_threshold": 0.9656
+            },
+            "0.95": {
+              "technical_flagged": 0.1411,
+              "editorial_passed": 0.9016,
+              "balanced_accuracy": 0.5213,
+              "technical_above_threshold": 0.8589
+            }
+          },
+          "median_cosine_T": 0.9903,
+          "median_cosine_E": 0.9937,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9689
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9881
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9931
+            }
+          }
+        },
+        "g3": {
+          "n_T": 1230,
+          "n_E": 1249,
+          "auroc_marginal": 0.5521,
+          "auroc_ci95": [
+            0.5254,
+            0.5775
+          ],
+          "auroc_stratified": 0.5347,
+          "stratification_movement": 0.0173,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.85": {
+              "technical_flagged": 0.0016,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5008,
+              "technical_above_threshold": 0.9984
+            },
+            "0.95": {
+              "technical_flagged": 0.0041,
+              "editorial_passed": 0.9976,
+              "balanced_accuracy": 0.5008,
+              "technical_above_threshold": 0.9959
+            }
+          },
+          "median_cosine_T": 0.9995,
+          "median_cosine_E": 0.9998,
+          "edit_classes": {
+            "kw2119": {
+              "n": 97,
+              "median_cosine": 0.9961
+            },
+            "number": {
+              "n": 387,
+              "median_cosine": 0.9994
+            },
+            "other": {
+              "n": 746,
+              "median_cosine": 0.9997
+            }
+          }
+        }
+      }
+    },
+    "e5-base-v2 [query: \u2014 card's symmetric convention]": {
+      "family": "e5",
+      "granularities": {
+        "g1": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5821,
+          "auroc_ci95": [
+            0.5584,
+            0.6066
+          ],
+          "auroc_stratified": 0.5429,
+          "stratification_movement": 0.0392,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.033,
+              "editorial_passed": 0.975,
+              "balanced_accuracy": 0.504,
+              "technical_above_threshold": 0.967
+            },
+            "0.85": {
+              "technical_flagged": 0.054,
+              "editorial_passed": 0.9565,
+              "balanced_accuracy": 0.5053,
+              "technical_above_threshold": 0.946
+            },
+            "0.95": {
+              "technical_flagged": 0.2091,
+              "editorial_passed": 0.8588,
+              "balanced_accuracy": 0.5339,
+              "technical_above_threshold": 0.7909
+            }
+          },
+          "median_cosine_T": 0.9844,
+          "median_cosine_E": 0.9911,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9318
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9786
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9892
+            }
+          }
+        },
+        "g2": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5693,
+          "auroc_ci95": [
+            0.5452,
+            0.5936
+          ],
+          "auroc_stratified": 0.5237,
+          "stratification_movement": 0.0456,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.026,
+              "editorial_passed": 0.9822,
+              "balanced_accuracy": 0.5041,
+              "technical_above_threshold": 0.974
+            },
+            "0.85": {
+              "technical_flagged": 0.0344,
+              "editorial_passed": 0.9736,
+              "balanced_accuracy": 0.504,
+              "technical_above_threshold": 0.9656
+            },
+            "0.95": {
+              "technical_flagged": 0.1607,
+              "editorial_passed": 0.8887,
+              "balanced_accuracy": 0.5247,
+              "technical_above_threshold": 0.8393
+            }
+          },
+          "median_cosine_T": 0.9887,
+          "median_cosine_E": 0.9931,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.963
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9844
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9928
+            }
+          }
+        },
+        "g3": {
+          "n_T": 1230,
+          "n_E": 1249,
+          "auroc_marginal": 0.559,
+          "auroc_ci95": [
+            0.5334,
+            0.5847
+          ],
+          "auroc_stratified": 0.5417,
+          "stratification_movement": 0.0172,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.85": {
+              "technical_flagged": 0.0008,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5004,
+              "technical_above_threshold": 0.9992
+            },
+            "0.95": {
+              "technical_flagged": 0.0041,
+              "editorial_passed": 0.9976,
+              "balanced_accuracy": 0.5008,
+              "technical_above_threshold": 0.9959
+            }
+          },
+          "median_cosine_T": 0.9995,
+          "median_cosine_E": 0.9998,
+          "edit_classes": {
+            "kw2119": {
+              "n": 97,
+              "median_cosine": 0.9953
+            },
+            "number": {
+              "n": 387,
+              "median_cosine": 0.9993
+            },
+            "other": {
+              "n": 746,
+              "median_cosine": 0.9997
+            }
+          }
+        }
+      }
+    },
+    "mixedbread-ai/mxbai-embed-large-v1": {
+      "family": "mxbai",
+      "granularities": {
+        "g1": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5763,
+          "auroc_ci95": [
+            0.5518,
+            0.6005
+          ],
+          "auroc_stratified": 0.5343,
+          "stratification_movement": 0.0419,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0042,
+              "editorial_passed": 0.9979,
+              "balanced_accuracy": 0.501,
+              "technical_above_threshold": 0.9958
+            },
+            "0.6": {
+              "technical_flagged": 0.0302,
+              "editorial_passed": 0.9722,
+              "balanced_accuracy": 0.5012,
+              "technical_above_threshold": 0.9698
+            },
+            "0.8": {
+              "technical_flagged": 0.0835,
+              "editorial_passed": 0.9272,
+              "balanced_accuracy": 0.5054,
+              "technical_above_threshold": 0.9165
+            },
+            "0.85": {
+              "technical_flagged": 0.1256,
+              "editorial_passed": 0.9116,
+              "balanced_accuracy": 0.5186,
+              "technical_above_threshold": 0.8744
+            },
+            "0.95": {
+              "technical_flagged": 0.3382,
+              "editorial_passed": 0.7511,
+              "balanced_accuracy": 0.5447,
+              "technical_above_threshold": 0.6618
+            }
+          },
+          "median_cosine_T": 0.9751,
+          "median_cosine_E": 0.9858,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.8813
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9668
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9834
+            }
+          }
+        },
+        "g2": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5592,
+          "auroc_ci95": [
+            0.5351,
+            0.5826
+          ],
+          "auroc_stratified": 0.5094,
+          "stratification_movement": 0.0498,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0042,
+              "editorial_passed": 0.9979,
+              "balanced_accuracy": 0.501,
+              "technical_above_threshold": 0.9958
+            },
+            "0.6": {
+              "technical_flagged": 0.0239,
+              "editorial_passed": 0.9793,
+              "balanced_accuracy": 0.5016,
+              "technical_above_threshold": 0.9761
+            },
+            "0.8": {
+              "technical_flagged": 0.0533,
+              "editorial_passed": 0.9494,
+              "balanced_accuracy": 0.5013,
+              "technical_above_threshold": 0.9467
+            },
+            "0.85": {
+              "technical_flagged": 0.0842,
+              "editorial_passed": 0.9358,
+              "balanced_accuracy": 0.51,
+              "technical_above_threshold": 0.9158
+            },
+            "0.95": {
+              "technical_flagged": 0.2716,
+              "editorial_passed": 0.7967,
+              "balanced_accuracy": 0.5341,
+              "technical_above_threshold": 0.7284
+            }
+          },
+          "median_cosine_T": 0.9834,
+          "median_cosine_E": 0.9897,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9431
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9785
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9878
+            }
+          }
+        },
+        "g3": {
+          "n_T": 1230,
+          "n_E": 1249,
+          "auroc_marginal": 0.556,
+          "auroc_ci95": [
+            0.5312,
+            0.581
+          ],
+          "auroc_stratified": 0.5382,
+          "stratification_movement": 0.0178,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.0016,
+              "editorial_passed": 0.9984,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 0.9984
+            },
+            "0.85": {
+              "technical_flagged": 0.0016,
+              "editorial_passed": 0.9984,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 0.9984
+            },
+            "0.95": {
+              "technical_flagged": 0.0073,
+              "editorial_passed": 0.9944,
+              "balanced_accuracy": 0.5009,
+              "technical_above_threshold": 0.9927
+            }
+          },
+          "median_cosine_T": 0.9995,
+          "median_cosine_E": 0.9995,
+          "edit_classes": {
+            "kw2119": {
+              "n": 97,
+              "median_cosine": 0.9966
+            },
+            "number": {
+              "n": 387,
+              "median_cosine": 0.9995
+            },
+            "other": {
+              "n": 746,
+              "median_cosine": 0.9995
+            }
+          }
+        }
+      }
+    },
+    "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": {
+      "family": "nomic",
+      "granularities": {
+        "g1": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5725,
+          "auroc_ci95": [
+            0.5479,
+            0.5964
+          ],
+          "auroc_stratified": 0.5312,
+          "stratification_movement": 0.0413,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0105,
+              "editorial_passed": 0.9957,
+              "balanced_accuracy": 0.5031,
+              "technical_above_threshold": 0.9895
+            },
+            "0.8": {
+              "technical_flagged": 0.0456,
+              "editorial_passed": 0.9579,
+              "balanced_accuracy": 0.5018,
+              "technical_above_threshold": 0.9544
+            },
+            "0.85": {
+              "technical_flagged": 0.0667,
+              "editorial_passed": 0.9358,
+              "balanced_accuracy": 0.5012,
+              "technical_above_threshold": 0.9333
+            },
+            "0.95": {
+              "technical_flagged": 0.2063,
+              "editorial_passed": 0.8274,
+              "balanced_accuracy": 0.5169,
+              "technical_above_threshold": 0.7937
+            }
+          },
+          "median_cosine_T": 0.9866,
+          "median_cosine_E": 0.9934,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9468
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9865
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9896
+            }
+          }
+        },
+        "g2": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5596,
+          "auroc_ci95": [
+            0.5358,
+            0.5831
+          ],
+          "auroc_stratified": 0.513,
+          "stratification_movement": 0.0466,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0105,
+              "editorial_passed": 0.9957,
+              "balanced_accuracy": 0.5031,
+              "technical_above_threshold": 0.9895
+            },
+            "0.8": {
+              "technical_flagged": 0.0323,
+              "editorial_passed": 0.9736,
+              "balanced_accuracy": 0.5029,
+              "technical_above_threshold": 0.9677
+            },
+            "0.85": {
+              "technical_flagged": 0.0428,
+              "editorial_passed": 0.9572,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 0.9572
+            },
+            "0.95": {
+              "technical_flagged": 0.1579,
+              "editorial_passed": 0.8645,
+              "balanced_accuracy": 0.5112,
+              "technical_above_threshold": 0.8421
+            }
+          },
+          "median_cosine_T": 0.9916,
+          "median_cosine_E": 0.9951,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9755
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9908
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9935
+            }
+          }
+        },
+        "g3": {
+          "n_T": 1230,
+          "n_E": 1249,
+          "auroc_marginal": 0.588,
+          "auroc_ci95": [
+            0.5623,
+            0.6131
+          ],
+          "auroc_stratified": 0.5671,
+          "stratification_movement": 0.0209,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.0008,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5004,
+              "technical_above_threshold": 0.9992
+            },
+            "0.85": {
+              "technical_flagged": 0.0008,
+              "editorial_passed": 0.9984,
+              "balanced_accuracy": 0.4996,
+              "technical_above_threshold": 0.9992
+            },
+            "0.95": {
+              "technical_flagged": 0.0073,
+              "editorial_passed": 0.9952,
+              "balanced_accuracy": 0.5013,
+              "technical_above_threshold": 0.9927
+            }
+          },
+          "median_cosine_T": 0.9997,
+          "median_cosine_E": 0.9999,
+          "edit_classes": {
+            "kw2119": {
+              "n": 97,
+              "median_cosine": 0.9984
+            },
+            "number": {
+              "n": 387,
+              "median_cosine": 0.9997
+            },
+            "other": {
+              "n": 746,
+              "median_cosine": 0.9998
+            }
+          }
+        }
+      }
+    },
+    "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": {
+      "family": "nomic",
+      "granularities": {
+        "g1": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5685,
+          "auroc_ci95": [
+            0.5443,
+            0.5929
+          ],
+          "auroc_stratified": 0.528,
+          "stratification_movement": 0.0405,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0007,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5004,
+              "technical_above_threshold": 0.9993
+            },
+            "0.6": {
+              "technical_flagged": 0.0098,
+              "editorial_passed": 0.9914,
+              "balanced_accuracy": 0.5006,
+              "technical_above_threshold": 0.9902
+            },
+            "0.8": {
+              "technical_flagged": 0.0386,
+              "editorial_passed": 0.9629,
+              "balanced_accuracy": 0.5008,
+              "technical_above_threshold": 0.9614
+            },
+            "0.85": {
+              "technical_flagged": 0.0596,
+              "editorial_passed": 0.9437,
+              "balanced_accuracy": 0.5017,
+              "technical_above_threshold": 0.9404
+            },
+            "0.95": {
+              "technical_flagged": 0.186,
+              "editorial_passed": 0.8338,
+              "balanced_accuracy": 0.5099,
+              "technical_above_threshold": 0.814
+            }
+          },
+          "median_cosine_T": 0.9906,
+          "median_cosine_E": 0.9947,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9555
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9908
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9923
+            }
+          }
+        },
+        "g2": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5556,
+          "auroc_ci95": [
+            0.5322,
+            0.5794
+          ],
+          "auroc_stratified": 0.5096,
+          "stratification_movement": 0.046,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0007,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5004,
+              "technical_above_threshold": 0.9993
+            },
+            "0.6": {
+              "technical_flagged": 0.0098,
+              "editorial_passed": 0.9922,
+              "balanced_accuracy": 0.501,
+              "technical_above_threshold": 0.9902
+            },
+            "0.8": {
+              "technical_flagged": 0.0309,
+              "editorial_passed": 0.9722,
+              "balanced_accuracy": 0.5015,
+              "technical_above_threshold": 0.9691
+            },
+            "0.85": {
+              "technical_flagged": 0.0407,
+              "editorial_passed": 0.9622,
+              "balanced_accuracy": 0.5014,
+              "technical_above_threshold": 0.9593
+            },
+            "0.95": {
+              "technical_flagged": 0.1389,
+              "editorial_passed": 0.8709,
+              "balanced_accuracy": 0.5049,
+              "technical_above_threshold": 0.8611
+            }
+          },
+          "median_cosine_T": 0.994,
+          "median_cosine_E": 0.9964,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9832
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9937
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9948
+            }
+          }
+        },
+        "g3": {
+          "n_T": 1230,
+          "n_E": 1249,
+          "auroc_marginal": 0.5766,
+          "auroc_ci95": [
+            0.5512,
+            0.6018
+          ],
+          "auroc_stratified": 0.5559,
+          "stratification_movement": 0.0207,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.0033,
+              "editorial_passed": 0.9992,
+              "balanced_accuracy": 0.5012,
+              "technical_above_threshold": 0.9967
+            },
+            "0.85": {
+              "technical_flagged": 0.0041,
+              "editorial_passed": 0.9976,
+              "balanced_accuracy": 0.5008,
+              "technical_above_threshold": 0.9959
+            },
+            "0.95": {
+              "technical_flagged": 0.013,
+              "editorial_passed": 0.9944,
+              "balanced_accuracy": 0.5037,
+              "technical_above_threshold": 0.987
+            }
+          },
+          "median_cosine_T": 0.9997,
+          "median_cosine_E": 0.9999,
+          "edit_classes": {
+            "kw2119": {
+              "n": 97,
+              "median_cosine": 0.999
+            },
+            "number": {
+              "n": 387,
+              "median_cosine": 0.9997
+            },
+            "other": {
+              "n": 746,
+              "median_cosine": 0.9998
+            }
+          }
+        }
+      }
+    },
+    "sentence-transformers/all-MiniLM-L6-v2": {
+      "family": "minilm",
+      "granularities": {
+        "g1": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5733,
+          "auroc_ci95": [
+            0.549,
+            0.5974
+          ],
+          "auroc_stratified": 0.5314,
+          "stratification_movement": 0.042,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0309,
+              "editorial_passed": 0.9757,
+              "balanced_accuracy": 0.5033,
+              "technical_above_threshold": 0.9691
+            },
+            "0.4": {
+              "technical_flagged": 0.0365,
+              "editorial_passed": 0.9665,
+              "balanced_accuracy": 0.5015,
+              "technical_above_threshold": 0.9635
+            },
+            "0.6": {
+              "technical_flagged": 0.0681,
+              "editorial_passed": 0.9444,
+              "balanced_accuracy": 0.5062,
+              "technical_above_threshold": 0.9319
+            },
+            "0.8": {
+              "technical_flagged": 0.1439,
+              "editorial_passed": 0.8688,
+              "balanced_accuracy": 0.5063,
+              "technical_above_threshold": 0.8561
+            },
+            "0.85": {
+              "technical_flagged": 0.1853,
+              "editorial_passed": 0.8374,
+              "balanced_accuracy": 0.5113,
+              "technical_above_threshold": 0.8147
+            },
+            "0.95": {
+              "technical_flagged": 0.4182,
+              "editorial_passed": 0.6719,
+              "balanced_accuracy": 0.5451,
+              "technical_above_threshold": 0.5818
+            }
+          },
+          "median_cosine_T": 0.9668,
+          "median_cosine_E": 0.9814,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.8461
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9676
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9748
+            }
+          }
+        },
+        "g2": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5625,
+          "auroc_ci95": [
+            0.5385,
+            0.587
+          ],
+          "auroc_stratified": 0.513,
+          "stratification_movement": 0.0495,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0253,
+              "editorial_passed": 0.98,
+              "balanced_accuracy": 0.5026,
+              "technical_above_threshold": 0.9747
+            },
+            "0.4": {
+              "technical_flagged": 0.0288,
+              "editorial_passed": 0.9757,
+              "balanced_accuracy": 0.5023,
+              "technical_above_threshold": 0.9712
+            },
+            "0.6": {
+              "technical_flagged": 0.0428,
+              "editorial_passed": 0.9629,
+              "balanced_accuracy": 0.5029,
+              "technical_above_threshold": 0.9572
+            },
+            "0.8": {
+              "technical_flagged": 0.1074,
+              "editorial_passed": 0.9009,
+              "balanced_accuracy": 0.5041,
+              "technical_above_threshold": 0.8926
+            },
+            "0.85": {
+              "technical_flagged": 0.1411,
+              "editorial_passed": 0.8709,
+              "balanced_accuracy": 0.506,
+              "technical_above_threshold": 0.8589
+            },
+            "0.95": {
+              "technical_flagged": 0.3368,
+              "editorial_passed": 0.7204,
+              "balanced_accuracy": 0.5286,
+              "technical_above_threshold": 0.6632
+            }
+          },
+          "median_cosine_T": 0.9772,
+          "median_cosine_E": 0.9863,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9183
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9735
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9824
+            }
+          }
+        },
+        "g3": {
+          "n_T": 1230,
+          "n_E": 1249,
+          "auroc_marginal": 0.5138,
+          "auroc_ci95": [
+            0.4917,
+            0.5365
+          ],
+          "auroc_stratified": 0.5025,
+          "stratification_movement": 0.0113,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0008,
+              "editorial_passed": 0.9984,
+              "balanced_accuracy": 0.4996,
+              "technical_above_threshold": 0.9992
+            },
+            "0.8": {
+              "technical_flagged": 0.0024,
+              "editorial_passed": 0.9968,
+              "balanced_accuracy": 0.4996,
+              "technical_above_threshold": 0.9976
+            },
+            "0.85": {
+              "technical_flagged": 0.0065,
+              "editorial_passed": 0.9944,
+              "balanced_accuracy": 0.5004,
+              "technical_above_threshold": 0.9935
+            },
+            "0.95": {
+              "technical_flagged": 0.0496,
+              "editorial_passed": 0.968,
+              "balanced_accuracy": 0.5088,
+              "technical_above_threshold": 0.9504
+            }
+          },
+          "median_cosine_T": 1.0,
+          "median_cosine_E": 1.0,
+          "edit_classes": {
+            "kw2119": {
+              "n": 97,
+              "median_cosine": 0.9973
+            },
+            "number": {
+              "n": 387,
+              "median_cosine": 1.0
+            },
+            "other": {
+              "n": 746,
+              "median_cosine": 1.0
+            }
+          }
+        }
+      }
+    },
+    "sentence-transformers/all-mpnet-base-v2": {
+      "family": "mpnet",
+      "granularities": {
+        "g1": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5649,
+          "auroc_ci95": [
+            0.5404,
+            0.5887
+          ],
+          "auroc_stratified": 0.5229,
+          "stratification_movement": 0.042,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0295,
+              "editorial_passed": 0.9743,
+              "balanced_accuracy": 0.5019,
+              "technical_above_threshold": 0.9705
+            },
+            "0.4": {
+              "technical_flagged": 0.0365,
+              "editorial_passed": 0.9658,
+              "balanced_accuracy": 0.5011,
+              "technical_above_threshold": 0.9635
+            },
+            "0.6": {
+              "technical_flagged": 0.0646,
+              "editorial_passed": 0.9387,
+              "balanced_accuracy": 0.5016,
+              "technical_above_threshold": 0.9354
+            },
+            "0.8": {
+              "technical_flagged": 0.1425,
+              "editorial_passed": 0.8823,
+              "balanced_accuracy": 0.5124,
+              "technical_above_threshold": 0.8575
+            },
+            "0.85": {
+              "technical_flagged": 0.1832,
+              "editorial_passed": 0.8466,
+              "balanced_accuracy": 0.5149,
+              "technical_above_threshold": 0.8168
+            },
+            "0.95": {
+              "technical_flagged": 0.3958,
+              "editorial_passed": 0.6833,
+              "balanced_accuracy": 0.5395,
+              "technical_above_threshold": 0.6042
+            }
+          },
+          "median_cosine_T": 0.9698,
+          "median_cosine_E": 0.9839,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.8479
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9696
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9765
+            }
+          }
+        },
+        "g2": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5525,
+          "auroc_ci95": [
+            0.5281,
+            0.5761
+          ],
+          "auroc_stratified": 0.5024,
+          "stratification_movement": 0.05,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0239,
+              "editorial_passed": 0.9786,
+              "balanced_accuracy": 0.5012,
+              "technical_above_threshold": 0.9761
+            },
+            "0.4": {
+              "technical_flagged": 0.0288,
+              "editorial_passed": 0.9765,
+              "balanced_accuracy": 0.5026,
+              "technical_above_threshold": 0.9712
+            },
+            "0.6": {
+              "technical_flagged": 0.0428,
+              "editorial_passed": 0.9593,
+              "balanced_accuracy": 0.5011,
+              "technical_above_threshold": 0.9572
+            },
+            "0.8": {
+              "technical_flagged": 0.1032,
+              "editorial_passed": 0.9051,
+              "balanced_accuracy": 0.5041,
+              "technical_above_threshold": 0.8968
+            },
+            "0.85": {
+              "technical_flagged": 0.1418,
+              "editorial_passed": 0.878,
+              "balanced_accuracy": 0.5099,
+              "technical_above_threshold": 0.8582
+            },
+            "0.95": {
+              "technical_flagged": 0.3228,
+              "editorial_passed": 0.7325,
+              "balanced_accuracy": 0.5277,
+              "technical_above_threshold": 0.6772
+            }
+          },
+          "median_cosine_T": 0.981,
+          "median_cosine_E": 0.9871,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9282
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9787
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9854
+            }
+          }
+        },
+        "g3": {
+          "n_T": 1230,
+          "n_E": 1249,
+          "auroc_marginal": 0.5335,
+          "auroc_ci95": [
+            0.5096,
+            0.5581
+          ],
+          "auroc_stratified": 0.5193,
+          "stratification_movement": 0.0143,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0008,
+              "editorial_passed": 0.9992,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 0.9992
+            },
+            "0.8": {
+              "technical_flagged": 0.0016,
+              "editorial_passed": 0.9976,
+              "balanced_accuracy": 0.4996,
+              "technical_above_threshold": 0.9984
+            },
+            "0.85": {
+              "technical_flagged": 0.0049,
+              "editorial_passed": 0.9968,
+              "balanced_accuracy": 0.5008,
+              "technical_above_threshold": 0.9951
+            },
+            "0.95": {
+              "technical_flagged": 0.0236,
+              "editorial_passed": 0.9872,
+              "balanced_accuracy": 0.5054,
+              "technical_above_threshold": 0.9764
+            }
+          },
+          "median_cosine_T": 0.9999,
+          "median_cosine_E": 0.9999,
+          "edit_classes": {
+            "kw2119": {
+              "n": 97,
+              "median_cosine": 0.9954
+            },
+            "number": {
+              "n": 387,
+              "median_cosine": 0.9999
+            },
+            "other": {
+              "n": 746,
+              "median_cosine": 0.9999
+            }
+          }
+        }
+      }
+    },
+    "thenlper/gte-base": {
+      "family": "gte",
+      "granularities": {
+        "g1": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5754,
+          "auroc_ci95": [
+            0.5505,
+            0.5993
+          ],
+          "auroc_stratified": 0.5344,
+          "stratification_movement": 0.041,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.0225,
+              "editorial_passed": 0.9836,
+              "balanced_accuracy": 0.503,
+              "technical_above_threshold": 0.9775
+            },
+            "0.85": {
+              "technical_flagged": 0.0414,
+              "editorial_passed": 0.9622,
+              "balanced_accuracy": 0.5018,
+              "technical_above_threshold": 0.9586
+            },
+            "0.95": {
+              "technical_flagged": 0.1607,
+              "editorial_passed": 0.8716,
+              "balanced_accuracy": 0.5162,
+              "technical_above_threshold": 0.8393
+            }
+          },
+          "median_cosine_T": 0.9888,
+          "median_cosine_E": 0.9937,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9541
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9863
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9917
+            }
+          }
+        },
+        "g2": {
+          "n_T": 1425,
+          "n_E": 1402,
+          "auroc_marginal": 0.5587,
+          "auroc_ci95": [
+            0.535,
+            0.5823
+          ],
+          "auroc_stratified": 0.5087,
+          "stratification_movement": 0.05,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.0189,
+              "editorial_passed": 0.9864,
+              "balanced_accuracy": 0.5027,
+              "technical_above_threshold": 0.9811
+            },
+            "0.85": {
+              "technical_flagged": 0.0302,
+              "editorial_passed": 0.9743,
+              "balanced_accuracy": 0.5022,
+              "technical_above_threshold": 0.9698
+            },
+            "0.95": {
+              "technical_flagged": 0.1151,
+              "editorial_passed": 0.903,
+              "balanced_accuracy": 0.509,
+              "technical_above_threshold": 0.8849
+            }
+          },
+          "median_cosine_T": 0.9922,
+          "median_cosine_E": 0.9951,
+          "edit_classes": {
+            "kw2119": {
+              "n": 116,
+              "median_cosine": 0.9797
+            },
+            "number": {
+              "n": 473,
+              "median_cosine": 0.9902
+            },
+            "other": {
+              "n": 836,
+              "median_cosine": 0.9941
+            }
+          }
+        },
+        "g3": {
+          "n_T": 1230,
+          "n_E": 1249,
+          "auroc_marginal": 0.5639,
+          "auroc_ci95": [
+            0.5407,
+            0.587
+          ],
+          "auroc_stratified": 0.5471,
+          "stratification_movement": 0.0167,
+          "operating_points": {
+            "0.3": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.4": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.6": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.8": {
+              "technical_flagged": 0.0,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 1.0
+            },
+            "0.85": {
+              "technical_flagged": 0.0008,
+              "editorial_passed": 1.0,
+              "balanced_accuracy": 0.5004,
+              "technical_above_threshold": 0.9992
+            },
+            "0.95": {
+              "technical_flagged": 0.0024,
+              "editorial_passed": 0.9976,
+              "balanced_accuracy": 0.5,
+              "technical_above_threshold": 0.9976
+            }
+          },
+          "median_cosine_T": 0.9995,
+          "median_cosine_E": 1.0,
+          "edit_classes": {
+            "kw2119": {
+              "n": 97,
+              "median_cosine": 0.998
+            },
+            "number": {
+              "n": 387,
+              "median_cosine": 0.9995
+            },
+            "other": {
+              "n": 746,
+              "median_cosine": 0.9995
+            }
+          }
+        }
+      }
+    }
+  },
+  "hypotheses": {
+    "H1": {
+      "bar": ">=90% of Verified-Technical above cosine 0.80 at g2; median T >= 0.95",
+      "per_config": {
+        "BAAI/bge-base-en-v1.5": {
+          "ge_080": 0.9509,
+          "ge_085": 0.9179,
+          "ge_095": 0.7305,
+          "median_T": 0.9821
+        },
+        "e5-base-v2 [NO prefix \u2014 sensitivity variant]": {
+          "ge_080": 0.974,
+          "ge_085": 0.9656,
+          "ge_095": 0.8589,
+          "median_T": 0.9903
+        },
+        "e5-base-v2 [query: \u2014 card's symmetric convention]": {
+          "ge_080": 0.974,
+          "ge_085": 0.9656,
+          "ge_095": 0.8393,
+          "median_T": 0.9887
+        },
+        "mixedbread-ai/mxbai-embed-large-v1": {
+          "ge_080": 0.9467,
+          "ge_085": 0.9158,
+          "ge_095": 0.7284,
+          "median_T": 0.9834
+        },
+        "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": {
+          "ge_080": 0.9677,
+          "ge_085": 0.9572,
+          "ge_095": 0.8421,
+          "median_T": 0.9916
+        },
+        "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": {
+          "ge_080": 0.9691,
+          "ge_085": 0.9593,
+          "ge_095": 0.8611,
+          "median_T": 0.994
+        },
+        "sentence-transformers/all-MiniLM-L6-v2": {
+          "ge_080": 0.8926,
+          "ge_085": 0.8589,
+          "ge_095": 0.6632,
+          "median_T": 0.9772
+        },
+        "sentence-transformers/all-mpnet-base-v2": {
+          "ge_080": 0.8968,
+          "ge_085": 0.8582,
+          "ge_095": 0.6772,
+          "median_T": 0.981
+        },
+        "thenlper/gte-base": {
+          "ge_080": 0.9811,
+          "ge_085": 0.9698,
+          "ge_095": 0.8849,
+          "median_T": 0.9922
+        }
+      },
+      "pass": false
+    },
+    "H2": {
+      "bar": "marginal AUROC in [0.45,0.65] for ALL configs at g2 AND movement < 0.05",
+      "marginals": {
+        "BAAI/bge-base-en-v1.5": 0.5596,
+        "e5-base-v2 [NO prefix \u2014 sensitivity variant]": 0.558,
+        "e5-base-v2 [query: \u2014 card's symmetric convention]": 0.5693,
+        "mixedbread-ai/mxbai-embed-large-v1": 0.5592,
+        "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": 0.5596,
+        "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": 0.5556,
+        "sentence-transformers/all-MiniLM-L6-v2": 0.5625,
+        "sentence-transformers/all-mpnet-base-v2": 0.5525,
+        "thenlper/gte-base": 0.5587
+      },
+      "movements": {
+        "BAAI/bge-base-en-v1.5": 0.05,
+        "e5-base-v2 [NO prefix \u2014 sensitivity variant]": 0.0482,
+        "e5-base-v2 [query: \u2014 card's symmetric convention]": 0.0456,
+        "mixedbread-ai/mxbai-embed-large-v1": 0.0498,
+        "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": 0.0466,
+        "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": 0.046,
+        "sentence-transformers/all-MiniLM-L6-v2": 0.0495,
+        "sentence-transformers/all-mpnet-base-v2": 0.05,
+        "thenlper/gte-base": 0.05
+      },
+      "pass_range": true,
+      "pass_movement": false
+    },
+    "H3": {
+      "bar": "kw2119+number are the top-2 Technical classes by median cosine, each >=0.97, in >=7/9 configs",
+      "hits": 0,
+      "of": 9,
+      "pass": false
+    },
+    "H4": {
+      "status": "PENDING bis corpus (E1-P6)"
+    },
+    "H5": {
+      "bar": "mean AUROC decays monotonically g1->g2->g3, total drop >= 0.10",
+      "mean_auroc_by_granularity": {
+        "g1": 0.5733,
+        "g2": 0.5594,
+        "g3": 0.5546
+      },
+      "pass": false
+    }
+  }
+}
