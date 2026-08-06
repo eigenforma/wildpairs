@@ -57,6 +57,18 @@ Full experiment specifications, hypotheses with numeric bars, verified dataset p
 | E2-X | Lab-only extension arms: MRL family across truncation dims (does L* shrink with dim?); native-hyperbolic encoders (the case Paper A §9 left open) — in-house Poincaré text models as named configurations; **MuRP as positive control only** (natively trained, non-constant radii — but a KG-embedding model, not a text encoder; it demonstrates that training-in-geometry uses the radius, it cannot run the sweep). Cite-only tier (operator ruling 2026-08-05): HNNs (Ganea 2018, already in Paper A refs), HGCNs (Chami 2019), hyperbolic attention/transformers — architectures without an adopted sentence-encoder checkpoint ecosystem; named as the open door native training leaves, not run | Forge | after P6, week-budget permitting |
 | X-HYP | **§9 generalized to every standard model of Hⁿ (DONE 2026-08-05):** post-hoc insertion of unit-norm embeddings into ball, Lorentz/hyperboloid, Klein, and upper half-space is a no-op — constant radius/height at machine epsilon, geodesic ranking rank-identical to cosine on all 79,800 pairs, 4 curvatures × 4 models, Lorentz closed form d = arcosh(cosh²√c − sinh²√c·cosθ)/√c confirmed to 5e-8, half-space isometry to 4e-15. Closes the "another chart might escape §9" reviewer hatch. Recompute: `harness/hyperbolic/models_of_hn_noop_check.py`; frozen: `results/hyperbolic/models_of_hn.json` | this box | **DONE** — a Paper B section-note or artifact lemma |
 
+## 3b. Phase matrix — E3 (Composed Factorial: the brand-name flank guard, promoted 2026-08-06)
+
+Operator ruling: worth the fleet time; Paper B runs at a higher threshold with stronger language if the failure mode reproduces on the most recognizable datasets in the genre. Fleet doctrine for this campaign: **all three GPUs hot, Wu coordinates.**
+
+| phase | what | where | state |
+|---|---|---|---|
+| E3-P0 | Freeze sources: SNLI 1.0, MultiNLI 1.0, QQP (GLUE clean), PAWS-Wiki labeled_final (HF parquet mirror — the GCS URL is dead, 403) | Agora coldstore `e3_composed/` | **IN FLIGHT 2026-08-06** — PAWS frozen (3 parquets); SNLI/MNLI/QQP downloading |
+| E3-P1 | Build the composed corpus, encoder-blind: meaning-preserving (paraphrase=1 / duplicate=1 / entailment) vs meaning-breaking (PAWS non-paraphrase / non-duplicate / contradiction); token-Jaccard per pair; **each source's native coupling orientation measured first** — the three-regime table gains three brand-name rows before any encoder loads | Wu | pending P0 |
+| E3-P2 | `prereg-e3` freeze: bars, sampling (balanced n≥2,000/source), caliper spec, **numerics pin: fp32 on CUDA/MPS, one pinned device per config, assignments fixed pre-sweep** (the E1 CPU-only ruling binds E1's reference path, not a fresh experiment's) | this box | pending P1 |
+| E3-P3 | The sweep, full regiment: **Forge (3090)**: mxbai, bge, e5×2 · **Agora (16 GB)**: nomic-clustering, gte · **Lear (MPS)**: MiniLM, mpnet · **Wu**: production router only (its deps live here; coordination otherwise). Evict-before-load both llama-servers; restore after | fleet | pending P2; short texts — GPU-minutes per config |
+| E3-P4 | Analysis (pre-committed before sweep): per-source naive vs stratified/caliper AUROC; shipped-threshold balanced accuracy; coupling-orientation table; the reserve becomes the flank guard | Wu | pending |
+
 ## 4. Swarm job matrix and control triggers
 
 Roles: **Forge/Macbeth** (24 GB VRAM) — all encoder sweeps, 120B arbitration. **Agora/Othello** (16 GB VRAM, Ops API :8000) — storage + mining + second embedding shard + 120B labeling. **Lear** (Mac, ollama :11434) — small-model bulk labeling, advisor, curve fitting. Interconnect: 40GbE DAC Forge↔Agora for shard exchange; USB4 Lear↔Agora backup.
