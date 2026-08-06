@@ -11,15 +11,21 @@ Analysis (AUROC, operating points, stratification) is a separate later script; t
 only measures and freezes.
 """
 import json
+import os
 import sys
 import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
-FALSIFYER = Path("c:/Users/poeti/Falsifyer")
-sys.path.insert(0, str(FALSIFYER / "experiments" / "factorial_pilot"))
+# Registry location: Wu default, env-overridable for fleet nodes carrying a copy.
+REGISTRY_DIR = Path(os.environ.get("PAPER_A_REGISTRY", "c:/Users/poeti/Falsifyer/experiments/factorial_pilot"))
+sys.path.insert(0, str(REGISTRY_DIR))
 
 from encoders import REGISTRY  # noqa: E402  (Paper A registry, verbatim)
+
+# SWEEP_ONLY: comma-separated substrings; when set, only matching config names run
+# (fleet sharding — e.g. SWEEP_ONLY=nomic on Forge while Wu holds the rest).
+ONLY = [s.strip().lower() for s in os.environ.get("SWEEP_ONLY", "").split(",") if s.strip()]
 
 PAIRS_G1G2 = ROOT / "corpus" / "e1_errata" / "pairs_g1g2.jsonl"
 PAIRS_G3 = ROOT / "corpus" / "e1_errata" / "pairs_g3.jsonl"
@@ -53,6 +59,8 @@ def main() -> None:
     order = sorted(range(len(REGISTRY)), key=lambda i: (REGISTRY[i].family == "nomic", "mxbai" in REGISTRY[i].family, i))
     for i in order:
         enc = REGISTRY[i]
+        if ONLY and not any(s in enc.name.lower() for s in ONLY):
+            continue
         out_path = OUT_DIR / (slug(enc.name) + ".json")
         if out_path.exists():
             log(f"SKIP (done): {enc.name}")
