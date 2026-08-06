@@ -26,6 +26,8 @@ All five drafts in `Falsifyer/docs/outreach/paper_b_outreach.md` can now carry t
 
 ## D4 — Claim altitude for Paper B (the real question)
 
+> **RULED 2026-08-06: HOLD FOR E2.** The altitude decision defers until the dilution titration delivers (or refutes) the second law. Drafting waits; E1 results stay frozen; outreach proceeds (the emails share prereg + scorecard and commit no altitude). E2 is now the program's critical path.
+
 **Terms.** *Claim altitude* is how far above the raw evidence the headline sits. Three rungs are available, all now evidenced:
 
 1. **Audit altitude** (lowest, safest): *"Shipped similarity gates approve 89–98% of corrections the IETF's own verifiers ruled meaning-changing; no encoder distinguishes the classes better than 0.52 stratified AUROC."* Unassailable; institution-labeled; already survived its own bars' scrutiny.
