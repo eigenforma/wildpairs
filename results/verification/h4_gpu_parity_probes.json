@@ -1,0 +1,36 @@
+{
+  "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": {
+    "max_delta": 2.384185791015625e-07,
+    "pass_1e-5": true
+  },
+  "sentence-transformers/all-MiniLM-L6-v2": {
+    "max_delta": 3.5762786865234375e-07,
+    "pass_1e-5": true
+  },
+  "sentence-transformers/all-mpnet-base-v2": {
+    "max_delta": 6.556510925292969e-07,
+    "pass_1e-5": true
+  },
+  "BAAI/bge-base-en-v1.5": {
+    "max_delta": 2.980232238769531e-07,
+    "pass_1e-5": true
+  },
+  "thenlper/gte-base": {
+    "max_delta": 0.0009765625,
+    "pass_1e-5": false,
+    "note": "fp32-forced GPU recompute"
+  },
+  "e5-base-v2 [query: \u2014 card's symmetric convention]": {
+    "max_delta": 2.384185791015625e-07,
+    "pass_1e-5": true
+  },
+  "e5-base-v2 [NO prefix \u2014 sensitivity variant]": {
+    "max_delta": 2.384185791015625e-07,
+    "pass_1e-5": true
+  },
+  "mixedbread-ai/mxbai-embed-large-v1": {
+    "max_delta": 0.0009750127792358398,
+    "pass_1e-5": false,
+    "note": "fp32-forced GPU recompute"
+  }
+}

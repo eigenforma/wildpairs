@@ -1,0 +1,129 @@
+{
+  "seed": 20260805,
+  "n_bis": 13780,
+  "n_bis_positive": 2019,
+  "bis_label_status": "machine-labeled; 200-pair two-annotator audit pending",
+  "configs": {
+    "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": {
+      "absent": "import failed: ModuleNotFoundError: No module named 'intern'"
+    },
+    "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": {
+      "threshold": {
+        "tau": 0.9953,
+        "bal_acc_errata": 0.5559,
+        "bal_acc_bis": 0.589,
+        "drop": -0.0331
+      },
+      "logistic_cos_jac": {
+        "auroc_errata": 0.566,
+        "auroc_bis": 0.7307,
+        "drop": -0.1647
+      },
+      "raw_auroc_bis_cosine_only": 0.6345
+    },
+    "sentence-transformers/all-MiniLM-L6-v2": {
+      "threshold": {
+        "tau": 0.9898,
+        "bal_acc_errata": 0.5559,
+        "bal_acc_bis": 0.601,
+        "drop": -0.0452
+      },
+      "logistic_cos_jac": {
+        "auroc_errata": 0.569,
+        "auroc_bis": 0.7221,
+        "drop": -0.1531
+      },
+      "raw_auroc_bis_cosine_only": 0.6484
+    },
+    "sentence-transformers/all-mpnet-base-v2": {
+      "threshold": {
+        "tau": 0.9942,
+        "bal_acc_errata": 0.5487,
+        "bal_acc_bis": 0.5896,
+        "drop": -0.0409
+      },
+      "logistic_cos_jac": {
+        "auroc_errata": 0.568,
+        "auroc_bis": 0.7162,
+        "drop": -0.1482
+      },
+      "raw_auroc_bis_cosine_only": 0.6541
+    },
+    "BAAI/bge-base-en-v1.5": {
+      "threshold": {
+        "tau": 0.9929,
+        "bal_acc_errata": 0.5522,
+        "bal_acc_bis": 0.5928,
+        "drop": -0.0407
+      },
+      "logistic_cos_jac": {
+        "auroc_errata": 0.5644,
+        "auroc_bis": 0.7228,
+        "drop": -0.1583
+      },
+      "raw_auroc_bis_cosine_only": 0.6725
+    },
+    "thenlper/gte-base": {
+      "threshold": {
+        "tau": 0.9961,
+        "bal_acc_errata": 0.5517,
+        "bal_acc_bis": 0.5947,
+        "drop": -0.043
+      },
+      "logistic_cos_jac": {
+        "auroc_errata": 0.5645,
+        "auroc_bis": 0.7199,
+        "drop": -0.1554
+      },
+      "raw_auroc_bis_cosine_only": 0.6635
+    },
+    "e5-base-v2 [query: \u2014 card's symmetric convention]": {
+      "threshold": {
+        "tau": 0.9895,
+        "bal_acc_errata": 0.5581,
+        "bal_acc_bis": 0.611,
+        "drop": -0.0529
+      },
+      "logistic_cos_jac": {
+        "auroc_errata": 0.5655,
+        "auroc_bis": 0.7068,
+        "drop": -0.1414
+      },
+      "raw_auroc_bis_cosine_only": 0.667
+    },
+    "e5-base-v2 [NO prefix \u2014 sensitivity variant]": {
+      "threshold": {
+        "tau": 0.9924,
+        "bal_acc_errata": 0.5465,
+        "bal_acc_bis": 0.6051,
+        "drop": -0.0586
+      },
+      "logistic_cos_jac": {
+        "auroc_errata": 0.5661,
+        "auroc_bis": 0.7246,
+        "drop": -0.1586
+      },
+      "raw_auroc_bis_cosine_only": 0.6675
+    },
+    "mixedbread-ai/mxbai-embed-large-v1": {
+      "threshold": {
+        "tau": 0.9912,
+        "bal_acc_errata": 0.5509,
+        "bal_acc_bis": 0.6,
+        "drop": -0.0491
+      },
+      "logistic_cos_jac": {
+        "auroc_errata": 0.5652,
+        "auroc_bis": 0.7221,
+        "drop": -0.1569
+      },
+      "raw_auroc_bis_cosine_only": 0.6715
+    }
+  },
+  "H4": {
+    "bar": "each fitted object drops >= 0.10 from errata to bis",
+    "min_drop": -0.1647,
+    "median_drop": -0.1,
+    "all_objects_drop_ge_0.10": false
+  }
+}
