@@ -42,6 +42,17 @@
       "bytes": 19773796684,
       "sha256": "cf5ab6b3a3f0b20d755563d8c3d2e1d7d35777e6c8ee4a31d9aae5d215dffcf0",
       "role": "E2 host corpus: enwiki-20210701 (CondaQA's exact source snapshot); byte-count verified against archive.org content-length"
+    },
+    {
+      "path": "wildpairs/rfc-text.sha256list",
+      "host": "10.1.20.207",
+      "mount": "/mnt/coldstore",
+      "external": true,
+      "source_url": "rsync://rsync.rfc-editor.org/rfcs-text-only",
+      "retrieved_utc": "2026-08-05T21:15:00+00:00",
+      "bytes": null,
+      "sha256": "3949c746cace2dd8a4bbf98ae1094e659988990ef5fb91b18c2b009ef73a34d6",
+      "role": "E1/E2 shared RFC text corpus: deterministic digest file (sorted sha256 of all 10,048 files in wildpairs/rfc-text/); verifying this file transitively pins the directory"
     }
   ]
 }

@@ -13,3 +13,17 @@
 [16:04:47] BAAI/bge-base-en-v1.5 :: g2 done (5701 pairs, 497s)
 [16:26:46] BAAI/bge-base-en-v1.5 :: g3 done (4727 pairs, 1319s)
 [16:26:46] FROZEN BAAI_bge-base-en-v1.5.json
+[17:15:20] thenlper/gte-base :: g1 done (5701 pairs, 2914s)
+[18:11:36] thenlper/gte-base :: g2 done (5701 pairs, 3376s)
+[20:46:38] thenlper/gte-base :: g3 done (4727 pairs, 9302s)
+[20:46:38] FROZEN thenlper_gte-base.json
+[20:54:04] e5-base-v2 [query: — card's symmetric convention] :: g1 done (5701 pairs, 446s)
+[21:02:53] e5-base-v2 [query: — card's symmetric convention] :: g2 done (5701 pairs, 530s)
+[21:25:28] e5-base-v2 [query: — card's symmetric convention] :: g3 done (4727 pairs, 1354s)
+[21:25:28] FROZEN e5-base-v2__query____card_s_symmetric_convention_.json
+[21:32:46] e5-base-v2 [NO prefix — sensitivity variant] :: g1 done (5701 pairs, 438s)
+[21:41:28] e5-base-v2 [NO prefix — sensitivity variant] :: g2 done (5701 pairs, 522s)
+[22:04:11] e5-base-v2 [NO prefix — sensitivity variant] :: g3 done (4727 pairs, 1363s)
+[22:04:11] FROZEN e5-base-v2__NO_prefix___sensitivity_variant_.json
+[00:47:35] mixedbread-ai/mxbai-embed-large-v1 :: g1 done (5701 pairs, 9805s)
+[03:46:49] mixedbread-ai/mxbai-embed-large-v1 :: g2 done (5701 pairs, 10754s)

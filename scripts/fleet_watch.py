@@ -12,11 +12,14 @@ import urllib.request
 from datetime import datetime
 
 SSH = ["ssh", "-o", "BatchMode=yes", "-o", "ConnectTimeout=6"]
+# LAN IPs, not bare hostnames: MagicDNS routes ssh through Tailscale SSH, which demands
+# interactive re-auth and kills unattended runs (RUNBOOK automation rule, 2026-08-06).
+SSH_TARGET = {"forge": "scott@10.1.20.223", "agora": "scott@10.1.20.207", "lear": "aiuser@10.1.20.201"}
 
 
 def sh(host: str, cmd: str) -> str:
     try:
-        return subprocess.run(SSH + [host, cmd], capture_output=True, text=True, timeout=25).stdout.strip()
+        return subprocess.run(SSH + [SSH_TARGET.get(host, host), cmd], capture_output=True, text=True, timeout=25).stdout.strip()
     except Exception:
         return ""
 
