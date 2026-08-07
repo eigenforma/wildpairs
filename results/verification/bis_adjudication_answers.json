@@ -1,0 +1,146 @@
+{
+ "adjudicator": "operator",
+ "note": "final in {different, same, unjudgeable}",
+ "verdicts": [
+  {
+   "item": 13,
+   "final": null
+  },
+  {
+   "item": 17,
+   "final": null
+  },
+  {
+   "item": 23,
+   "final": null
+  },
+  {
+   "item": 26,
+   "final": null
+  },
+  {
+   "item": 45,
+   "final": null
+  },
+  {
+   "item": 48,
+   "final": null
+  },
+  {
+   "item": 49,
+   "final": null
+  },
+  {
+   "item": 54,
+   "final": null
+  },
+  {
+   "item": 56,
+   "final": null
+  },
+  {
+   "item": 57,
+   "final": null
+  },
+  {
+   "item": 73,
+   "final": null
+  },
+  {
+   "item": 78,
+   "final": null
+  },
+  {
+   "item": 82,
+   "final": null
+  },
+  {
+   "item": 87,
+   "final": null
+  },
+  {
+   "item": 91,
+   "final": null
+  },
+  {
+   "item": 93,
+   "final": null
+  },
+  {
+   "item": 104,
+   "final": null
+  },
+  {
+   "item": 107,
+   "final": null
+  },
+  {
+   "item": 121,
+   "final": null
+  },
+  {
+   "item": 123,
+   "final": null
+  },
+  {
+   "item": 124,
+   "final": null
+  },
+  {
+   "item": 125,
+   "final": null
+  },
+  {
+   "item": 135,
+   "final": null
+  },
+  {
+   "item": 136,
+   "final": null
+  },
+  {
+   "item": 137,
+   "final": null
+  },
+  {
+   "item": 145,
+   "final": null
+  },
+  {
+   "item": 158,
+   "final": null
+  },
+  {
+   "item": 159,
+   "final": null
+  },
+  {
+   "item": 162,
+   "final": null
+  },
+  {
+   "item": 163,
+   "final": null
+  },
+  {
+   "item": 166,
+   "final": null
+  },
+  {
+   "item": 173,
+   "final": null
+  },
+  {
+   "item": 181,
+   "final": null
+  },
+  {
+   "item": 187,
+   "final": null
+  },
+  {
+   "item": 188,
+   "final": null
+  }
+ ]
+}

@@ -1,0 +1,341 @@
+<title>Bis Adjudication — 35 items</title>
+<style>
+:root{--ground:#EFF2F4;--ink:#1C2830;--faint:#5A6B76;--panel:#FFF;--pl:#D8DEE3;--d:#C03B2D;--s:#0E8A83;}
+@media (prefers-color-scheme: dark){:root{--ground:#101820;--ink:#DCE4E9;--faint:#8FA0AB;--panel:#16212B;--pl:#2A3843;--d:#E06152;--s:#2FB8AF;}}
+:root[data-theme="dark"]{--ground:#101820;--ink:#DCE4E9;--faint:#8FA0AB;--panel:#16212B;--pl:#2A3843;--d:#E06152;--s:#2FB8AF;}
+:root[data-theme="light"]{--ground:#EFF2F4;--ink:#1C2830;--faint:#5A6B76;--panel:#FFF;--pl:#D8DEE3;--d:#C03B2D;--s:#0E8A83;}
+body{background:var(--ground);color:var(--ink);font-family:Charter,Georgia,serif;line-height:1.5;margin:0;padding:2rem 1rem 4rem;}
+main{max-width:60rem;margin:0 auto;}
+h1{font-size:1.5rem;} .rule{color:var(--faint);max-width:44rem;font-size:.95rem;}
+.item{background:var(--panel);border:1px solid var(--pl);border-radius:4px;margin-top:1rem;padding:.8rem 1rem;}
+.item header{display:flex;justify-content:space-between;font-family:ui-monospace,Consolas,monospace;font-size:.8rem;}
+.num{letter-spacing:.1em;text-transform:uppercase;}
+.votes b{font-weight:650;} b.different{color:var(--d);} b.same{color:var(--s);} b.unjudgeable{color:var(--faint);}
+.texts{display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:.5rem;}
+@media(max-width:700px){.texts{grid-template-columns:1fr;}}
+.lbl{font-family:ui-monospace,Consolas,monospace;font-size:.7rem;letter-spacing:.12em;text-transform:uppercase;color:var(--faint);}
+.texts p{margin:.25rem 0 0;font-size:.95rem;}
+</style>
+<main>
+<h1>Bis adjudication — 35 disagreements</h1>
+<p class="rule">Per the protocol: does the revision change what the sentence requires or asserts —
+could a careful implementer act differently? Record each final verdict in
+<code>results/verification/bis_adjudication_answers.json</code> (different / same / unjudgeable).
+The machine-label key stays sealed until all 35 are recorded. Annotator votes are shown; you may
+overrule both.</p>
+<article class="item">
+  <header><span class="num">item 13</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>A COOKIE ACK chunk may be bundled with any pending DATA chunks (and/or SACK chunks), but the COOKIE ACK chunk MUST be the first chunk in the packet.</p></div>
+    <div><div class="lbl">text B</div><p>A COOKIE ACK chunk MAY be bundled with any pending DATA chunks (and/or SACK chunks), but the COOKIE ACK chunk MUST be the first chunk in the packet.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 17</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>extensions: Clients request extended functionality from servers by sending data in the extensions field.</p></div>
+    <div><div class="lbl">text B</div><p>extensions Clients MAY request extended functionality from servers by sending data in the extensions field.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 23</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>This textual convention SHOULD NOT be used directly in object Daniele, et al.</p></div>
+    <div><div class="lbl">text B</div><p>This textual convention SHOULD NOT be used directly in object Daniele, et.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 26</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>On reception, the receiver MUST simply throw away any Discard- Request that it receives.</p></div>
+    <div><div class="lbl">text B</div><p>A discard receiver MUST simply throw away an Discard-Request that it receives.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 45</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>DiameterURI The DiameterURI MUST follow the Uniform Resource Identifiers (URI) syntax [URI] rules specified below: &quot;aaa://&quot; FQDN [ port ] [ transport ] [ protocol ] ; No transport security &quot;aaas://&quot; FQDN [ port ] [ transport ] [ protocol ] ; Transport security used FQDN = Fully Qualified Host Name port = &quot;:&quot; 1*DIGIT ; One of the ports used to listen for ; incoming connections.</p></div>
+    <div><div class="lbl">text B</div><p>DiameterURI The DiameterURI MUST follow the Uniform Resource Identifiers (RFC 3986) syntax [RFC3986] rules specified below: &quot;aaa://&quot; FQDN [ port ] [ transport ] [ protocol ] ; No transport security &quot;aaas://&quot; FQDN [ port ] [ transport ] [ protocol ] ; Transport security used FQDN = &lt; Fully Qualified Domain Name &gt; Fajardo, et al.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 48</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>And the INIT ACK MUST contain a new Initiation Tag (randomly generated see Section 5.3.1).</p></div>
+    <div><div class="lbl">text B</div><p>And the INIT ACK chunk MUST contain a new Initiate Tag (randomly generated; see Section 5.3.1).</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 49</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>For sessions of very long or indefinite duration, the &quot;object_transport_id&quot; field may be repeated, but it is presumed that the 16-bit field size provides an adequate enough sequence space to avoid object confusion amongst receivers and sources (i.e., receivers SHOULD re-synchronize with a server when receiving object sequence identifiers sufficiently out- of-range with the current state kept for a given source).</p></div>
+    <div><div class="lbl">text B</div><p>For sessions of very long or indefinite duration, the &quot;object_transport_id&quot; field will wrap and be repeated, but it is presumed that the 16-bit field size provides a sufficient sequence space to avoid object confusion amongst receivers and sources (i.e., receivers SHOULD re-synchronize with a server when receiving object sequence identifiers sufficiently out-of-range with the current state kept for a given source).</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 54</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>The system SHOULD validate the R1 signature before applying further packet processing, according to Section 5.2.15.</p></div>
+    <div><div class="lbl">text B</div><p>The system SHOULD validate the R1 signature before applying further packet processing, according to Section 5.2.12.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 56</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>All 1xx (informational), 204 (no content), and 304 (not modified) responses MUST NOT include a message-body.</p></div>
+    <div><div class="lbl">text B</div><p>All 1xx (Informational), 204 (No Content), and 304 (Not Modified) responses do not include a message body.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 57</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>If an origin server wishes to force a cache to validate every request, it can assign an explicit expiration time in the past to indicate that the response is already stale.</p></div>
+    <div><div class="lbl">text B</div><p>If an origin server wishes to force a semantically transparent cache to validate every request, it MAY assign an explicit expiration time in the past.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 73</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>For ALC, the length of the TSI field within the LCT header is REQUIRED to be non-zero.</p></div>
+    <div><div class="lbl">text B</div><p>For ALC the length of the TSI field is REQUIRED to be non-zero.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 78</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>Each status value MAY be accompanied by a string of human-readable Hollenbeck Standards Track [Page 3] RFC 3732 EPP Host Mapping March 2004 text that describes the rationale for the status applied to the object.</p></div>
+    <div><div class="lbl">text B</div><p>Each status value MAY be accompanied by a string of human-readable text that describes the rationale for the status applied to the object.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 82</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>If the received value is zero (0), the intermediary MUST NOT forward the request; instead, the intermediary MUST respond as the final recipient.</p></div>
+    <div><div class="lbl">text B</div><p>If the received value is zero (0), the recipient MUST NOT forward the request; instead, it MUST respond as the final recipient.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 87</span>
+    <span class="votes">A: <b class="unjudgeable">unjudgeable</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>However, external router behavior MUST be the same as host behavior with respect to these variables.</p></div>
+    <div><div class="lbl">text B</div><p>However, external router behavior MUST be Narten, et.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 91</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>IANA will extract the record from the form and place the inserted or modified record into the appropriate section of the Language Subtag Registry, grouping the records by their &#x27;Type&#x27; field.</p></div>
+    <div><div class="lbl">text B</div><p>IANA MUST place any inserted or modified records into the appropriate section of the language subtag registry, grouping the records by their &#x27;Type&#x27; field.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 93</span>
+    <span class="votes">A: <b class="unjudgeable">unjudgeable</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>CertRequest ::= SEQUENCE { certReqId INTEGER, certTemplate CertTemplate, controls Controls OPTIONAL } -- If certTemplate is an empty SEQUENCE (i.e., all fields -- omitted), then controls MAY contain the Adams, et al.</p></div>
+    <div><div class="lbl">text B</div><p>If certTemplate is an empty SEQUENCE (i.e., all fields omitted), then the controls field in the CertRequest structure MAY contain the id- regCtrl-altCertTemplate control, specifying a template for a certificate other than an X.509v3 public-key certificate.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 104</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>* Where the length is described, the attribute &quot;Content-Length&quot; MUST be used for the purpose defined in [RFC2616].</p></div>
+    <div><div class="lbl">text B</div><p>* Where the length is described, the attribute &quot;Content-Length&quot; MUST be used for the purpose as defined in [6].</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 107</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>The Object Identifier (OID) sha256WithRSAEncryption from [RFC4055] MUST be used in these products.</p></div>
+    <div><div class="lbl">text B</div><p>The Object Identifier (OID) sha256withRSAEncryption from [RFC4055] MUST be used.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 121</span>
+    <span class="votes">A: <b class="unjudgeable">unjudgeable</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>If no Accept-Language header is present in the request, the server Fielding, et al.</p></div>
+    <div><div class="lbl">text B</div><p>If no Accept-Language header is present in the request, the server SHOULD assume that all languages are equally acceptable.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 123</span>
+    <span class="votes">A: <b class="different">different</b> · B: <b class="same">same</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>RELATED-TO 0+ RRULE 0+ STATUS 0 or 1 MAY be present, must be &quot;CANCELLED&quot; if present SUMMARY 0 or 1 URL 0 or 1 X-PROPERTY 0+ Silverberg, et.</p></div>
+    <div><div class="lbl">text B</div><p>| | RELATED-TO | 0+ | | | RRULE | 0 or 1 | | | STATUS | 0 or 1 | MAY be present; MUST be CANCELLED | | | | if present.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 124</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>Inline binary contact SHOULD only be used in applications whose special circumstances demand that an iCalendar object be expressed as a single entity.</p></div>
+    <div><div class="lbl">text B</div><p>Inline binary content SHOULD only be used in applications whose special circumstances demand that an iCalendar object be expressed as a single entity.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 125</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>Clients that are capable of handling both unicast and multicast transmission MUST indicate such capability by including two full transport-specs with separate parameters for each.</p></div>
+    <div><div class="lbl">text B</div><p>Clients that are capable of handling both unicast and multicast transmission need to indicate such capability by including two full transport-specs with separate parameters for each.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 135</span>
+    <span class="votes">A: <b class="unjudgeable">unjudgeable</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>Implementations SHOULD provide a management interface through which these parameters and the associated Transform IDs may be entered (by a user or system administrator), to enable negotiating such groups.</p></div>
+    <div><div class="lbl">text B</div><p>Standards Track [Page 85] RFC 7296 IKEv2bis October 2014 provide a management interface through which these parameters and the associated Transform IDs may be entered (by a user or system administrator), to enable negotiating such groups.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 136</span>
+    <span class="votes">A: <b class="different">different</b> · B: <b class="same">same</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>At least the value &#x27;utf-8&#x27; MUST be present, since IPP objects MUST support the UTF-8 [RFC3629] charset.</p></div>
+    <div><div class="lbl">text B</div><p>At least the value &#x27;utf-8&#x27; MUST be present, since IPP objects MUST support the UTF-8 [RFC2279] charset.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 137</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>Minimal encapsulation [15] and GRE encapsulation [13] are alternate encapsulation methods that MAY optionally be supported by mobility agents and mobile nodes.</p></div>
+    <div><div class="lbl">text B</div><p>Minimal encapsulation [34] and GRE encapsulation [16] are alternate encapsulation methods which MAY optionally be supported by mobility agents and mobile nodes.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 145</span>
+    <span class="votes">A: <b class="different">different</b> · B: <b class="same">same</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>RDMA Write list: A --&gt; B --&gt; C Compound request: PUTFH LOOKUP READ PUTFH LOOKUP READLINK PUTFH LOOKUP READ | | | v v v A B C Talpey &amp; Callaghan Standards Track [Page 6] RFC 5667 NFS Direct Data Placement January 2010 If the client does not want to have the READLINK result returned directly, then it provides a zero-length array of segment triplets for buffer B or sets the values in the segment triplet for buffer B to zeros so that the READLINK result MUST be returned inline.</p></div>
+    <div><div class="lbl">text B</div><p>Write list: A --&gt; B --&gt; C NFS version 4 COMPOUND request: PUTFH LOOKUP READ PUTFH LOOKUP READLINK PUTFH LOOKUP READ | | | v v v A B C If the NFS version 4 client does not want to have the READLINK result returned via RDMA, it provides an empty Write chunk for buffer B to indicate that the READLINK result must be returned inline.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 158</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>In order to remain persistent, all messages on a connection need to have a self-defined message length (i.e., one not defined by closure of the connection), as described in Section 3.3.</p></div>
+    <div><div class="lbl">text B</div><p>In order to remain persistent, all messages on the connection MUST have a self-defined message length (i.e., one not defined by closure of the connection), as described in section 4.4.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 159</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>Standards Track [Page 50] RFC 8299 YANG Data Model for L3VPN Service Delivery January 2018 site level; as a consequence, all site-network-accesses under the site MUST inherit the group-ids of the site they belong to.</p></div>
+    <div><div class="lbl">text B</div><p>Standards Track [Page 43] RFC 8049 YANG Data Model for L3VPN Service Delivery February 2017 site level; as a consequence, all site-network-accesses under the site MUST inherit the group-ids of the site they belong to.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 162</span>
+    <span class="votes">A: <b class="unjudgeable">unjudgeable</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>When CRLs are issued, the CRLs MUST be version 2 CRLs, include the date by which the next CRL will be issued in the nextUpdate field (section 5.1.2.5), include the CRL number extension (section 5.2.3), and include the authority key identifier extension (section 5.2.1).</p></div>
+    <div><div class="lbl">text B</div><p>Conforming CAs that issue CRLs MUST issue version 2 CRLs, and CAs MUST include the date by which the next CRL will be issued in the nextUpdate field (see Housley, et.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 163</span>
+    <span class="votes">A: <b class="unjudgeable">unjudgeable</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>Message Processing Rules Implementations MUST observe the following rules when processing ICMPv6 messages (from [RFC-1122]): Conta, et al.</p></div>
+    <div><div class="lbl">text B</div><p>2.4 Message Processing Rules Implementations MUST observe the following rules when processing ICMPv6 messages (from [RFC-1122]): (a) If an ICMPv6 error message of unknown type is received, it MUST be passed to the upper layer.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 166</span>
+    <span class="votes">A: <b class="unjudgeable">unjudgeable</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>When the iSER layer at the target receives the Task Management Function Request with the TASK REASSIGN function, it MUST do the following: * It MUST use the ITT as specified in the Referenced Task Tag from the Task Management Function Request PDU to locate the Local and Remote Mappings (if any).</p></div>
+    <div><div class="lbl">text B</div><p>When the iSER layer at the target receives the Task Management Function Request with the TASK REASSIGN function, it MUST do the following: Ko, et al.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 173</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>The responder should not accept cookies indefinitely after &lt;secret&gt; is changed, since that would defeat part of the DoS protection.</p></div>
+    <div><div class="lbl">text B</div><p>The responder SHOULD NOT accept cookies indefinitely after &lt;secret&gt; is changed, since that would defeat part of the denial of service protection.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 181</span>
+    <span class="votes">A: <b class="different">different</b> · B: <b class="same">same</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>Herberg &amp; Clausen Standards Track [Page 5] RFC 6622 ICV and Timestamp TLVs for MANETs May 2012 (Specifically, the &lt;value&gt; field consists of a cryptographic operation over a hash value, with fields indicating which hash function and cryptographic operation have been used; this is specified in Section 12.) Other documents can request assignments for other type extensions; if they do so, they MUST specify their internal structure (if any) and interpretation.</p></div>
+    <div><div class="lbl">text B</div><p>Standards Track [Page 7] RFC 7182 ICV and Timestamp TLVs for MANETs April 2014 Other documents can request assignments for other type extensions; if they do so, they MUST specify their internal structure (if any) and interpretation.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 187</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>The mobile node follows the error checking guidelines in [1], and depending on the reply code, MAY try modifying the registration request (for example, by eliminating the request for alternate forms of encapsulation), and issuing a new registration.</p></div>
+    <div><div class="lbl">text B</div><p>The mobile node follows the error checking guidelines in [1], and depending on the reply code, MAY try modifying the registration request (for example, by eliminating the request for alternate forms of encapsulation or delivery style), and issuing a new registration.</p></div>
+  </div>
+</article>
+<article class="item">
+  <header><span class="num">item 188</span>
+    <span class="votes">A: <b class="same">same</b> · B: <b class="different">different</b></span>
+  </header>
+  <div class="texts">
+    <div><div class="lbl">text A</div><p>Changes from S/MIME v3 to S/MIME v3.1 The RSA public key algorithm was changed to a MUST implement key wrapping algorithm, and the Diffie-Hellman (DH) algorithm changed to a SHOULD implement.</p></div>
+    <div><div class="lbl">text B</div><p>Changes Since S/MIME v3 The RSA public key algorithm was changed to a MUST implement key wrapping algorithm, and the Diffie-Hellman algorithm changed to a SHOULD implement.</p></div>
+  </div>
+</article>
+</main>
