@@ -8,9 +8,9 @@
           0.6379
         ],
         "auroc_stratified": 0.6381,
-        "auroc_caliper": 0.6406,
-        "caliper_matched_pairs": 848,
-        "artifact_share": -0.0199,
+        "auroc_caliper": 0.6185,
+        "caliper_matched_pairs": 1972,
+        "artifact_share": 0.0022,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -27,9 +27,9 @@
           0.8911
         ],
         "auroc_stratified": 0.865,
-        "auroc_caliper": 0.8222,
-        "caliper_matched_pairs": 30,
-        "artifact_share": 0.059,
+        "auroc_caliper": 0.804,
+        "caliper_matched_pairs": 1357,
+        "artifact_share": 0.0772,
         "balanced_accuracy": {
           "0.3": 0.509,
           "0.4": 0.5445,
@@ -46,9 +46,9 @@
           0.9172
         ],
         "auroc_stratified": 0.9076,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 16,
-        "artifact_share": null,
+        "auroc_caliper": 0.8837,
+        "caliper_matched_pairs": 1678,
+        "artifact_share": 0.0246,
         "balanced_accuracy": {
           "0.3": 0.5165,
           "0.4": 0.569,
@@ -65,9 +65,9 @@
           0.8857
         ],
         "auroc_stratified": 0.876,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 11,
-        "artifact_share": null,
+        "auroc_caliper": 0.8445,
+        "caliper_matched_pairs": 1703,
+        "artifact_share": 0.0308,
         "balanced_accuracy": {
           "0.3": 0.5002,
           "0.4": 0.5042,
@@ -86,9 +86,9 @@
           0.6384
         ],
         "auroc_stratified": 0.6395,
-        "auroc_caliper": 0.6368,
-        "caliper_matched_pairs": 848,
-        "artifact_share": -0.0154,
+        "auroc_caliper": 0.6191,
+        "caliper_matched_pairs": 1972,
+        "artifact_share": 0.0022,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -105,9 +105,9 @@
           0.8654
         ],
         "auroc_stratified": 0.8388,
-        "auroc_caliper": 0.7911,
-        "caliper_matched_pairs": 30,
-        "artifact_share": 0.063,
+        "auroc_caliper": 0.7565,
+        "caliper_matched_pairs": 1357,
+        "artifact_share": 0.0977,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -124,9 +124,9 @@
           0.8797
         ],
         "auroc_stratified": 0.8582,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 16,
-        "artifact_share": null,
+        "auroc_caliper": 0.8364,
+        "caliper_matched_pairs": 1678,
+        "artifact_share": 0.0326,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -143,9 +143,9 @@
           0.8546
         ],
         "auroc_stratified": 0.8373,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 11,
-        "artifact_share": null,
+        "auroc_caliper": 0.8059,
+        "caliper_matched_pairs": 1703,
+        "artifact_share": 0.0367,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -164,9 +164,9 @@
           0.6243
         ],
         "auroc_stratified": 0.627,
-        "auroc_caliper": 0.6202,
-        "caliper_matched_pairs": 848,
-        "artifact_share": -0.0133,
+        "auroc_caliper": 0.6045,
+        "caliper_matched_pairs": 1972,
+        "artifact_share": 0.0023,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -183,9 +183,9 @@
           0.8802
         ],
         "auroc_stratified": 0.8557,
-        "auroc_caliper": 0.8033,
-        "caliper_matched_pairs": 30,
-        "artifact_share": 0.0663,
+        "auroc_caliper": 0.7814,
+        "caliper_matched_pairs": 1357,
+        "artifact_share": 0.0883,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -202,9 +202,9 @@
           0.8212
         ],
         "auroc_stratified": 0.7721,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 16,
-        "artifact_share": null,
+        "auroc_caliper": 0.7654,
+        "caliper_matched_pairs": 1678,
+        "artifact_share": 0.0428,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -221,9 +221,9 @@
           0.8171
         ],
         "auroc_stratified": 0.7908,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 11,
-        "artifact_share": null,
+        "auroc_caliper": 0.7589,
+        "caliper_matched_pairs": 1703,
+        "artifact_share": 0.045,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -242,9 +242,9 @@
           0.6864
         ],
         "auroc_stratified": 0.6909,
-        "auroc_caliper": 0.6856,
-        "caliper_matched_pairs": 848,
-        "artifact_share": -0.016,
+        "auroc_caliper": 0.6674,
+        "caliper_matched_pairs": 1972,
+        "artifact_share": 0.0023,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -261,9 +261,9 @@
           0.8995
         ],
         "auroc_stratified": 0.8709,
-        "auroc_caliper": 0.8311,
-        "caliper_matched_pairs": 30,
-        "artifact_share": 0.059,
+        "auroc_caliper": 0.8197,
+        "caliper_matched_pairs": 1357,
+        "artifact_share": 0.0705,
         "balanced_accuracy": {
           "0.3": 0.5255,
           "0.4": 0.5607,
@@ -280,9 +280,9 @@
           0.9313
         ],
         "auroc_stratified": 0.9227,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 16,
-        "artifact_share": null,
+        "auroc_caliper": 0.9045,
+        "caliper_matched_pairs": 1678,
+        "artifact_share": 0.019,
         "balanced_accuracy": {
           "0.3": 0.5302,
           "0.4": 0.5945,
@@ -299,9 +299,9 @@
           0.9013
         ],
         "auroc_stratified": 0.8909,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 11,
-        "artifact_share": null,
+        "auroc_caliper": 0.866,
+        "caliper_matched_pairs": 1703,
+        "artifact_share": 0.0258,
         "balanced_accuracy": {
           "0.3": 0.5005,
           "0.4": 0.5062,
@@ -320,9 +320,9 @@
           0.6783
         ],
         "auroc_stratified": 0.6774,
-        "auroc_caliper": 0.6881,
-        "caliper_matched_pairs": 848,
-        "artifact_share": -0.0265,
+        "auroc_caliper": 0.6593,
+        "caliper_matched_pairs": 1972,
+        "artifact_share": 0.0022,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -339,9 +339,9 @@
           0.8788
         ],
         "auroc_stratified": 0.8406,
-        "auroc_caliper": 0.8467,
-        "caliper_matched_pairs": 30,
-        "artifact_share": 0.0216,
+        "auroc_caliper": 0.7898,
+        "caliper_matched_pairs": 1357,
+        "artifact_share": 0.0784,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -358,9 +358,9 @@
           0.8818
         ],
         "auroc_stratified": 0.8585,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 16,
-        "artifact_share": null,
+        "auroc_caliper": 0.8398,
+        "caliper_matched_pairs": 1678,
+        "artifact_share": 0.0313,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -377,9 +377,9 @@
           0.7045
         ],
         "auroc_stratified": 0.6229,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 11,
-        "artifact_share": null,
+        "auroc_caliper": 0.6332,
+        "caliper_matched_pairs": 1703,
+        "artifact_share": 0.055,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -398,9 +398,9 @@
           0.6952
         ],
         "auroc_stratified": 0.6894,
-        "auroc_caliper": 0.706,
-        "caliper_matched_pairs": 848,
-        "artifact_share": -0.027,
+        "auroc_caliper": 0.6768,
+        "caliper_matched_pairs": 1972,
+        "artifact_share": 0.0022,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -417,9 +417,9 @@
           0.8808
         ],
         "auroc_stratified": 0.8361,
-        "auroc_caliper": 0.8944,
-        "caliper_matched_pairs": 30,
-        "artifact_share": -0.0242,
+        "auroc_caliper": 0.8023,
+        "caliper_matched_pairs": 1357,
+        "artifact_share": 0.068,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5015,
@@ -436,9 +436,9 @@
           0.8039
         ],
         "auroc_stratified": 0.7418,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 16,
-        "artifact_share": null,
+        "auroc_caliper": 0.749,
+        "caliper_matched_pairs": 1678,
+        "artifact_share": 0.0414,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -455,9 +455,9 @@
           0.6607
         ],
         "auroc_stratified": 0.5741,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 11,
-        "artifact_share": null,
+        "auroc_caliper": 0.5924,
+        "caliper_matched_pairs": 1703,
+        "artifact_share": 0.0515,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -476,9 +476,9 @@
           0.6445
         ],
         "auroc_stratified": 0.6516,
-        "auroc_caliper": 0.6615,
-        "caliper_matched_pairs": 848,
-        "artifact_share": -0.0343,
+        "auroc_caliper": 0.625,
+        "caliper_matched_pairs": 1972,
+        "artifact_share": 0.0022,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -495,9 +495,9 @@
           0.8844
         ],
         "auroc_stratified": 0.8555,
-        "auroc_caliper": 0.8089,
-        "caliper_matched_pairs": 30,
-        "artifact_share": 0.0652,
+        "auroc_caliper": 0.7957,
+        "caliper_matched_pairs": 1357,
+        "artifact_share": 0.0784,
         "balanced_accuracy": {
           "0.3": 0.5887,
           "0.4": 0.6248,
@@ -514,9 +514,9 @@
           0.9072
         ],
         "auroc_stratified": 0.8965,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 16,
-        "artifact_share": null,
+        "auroc_caliper": 0.8706,
+        "caliper_matched_pairs": 1678,
+        "artifact_share": 0.027,
         "balanced_accuracy": {
           "0.3": 0.722,
           "0.4": 0.79,
@@ -533,9 +533,9 @@
           0.7493
         ],
         "auroc_stratified": 0.6876,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 11,
-        "artifact_share": null,
+        "auroc_caliper": 0.685,
+        "caliper_matched_pairs": 1703,
+        "artifact_share": 0.0493,
         "balanced_accuracy": {
           "0.3": 0.5318,
           "0.4": 0.557,
@@ -554,9 +554,9 @@
           0.6769
         ],
         "auroc_stratified": 0.6745,
-        "auroc_caliper": 0.6856,
-        "caliper_matched_pairs": 848,
-        "artifact_share": -0.0253,
+        "auroc_caliper": 0.6575,
+        "caliper_matched_pairs": 1972,
+        "artifact_share": 0.0027,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -573,9 +573,9 @@
           0.9065
         ],
         "auroc_stratified": 0.8837,
-        "auroc_caliper": 0.8667,
-        "caliper_matched_pairs": 30,
-        "artifact_share": 0.0304,
+        "auroc_caliper": 0.8323,
+        "caliper_matched_pairs": 1357,
+        "artifact_share": 0.0647,
         "balanced_accuracy": {
           "0.3": 0.5998,
           "0.4": 0.641,
@@ -592,9 +592,9 @@
           0.9327
         ],
         "auroc_stratified": 0.9271,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 16,
-        "artifact_share": null,
+        "auroc_caliper": 0.9054,
+        "caliper_matched_pairs": 1678,
+        "artifact_share": 0.0195,
         "balanced_accuracy": {
           "0.3": 0.762,
           "0.4": 0.831,
@@ -611,9 +611,9 @@
           0.8435
         ],
         "auroc_stratified": 0.8099,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 11,
-        "artifact_share": null,
+        "auroc_caliper": 0.7996,
+        "caliper_matched_pairs": 1703,
+        "artifact_share": 0.0316,
         "balanced_accuracy": {
           "0.3": 0.5643,
           "0.4": 0.628,
@@ -632,9 +632,9 @@
           0.644
         ],
         "auroc_stratified": 0.6396,
-        "auroc_caliper": 0.6463,
-        "caliper_matched_pairs": 848,
-        "artifact_share": -0.0191,
+        "auroc_caliper": 0.6249,
+        "caliper_matched_pairs": 1972,
+        "artifact_share": 0.0022,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -651,9 +651,9 @@
           0.8729
         ],
         "auroc_stratified": 0.8369,
-        "auroc_caliper": 0.8089,
-        "caliper_matched_pairs": 30,
-        "artifact_share": 0.0532,
+        "auroc_caliper": 0.7757,
+        "caliper_matched_pairs": 1357,
+        "artifact_share": 0.0864,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -670,9 +670,9 @@
           0.9119
         ],
         "auroc_stratified": 0.899,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 16,
-        "artifact_share": null,
+        "auroc_caliper": 0.8772,
+        "caliper_matched_pairs": 1678,
+        "artifact_share": 0.0255,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
@@ -689,9 +689,9 @@
           0.8265
         ],
         "auroc_stratified": 0.7941,
-        "auroc_caliper": null,
-        "caliper_matched_pairs": 11,
-        "artifact_share": null,
+        "auroc_caliper": 0.7729,
+        "caliper_matched_pairs": 1703,
+        "artifact_share": 0.0409,
         "balanced_accuracy": {
           "0.3": 0.5,
           "0.4": 0.5,
