@@ -1,0 +1,765 @@
+{
+  "configs": {
+    "BAAI/bge-base-en-v1.5": {
+      "paws": {
+        "auroc_naive": 0.6207,
+        "auroc_naive_ci": [
+          0.6032,
+          0.6379
+        ],
+        "auroc_stratified": 0.6381,
+        "auroc_caliper": 0.6406,
+        "caliper_matched_pairs": 848,
+        "artifact_share": -0.0199,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.4997,
+          "0.85": 0.5008,
+          "0.95": 0.5302
+        }
+      },
+      "qqp": {
+        "auroc_naive": 0.8812,
+        "auroc_naive_ci": [
+          0.8708,
+          0.8911
+        ],
+        "auroc_stratified": 0.865,
+        "auroc_caliper": 0.8222,
+        "caliper_matched_pairs": 30,
+        "artifact_share": 0.059,
+        "balanced_accuracy": {
+          "0.3": 0.509,
+          "0.4": 0.5445,
+          "0.6": 0.624,
+          "0.8": 0.7988,
+          "0.85": 0.7853,
+          "0.95": 0.6132
+        }
+      },
+      "snli": {
+        "auroc_naive": 0.9083,
+        "auroc_naive_ci": [
+          0.8991,
+          0.9172
+        ],
+        "auroc_stratified": 0.9076,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 16,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5165,
+          "0.4": 0.569,
+          "0.6": 0.8063,
+          "0.8": 0.6647,
+          "0.85": 0.5958,
+          "0.95": 0.5138
+        }
+      },
+      "mnli": {
+        "auroc_naive": 0.8753,
+        "auroc_naive_ci": [
+          0.8648,
+          0.8857
+        ],
+        "auroc_stratified": 0.876,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 11,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5002,
+          "0.4": 0.5042,
+          "0.6": 0.6253,
+          "0.8": 0.771,
+          "0.85": 0.6973,
+          "0.95": 0.531
+        }
+      }
+    },
+    "e5-base-v2 [NO prefix \u2014 sensitivity variant]": {
+      "paws": {
+        "auroc_naive": 0.6213,
+        "auroc_naive_ci": [
+          0.6042,
+          0.6384
+        ],
+        "auroc_stratified": 0.6395,
+        "auroc_caliper": 0.6368,
+        "caliper_matched_pairs": 848,
+        "artifact_share": -0.0154,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.5,
+          "0.85": 0.5,
+          "0.95": 0.5048
+        }
+      },
+      "qqp": {
+        "auroc_naive": 0.8541,
+        "auroc_naive_ci": [
+          0.8424,
+          0.8654
+        ],
+        "auroc_stratified": 0.8388,
+        "auroc_caliper": 0.7911,
+        "caliper_matched_pairs": 30,
+        "artifact_share": 0.063,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.5897,
+          "0.85": 0.6958,
+          "0.95": 0.6763
+        }
+      },
+      "snli": {
+        "auroc_naive": 0.869,
+        "auroc_naive_ci": [
+          0.8578,
+          0.8797
+        ],
+        "auroc_stratified": 0.8582,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 16,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.7572,
+          "0.85": 0.771,
+          "0.95": 0.5395
+        }
+      },
+      "mnli": {
+        "auroc_naive": 0.8426,
+        "auroc_naive_ci": [
+          0.8306,
+          0.8546
+        ],
+        "auroc_stratified": 0.8373,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 11,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.589,
+          "0.85": 0.719,
+          "0.95": 0.582
+        }
+      }
+    },
+    "e5-base-v2 [query: \u2014 card's symmetric convention]": {
+      "paws": {
+        "auroc_naive": 0.6068,
+        "auroc_naive_ci": [
+          0.5895,
+          0.6243
+        ],
+        "auroc_stratified": 0.627,
+        "auroc_caliper": 0.6202,
+        "caliper_matched_pairs": 848,
+        "artifact_share": -0.0133,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.5,
+          "0.85": 0.5,
+          "0.95": 0.5038
+        }
+      },
+      "qqp": {
+        "auroc_naive": 0.8697,
+        "auroc_naive_ci": [
+          0.8587,
+          0.8802
+        ],
+        "auroc_stratified": 0.8557,
+        "auroc_caliper": 0.8033,
+        "caliper_matched_pairs": 30,
+        "artifact_share": 0.0663,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.5962,
+          "0.85": 0.6935,
+          "0.95": 0.7083
+        }
+      },
+      "snli": {
+        "auroc_naive": 0.8082,
+        "auroc_naive_ci": [
+          0.795,
+          0.8212
+        ],
+        "auroc_stratified": 0.7721,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 16,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5018,
+          "0.8": 0.7315,
+          "0.85": 0.6837,
+          "0.95": 0.5397
+        }
+      },
+      "mnli": {
+        "auroc_naive": 0.8038,
+        "auroc_naive_ci": [
+          0.7909,
+          0.8171
+        ],
+        "auroc_stratified": 0.7908,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 11,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.6342,
+          "0.85": 0.7177,
+          "0.95": 0.5795
+        }
+      }
+    },
+    "mixedbread-ai/mxbai-embed-large-v1": {
+      "paws": {
+        "auroc_naive": 0.6697,
+        "auroc_naive_ci": [
+          0.653,
+          0.6864
+        ],
+        "auroc_stratified": 0.6909,
+        "auroc_caliper": 0.6856,
+        "caliper_matched_pairs": 848,
+        "artifact_share": -0.016,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.5002,
+          "0.85": 0.5018,
+          "0.95": 0.5473
+        }
+      },
+      "qqp": {
+        "auroc_naive": 0.8901,
+        "auroc_naive_ci": [
+          0.8802,
+          0.8995
+        ],
+        "auroc_stratified": 0.8709,
+        "auroc_caliper": 0.8311,
+        "caliper_matched_pairs": 30,
+        "artifact_share": 0.059,
+        "balanced_accuracy": {
+          "0.3": 0.5255,
+          "0.4": 0.5607,
+          "0.6": 0.6505,
+          "0.8": 0.806,
+          "0.85": 0.781,
+          "0.95": 0.6125
+        }
+      },
+      "snli": {
+        "auroc_naive": 0.9234,
+        "auroc_naive_ci": [
+          0.9151,
+          0.9313
+        ],
+        "auroc_stratified": 0.9227,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 16,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5302,
+          "0.4": 0.5945,
+          "0.6": 0.8075,
+          "0.8": 0.7575,
+          "0.85": 0.6767,
+          "0.95": 0.532
+        }
+      },
+      "mnli": {
+        "auroc_naive": 0.8918,
+        "auroc_naive_ci": [
+          0.8821,
+          0.9013
+        ],
+        "auroc_stratified": 0.8909,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 11,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5005,
+          "0.4": 0.5062,
+          "0.6": 0.6285,
+          "0.8": 0.8017,
+          "0.85": 0.7368,
+          "0.95": 0.5475
+        }
+      }
+    },
+    "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": {
+      "paws": {
+        "auroc_naive": 0.6615,
+        "auroc_naive_ci": [
+          0.6448,
+          0.6783
+        ],
+        "auroc_stratified": 0.6774,
+        "auroc_caliper": 0.6881,
+        "caliper_matched_pairs": 848,
+        "artifact_share": -0.0265,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.5,
+          "0.85": 0.5008,
+          "0.95": 0.511
+        }
+      },
+      "qqp": {
+        "auroc_naive": 0.8683,
+        "auroc_naive_ci": [
+          0.8573,
+          0.8788
+        ],
+        "auroc_stratified": 0.8406,
+        "auroc_caliper": 0.8467,
+        "caliper_matched_pairs": 30,
+        "artifact_share": 0.0216,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5517,
+          "0.8": 0.701,
+          "0.85": 0.767,
+          "0.95": 0.694
+        }
+      },
+      "snli": {
+        "auroc_naive": 0.8711,
+        "auroc_naive_ci": [
+          0.8601,
+          0.8818
+        ],
+        "auroc_stratified": 0.8585,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 16,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5135,
+          "0.8": 0.7948,
+          "0.85": 0.7483,
+          "0.95": 0.536
+        }
+      },
+      "mnli": {
+        "auroc_naive": 0.6882,
+        "auroc_naive_ci": [
+          0.6721,
+          0.7045
+        ],
+        "auroc_stratified": 0.6229,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 11,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5008,
+          "0.8": 0.562,
+          "0.85": 0.6078,
+          "0.95": 0.586
+        }
+      }
+    },
+    "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": {
+      "paws": {
+        "auroc_naive": 0.679,
+        "auroc_naive_ci": [
+          0.6624,
+          0.6952
+        ],
+        "auroc_stratified": 0.6894,
+        "auroc_caliper": 0.706,
+        "caliper_matched_pairs": 848,
+        "artifact_share": -0.027,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5002,
+          "0.8": 0.5035,
+          "0.85": 0.5082,
+          "0.95": 0.5495
+        }
+      },
+      "qqp": {
+        "auroc_naive": 0.8703,
+        "auroc_naive_ci": [
+          0.8593,
+          0.8808
+        ],
+        "auroc_stratified": 0.8361,
+        "auroc_caliper": 0.8944,
+        "caliper_matched_pairs": 30,
+        "artifact_share": -0.0242,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5015,
+          "0.6": 0.554,
+          "0.8": 0.7115,
+          "0.85": 0.7715,
+          "0.95": 0.7027
+        }
+      },
+      "snli": {
+        "auroc_naive": 0.7904,
+        "auroc_naive_ci": [
+          0.7764,
+          0.8039
+        ],
+        "auroc_stratified": 0.7418,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 16,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5045,
+          "0.8": 0.693,
+          "0.85": 0.7155,
+          "0.95": 0.5505
+        }
+      },
+      "mnli": {
+        "auroc_naive": 0.6439,
+        "auroc_naive_ci": [
+          0.6272,
+          0.6607
+        ],
+        "auroc_stratified": 0.5741,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 11,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5012,
+          "0.8": 0.547,
+          "0.85": 0.5715,
+          "0.95": 0.5853
+        }
+      }
+    },
+    "sentence-transformers/all-MiniLM-L6-v2": {
+      "paws": {
+        "auroc_naive": 0.6272,
+        "auroc_naive_ci": [
+          0.61,
+          0.6445
+        ],
+        "auroc_stratified": 0.6516,
+        "auroc_caliper": 0.6615,
+        "caliper_matched_pairs": 848,
+        "artifact_share": -0.0343,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5002,
+          "0.8": 0.5035,
+          "0.85": 0.5052,
+          "0.95": 0.5525
+        }
+      },
+      "qqp": {
+        "auroc_naive": 0.8741,
+        "auroc_naive_ci": [
+          0.8631,
+          0.8844
+        ],
+        "auroc_stratified": 0.8555,
+        "auroc_caliper": 0.8089,
+        "caliper_matched_pairs": 30,
+        "artifact_share": 0.0652,
+        "balanced_accuracy": {
+          "0.3": 0.5887,
+          "0.4": 0.6248,
+          "0.6": 0.737,
+          "0.8": 0.782,
+          "0.85": 0.7468,
+          "0.95": 0.5923
+        }
+      },
+      "snli": {
+        "auroc_naive": 0.8976,
+        "auroc_naive_ci": [
+          0.8878,
+          0.9072
+        ],
+        "auroc_stratified": 0.8965,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 16,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.722,
+          "0.4": 0.79,
+          "0.6": 0.7788,
+          "0.8": 0.5837,
+          "0.85": 0.5503,
+          "0.95": 0.5082
+        }
+      },
+      "mnli": {
+        "auroc_naive": 0.7342,
+        "auroc_naive_ci": [
+          0.7191,
+          0.7493
+        ],
+        "auroc_stratified": 0.6876,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 11,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5318,
+          "0.4": 0.557,
+          "0.6": 0.6583,
+          "0.8": 0.6358,
+          "0.85": 0.5835,
+          "0.95": 0.515
+        }
+      }
+    },
+    "sentence-transformers/all-mpnet-base-v2": {
+      "paws": {
+        "auroc_naive": 0.6602,
+        "auroc_naive_ci": [
+          0.6432,
+          0.6769
+        ],
+        "auroc_stratified": 0.6745,
+        "auroc_caliper": 0.6856,
+        "caliper_matched_pairs": 848,
+        "artifact_share": -0.0253,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5002,
+          "0.8": 0.5058,
+          "0.85": 0.5105,
+          "0.95": 0.581
+        }
+      },
+      "qqp": {
+        "auroc_naive": 0.8971,
+        "auroc_naive_ci": [
+          0.8871,
+          0.9065
+        ],
+        "auroc_stratified": 0.8837,
+        "auroc_caliper": 0.8667,
+        "caliper_matched_pairs": 30,
+        "artifact_share": 0.0304,
+        "balanced_accuracy": {
+          "0.3": 0.5998,
+          "0.4": 0.641,
+          "0.6": 0.7548,
+          "0.8": 0.8113,
+          "0.85": 0.7655,
+          "0.95": 0.5945
+        }
+      },
+      "snli": {
+        "auroc_naive": 0.9249,
+        "auroc_naive_ci": [
+          0.9166,
+          0.9327
+        ],
+        "auroc_stratified": 0.9271,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 16,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.762,
+          "0.4": 0.831,
+          "0.6": 0.8043,
+          "0.8": 0.5913,
+          "0.85": 0.5545,
+          "0.95": 0.509
+        }
+      },
+      "mnli": {
+        "auroc_naive": 0.8312,
+        "auroc_naive_ci": [
+          0.8189,
+          0.8435
+        ],
+        "auroc_stratified": 0.8099,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 11,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5643,
+          "0.4": 0.628,
+          "0.6": 0.7472,
+          "0.8": 0.6562,
+          "0.85": 0.5953,
+          "0.95": 0.5102
+        }
+      }
+    },
+    "thenlper/gte-base": {
+      "paws": {
+        "auroc_naive": 0.6271,
+        "auroc_naive_ci": [
+          0.6098,
+          0.644
+        ],
+        "auroc_stratified": 0.6396,
+        "auroc_caliper": 0.6463,
+        "caliper_matched_pairs": 848,
+        "artifact_share": -0.0191,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.5,
+          "0.85": 0.5,
+          "0.95": 0.5028
+        }
+      },
+      "qqp": {
+        "auroc_naive": 0.8621,
+        "auroc_naive_ci": [
+          0.8508,
+          0.8729
+        ],
+        "auroc_stratified": 0.8369,
+        "auroc_caliper": 0.8089,
+        "caliper_matched_pairs": 30,
+        "artifact_share": 0.0532,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.6092,
+          "0.85": 0.7,
+          "0.95": 0.6997
+        }
+      },
+      "snli": {
+        "auroc_naive": 0.9027,
+        "auroc_naive_ci": [
+          0.8931,
+          0.9119
+        ],
+        "auroc_stratified": 0.899,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 16,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.7127,
+          "0.85": 0.8297,
+          "0.95": 0.5573
+        }
+      },
+      "mnli": {
+        "auroc_naive": 0.8137,
+        "auroc_naive_ci": [
+          0.8006,
+          0.8265
+        ],
+        "auroc_stratified": 0.7941,
+        "auroc_caliper": null,
+        "caliper_matched_pairs": 11,
+        "artifact_share": null,
+        "balanced_accuracy": {
+          "0.3": 0.5,
+          "0.4": 0.5,
+          "0.6": 0.5,
+          "0.8": 0.5295,
+          "0.85": 0.6155,
+          "0.95": 0.643
+        }
+      }
+    }
+  },
+  "hypotheses": {
+    "HE3-1": {
+      "bar": "artifact share >= 0.10 on each aligned source for >= 7/9 configs",
+      "configs_meeting": {
+        "qqp": 0,
+        "snli": 0,
+        "mnli": 0
+      },
+      "pass": false
+    },
+    "HE3-2": {
+      "bar": "naive QQP AUROC >= 0.80 for >= 5/9",
+      "n": 9,
+      "pass": true
+    },
+    "HE3-3": {
+      "bar": "PAWS AUROC in [0.50,0.75] all; production <= 0.62",
+      "all_in_range": true,
+      "production_le_0.62": false,
+      "pass": false
+    },
+    "HE3-4": {
+      "bar": "BA <= 0.70 at {0.80,0.85,0.95} in every cell",
+      "violations": 28,
+      "sample": [
+        [
+          "BAAI/bge-base-en-v1.5",
+          "qqp",
+          "0.8"
+        ],
+        [
+          "BAAI/bge-base-en-v1.5",
+          "qqp",
+          "0.85"
+        ],
+        [
+          "BAAI/bge-base-en-v1.5",
+          "mnli",
+          "0.8"
+        ],
+        [
+          "e5-base-v2 [NO prefix \u2014 sensitivity variant]",
+          "snli",
+          "0.8"
+        ],
+        [
+          "e5-base-v2 [NO prefix \u2014 sensitivity variant]",
+          "snli",
+          "0.85"
+        ]
+      ],
+      "pass": false
+    },
+    "HE3-5": {
+      "bar": "naive AUROC rank follows coupling (qqp > snli~mnli > paws) for >= 7/9",
+      "n": 1,
+      "pass": false
+    }
+  }
+}

@@ -60,3 +60,10 @@ Agora 4.5 GB free beside the 20b) exceeds every E3 wing's footprint, and VRAM co
 not affect pinned numerics. Any OOM during the sortie triggers eviction per the original clause.
 Frozen sample: sha256 ceb307849323b1dd27e89a2b21ace89d84266ab8f37e30abd9c04047f5abc497 (16,000
 pairs, 2,000×2×4, seed 20260805), committed as corpus/e3_composed_sweep_sample.jsonl.
+
+**AMENDMENT A2 (2026-08-07, after first analysis run):** implementation defect in the caliper
+matcher — the sort-with-random-tiebreak drew two different permutations where one must be reused,
+leaving the matched arrays unsorted and starving the matcher (nan on snli/mnli). Fixed to the
+standard single-permutation stable-argsort; sanity check asserts sorted order. HE3-1's first-run
+0/9 verdict is void (instrument defect, disclosed); the rerun's verdict is final. No other
+estimator touched; naive/stratified/BA values from run 1 are unaffected and stand.

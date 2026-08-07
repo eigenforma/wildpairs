@@ -65,8 +65,9 @@ def stratified(cos_b, j_b, cos_p, j_p):
 
 def caliper(cos_b, j_b, cos_p, j_p, tol=0.05):
     rng = np.random.default_rng(SEED)
-    ob = rng.permutation(len(j_b))[np.argsort(j_b[rng.permutation(len(j_b))], kind="mergesort")]
-    op = rng.permutation(len(j_p))[np.argsort(j_p[rng.permutation(len(j_p))], kind="mergesort")]
+    pb, pp = rng.permutation(len(j_b)), rng.permutation(len(j_p))
+    ob = pb[np.argsort(j_b[pb], kind="mergesort")]
+    op = pp[np.argsort(j_p[pp], kind="mergesort")]
     jb, jp = j_b[ob], j_p[op]
     ib = ip = 0
     keep_b, keep_p = [], []
