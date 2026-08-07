@@ -36,7 +36,10 @@ def gpu_line(host: str) -> str:
     q = sh(host, "nvidia-smi --query-gpu=memory.used,memory.total,temperature.gpu,utilization.gpu --format=csv,noheader,nounits")
     if not q:
         return "gpu:unreachable"
-    used, total, temp, util = [x.strip() for x in q.split(",")]
+    parts = [x.strip() for x in q.split(",")]
+    if len(parts) != 4:
+        return f"gpu:ERROR({q.splitlines()[0][:40]})"
+    used, total, temp, util = parts
     return f"gpu:{used}/{total}MiB {temp}C {util}%"
 
 
