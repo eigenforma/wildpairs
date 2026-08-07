@@ -1,0 +1,70 @@
+{
+  "counts": {
+    "mnli_break": 6453,
+    "mnli_preserve": 6927,
+    "mnli_skipped_neutral_or_unlabeled": 6605,
+    "paws_break": 8921,
+    "paws_preserve": 7059,
+    "qqp_break": 25544,
+    "qqp_preserve": 14884,
+    "snli_break": 6515,
+    "snli_preserve": 6693,
+    "snli_skipped_neutral_or_unlabeled": 6788
+  },
+  "snli": {
+    "n_break": 6515,
+    "n_preserve": 6693,
+    "jaccard_break": {
+      "median": 0.1481,
+      "mean": 0.1787
+    },
+    "jaccard_preserve": {
+      "median": 0.25,
+      "mean": 0.2791
+    },
+    "cliffs_delta_break_vs_preserve": -0.3719,
+    "orientation": "aligned (break less similar in wording -- confounder helps a low-cosine gate)"
+  },
+  "mnli": {
+    "n_break": 6453,
+    "n_preserve": 6927,
+    "jaccard_break": {
+      "median": 0.2,
+      "mean": 0.2272
+    },
+    "jaccard_preserve": {
+      "median": 0.2941,
+      "mean": 0.3228
+    },
+    "cliffs_delta_break_vs_preserve": -0.3359,
+    "orientation": "aligned (break less similar in wording -- confounder helps a low-cosine gate)"
+  },
+  "qqp": {
+    "n_break": 25544,
+    "n_preserve": 14884,
+    "jaccard_break": {
+      "median": 0.2381,
+      "mean": 0.3061
+    },
+    "jaccard_preserve": {
+      "median": 0.4444,
+      "mean": 0.4714
+    },
+    "cliffs_delta_break_vs_preserve": -0.4426,
+    "orientation": "aligned (break less similar in wording -- confounder helps a low-cosine gate)"
+  },
+  "paws": {
+    "n_break": 8921,
+    "n_preserve": 7059,
+    "jaccard_break": {
+      "median": 0.8889,
+      "mean": 0.8942
+    },
+    "jaccard_preserve": {
+      "median": 0.8889,
+      "mean": 0.8945
+    },
+    "cliffs_delta_break_vs_preserve": 0.0056,
+    "orientation": "near-matched"
+  }
+}

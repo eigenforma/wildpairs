@@ -78,15 +78,15 @@
       "threshold": {
         "tau": 0.9961,
         "bal_acc_errata": 0.5517,
-        "bal_acc_bis": 0.5947,
-        "drop": -0.043
+        "bal_acc_bis": 0.5943,
+        "drop": -0.0426
       },
       "logistic_cos_jac": {
         "auroc_errata": 0.5645,
-        "auroc_bis": 0.7199,
-        "drop": -0.1554
+        "auroc_bis": 0.7198,
+        "drop": -0.1553
       },
-      "raw_auroc_bis_cosine_only": 0.6635
+      "raw_auroc_bis_cosine_only": 0.6637
     },
     "e5-base-v2 [query: \u2014 card's symmetric convention]": {
       "threshold": {
@@ -120,15 +120,15 @@
       "threshold": {
         "tau": 0.9912,
         "bal_acc_errata": 0.5509,
-        "bal_acc_bis": 0.6,
-        "drop": -0.0491
+        "bal_acc_bis": 0.5997,
+        "drop": -0.0488
       },
       "logistic_cos_jac": {
         "auroc_errata": 0.5652,
-        "auroc_bis": 0.7221,
-        "drop": -0.1569
+        "auroc_bis": 0.7223,
+        "drop": -0.1571
       },
-      "raw_auroc_bis_cosine_only": 0.6715
+      "raw_auroc_bis_cosine_only": 0.6712
     }
   },
   "H4": {
