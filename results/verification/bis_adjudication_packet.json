@@ -1,0 +1,252 @@
+{
+ "instructions": "Adjudicator: for each item, give the final verdict (different/same/unjudgeable) per docs/annotation_protocol_bis.md. You may see both annotators' votes; you must NOT see any machine label (the key stays sealed until all 35 verdicts are recorded). Record answers as {\"item\": N, \"final\": \"...\"}.",
+ "n": 35,
+ "kappa_AB": 0.662,
+ "items": [
+  {
+   "item": 13,
+   "text_A": "A COOKIE ACK chunk may be bundled with any pending DATA chunks (and/or SACK chunks), but the COOKIE ACK chunk MUST be the first chunk in the packet.",
+   "text_B": "A COOKIE ACK chunk MAY be bundled with any pending DATA chunks (and/or SACK chunks), but the COOKIE ACK chunk MUST be the first chunk in the packet.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 17,
+   "text_A": "extensions: Clients request extended functionality from servers by sending data in the extensions field.",
+   "text_B": "extensions Clients MAY request extended functionality from servers by sending data in the extensions field.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 23,
+   "text_A": "This textual convention SHOULD NOT be used directly in object Daniele, et al.",
+   "text_B": "This textual convention SHOULD NOT be used directly in object Daniele, et.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 26,
+   "text_A": "On reception, the receiver MUST simply throw away any Discard- Request that it receives.",
+   "text_B": "A discard receiver MUST simply throw away an Discard-Request that it receives.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 45,
+   "text_A": "DiameterURI The DiameterURI MUST follow the Uniform Resource Identifiers (URI) syntax [URI] rules specified below: \"aaa://\" FQDN [ port ] [ transport ] [ protocol ] ; No transport security \"aaas://\" FQDN [ port ] [ transport ] [ protocol ] ; Transport security used FQDN = Fully Qualified Host Name port = \":\" 1*DIGIT ; One of the ports used to listen for ; incoming connections.",
+   "text_B": "DiameterURI The DiameterURI MUST follow the Uniform Resource Identifiers (RFC 3986) syntax [RFC3986] rules specified below: \"aaa://\" FQDN [ port ] [ transport ] [ protocol ] ; No transport security \"aaas://\" FQDN [ port ] [ transport ] [ protocol ] ; Transport security used FQDN = < Fully Qualified Domain Name > Fajardo, et al.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 48,
+   "text_A": "And the INIT ACK MUST contain a new Initiation Tag (randomly generated see Section 5.3.1).",
+   "text_B": "And the INIT ACK chunk MUST contain a new Initiate Tag (randomly generated; see Section 5.3.1).",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 49,
+   "text_A": "For sessions of very long or indefinite duration, the \"object_transport_id\" field may be repeated, but it is presumed that the 16-bit field size provides an adequate enough sequence space to avoid object confusion amongst receivers and sources (i.e., receivers SHOULD re-synchronize with a server when receiving object sequence identifiers sufficiently out- of-range with the current state kept for a given source).",
+   "text_B": "For sessions of very long or indefinite duration, the \"object_transport_id\" field will wrap and be repeated, but it is presumed that the 16-bit field size provides a sufficient sequence space to avoid object confusion amongst receivers and sources (i.e., receivers SHOULD re-synchronize with a server when receiving object sequence identifiers sufficiently out-of-range with the current state kept for a given source).",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 54,
+   "text_A": "The system SHOULD validate the R1 signature before applying further packet processing, according to Section 5.2.15.",
+   "text_B": "The system SHOULD validate the R1 signature before applying further packet processing, according to Section 5.2.12.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 56,
+   "text_A": "All 1xx (informational), 204 (no content), and 304 (not modified) responses MUST NOT include a message-body.",
+   "text_B": "All 1xx (Informational), 204 (No Content), and 304 (Not Modified) responses do not include a message body.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 57,
+   "text_A": "If an origin server wishes to force a cache to validate every request, it can assign an explicit expiration time in the past to indicate that the response is already stale.",
+   "text_B": "If an origin server wishes to force a semantically transparent cache to validate every request, it MAY assign an explicit expiration time in the past.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 73,
+   "text_A": "For ALC, the length of the TSI field within the LCT header is REQUIRED to be non-zero.",
+   "text_B": "For ALC the length of the TSI field is REQUIRED to be non-zero.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 78,
+   "text_A": "Each status value MAY be accompanied by a string of human-readable Hollenbeck Standards Track [Page 3] RFC 3732 EPP Host Mapping March 2004 text that describes the rationale for the status applied to the object.",
+   "text_B": "Each status value MAY be accompanied by a string of human-readable text that describes the rationale for the status applied to the object.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 82,
+   "text_A": "If the received value is zero (0), the intermediary MUST NOT forward the request; instead, the intermediary MUST respond as the final recipient.",
+   "text_B": "If the received value is zero (0), the recipient MUST NOT forward the request; instead, it MUST respond as the final recipient.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 87,
+   "text_A": "However, external router behavior MUST be the same as host behavior with respect to these variables.",
+   "text_B": "However, external router behavior MUST be Narten, et.",
+   "annotator_A": "unjudgeable",
+   "annotator_B": "different"
+  },
+  {
+   "item": 91,
+   "text_A": "IANA will extract the record from the form and place the inserted or modified record into the appropriate section of the Language Subtag Registry, grouping the records by their 'Type' field.",
+   "text_B": "IANA MUST place any inserted or modified records into the appropriate section of the language subtag registry, grouping the records by their 'Type' field.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 93,
+   "text_A": "CertRequest ::= SEQUENCE { certReqId INTEGER, certTemplate CertTemplate, controls Controls OPTIONAL } -- If certTemplate is an empty SEQUENCE (i.e., all fields -- omitted), then controls MAY contain the Adams, et al.",
+   "text_B": "If certTemplate is an empty SEQUENCE (i.e., all fields omitted), then the controls field in the CertRequest structure MAY contain the id- regCtrl-altCertTemplate control, specifying a template for a certificate other than an X.509v3 public-key certificate.",
+   "annotator_A": "unjudgeable",
+   "annotator_B": "different"
+  },
+  {
+   "item": 104,
+   "text_A": "* Where the length is described, the attribute \"Content-Length\" MUST be used for the purpose defined in [RFC2616].",
+   "text_B": "* Where the length is described, the attribute \"Content-Length\" MUST be used for the purpose as defined in [6].",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 107,
+   "text_A": "The Object Identifier (OID) sha256WithRSAEncryption from [RFC4055] MUST be used in these products.",
+   "text_B": "The Object Identifier (OID) sha256withRSAEncryption from [RFC4055] MUST be used.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 121,
+   "text_A": "If no Accept-Language header is present in the request, the server Fielding, et al.",
+   "text_B": "If no Accept-Language header is present in the request, the server SHOULD assume that all languages are equally acceptable.",
+   "annotator_A": "unjudgeable",
+   "annotator_B": "different"
+  },
+  {
+   "item": 123,
+   "text_A": "RELATED-TO 0+ RRULE 0+ STATUS 0 or 1 MAY be present, must be \"CANCELLED\" if present SUMMARY 0 or 1 URL 0 or 1 X-PROPERTY 0+ Silverberg, et.",
+   "text_B": "| | RELATED-TO | 0+ | | | RRULE | 0 or 1 | | | STATUS | 0 or 1 | MAY be present; MUST be CANCELLED | | | | if present.",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 124,
+   "text_A": "Inline binary contact SHOULD only be used in applications whose special circumstances demand that an iCalendar object be expressed as a single entity.",
+   "text_B": "Inline binary content SHOULD only be used in applications whose special circumstances demand that an iCalendar object be expressed as a single entity.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 125,
+   "text_A": "Clients that are capable of handling both unicast and multicast transmission MUST indicate such capability by including two full transport-specs with separate parameters for each.",
+   "text_B": "Clients that are capable of handling both unicast and multicast transmission need to indicate such capability by including two full transport-specs with separate parameters for each.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 135,
+   "text_A": "Implementations SHOULD provide a management interface through which these parameters and the associated Transform IDs may be entered (by a user or system administrator), to enable negotiating such groups.",
+   "text_B": "Standards Track [Page 85] RFC 7296 IKEv2bis October 2014 provide a management interface through which these parameters and the associated Transform IDs may be entered (by a user or system administrator), to enable negotiating such groups.",
+   "annotator_A": "unjudgeable",
+   "annotator_B": "different"
+  },
+  {
+   "item": 136,
+   "text_A": "At least the value 'utf-8' MUST be present, since IPP objects MUST support the UTF-8 [RFC3629] charset.",
+   "text_B": "At least the value 'utf-8' MUST be present, since IPP objects MUST support the UTF-8 [RFC2279] charset.",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 137,
+   "text_A": "Minimal encapsulation [15] and GRE encapsulation [13] are alternate encapsulation methods that MAY optionally be supported by mobility agents and mobile nodes.",
+   "text_B": "Minimal encapsulation [34] and GRE encapsulation [16] are alternate encapsulation methods which MAY optionally be supported by mobility agents and mobile nodes.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 145,
+   "text_A": "RDMA Write list: A --> B --> C Compound request: PUTFH LOOKUP READ PUTFH LOOKUP READLINK PUTFH LOOKUP READ | | | v v v A B C Talpey & Callaghan Standards Track [Page 6] RFC 5667 NFS Direct Data Placement January 2010 If the client does not want to have the READLINK result returned directly, then it provides a zero-length array of segment triplets for buffer B or sets the values in the segment triplet for buffer B to zeros so that the READLINK result MUST be returned inline.",
+   "text_B": "Write list: A --> B --> C NFS version 4 COMPOUND request: PUTFH LOOKUP READ PUTFH LOOKUP READLINK PUTFH LOOKUP READ | | | v v v A B C If the NFS version 4 client does not want to have the READLINK result returned via RDMA, it provides an empty Write chunk for buffer B to indicate that the READLINK result must be returned inline.",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 158,
+   "text_A": "In order to remain persistent, all messages on a connection need to have a self-defined message length (i.e., one not defined by closure of the connection), as described in Section 3.3.",
+   "text_B": "In order to remain persistent, all messages on the connection MUST have a self-defined message length (i.e., one not defined by closure of the connection), as described in section 4.4.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 159,
+   "text_A": "Standards Track [Page 50] RFC 8299 YANG Data Model for L3VPN Service Delivery January 2018 site level; as a consequence, all site-network-accesses under the site MUST inherit the group-ids of the site they belong to.",
+   "text_B": "Standards Track [Page 43] RFC 8049 YANG Data Model for L3VPN Service Delivery February 2017 site level; as a consequence, all site-network-accesses under the site MUST inherit the group-ids of the site they belong to.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 162,
+   "text_A": "When CRLs are issued, the CRLs MUST be version 2 CRLs, include the date by which the next CRL will be issued in the nextUpdate field (section 5.1.2.5), include the CRL number extension (section 5.2.3), and include the authority key identifier extension (section 5.2.1).",
+   "text_B": "Conforming CAs that issue CRLs MUST issue version 2 CRLs, and CAs MUST include the date by which the next CRL will be issued in the nextUpdate field (see Housley, et.",
+   "annotator_A": "unjudgeable",
+   "annotator_B": "different"
+  },
+  {
+   "item": 163,
+   "text_A": "Message Processing Rules Implementations MUST observe the following rules when processing ICMPv6 messages (from [RFC-1122]): Conta, et al.",
+   "text_B": "2.4 Message Processing Rules Implementations MUST observe the following rules when processing ICMPv6 messages (from [RFC-1122]): (a) If an ICMPv6 error message of unknown type is received, it MUST be passed to the upper layer.",
+   "annotator_A": "unjudgeable",
+   "annotator_B": "different"
+  },
+  {
+   "item": 166,
+   "text_A": "When the iSER layer at the target receives the Task Management Function Request with the TASK REASSIGN function, it MUST do the following: * It MUST use the ITT as specified in the Referenced Task Tag from the Task Management Function Request PDU to locate the Local and Remote Mappings (if any).",
+   "text_B": "When the iSER layer at the target receives the Task Management Function Request with the TASK REASSIGN function, it MUST do the following: Ko, et al.",
+   "annotator_A": "unjudgeable",
+   "annotator_B": "different"
+  },
+  {
+   "item": 173,
+   "text_A": "The responder should not accept cookies indefinitely after <secret> is changed, since that would defeat part of the DoS protection.",
+   "text_B": "The responder SHOULD NOT accept cookies indefinitely after <secret> is changed, since that would defeat part of the denial of service protection.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 181,
+   "text_A": "Herberg & Clausen Standards Track [Page 5] RFC 6622 ICV and Timestamp TLVs for MANETs May 2012 (Specifically, the <value> field consists of a cryptographic operation over a hash value, with fields indicating which hash function and cryptographic operation have been used; this is specified in Section 12.) Other documents can request assignments for other type extensions; if they do so, they MUST specify their internal structure (if any) and interpretation.",
+   "text_B": "Standards Track [Page 7] RFC 7182 ICV and Timestamp TLVs for MANETs April 2014 Other documents can request assignments for other type extensions; if they do so, they MUST specify their internal structure (if any) and interpretation.",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 187,
+   "text_A": "The mobile node follows the error checking guidelines in [1], and depending on the reply code, MAY try modifying the registration request (for example, by eliminating the request for alternate forms of encapsulation), and issuing a new registration.",
+   "text_B": "The mobile node follows the error checking guidelines in [1], and depending on the reply code, MAY try modifying the registration request (for example, by eliminating the request for alternate forms of encapsulation or delivery style), and issuing a new registration.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 188,
+   "text_A": "Changes from S/MIME v3 to S/MIME v3.1 The RSA public key algorithm was changed to a MUST implement key wrapping algorithm, and the Diffie-Hellman (DH) algorithm changed to a SHOULD implement.",
+   "text_B": "Changes Since S/MIME v3 The RSA public key algorithm was changed to a MUST implement key wrapping algorithm, and the Diffie-Hellman algorithm changed to a SHOULD implement.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  }
+ ]
+}
