@@ -52,3 +52,11 @@ with CIs. All results frozen JSON; prose cites, never sources.
 
 Tag `prereg-e3` on the commit containing this file and the sampler. Amendments below the tag line,
 dated; post-hoc analyses labeled as such.
+
+---
+**AMENDMENT A1 (2026-08-07, before any scoring):** §2's blanket eviction is relaxed to
+**evict-only-on-OOM**: measured post-boot headroom (Forge 8.8 GB free beside the resident 120B;
+Agora 4.5 GB free beside the 20b) exceeds every E3 wing's footprint, and VRAM co-residency does
+not affect pinned numerics. Any OOM during the sortie triggers eviction per the original clause.
+Frozen sample: sha256 ceb307849323b1dd27e89a2b21ace89d84266ab8f37e30abd9c04047f5abc497 (16,000
+pairs, 2,000×2×4, seed 20260805), committed as corpus/e3_composed_sweep_sample.jsonl.
