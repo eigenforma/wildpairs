@@ -1,0 +1,116 @@
+{
+  "computed": "2026-08-10, pre-tag (encoder-blind, lexical)",
+  "rule": "drop from bin L if max ws-tokens over (orig, para, affirm) > ceil(L/1.3)/2; anchor-level",
+  "anchor_payload_stats": {
+    "orig": {
+      "n": 959,
+      "median": 23,
+      "p90": 41,
+      "max": 105
+    },
+    "max_member": {
+      "n": 959,
+      "median": 27,
+      "p90": 45,
+      "max": 112
+    }
+  },
+  "per_bin": {
+    "64": {
+      "ws_budget_W": 50,
+      "cut_max_member_gt": 25.0,
+      "eligible": 412,
+      "dropped": 547,
+      "dropped_frac": 0.5704,
+      "dropped_payload_stats": {
+        "n": 547,
+        "median": 34,
+        "p90": 52,
+        "max": 112
+      },
+      "scope_eligible": 389
+    },
+    "96": {
+      "ws_budget_W": 74,
+      "cut_max_member_gt": 37.0,
+      "eligible": 766,
+      "dropped": 193,
+      "dropped_frac": 0.2013,
+      "dropped_payload_stats": {
+        "n": 193,
+        "median": 45,
+        "p90": 62,
+        "max": 112
+      },
+      "scope_eligible": 722
+    },
+    "128": {
+      "ws_budget_W": 99,
+      "cut_max_member_gt": 49.5,
+      "eligible": 890,
+      "dropped": 69,
+      "dropped_frac": 0.0719,
+      "dropped_payload_stats": {
+        "n": 69,
+        "median": 57,
+        "p90": 69,
+        "max": 112
+      },
+      "scope_eligible": 846
+    },
+    "256": {
+      "ws_budget_W": 197,
+      "cut_max_member_gt": 98.5,
+      "eligible": 958,
+      "dropped": 1,
+      "dropped_frac": 0.001,
+      "dropped_payload_stats": {
+        "n": 1,
+        "median": 112,
+        "p90": 112,
+        "max": 112
+      },
+      "scope_eligible": 902
+    },
+    "512": {
+      "ws_budget_W": 394,
+      "cut_max_member_gt": 197.0,
+      "eligible": 959,
+      "dropped": 0,
+      "dropped_frac": 0.0,
+      "dropped_payload_stats": null,
+      "scope_eligible": 903
+    },
+    "1024": {
+      "ws_budget_W": 788,
+      "cut_max_member_gt": 394.0,
+      "eligible": 959,
+      "dropped": 0,
+      "dropped_frac": 0.0,
+      "dropped_payload_stats": null,
+      "scope_eligible": 903
+    },
+    "2048": {
+      "ws_budget_W": 1576,
+      "cut_max_member_gt": 788.0,
+      "eligible": 959,
+      "dropped": 0,
+      "dropped_frac": 0.0,
+      "dropped_payload_stats": null,
+      "scope_eligible": 903
+    },
+    "4096": {
+      "ws_budget_W": 3151,
+      "cut_max_member_gt": 1575.5,
+      "eligible": 959,
+      "dropped": 0,
+      "dropped_frac": 0.0,
+      "dropped_payload_stats": null,
+      "scope_eligible": 903
+    }
+  },
+  "constant_cohort_all_bins_incl_64": 412,
+  "constant_cohort_96_floor": 766,
+  "floor_rule_verdict": "cohort@64 >= 400: L=64 stays the constant-cohort fit floor",
+  "scope_control_present": 903
+}
