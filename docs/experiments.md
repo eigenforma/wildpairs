@@ -91,3 +91,21 @@ Upgrade path for the verdict: from "an 80-pair authored instrument says the gate
 ## Runner-up record (panel totals /150)
 
 #6 IETF errata 131 · #3 Artifact Share 130.5 · #0 Natural revision histories 126.5 · #4 Dilution Law 122.5 · #1 Dilution curve (ecological) 121 · #2 Composed factorial 120.5 · #7 FDA drug labels 120.5 · #5 Regulatory gates-at-length 119. The pair-selector chose #6+#4 over #6+#3 because 6 and 3 are methodological twins (same analytic move, two corpora) while 6+4 covers ecological scale *and* a new quantitative dimension, answering reviewer critiques (a), (b), (c) simultaneously.
+
+---
+
+## Corrections and updates (2026-08-08, five-lens adversarial review)
+
+The record above is preserved as written on 2026-08-05; **operative specifications live in the preregistrations** (review record: `docs/reviews/adversarial_review_2026-08-08.md`). Corrections that must not propagate into the paper:
+
+- E1's title count "3,583" → **3,578** (1,895 + 1,683). One dated snapshot number everywhere.
+- "six shipped operating points" → Paper A's canonical phrasing is **five** shipped operating points (0.30/0.40/0.80/0.85/0.95) **plus the audited guard's cosine-0.60 equivalent, evaluated separately** (Paper A §5/§6). Same reviewers will diff the count.
+- "~100× the length range" (vs Semantic Needles) → **~10×** (their ceiling ≈ 19 sentences ≈ 400–500 tokens; E2's is 4,096). "Procedural needles" → "procedurally *generated* perturbations" (their corpus is plain Wikipedia).
+- vCache is arXiv:**2502.03771** (ICLR 2026); arXiv:2606.19719 is a *different* paper (Baral et al., "Closing the Calibration Gap in Semantic Caching"). Cite both, separately.
+- CondaQA "150+ citations" is unsupported by a verifiable source (Semantic Scholar: 50) — drop the number or attribute the claim.
+- "the case §9 explicitly left open" → "the case §9's no-op proof does not touch" (§9 scopes native training out; it never poses the question).
+- Held stratum: 2,412 is *all* Held; **2,214** carry both texts (845 T / 1,369 E) — and Held's class-overlap coupling is ≈3× the Verified gap, so the sensitivity stratum is *more* confounded than the primary.
+- CondaQA payload length: median **23**, mean 24.8, p90 38 whitespace tokens — "average ~38+" was the p90.
+- The quantity-class "~782–809" range: the pinned definition (`\d+(\.\d+)?` multiset, prereg-e1 §2) reproduces **782 exactly**; unpinned variants ranged 545–930, so only the pinned number may appear.
+- PMC: "FTP retires August 2026" understated — the legacy S3 prefix `deprecated/oa_comm/txt/all/` is deleted **on/after 2026-08-24**; the E2 slice must freeze before then (PLAN §5 ask 1).
+- Must-cite additions from the scoop hunt (neither headline scooped): **MeTMaP** (arXiv:2402.14480, FORGE 2024 — metamorphic audit of 203 vector-matching configurations; nearest prior gate-audit work; flagged into Paper A too), **Length-Induced Embedding Collapse** (arXiv:2410.24200 — the ancestor the cited pooling-theory line argues against), the **3GPP change-request NLP line** (Chen et al., USENIX Security 2022; TSpec-LLM) as prior institutional-label+embeddings work differentiated in one clause, **PSMBench/RFC2PSM** (NeurIPS 2025 D&B) as the hedge on RFC-corpus novelty (errata remain untouched — verified against HF and 47 NevIR citations), and WNC differentiated on label *semantics*, not provenance.
