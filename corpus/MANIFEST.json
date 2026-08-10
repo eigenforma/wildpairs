@@ -126,6 +126,28 @@
       "sha256": "7760d829453764ba342a6f562809a8ed21c2c3eec3fd9ffa544089f145d42f6d",
       "role": "E3 composed-factorial source (brand-name benchmark, frozen)",
       "bytes_backfilled": "2026-08-10, stat on agora coldstore (review F14)"
+    },
+    {
+      "path": "wildpairs/pmc/CHECKSUMS",
+      "host": "10.1.20.207",
+      "mount": "/mnt/coldstore",
+      "external": true,
+      "source_url": "s3://pmc-oa-opendata/deprecated/oa_comm/txt/all/ (legacy prefix, DELETED on/after 2026-08-24 per NCBI announcement 2026-02-12; post-expiry reproduction: eSearch->S3 per-article pipeline)",
+      "retrieved_utc": "2026-08-10",
+      "bytes": 173547,
+      "sha256": "4bc9002fc094092de3ee60d1a0c33e3b95cab0f1168df6f2c1a8d791308b6faa",
+      "role": "E2 held-out host 1: PMC-OA oa_comm txt slice manifest -- CHECKSUMS carries per-file sha256 for the full listing snapshot, license filelist CSV, and the 2,000-article slice (first 2,000 >= 6,000 ws tokens by ascending PMC ID; PMC1043859..PMC556014 numeric range). Recompute: scripts/pmc_freeze.py"
+    },
+    {
+      "path": "pmc_frozen_slice.tgz",
+      "host": "10.1.20.223",
+      "mount": "/mnt/weight_vault",
+      "external": true,
+      "source_url": "redundancy copy of agora:/mnt/coldstore/wildpairs/pmc (source S3 prefix deleted 2026-08-24; two-site rule for irreplaceable data)",
+      "retrieved_utc": "2026-08-10",
+      "bytes": 293078080,
+      "sha256": "9bbc2ca685bc673f4b0da01a931b1b63462c992ff5d7fba1fe32889ce5b5b8e2",
+      "role": "E2 held-out host 1: full PMC freeze backup tarball (listing + CHECKSUMS + filelists incl. 825MB license CSV + slice)"
     }
   ]
 }

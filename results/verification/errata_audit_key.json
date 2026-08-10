@@ -1,0 +1,2106 @@
+{
+ "seed": 20260810,
+ "stratification": "T: 50/50/50 kw2119/number/other; E: 150 uniform; g1 texts",
+ "items": {
+  "0": {
+   "pair_id": "eid2877",
+   "doc_id": "RFC5473",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "1": {
+   "pair_id": "eid8922",
+   "doc_id": "RFC5882",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "2": {
+   "pair_id": "eid4241",
+   "doc_id": "RFC6351",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "3": {
+   "pair_id": "eid8383",
+   "doc_id": "RFC8391",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "4": {
+   "pair_id": "eid2892",
+   "doc_id": "RFC5101",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "5": {
+   "pair_id": "eid909",
+   "doc_id": "RFC4824",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "6": {
+   "pair_id": "eid7155",
+   "doc_id": "RFC2229",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "7": {
+   "pair_id": "eid8693",
+   "doc_id": "RFC8527",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "8": {
+   "pair_id": "eid6529",
+   "doc_id": "RFC2535",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "9": {
+   "pair_id": "eid2825",
+   "doc_id": "RFC5801",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "10": {
+   "pair_id": "eid102",
+   "doc_id": "RFC4396",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "11": {
+   "pair_id": "eid7938",
+   "doc_id": "RFC7842",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "12": {
+   "pair_id": "eid3351",
+   "doc_id": "RFC5340",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "13": {
+   "pair_id": "eid4098",
+   "doc_id": "RFC6621",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "14": {
+   "pair_id": "eid2533",
+   "doc_id": "RFC5960",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "15": {
+   "pair_id": "eid7873",
+   "doc_id": "RFC6056",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "16": {
+   "pair_id": "eid218",
+   "doc_id": "RFC3886",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "17": {
+   "pair_id": "eid2164",
+   "doc_id": "RFC1320",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "18": {
+   "pair_id": "eid3881",
+   "doc_id": "RFC7012",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "19": {
+   "pair_id": "eid5274",
+   "doc_id": "RFC7950",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "20": {
+   "pair_id": "eid8927",
+   "doc_id": "RFC8058",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "21": {
+   "pair_id": "eid1658",
+   "doc_id": "RFC5326",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "22": {
+   "pair_id": "eid7313",
+   "doc_id": "RFC8519",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "23": {
+   "pair_id": "eid5768",
+   "doc_id": "RFC7170",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "24": {
+   "pair_id": "eid331",
+   "doc_id": "RFC3119",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "25": {
+   "pair_id": "eid2856",
+   "doc_id": "RFC5296",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "26": {
+   "pair_id": "eid28",
+   "doc_id": "RFC4669",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "27": {
+   "pair_id": "eid3417",
+   "doc_id": "RFC2560",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "28": {
+   "pair_id": "eid1901",
+   "doc_id": "RFC5657",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "29": {
+   "pair_id": "eid694",
+   "doc_id": "RFC2911",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "30": {
+   "pair_id": "eid5987",
+   "doc_id": "RFC7940",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "31": {
+   "pair_id": "eid4414",
+   "doc_id": "RFC5545",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "32": {
+   "pair_id": "eid7149",
+   "doc_id": "RFC1337",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "33": {
+   "pair_id": "eid7213",
+   "doc_id": "RFC4518",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "34": {
+   "pair_id": "eid7215",
+   "doc_id": "RFC4510",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "35": {
+   "pair_id": "eid3189",
+   "doc_id": "RFC6588",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "36": {
+   "pair_id": "eid5996",
+   "doc_id": "RFC8163",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "37": {
+   "pair_id": "eid448",
+   "doc_id": "RFC2417",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "38": {
+   "pair_id": "eid732",
+   "doc_id": "RFC4612",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "39": {
+   "pair_id": "eid2520",
+   "doc_id": "RFC4985",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "40": {
+   "pair_id": "eid1573",
+   "doc_id": "RFC4760",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "41": {
+   "pair_id": "eid5456",
+   "doc_id": "RFC1123",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "42": {
+   "pair_id": "eid404",
+   "doc_id": "RFC2645",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "43": {
+   "pair_id": "eid5078",
+   "doc_id": "RFC7252",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "44": {
+   "pair_id": "eid6012",
+   "doc_id": "RFC8231",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "45": {
+   "pair_id": "eid8838",
+   "doc_id": "RFC4647",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "46": {
+   "pair_id": "eid275",
+   "doc_id": "RFC3420",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "47": {
+   "pair_id": "eid950",
+   "doc_id": "RFC4678",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "48": {
+   "pair_id": "eid2663",
+   "doc_id": "RFC3530",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "49": {
+   "pair_id": "eid2552",
+   "doc_id": "RFC6003",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "50": {
+   "pair_id": "eid805",
+   "doc_id": "RFC4141",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "51": {
+   "pair_id": "eid6214",
+   "doc_id": "RFC5524",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "52": {
+   "pair_id": "eid156",
+   "doc_id": "RFC4237",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "53": {
+   "pair_id": "eid3094",
+   "doc_id": "RFC6020",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "54": {
+   "pair_id": "eid2525",
+   "doc_id": "RFC3986",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "55": {
+   "pair_id": "eid3824",
+   "doc_id": "RFC5465",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "56": {
+   "pair_id": "eid7013",
+   "doc_id": "RFC9113",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "57": {
+   "pair_id": "eid1787",
+   "doc_id": "RFC4643",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "58": {
+   "pair_id": "eid8523",
+   "doc_id": "RFC9482",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "59": {
+   "pair_id": "eid225",
+   "doc_id": "RFC3822",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "60": {
+   "pair_id": "eid5210",
+   "doc_id": "RFC8259",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "61": {
+   "pair_id": "eid2905",
+   "doc_id": "RFC6183",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "62": {
+   "pair_id": "eid4519",
+   "doc_id": "RFC6822",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "63": {
+   "pair_id": "eid5602",
+   "doc_id": "RFC5545",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "64": {
+   "pair_id": "eid7784",
+   "doc_id": "RFC9463",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "65": {
+   "pair_id": "eid7083",
+   "doc_id": "RFC5880",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "66": {
+   "pair_id": "eid2709",
+   "doc_id": "RFC4861",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "67": {
+   "pair_id": "eid6102",
+   "doc_id": "RFC7940",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "68": {
+   "pair_id": "eid3173",
+   "doc_id": "RFC5627",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "69": {
+   "pair_id": "eid880",
+   "doc_id": "RFC4824",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "70": {
+   "pair_id": "eid7872",
+   "doc_id": "RFC1766",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "71": {
+   "pair_id": "eid642",
+   "doc_id": "RFC2445",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "72": {
+   "pair_id": "eid1467",
+   "doc_id": "RFC4357",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "73": {
+   "pair_id": "eid4798",
+   "doc_id": "RFC4303",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "74": {
+   "pair_id": "eid3384",
+   "doc_id": "RFC6751",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "75": {
+   "pair_id": "eid3372",
+   "doc_id": "RFC6519",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "76": {
+   "pair_id": "eid831",
+   "doc_id": "RFC4314",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "77": {
+   "pair_id": "eid1072",
+   "doc_id": "RFC4270",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "78": {
+   "pair_id": "eid4887",
+   "doc_id": "RFC6733",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "79": {
+   "pair_id": "eid677",
+   "doc_id": "RFC4377",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "80": {
+   "pair_id": "eid2",
+   "doc_id": "RFC4907",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "81": {
+   "pair_id": "eid1809",
+   "doc_id": "RFC5162",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "82": {
+   "pair_id": "eid2829",
+   "doc_id": "RFC4992",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "83": {
+   "pair_id": "eid7406",
+   "doc_id": "RFC9350",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "84": {
+   "pair_id": "eid2895",
+   "doc_id": "RFC5815",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "85": {
+   "pair_id": "eid7234",
+   "doc_id": "RFC5137",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "86": {
+   "pair_id": "eid5952",
+   "doc_id": "RFC7868",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "87": {
+   "pair_id": "eid2928",
+   "doc_id": "RFC3315",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "88": {
+   "pair_id": "eid3016",
+   "doc_id": "RFC2026",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "89": {
+   "pair_id": "eid5394",
+   "doc_id": "RFC7749",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "90": {
+   "pair_id": "eid4248",
+   "doc_id": "RFC6920",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "91": {
+   "pair_id": "eid6871",
+   "doc_id": "RFC6582",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "92": {
+   "pair_id": "eid7208",
+   "doc_id": "RFC4519",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "93": {
+   "pair_id": "eid1486",
+   "doc_id": "RFC4253",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "94": {
+   "pair_id": "eid8441",
+   "doc_id": "RFC9642",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "95": {
+   "pair_id": "eid4348",
+   "doc_id": "RFC4867",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "96": {
+   "pair_id": "eid8714",
+   "doc_id": "RFC4363",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "97": {
+   "pair_id": "eid419",
+   "doc_id": "RFC2557",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "98": {
+   "pair_id": "eid8336",
+   "doc_id": "RFC2986",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "99": {
+   "pair_id": "eid7197",
+   "doc_id": "RFC4532",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "100": {
+   "pair_id": "eid2159",
+   "doc_id": "RFC3473",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "101": {
+   "pair_id": "eid3540",
+   "doc_id": "RFC3971",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "102": {
+   "pair_id": "eid2051",
+   "doc_id": "RFC3261",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "103": {
+   "pair_id": "eid4520",
+   "doc_id": "RFC6822",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "104": {
+   "pair_id": "eid5556",
+   "doc_id": "RFC8493",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "105": {
+   "pair_id": "eid5052",
+   "doc_id": "RFC7991",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "106": {
+   "pair_id": "eid7306",
+   "doc_id": "RFC9110",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "107": {
+   "pair_id": "eid5765",
+   "doc_id": "RFC7170",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "108": {
+   "pair_id": "eid4820",
+   "doc_id": "RFC2863",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "109": {
+   "pair_id": "eid216",
+   "doc_id": "RFC3886",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "110": {
+   "pair_id": "eid6164",
+   "doc_id": "RFC8709",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "111": {
+   "pair_id": "eid498",
+   "doc_id": "RFC2119",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "112": {
+   "pair_id": "eid1587",
+   "doc_id": "RFC5357",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "113": {
+   "pair_id": "eid4203",
+   "doc_id": "RFC4090",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "114": {
+   "pair_id": "eid1533",
+   "doc_id": "RFC3977",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "115": {
+   "pair_id": "eid3059",
+   "doc_id": "RFC6145",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "116": {
+   "pair_id": "eid5289",
+   "doc_id": "RFC6243",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "117": {
+   "pair_id": "eid7288",
+   "doc_id": "RFC8702",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "118": {
+   "pair_id": "eid4920",
+   "doc_id": "RFC864",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "119": {
+   "pair_id": "eid8591",
+   "doc_id": "RFC8972",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "120": {
+   "pair_id": "eid4415",
+   "doc_id": "RFC6428",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "121": {
+   "pair_id": "eid411",
+   "doc_id": "RFC2616",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "122": {
+   "pair_id": "eid1710",
+   "doc_id": "RFC5317",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "123": {
+   "pair_id": "eid8202",
+   "doc_id": "RFC8409",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "124": {
+   "pair_id": "eid7278",
+   "doc_id": "RFC3647",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "125": {
+   "pair_id": "eid3791",
+   "doc_id": "RFC5065",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "126": {
+   "pair_id": "eid1831",
+   "doc_id": "RFC2585",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "127": {
+   "pair_id": "eid2291",
+   "doc_id": "RFC5661",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "128": {
+   "pair_id": "eid3530",
+   "doc_id": "RFC4293",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "129": {
+   "pair_id": "eid5143",
+   "doc_id": "RFC7696",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "130": {
+   "pair_id": "eid5369",
+   "doc_id": "RFC4271",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "131": {
+   "pair_id": "eid6658",
+   "doc_id": "RFC2026",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "132": {
+   "pair_id": "eid8169",
+   "doc_id": "RFC2080",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "133": {
+   "pair_id": "eid4102",
+   "doc_id": "RFC3279",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "134": {
+   "pair_id": "eid8349",
+   "doc_id": "RFC5440",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "135": {
+   "pair_id": "eid485",
+   "doc_id": "RFC2183",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "136": {
+   "pair_id": "eid4873",
+   "doc_id": "RFC5764",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "137": {
+   "pair_id": "eid3169",
+   "doc_id": "RFC5789",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "138": {
+   "pair_id": "eid2586",
+   "doc_id": "RFC2045",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "139": {
+   "pair_id": "eid4461",
+   "doc_id": "RFC4861",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "140": {
+   "pair_id": "eid471",
+   "doc_id": "RFC2236",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "141": {
+   "pair_id": "eid4953",
+   "doc_id": "RFC5232",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "142": {
+   "pair_id": "eid5066",
+   "doc_id": "RFC8152",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "143": {
+   "pair_id": "eid8560",
+   "doc_id": "RFC8765",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "144": {
+   "pair_id": "eid5560",
+   "doc_id": "RFC4122",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "145": {
+   "pair_id": "eid1430",
+   "doc_id": "RFC4918",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "146": {
+   "pair_id": "eid5948",
+   "doc_id": "RFC7932",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "147": {
+   "pair_id": "eid1797",
+   "doc_id": "RFC4873",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "148": {
+   "pair_id": "eid830",
+   "doc_id": "RFC4342",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "149": {
+   "pair_id": "eid1927",
+   "doc_id": "RFC5676",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "150": {
+   "pair_id": "eid4948",
+   "doc_id": "RFC7252",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "151": {
+   "pair_id": "eid5462",
+   "doc_id": "RFC7542",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "152": {
+   "pair_id": "eid6666",
+   "doc_id": "RFC9085",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "153": {
+   "pair_id": "eid7796",
+   "doc_id": "RFC8996",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "154": {
+   "pair_id": "eid7148",
+   "doc_id": "RFC9260",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "155": {
+   "pair_id": "eid4260",
+   "doc_id": "RFC6038",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "156": {
+   "pair_id": "eid2730",
+   "doc_id": "RFC6045",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "157": {
+   "pair_id": "eid4194",
+   "doc_id": "RFC4632",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "158": {
+   "pair_id": "eid8111",
+   "doc_id": "RFC9328",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "159": {
+   "pair_id": "eid1751",
+   "doc_id": "RFC3061",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "160": {
+   "pair_id": "eid280",
+   "doc_id": "RFC3413",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "161": {
+   "pair_id": "eid7026",
+   "doc_id": "RFC1925",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "162": {
+   "pair_id": "eid5890",
+   "doc_id": "RFC5913",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "163": {
+   "pair_id": "eid5158",
+   "doc_id": "RFC8216",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "164": {
+   "pair_id": "eid5184",
+   "doc_id": "RFC3323",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "165": {
+   "pair_id": "eid4850",
+   "doc_id": "RFC7749",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "166": {
+   "pair_id": "eid1519",
+   "doc_id": "RFC4918",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "167": {
+   "pair_id": "eid5404",
+   "doc_id": "RFC1606",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "168": {
+   "pair_id": "eid8183",
+   "doc_id": "RFC9483",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "169": {
+   "pair_id": "eid2844",
+   "doc_id": "RFC5780",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "170": {
+   "pair_id": "eid351",
+   "doc_id": "RFC3024",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "171": {
+   "pair_id": "eid8485",
+   "doc_id": "RFC2812",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "172": {
+   "pair_id": "eid4994",
+   "doc_id": "RFC4226",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "173": {
+   "pair_id": "eid1055",
+   "doc_id": "RFC4474",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "174": {
+   "pair_id": "eid2326",
+   "doc_id": "RFC5661",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "175": {
+   "pair_id": "eid8081",
+   "doc_id": "RFC9435",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "176": {
+   "pair_id": "eid2940",
+   "doc_id": "RFC5440",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "177": {
+   "pair_id": "eid4067",
+   "doc_id": "RFC2203",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "178": {
+   "pair_id": "eid4092",
+   "doc_id": "RFC5255",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "179": {
+   "pair_id": "eid7883",
+   "doc_id": "RFC9250",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "180": {
+   "pair_id": "eid8880",
+   "doc_id": "RFC9907",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "181": {
+   "pair_id": "eid7815",
+   "doc_id": "RFC9522",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "182": {
+   "pair_id": "eid261",
+   "doc_id": "RFC3501",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "183": {
+   "pair_id": "eid5860",
+   "doc_id": "RFC7464",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "184": {
+   "pair_id": "eid5248",
+   "doc_id": "RFC7841",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "185": {
+   "pair_id": "eid2579",
+   "doc_id": "RFC5322",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "186": {
+   "pair_id": "eid3937",
+   "doc_id": "RFC6971",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "187": {
+   "pair_id": "eid8840",
+   "doc_id": "RFC1309",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "188": {
+   "pair_id": "eid3401",
+   "doc_id": "RFC4551",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "189": {
+   "pair_id": "eid6197",
+   "doc_id": "RFC7836",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "190": {
+   "pair_id": "eid2865",
+   "doc_id": "RFC5246",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "191": {
+   "pair_id": "eid5311",
+   "doc_id": "RFC8179",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "192": {
+   "pair_id": "eid373",
+   "doc_id": "RFC2822",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "193": {
+   "pair_id": "eid3682",
+   "doc_id": "RFC5416",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "194": {
+   "pair_id": "eid1888",
+   "doc_id": "RFC5491",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "195": {
+   "pair_id": "eid1690",
+   "doc_id": "RFC3696",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "196": {
+   "pair_id": "eid8327",
+   "doc_id": "RFC7331",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "197": {
+   "pair_id": "eid379",
+   "doc_id": "RFC2821",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "198": {
+   "pair_id": "eid7158",
+   "doc_id": "RFC2229",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "199": {
+   "pair_id": "eid3750",
+   "doc_id": "RFC5521",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "200": {
+   "pair_id": "eid7320",
+   "doc_id": "RFC916",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "201": {
+   "pair_id": "eid2082",
+   "doc_id": "RFC5639",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "202": {
+   "pair_id": "eid3809",
+   "doc_id": "RFC4271",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "203": {
+   "pair_id": "eid3627",
+   "doc_id": "RFC5905",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "204": {
+   "pair_id": "eid3525",
+   "doc_id": "RFC4293",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "205": {
+   "pair_id": "eid6641",
+   "doc_id": "RFC7667",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "206": {
+   "pair_id": "eid7340",
+   "doc_id": "RFC9083",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "207": {
+   "pair_id": "eid4924",
+   "doc_id": "RFC6840",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "208": {
+   "pair_id": "eid8299",
+   "doc_id": "RFC9568",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "209": {
+   "pair_id": "eid6825",
+   "doc_id": "RFC6520",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "210": {
+   "pair_id": "eid2924",
+   "doc_id": "RFC3196",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "211": {
+   "pair_id": "eid3878",
+   "doc_id": "RFC4254",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "212": {
+   "pair_id": "eid3032",
+   "doc_id": "RFC3501",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "213": {
+   "pair_id": "eid7291",
+   "doc_id": "RFC5890",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "214": {
+   "pair_id": "eid745",
+   "doc_id": "RFC4427",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "215": {
+   "pair_id": "eid5755",
+   "doc_id": "RFC2694",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "216": {
+   "pair_id": "eid7289",
+   "doc_id": "RFC8366",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "217": {
+   "pair_id": "eid5427",
+   "doc_id": "RFC8110",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "218": {
+   "pair_id": "eid5957",
+   "doc_id": "RFC4960",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "219": {
+   "pair_id": "eid5683",
+   "doc_id": "RFC8122",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "220": {
+   "pair_id": "eid4533",
+   "doc_id": "RFC4253",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "221": {
+   "pair_id": "eid5202",
+   "doc_id": "RFC4960",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "222": {
+   "pair_id": "eid3470",
+   "doc_id": "RFC6020",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "223": {
+   "pair_id": "eid6684",
+   "doc_id": "RFC8572",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "224": {
+   "pair_id": "eid8319",
+   "doc_id": "RFC8666",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "225": {
+   "pair_id": "eid402",
+   "doc_id": "RFC2656",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "226": {
+   "pair_id": "eid8300",
+   "doc_id": "RFC9568",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "227": {
+   "pair_id": "eid855",
+   "doc_id": "RFC2489",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "228": {
+   "pair_id": "eid6796",
+   "doc_id": "RFC3533",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "229": {
+   "pair_id": "eid8532",
+   "doc_id": "RFC3958",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "230": {
+   "pair_id": "eid5455",
+   "doc_id": "RFC7664",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "231": {
+   "pair_id": "eid6300",
+   "doc_id": "RFC8886",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "232": {
+   "pair_id": "eid5436",
+   "doc_id": "RFC7208",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "233": {
+   "pair_id": "eid5669",
+   "doc_id": "RFC8152",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "234": {
+   "pair_id": "eid8834",
+   "doc_id": "RFC9868",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "235": {
+   "pair_id": "eid8851",
+   "doc_id": "RFC6513",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "236": {
+   "pair_id": "eid8318",
+   "doc_id": "RFC8018",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "237": {
+   "pair_id": "eid2469",
+   "doc_id": "RFC3633",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "238": {
+   "pair_id": "eid574",
+   "doc_id": "RFC793",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "239": {
+   "pair_id": "eid8184",
+   "doc_id": "RFC9483",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "240": {
+   "pair_id": "eid4951",
+   "doc_id": "RFC6143",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "241": {
+   "pair_id": "eid1305",
+   "doc_id": "RFC3982",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "242": {
+   "pair_id": "eid906",
+   "doc_id": "RFC4607",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "243": {
+   "pair_id": "eid563",
+   "doc_id": "RFC1035",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "244": {
+   "pair_id": "eid241",
+   "doc_id": "RFC3720",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "245": {
+   "pair_id": "eid7207",
+   "doc_id": "RFC4520",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "246": {
+   "pair_id": "eid4817",
+   "doc_id": "RFC6066",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "247": {
+   "pair_id": "eid2651",
+   "doc_id": "RFC5802",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "248": {
+   "pair_id": "eid3781",
+   "doc_id": "RFC5385",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "249": {
+   "pair_id": "eid3145",
+   "doc_id": "RFC2648",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "250": {
+   "pair_id": "eid3677",
+   "doc_id": "RFC6130",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "251": {
+   "pair_id": "eid6838",
+   "doc_id": "RFC8665",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "252": {
+   "pair_id": "eid3205",
+   "doc_id": "RFC6487",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "253": {
+   "pair_id": "eid7523",
+   "doc_id": "RFC7959",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "254": {
+   "pair_id": "eid1801",
+   "doc_id": "RFC2817",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "255": {
+   "pair_id": "eid7196",
+   "doc_id": "RFC4532",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "256": {
+   "pair_id": "eid1832",
+   "doc_id": "RFC5415",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "257": {
+   "pair_id": "eid434",
+   "doc_id": "RFC2445",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "258": {
+   "pair_id": "eid4980",
+   "doc_id": "RFC7483",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "259": {
+   "pair_id": "eid710",
+   "doc_id": "RFC3281",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "260": {
+   "pair_id": "eid2587",
+   "doc_id": "RFC5303",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "261": {
+   "pair_id": "eid3264",
+   "doc_id": "RFC4271",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "262": {
+   "pair_id": "eid3513",
+   "doc_id": "RFC5878",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "263": {
+   "pair_id": "eid6941",
+   "doc_id": "RFC9180",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "264": {
+   "pair_id": "eid153",
+   "doc_id": "RFC4241",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "265": {
+   "pair_id": "eid4347",
+   "doc_id": "RFC4867",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "266": {
+   "pair_id": "eid4763",
+   "doc_id": "RFC4941",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "267": {
+   "pair_id": "eid5116",
+   "doc_id": "RFC5536",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "268": {
+   "pair_id": "eid7639",
+   "doc_id": "RFC8029",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "269": {
+   "pair_id": "eid3280",
+   "doc_id": "RFC3588",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "orig"
+  },
+  "270": {
+   "pair_id": "eid150",
+   "doc_id": "RFC4271",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "271": {
+   "pair_id": "eid192",
+   "doc_id": "RFC4043",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "272": {
+   "pair_id": "eid5747",
+   "doc_id": "RFC8558",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "273": {
+   "pair_id": "eid292",
+   "doc_id": "RFC3369",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "274": {
+   "pair_id": "eid6472",
+   "doc_id": "RFC8175",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "275": {
+   "pair_id": "eid2638",
+   "doc_id": "RFC3530",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "276": {
+   "pair_id": "eid3271",
+   "doc_id": "RFC3973",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "277": {
+   "pair_id": "eid3487",
+   "doc_id": "RFC5812",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "278": {
+   "pair_id": "eid6920",
+   "doc_id": "RFC5322",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "279": {
+   "pair_id": "eid1283",
+   "doc_id": "RFC793",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "280": {
+   "pair_id": "eid5926",
+   "doc_id": "RFC7030",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "281": {
+   "pair_id": "eid2750",
+   "doc_id": "RFC6056",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "282": {
+   "pair_id": "eid3166",
+   "doc_id": "RFC6482",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "283": {
+   "pair_id": "eid3953",
+   "doc_id": "RFC5180",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "284": {
+   "pair_id": "eid8167",
+   "doc_id": "RFC9293",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "orig"
+  },
+  "285": {
+   "pair_id": "eid194",
+   "doc_id": "RFC4029",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  },
+  "286": {
+   "pair_id": "eid643",
+   "doc_id": "RFC2445",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "287": {
+   "pair_id": "eid2986",
+   "doc_id": "RFC5981",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "288": {
+   "pair_id": "eid7920",
+   "doc_id": "RFC8785",
+   "type": "Technical",
+   "edit_class": "kw2119",
+   "A_is": "corr"
+  },
+  "289": {
+   "pair_id": "eid9037",
+   "doc_id": "RFC703",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "290": {
+   "pair_id": "eid1930",
+   "doc_id": "RFC3977",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "291": {
+   "pair_id": "eid3816",
+   "doc_id": "RFC5595",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "292": {
+   "pair_id": "eid8372",
+   "doc_id": "RFC8718",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "293": {
+   "pair_id": "eid4560",
+   "doc_id": "RFC7622",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "corr"
+  },
+  "294": {
+   "pair_id": "eid796",
+   "doc_id": "RFC4319",
+   "type": "Technical",
+   "edit_class": "number",
+   "A_is": "corr"
+  },
+  "295": {
+   "pair_id": "eid3164",
+   "doc_id": "RFC5559",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "orig"
+  },
+  "296": {
+   "pair_id": "eid2640",
+   "doc_id": "RFC5802",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "297": {
+   "pair_id": "eid6470",
+   "doc_id": "RFC1122",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "298": {
+   "pair_id": "eid1468",
+   "doc_id": "RFC4055",
+   "type": "Editorial",
+   "edit_class": "editorial-na",
+   "A_is": "orig"
+  },
+  "299": {
+   "pair_id": "eid4333",
+   "doc_id": "RFC7511",
+   "type": "Technical",
+   "edit_class": "other",
+   "A_is": "corr"
+  }
+ }
+}

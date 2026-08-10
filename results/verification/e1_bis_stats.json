@@ -1,9 +1,14 @@
 {
-  "direct_obsoletes_edges": 1542,
-  "docpairs_with_text": 1542,
-  "keyword_preserved_rewording": 11761,
-  "old_sentence_ambiguous_or_weak": 20775,
-  "identical_no_revision": 13909,
-  "strength_transition": 2019,
-  "old_sentence_no_candidates": 152
+ "direct_obsoletes_edges": 1542,
+ "docpairs_with_text": 1542,
+ "keyword_preserved_rewording": 11761,
+ "old_sentence_ambiguous_or_weak": 20775,
+ "identical_no_revision": 13909,
+ "strength_transition": 2019,
+ "old_sentence_no_candidates": 152,
+ "jaccard_medians_pinned_tokenizer": {
+  "strength_transition": 0.6667,
+  "keyword_preserved_rewording": 0.8696
+ },
+ "jaccard_medians_note": "added 2026-08-10 (review F5/A8): per-class medians under the prereg-e1 \u00a72 tokenizer, recompute: scripts/regen_e1_bis_stats.py"
 }

@@ -1,0 +1,1502 @@
+[
+ {
+  "item": 0,
+  "text_A": "o The Class of Service field: ClassOfServiceIPv4 in [RFC5102], with a type of 5 and a length of 1 octet.",
+  "text_B": "o The Class of Service field: ipClassOfService in [RFC5102], with a type of 5 and a length of 1 octet."
+ },
+ {
+  "item": 1,
+  "text_A": "The basic mechanisms are covered in Section 4 above. At this time, OSPFv2 and OSPFv3 carry routing information for a single data protocol (IPv4 and IPv6, respectively) so when it is desired to signal a topology change after a BFD session failure, this should be done by tearing down the corresponding OSPF neighbor. IS-IS may be used to support only one data protocol, or multiple data protocols. [ISIS] specifies a common topology for multiple data protocols, but work is under way to support multiple topologies. If multiple topologies are used to support multiple data protocols (or multiple classes of service of the same data protocol), the topology- specific path associated with a failing BFD session should no longer be advertised in IS-IS Label Switched Paths (LSPs) in order to signal a lack of connectivity. Otherwise, a failing BFD session should be signaled by simulating an IS-IS adjacency failure. OSPF has a planned restart signaling mechanism, whereas IS-IS does not. The appropriate mechanisms outlined in Section 4.3 should be used.",
+  "text_B": "The basic mechanisms are covered in Section 3 above. At this time, OSPFv2 and OSPFv3 carry routing information for a single data protocol (IPv4 and IPv6, respectively) so when it is desired to signal a topology change after a BFD session failure, this should be done by tearing down the corresponding OSPF neighbor. IS-IS may be used to support only one data protocol, or multiple data protocols. [ISIS] specifies a common topology for multiple data protocols, but work is under way to support multiple topologies. If multiple topologies are used to support multiple data protocols (or multiple classes of service of the same data protocol), the topology- specific path associated with a failing BFD session should no longer be advertised in IS-IS Label Switched Paths (LSPs) in order to signal a lack of connectivity. Otherwise, a failing BFD session should be signaled by simulating an IS-IS adjacency failure. OSPF has a planned restart signaling mechanism, whereas IS-IS does not. The appropriate mechanisms outlined in Section 3.3 should be used."
+ },
+ {
+  "item": 2,
+  "text_A": "BEGIN:VCARD VERSION:4.0 contact.FN:... contact.EMAIL:... media.PHOTO:... CATEGORIES:...",
+  "text_B": "BEGIN:VCARD VERSION:4.0 contact.FN=... contact.EMAIL=... media.PHOTO=... CATEGORIES=..."
+ },
+ {
+  "item": 3,
+  "text_A": "Input: private key sk, Message M, WOTS+ seed SEED, address ADRS",
+  "text_B": "Input: Message M, WOTS+ private key sk, address ADRS, seed SEED"
+ },
+ {
+  "item": 4,
+  "text_A": "packetDeltaCount",
+  "text_B": "inPacketDeltaCount"
+ },
+ {
+  "item": 5,
+  "text_A": "RFC 4824 completely fails to appropriatey point out the benefits and merits of IP-SFS, and to perform a fair comparison with industry standard strenght security for common wireless protocols. Apparently, IP-SFS provides for industry standard Wireless Equivalent Privacy (WEP). It *is* a wireless protocol! Its interfaces do not consume electrical power (if used under daylight conditions) and do not produce any electromagnetical interference. The former property results in great applicability to developing economies that lack substantial ubiquitous electrical power distribution but have a lot of cheap manpower available, but it also makes IP-SFS great for countries with instable electrical power distribution systems, like the U.S. (and, yet currently still to a lesser degree, Europe). Both properties together make IP-SFS strictly immune to any modern cryptanalytical methods based on the variation of power consumption over time and to the suspected industry espionage by the electronical 'sky ears' still deployed in Europe and otherwise mostly idle, since the end of the Cold War. Furthermore, IP-SFS apparently is very well suited for environments with stringent legal requirements for the war against the Axis of Evil, with its step-by-step increasing legal custody of privacy and political correctness of content to be performed / enforced by legal authorities and cooperating access and content providers. That should make IP-SFS particularly interesting for the emerging infrastructure of the .cn domain (and for many other countries, as well). To change the disadvantageous presentation of IP-SFS and to address at least a few of its benefits, I recommend to change, via an RFC Errata Note, the first paragraph of Section 5, | By its nature of line-of-sight signaling, IP-SFS is considered | insecure. The transmission of sensitive data over IP-SFS is strongly | discouraged unless security is provided by higher level protocols. to say: | By its nature of line-of-sight signaling, IP-SFS is considered to | provide industry strength wireless equivalent security and privacy | (WEP). The transmission of sensitive data over IP-SFS is strongly | discouraged unless security is provided by legal environments or | corporate guidelines of conduct, impending punishment of the | interfaces, or other higher level protocols. :-)",
+  "text_B": "[see above]"
+ },
+ {
+  "item": 6,
+  "text_A": "definition has been retrieved, and parameter 3 is the the short",
+  "text_B": "definition has been retrieved, and parameter 3 is the short"
+ },
+ {
+  "item": 7,
+  "text_A": "Data in the operational state datastore can come from multiple sources.",
+  "text_B": "Data in the operational state datatstore can come from multiple sources."
+ },
+ {
+  "item": 8,
+  "text_A": "It cryptographically binds the RRset being signed to the signer and a validity interval.",
+  "text_B": "It cryptographicly binds the RRset being signed to the signer and a validity interval."
+ },
+ {
+  "item": 9,
+  "text_A": "The initiator-address-type and acceptor-address-type fields of the GSS-CHANNEL-BINDINGS structure MUST be set to 255 (GSS_C_AF_NULLADDR).",
+  "text_B": "The initiator-address-type and acceptor-address-type fields of the GSS-CHANNEL-BINDINGS structure MUST be set to 0."
+ },
+ {
+  "item": 10,
+  "text_A": "For TYPE 3 units containing the last (trailing) modifier fragment,...",
+  "text_B": "For TYPE 3 units containing the complete modifiers,..."
+ },
+ {
+  "item": 11,
+  "text_A": "The IETF email archive search tool, as specified in [RFC6778] and available at [mailarch], has been in use for nearly two years.",
+  "text_B": "The IETF email archive search tool, as specified in [RFC6778]) and available at [mailarch], has been in use for nearly two years."
+ },
+ {
+  "item": 12,
+  "text_A": "o Link-local addresses MUST never be advertised in inter-area- prefix-LSAs.",
+  "text_B": "o If the router's router-LSA R-bit is clear, only IPv6 prefixes associated with local interfaces MAY be advertised in inter-area-prefix-LSAs. Non-local IPv6 prefixes, e.g., those advertised by other routers and installed during the SPF computation, MUST NOT be advertised in inter-area-prefixes-LSAs."
+ },
+ {
+  "item": 13,
+  "text_A": "This distributed relay set selection technique has been shown to approximate a minimum connected dominating set (MCDS) in [JLMV02].",
+  "text_B": "This distributed relay set selection technique has been shown to approximate a minimal connected dominating set (MCDS) in [JLMV02]."
+ },
+ {
+  "item": 14,
+  "text_A": "A section MUST provide a means of identifying the type of payload it carries. If the section is a data-link, link-specific mechanisms such as a protocol type indication in the data-link header MAY be used.",
+  "text_B": "This mechanism may be used to facilitate multiplexing MPLS with other protocols on the section if that function is supported by the section. Support or non-support of multiplexing on sections is out-of-scope for this document."
+ },
+ {
+  "item": 15,
+  "text_A": "(this \"separation of the ephemeral port space\" means that transport-protocol instances with different remote endpoints will not have different sequences of port numbers, i.e., will not be part of the same ephemeral port sequence as in the case of the traditional BSD ephemeral port selection algorithm)",
+  "text_B": "(this \"separation of the ephemeral port space\" means that transport-protocol instances with different remote endpoints will have different sequences of port numbers, i.e., will not be part of the same ephemeral port sequence as in the case of the traditional BSD ephemeral port selection algorithm)"
+ },
+ {
+  "item": 16,
+  "text_A": "A Message Tracking Status Motification (MTSN) is intended to be returned as the body of a Message Tracking request [RFC-MTRK-MTQP]. ^^^^^^^",
+  "text_B": "A Message Tracking Status Motification (MTSN) is intended to be returned as the body of a Message Tracking response [RFC-MTRK-MTQP]. ^^^^^^^^"
+ },
+ {
+  "item": 17,
+  "text_A": "Digesting %d %d-byte blocks ...\", MD, TEST_BLOCK_COUNT, TEST_BLOCK_LEN);",
+  "text_B": "Digesting %d %d-byte blocks ...\", MD, TEST_BLOCK_LEN, TEST_BLOCK_COUNT);"
+ },
+ {
+  "item": 18,
+  "text_A": "The current encodings of these data types for use with the IPFIX protocol are defined in [RFC7011]; encodings allowing the use of the IPFIX Information Elements [IANA-IPFIX] with other protocols may be defined in the future by referencing this document.",
+  "text_B": "The abstract data type definitions in this section are intended only to define the values which can be taken by Information Elements of each type. The encodings of these data types for use with the IPFIX protocol are defined in Section 6.1 of [RFC7011]; encodings allowing the use of the IPFIX Information Elements [IANA-IPFIX] with other protocols may be defined in the future by referencing this document. Note that for timestamp encodings (sections 3.1.15 - 3.1.18), it is the responsibility of the encoding to ensure that each representation has an unambiguous mapping to a moment in time (e.g. relative to a defined epoch)."
+ },
+ {
+  "item": 19,
+  "text_A": "A corresponding XML instance example of the complete notification: <notification xmlns=\"urn:ietf:params:xml:ns:netconf:notification:1.0\"> <eventTime>2008-07-08T00:01:00Z</eventTime> <event xmlns=\"urn:example:event\"> <event-class>fault</event-class> <reporting-entity> /ex:interface[ex:name='Ethernet0'] </reporting-entity> <severity>major</severity> </event> </notification>",
+  "text_B": "A corresponding XML instance example of the complete notification follows. This example reports an event for an interface from the \"example-foo\" module defined in Section 13.1.1. <notification xmlns=\"urn:ietf:params:xml:ns:netconf:notification:1.0\"> <eventTime>2008-07-08T00:01:00Z</eventTime> <event xmlns=\"urn:example:event\"> <event-class>fault</event-class> <reporting-entity xmlns:ex=\"urn:example:foo\"> /ex:interface[ex:name='Ethernet0'] </reporting-entity> <severity>major</severity> </event> </notification>"
+ },
+ {
+  "item": 20,
+  "text_A": "Content-Type: multipart/form-data; boundary=---FormBoundaryjWmhtjORrn",
+  "text_B": "Content-Type: multipart/form-data; boundary=-FormBoundaryjWmhtjORrn"
+ },
+ {
+  "item": 21,
+  "text_A": "Data segments that are not checkpoints MUST NOT have these two fields in | the segment content and MUST continue on directly with the client ^^^^^^^^^^^^^^^ service data.",
+  "text_B": "Data segments that are not checkpoints MUST NOT have these two fields in | the header and MUST continue on directly with the client service ^^^^^^ data."
+ },
+ {
+  "item": 22,
+  "text_A": "In this example, /ietf-acl:acls/ietf-acl:acl/ietf-acl:aces/ietf-acl:ace/ ietf-acl:matches are augmented with two new choices: protocol- payload-choice and metadata. The protocol-payload-choice uses a grouping with an enumeration of all supported protocol values. Metadata matches apply to fields associated with the packet, that are not in the packet header, such as overall packet length. In another example, /ietf-acl:acls/ietf-acl:acl/ietf-acl:aces/ietf-acl:ace/ ietf-acl:actions are augmented with a new choice of actions.",
+  "text_B": "In this example, /acl:acls/acl:acl/acl:aces/acl:ace/acl:matches are augmented with two new choices: protocol-payload-choice and metadata. The protocol-payload-choice uses a grouping with an enumeration of all supported protocol values. Metadata matches apply to fields associated with the packet, that are not in the packet header, such as overall packet length. In another example, /acl:acls/acl:acl/acl:aces/acl:ace/acl:actions are augmented with a new choice of actions."
+ },
+ {
+  "item": 23,
+  "text_A": "The Compound MAC computation is as follows: CMK = CMK[j] Compound-MAC = MAC( CMK, BUFFER ) where j is the number of the last successfully executed inner EAP method, MAC is the MAC function negotiated in TLS 1.2 [RFC5246], and BUFFER is created after concatenating these fields in the following order:",
+  "text_B": "The Compound MAC computation is as follows: Compound-MAC = the first 20 octets of MAC( CMK[n], BUFFER ) where n is the number of the last successfully executed inner method, MAC is the MAC function negotiated in TLS (e.g. TLS 1.2 in [RFC5246]), and BUFFER is created after concatenating these fields in the following order:"
+ },
+ {
+  "item": 24,
+  "text_A": "the encoding name SHALL be \"mpa-robust\" (the same as the MIME subtype).",
+  "text_B": "the encoding name SHALL be \"mp3\" (the same as the MIME subtype)."
+ },
+ {
+  "item": 25,
+  "text_A": "The EMSKname is 64 bits in length and so the username portion takes up 16 octets.",
+  "text_B": "The EMSKname is 64 bits in length and so the username portion takes up 128 octets."
+ },
+ {
+  "item": 26,
+  "text_A": "\"If the server has a persistent state (e.g., a process) and supports a 'reset' operation (e.g., can be told to re-read configuration files), this value will be the | time elapsed (in centiseconds) since the | server was 'reset'.",
+  "text_B": "\"If the server has a persistent state (e.g., a process) and supports a 'reset' operation (e.g., can be told to re-read configuration files), this value will be the time elapsed (in hundredths of a second) since the server was 'reset.'"
+ },
+ {
+  "item": 27,
+  "text_A": "Systems or applications that rely on OCSP responses MUST be capable of detecting and enforcing use of the id-ad-ocspSigning value as described above. and 3. Includes a value of id-ad-ocspSigning in an ExtendedKeyUsage",
+  "text_B": "Systems or applications that rely on OCSP responses MUST be capable of detecting and enforcing use of the id-kp-OCSPSigning value as described above. and 3. Includes a value of id-kp-ocspSigning in an ExtendedKeyUsage"
+ },
+ {
+  "item": 28,
+  "text_A": "VRFY and EXPN commands are often not implemented or are disabled. This does not pose an interoperability problem for SMTP because | EXPN is an optional feature and its support is never relied on. [...] ^",
+  "text_B": "[[ second paragraph of Section 6.2 ]] VRFY and EXPN commands are often not implemented or are disabled. This does not pose an interoperability problem for SMTP because | EXPN is an optional features and its support is never relied on. [...] ^^"
+ },
+ {
+  "item": 29,
+  "text_A": "The top half (128 values) of each range (0x0n40 to 0x0nFF, for n = 0 to 5) is reserved for vendor use within each status code class.",
+  "text_B": "The top half (128 values) of each range (0x0n80 to 0x0nFF, for n = 0 to 5) is reserved for vendor use within each status code class."
+ },
+ {
+  "item": 30,
+  "text_A": "Variant code points are specified using one or more \"var\" elements as children of a \"char\" element.",
+  "text_B": "Variant code points are specified using one of more \"var\" elements as children of a \"char\" element."
+ },
+ {
+  "item": 31,
+  "text_A": "In the case of the \"STANDARD\" and \"DAYLIGHT\" sub-components the UNTIL rule part MUST always be specified as a date with UTC time. If not present, and the COUNT rule part is also not present, the \"RRULE\" is considered to repeat forever.",
+  "text_B": "If specified as a DATE-TIME value, then it MUST be specified in a UTC time format."
+ },
+ {
+  "item": 32,
+  "text_A": "Another possible continuation after segment 6 leads to hazard H2, shown below.",
+  "text_B": "Another possible continuation after segment 6 leads to hazard H3, shown below."
+ },
+ {
+  "item": 33,
+  "text_A": "\"foo<SPACE>bar<SPACE><SPACE>\", result in the output",
+  "text_B": "\"foo<SPACE>bar<SPACE><SPACE>\" result in the output"
+ },
+ {
+  "item": 34,
+  "text_A": "[RFC4511] replaces the majority RFC 2251, portions of RFC 2252, and",
+  "text_B": "[RFC4511] replaces the majority of RFC 2251, portions of RFC 2252, and"
+ },
+ {
+  "item": 35,
+  "text_A": "Rules for lexical equivalence: | The Namespace-Specific String (NSS) in 'ucode' URNs | (i.e. the <ucode-name> in the ABNF) is case-sensitive. | So this namespace imposes no additional lexical equivalences | beyond what is specified in RFC 2141 (i.e., according to | RFC 2141, the \"urn:ucode:\" part is case-insensitive, the NSS | is not).",
+  "text_B": "Rules for lexical equivalence: The entire UCODE-URN is case-sensitive. NOTE: This is an additional restriction imposed on the ucode namespace by the requirements of some major applications of ucode in existence. Only capital \"A\", \"B\", \"C\", ..., \"F\" are allowed as part of hexadecimal characters."
+ },
+ {
+  "item": 36,
+  "text_A": "*/ if (code == 0 || read_index + code > length) return 0;",
+  "text_B": "*/ if (read_index + code > length) return 0;"
+ },
+ {
+  "item": 37,
+  "text_A": "IMPORTS MODULE-COMPLIANCE, NOTIFICATION-GROUP, OBJECT-GROUP FROM SNMPv2-CONF snmpModules, MODULE-IDENTITY, NOTIFICATION-TYPE, Counter32, Integer32, Unsigned32, OBJECT-TYPE, IpAddress FROM SNMPv2-SMI",
+  "text_B": "IMPORTS MODULE-COMPLIANCE, NOTIFICATION-GROUP, OBJECT-GROUP FROM SNMPv2-CONF mib-2, MODULE-IDENTITY, NOTIFICATION-TYPE, Counter32, Integer32, Unsigned32, OBJECT-TYPE, IpAddress FROM SNMPv2-SMI"
+ },
+ {
+  "item": 38,
+  "text_A": "[2] Handley, M., Jacobson, V., and C. Perkins, \"SDP: Session Description Protocol\", RFC 4566, July 2006.",
+  "text_B": "[2] Handley, M. and V. Jacobson, \"SDP: Session Description Protocol\", RFC 2327, April 1998."
+ },
+ {
+  "item": 39,
+  "text_A": "Name A DNS domain name, representing a domain for which the certificate issuer has asserted that the certified subject is a legitimate provider of the identified service.",
+  "text_B": "Name The DNS domain name of the domain where the specified service is located."
+ },
+ {
+  "item": 40,
+  "text_A": "Address Family Identifier (AFI): This field in combination with the Subsequent Address Family Identifier field identifies the set of Network Layer protocols to which the address carried in the Next Hop field must belong, the way in which the address of the next hop is encoded, and the semantics of the Network Layer Reachability Information that follows. If the Next Hop is allowed to be from more than one Network Layer protocol, the encoding of the Next Hop MUST provide a way to determine its Network Layer protocol. Presently defined values for the Address Family Identifier field are specified in the IANA's Address Family Numbers registry [IANA-AF]. Subsequent Address Family Identifier (SAFI): This field in combination with the Address Family Identifier field identifies the set of Network Layer protocols to which the address carried in the Next Hop must belong, the way in which the address of the next hop is encoded, and the semantics of the Network Layer Reachability Information that follows. If the Next Hop is allowed to be from more than one Network Layer protocol, the encoding of the Next Hop MUST provide a way to determine its Network Layer protocol.",
+  "text_B": "Address Family Identifier (AFI): This field in combination with the Subsequent Address Family Identifier field identifies the semantics of Withdrawn Routes Network Layer Reachability Information carried in the attribute. Presently defined values for the Address Family Identifier field are specified in the IANA's Address Family Numbers registry [IANA-AF]. Subsequent Address Family Identifier (SAFI): This field in combination with the Address Family Identifier field identifies the semantics of Withdrawn Routes Network Layer Reachability Information carried in the attribute."
+ },
+ {
+  "item": 41,
+  "text_A": "Sending a port command can avoided if a transfer mode other than stream is used, by leaving the data transfer connection open between transfers.",
+  "text_B": "Sending a port command can be avoided if a transfer mode other than stream is used, by leaving the data transfer connection open between transfers."
+ },
+ {
+  "item": 42,
+  "text_A": "If the authentication used by the customer does not provide access to all of the domains specified in ATRN, the provider MUST NOT send mail for any domains to the customer; the provider MUST reject the ATRN command with a 550 code.",
+  "text_B": "If the authentication used by the customer does not provide access to all of the domains specified in ATRN, the provider MUST NOT send mail for any domains to the customer; the provider MUST reject the ATRN command with a 450 code."
+ },
+ {
+  "item": 43,
+  "text_A": "The Content-Format code attribute MUST NOT appear more than once in a link. The syntax of the attribute value is summarized in the production \"ct-value\" in Figure 12, where \"cardinal\", \"SP\", and \"DQUOTE\" are defined as in [RFC6690].",
+  "text_B": "The syntax of the attribute value is summarized in the production \"ct- value\" in Figure 12, where \"cardinal\", \"SP\", and \"DQUOTE\" are defined as in [RFC6690]."
+ },
+ {
+  "item": 44,
+  "text_A": "If the PCC receives a PCUpd message for an LSP object identified with a PLSP-ID that does not exist on the PCC, it MUST generate a PCErr with Error-type=19 (Invalid Operation), error-value 3, (Attempted LSP Update Request for an LSP identified by an unknown PSP-ID) (see Section 8.5).",
+  "text_B": "If the PCC receives a PCUpd message for an LSP object identified with a PLSP-ID that does not exist on the PCC, it MUST generate a PCErr with Error-type=19 (Invalid Operation), error-value 3, (Attempted LSP Update Request for an LSP identified by an unknown PLSP-ID) (see Section 8.5)."
+ },
+ {
+  "item": 45,
+  "text_A": "However, wildcards outside the first position are ignored by Extended Filtering (see Section 3.2.2).",
+  "text_B": "However, wildcards outside the first position are ignored by Extended Filtering (see Section 3.3.2)."
+ },
+ {
+  "item": 46,
+  "text_A": "Internet Media Type message/sipfrag",
+  "text_B": "Internet Media Type message/ipfrag"
+ },
+ {
+  "item": 47,
+  "text_A": "o Interval: These two bytes indicate a recommended polling interval for the load balancer to use.",
+  "text_B": "o Interval: These two bytes indicate a recommended polling interval (number of seconds) for the load balancer to use."
+ },
+ {
+  "item": 48,
+  "text_A": "When an OPEN is done for a file and the open_owner for which the open is being done already has the file open, the result is to upgrade the open file status maintained on the server to include the access and deny bits specified by the new OPEN as well as those for the existing OPEN.",
+  "text_B": "When an OPEN is done for a file and the lockowner for which the open is being done already has the file open, the result is to upgrade the open file status maintained on the server to include the access and deny bits specified by the new OPEN as well as those for the existing OPEN."
+ },
+ {
+  "item": 49,
+  "text_A": "This | association applies when a set of one or more CTIs maps to a single (shared) BW profile. An example of value setting consists in assigning an arbitrary value comprised within the range [0x08,0xF8] associated to a set of CTi, the values in the range | [0xF8,0xFF] being selected for reserved sets.",
+  "text_B": "This | association applies when a set of one or more CTis maps to a single (shared) BW profile. An example of value setting consists in assigning an arbitrary value comprised within the range [0x08,0xF8] associated to a set of CTi, the values in the range | [0xF9,0xFF] being selected for reserved sets."
+ },
+ {
+  "item": 50,
+  "text_A": "[see above]",
+  "text_B": "(1) In Section 1.2, the last paragraph at the bottom of page 4 says: * three MIME Content header fields (Content-Convert, Content- Previous and * Content-Features) that specify appropriate content header fields and record conversions that have been performed. It should say: * three MIME Content header fields (Content-Convert, Content- | Previous and Content-Features) that specify appropriate content header fields and record conversions that have been performed. (2) In Section 3, the fourth paragraph on page 6 says: When CONPERM is used, conversions are performed by the first ESMTP host that can obtain both the originator's permission and information about the capabilities supported by the recipient. If a relay or client is unable to transmit the message to a next-hop that supports CONPERM or to perform appropriate conversion, then it terminates message transmission and returns a [DSNSMTP, DSNFMT, SYSCOD] to the originator, with status code 5.6.3 (Conversion required but not supported). It should say: When CONPERM is used, conversions are performed by the first ESMTP host that can obtain both the originator's permission and information about the capabilities supported by the recipient. If a relay or client is unable to transmit the message to a next-hop that supports CONPERM or to perform appropriate conversion, then it terminates | message transmission and returns a Delivery Status Notification (DSN) [DSNSMTP, DSNFMT, SYSCOD] to the originator, with status code 5.6.3 (Conversion required but not supported). Rationale: Probably, that triple of RFCs should not be sent :-) The proposed text change conforms to the current authoring style guides for I-Ds / RFCs, spelling out the abbreviation 'MDN' at its first occurrance in the text. (3) Similarly, the final NOTE in Section 3, on page 9, says: NOTE: An originator MAY validate any conversions that are made by requesting a positive [DSNSMTP]. ... where it should better say: NOTE: An originator MAY validate any conversions that are made | by requesting a positive DSN [DSNSMTP]. ... (4) The second item of the first enumerated list in Section 3.3, on page 12, contains a (visually hidden) word replication. The text says: 2) MUST return a DSN notification to the originator, with status code 5.6.3 (Conversion required but not supported). [DSNSMTP, DSNFMT, SYSCOD] It should say: | 2) MUST return a DSN to the originator, with status code 5.6.3 (Conversion required but not supported). [DSNSMTP, DSNFMT, SYSCOD] Rationale: The trailing \"N\" of \"DSN\" already stands for \"notification\". (5) To make the spelling of [E]SMTP keywords and verbs consistent within the text, the headline of Section 4.2 (on page 13), 4.2. CONPERM Parameter to Mail-From should better use uppercaes spelling as well, to read: 4.2. CONPERM Parameter to MAIL-FROM (6) The ABNF given in Section 7, on page 16, and Section 8, on page 17, does not fully conform to the contemporary (RFC 2822) style. The ABNF in Section 7 omits the explicit specification of white space usage that presumably has been intended. The ABNF in Section 8 inserts a paramount of CFWS. NOTE: - RFC 2822 has deprecated the use of white space between header field names and the subsequent \":\" and, as far as I can see, comments have not been allowed at such places by RFC 822, and aren't by the \"obsolete syntax\" in RFC 2822. - RFC 2822 has carefully made [C]FWS an intrinsic part of many low-level syntactic constructs to improve readability of the high-level ABNF productions. Thus, CFWS should not be inserted again where it is (logically) already present. Furthermore, the spelling of ABNF production names should be self-consistent within a certain field. RFC 2822 makes use of lowercase production (rule) names for teh syntactic description of the Internet Message Format; therefore it seems preferrable to follow this style when defining IMF extensions. In the light of these explanations (and detailed inspection of RFC 2822), the ABNF productions in Section 7 : Convert = \"Content-convert\" \":\" permitted Permitted = \"ANY\" / \"NONE\" / permitted-list should perhaps be re-written as : convert = \"Content-convert:\" [CFWS] permitted permitted = \"ANY\" / \"NONE\" / permitted-list and the ABNF productions in Section 8 : previous = \"Content-Previous\" [CFWS] \":\" [CFWS] date by type date = \"Date \" [CFWS] date-time [CFWS] \";\" [CFWS] by = \"By \" [CFWS] domain [CFWS] \";\" [CFWS] should perhaps be re-written as : previous = \"Content-Previous:\" date by type date = \"Date \" [CFWS] date-time \";\" [CFWS] by = \"By \" domain \";\" [CFWS] or even (disallowing comments after \"Date \" - like RFC 2822 does): previous = \"Content-Previous:\" date by type date = \"Date \" date-time \";\" [CFWS] by = \"By \" domain \";\" [CFWS] (7) The examples in Section 9 contain improperly truncated references to MIME Content-Types. The following line that appears - in Section 9.1 in the 3rd text line on page 18, and - in Section 9.2 in the 10th text line : C: <<RFC 2822 message with MIME Content-Type:TIFF-FX should, in both cases, read: C: <<RFC 2822 message with MIME Content-Type: image/TIFF-FX (8) In Appendix C, the headline: Appendix C. MIME Content-Type Registrations should say: Appendix C. MIME Header Field Registrations (9) Perhaps, in Appendix C, the IANA should have been directed to add to the MIME Header Registration for \"Content-Features:\" an additional reference to RFC 4141. E.g., add on page 25, before the \"Authors' Addresses\": C.3. Content-Features This memo substantially amends the specification of the MIME Header Field \"Content-Features:\" registered by [[FEAT]. The IANA should include into the 'Specification document(s)' clause of that registration a pointer to RFC 4141."
+ },
+ {
+  "item": 51,
+  "text_A": "This document defines the URLFETCH=BINARY IMAP capability. IANA has added it to the registry accordingly.",
+  "text_B": "This document defines the URLAUTH=BINARY IMAP capability. IANA is asked to replace URLFETCH=BINARY with URLAUTH=BINARY in the IMAP registry."
+ },
+ {
+  "item": 52,
+  "text_A": "IANA has registered an LDAP Object Identifier for use in this technical specification, according to the following template. This Object Identifier, 1.3.6.1.1.11, is referred to as the \"IANA-ASSIGNED-OID\" in the body of this memo.",
+  "text_B": "IANA has registered an LDAP Object Identifier for use in this technical specification, according to the following template:"
+ },
+ {
+  "item": 53,
+  "text_A": "bit-stmt = bit-keyword sep identifier-arg-str optsep (\";\" / \"{\" stmtsep ;; these stmts can appear in any order [position-stmt stmtsep] [status-stmt stmtsep] [description-stmt stmtsep] [reference-stmt stmtsep] \"}\" \"}\")",
+  "text_B": "bit-stmt = bit-keyword sep identifier-arg-str optsep (\";\" / \"{\" stmtsep ;; these stmts can appear in any order [position-stmt stmtsep] [status-stmt stmtsep] [description-stmt stmtsep] [reference-stmt stmtsep] \"}\")"
+ },
+ {
+  "item": 54,
+  "text_A": "Advice for designers of new URI schemes can be found in [RFC4395].",
+  "text_B": "Advice for designers of new URI schemes can be found in [RFC2718]."
+ },
+ {
+  "item": 55,
+  "text_A": "This extension adds the NOTIFY command as defined in Section 3.1.",
+  "text_B": "This extension adds the NOTIFY command as defined in Section 5.1."
+ },
+ {
+  "item": 56,
+  "text_A": "| Note: An endpoint that learns of stream closure after sending | all data can close a stream by sending a DATA frame with a | zero-length Data field and the END_STREAM flag set.",
+  "text_B": "| Note: An endpoint that learns of stream closure after sending | all data can close a stream by sending a STREAM frame with a | zero-length Data field and the END_STREAM flag set."
+ },
+ {
+  "item": 57,
+  "text_A": "user-pass-char = CTRL / %x21-FF NOTE: a server implementation MAY parse AUTHINFO USER and AUTHINFO PASS specially so as to allow white space to be used within the username or password.",
+  "text_B": "user-pass-char = B-CHAR NOTE: a server implementation MAY parse AUTHINFO USER and AUTHINFO PASS specially so as to allow white space to be used within the username or password."
+ },
+ {
+  "item": 58,
+  "text_A": "PKIMessage structures",
+  "text_B": "PKIMessages"
+ },
+ {
+  "item": 59,
+  "text_A": "template-version=0.1",
+  "text_B": "template-version=1.0"
+ },
+ {
+  "item": 60,
+  "text_A": "Request for Comments: 8259 Textuality Obsoletes: 7159 December 2017 Category: Standards Track ISSN: 2070-1721",
+  "text_B": "Request for Comments: 8259 Textuality STD: 90 December 2017 Obsoletes: 7159 Category: Standards Track ISSN: 2070-1721"
+ },
+ {
+  "item": 61,
+  "text_A": "The commonPropertiesID may then serve as a scope for the set of Original Exporters.",
+  "text_B": "The commonPropertiesId may then serve as a scope for the set of Original Exporters."
+ },
+ {
+  "item": 62,
+  "text_A": "MI-RTRs include the IID-TLV in the point-to-point Hello PDUs associated with non-zero instances that they originate. ----------------------------- In Section 4: The following subsections describe the additional rules an MI-RTR MUST follow when establishing adjacencies for non-zero instances.",
+  "text_B": "MI-RTRs include the IID-TLV in the point-to-point Hello PDUs they originate. ------------------------------ Also in Section 4: The following subsections describe the additional rules an MI-RTR MUST follow when establishing adjacencies."
+ },
+ {
+  "item": 63,
+  "text_A": "ATTACH;FMTTYPE=text/plain;ENCODING=BASE64;VALUE=BINARY:VGhlIH F1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZy4=",
+  "text_B": "ATTACH;FMTTYPE=text/plain;ENCODING=BASE64;VALUE=BINARY:VGhlIH F1aWNrIGJyb3duIGZveCBqdW1wcyBvdmVyIHRoZSBsYXp5IGRvZy4"
+ },
+ {
+  "item": 64,
+  "text_A": "dohpath: Used to supply a relative DoH URI Template (Section 5.1 of [RFC9461]).",
+  "text_B": "dohpath: Used to supply a relative DoH URI Template (Section 5 of [RFC9461])."
+ },
+ {
+  "item": 65,
+  "text_A": "Otherwise (bfd.AuthSeqKnown is 0), bfd.AuthSeqKnown MUST be set to 1, bfd.RcvAuthSeq MUST be set to the value of the received Sequence Number field, and the received packet MUST be accepted. Replace the contents of the Auth Key/Hash field with the authentication key selected by the received Auth Key ID field. If the SHA1 hash of the entire BFD Control packet is equal to the received value of the Auth Key/Hash field, the received packet MUST be accepted. Otherwise (the hash does not match the Auth Key/Hash field), the received packet MUST be discarded.",
+  "text_B": "Replace the contents of the Auth Key/Hash field with the authentication key selected by the received Auth Key ID field. If the SHA1 hash of the entire BFD Control packet is not equal to the received value of the Auth Key/Hash field, the received packet MUST be discarded. Otherwise, the packet MUST be accepted, bfd.AuthSeqKnown MUST be set to 1, and bfd.RcvAuthSeq MUST be set to the value of the received Sequence Number field."
+ },
+ {
+  "item": 66,
+  "text_A": "!INCOMPLETE NA, Solicited=any, Update content of unchanged Override=any, No IsRouter flag.",
+  "text_B": "!INCOMPLETE NA, Solicited=1, Update content of REACHABLE Override=any, No IsRouter flag. link-layer address !INCOMPLETE NA, Solicited=0, Update content of unchanged Override=any, No IsRouter flag. link-layer address or !INCOMPLETE NA, Solicited=1, - REACHABLE Override=0 Same link-layer address as cached or no link-layer address !INCOMPLETE NA, Solicited=any, Update content of unchanged Override=any, No IsRouter flag."
+ },
+ {
+  "item": 67,
+  "text_A": "Any \"char\", \"range\", or \"variant\" element in the \"data\" section may contain an OPTIONAL \"comment\" attribute.",
+  "text_B": "Any \"char\", \"range\", or \"var\" element in the \"data\" section may contain an OPTIONAL \"comment\" attribute."
+ },
+ {
+  "item": 68,
+  "text_A": "o a 2xx response to NOTIFY o the UPDATE request o a 2xx response to **UPDATE**",
+  "text_B": "o a 2xx response to NOTIFY o the UPDATE request o a 2xx response to NOTIFY"
+ },
+ {
+  "item": 69,
+  "text_A": "IP-SFS adapts the standard SFSS to encode an alphabet of 16 signals (flag patterns) to represent data values 0-15 (Section 3.3) and 9 signals to represent control functions (Section 3.4).",
+  "text_B": "IP-SFS adapts the standard SFSS to encode an alphabet of 16 signals (flag patterns) to represent data values 0-15 (Section 3.2.1) and 9 signals to represent control functions (Section 3.2.2)."
+ },
+ {
+  "item": 70,
+  "text_A": "A prerequisite for any such function is a means of labelling the information content with an identifier for the language in which is is written.",
+  "text_B": "A prerequisite for any such function is a means of labelling the information content with an identifier for the language in which it is written."
+ },
+ {
+  "item": 71,
+  "text_A": "LOCATION:Conference Room - F123\\, Bldg. 002 LOCATION;ALTREP=\"http://xyzcorp.com/conf-rooms/f123.vcf\": Conference Room - F123\\, Bldg.",
+  "text_B": "LOCATION:Conference Room - F123, Bldg. 002 LOCATION;ALTREP=\"http://xyzcorp.com/conf-rooms/f123.vcf\": Conference Room - F123, Bldg."
+ },
+ {
+  "item": 72,
+  "text_A": "[RFDSL] \"Russian Federal Electronic Digital Signature Law\", 10 Jan 2002 N 1-FZ.",
+  "text_B": "[RFDSL] \"Russian Federal Digital Signature Law\", 10 Jan 2002 N 1-FZ"
+ },
+ {
+  "item": 73,
+  "text_A": "* If tunnel mode is being used, then the IPsec implementation can add Traffic Flow Confidentiality (TFC) padding (see Section 2.7) after the Payload Data and before the Padding (0-255 bytes) field.",
+  "text_B": "* If tunnel mode is being used, then the IPsec implementation can add Traffic Flow Confidentiality (TFC) padding (see Section 2.4) after the Payload Data and before the Padding (0-255 bytes) field."
+ },
+ {
+  "item": 74,
+  "text_A": "CR-2 IPv6/IPv4 PACKET FROM A HOST OF THE SAME SITE <figure omitted> If ALL the following conditions are satisfied (i.e., the packet comes from a 6a44 client of the same site), the 6a44 client MUST decapsulate the inner packet and treat it as a received IPv6 packet: (1) the IPv4 packet contains a complete IPv6 packet (protocol = 41, offset = 0, more-fragment bit = 0); (2) the IPv6 source address is one of the same site (the first 80 bits match those of the 6a44-client IPv6 address); (3) its last 32 bits are equal to the IPv4 source address and the IPv4 source address starts with the IPv4 link prefix; (4) the IPv6 destination address is the 6a44-client IPv6 address; (5) its last 32 bits are equal to the IPv4 destination address.",
+  "text_B": "CR-2 IPv6/IPv4 PACKET FROM A HOST OF THE SAME SITE <figure omitted> If ALL the following conditions are satisfied (i.e., the packet comes from a 6a44 client of the same site), the 6a44 client MUST decapsulate the inner packet and treat it as a received IPv6 packet: (1) the IPv4 packet contains a complete UDP datagram (protocol = 17, offset = 0, more-fragment bit = 0); (2) both ports of the UDP datagram are the 6a44 port, and the UDP payload is an IPv6 packet (UDP length of at least 40 octets, version = 6); (3) the IPv6 source address is one of the same site (the first 80 bits match those of the 6a44-client IPv6 address; (4) its last 32 bits are equal to the IPv4 source address; (5) the IPv6 destination address is the 6a44-client IPv6 address."
+ },
+ {
+  "item": 75,
+  "text_A": "In the scenario depicted in Figure 2, the Access-Request packet contains a Service-Type attribute with the value Authorize Only (17); thus, according to [RFC5080], the Access-Request packet MUST contain a State attribute.",
+  "text_B": "In the scenario depicted in Figure 2, the Access-Request packet contains a Service-Type attribute with the value Call-Check (10)."
+ },
+ {
+  "item": 76,
+  "text_A": "The MYRIGHTS command returns the set of rights that the user has to the mailbox in an untagged MYRIGHTS reply.",
+  "text_B": "The MYRIGHTS command returns the set of rights that the user has to mailbox in an untagged MYRIGHTS reply."
+ },
+ {
+  "item": 77,
+  "text_A": "They are used because they have two security properties: to be one way and collision free.",
+  "text_B": "They are used because they have two security properties: to be one-way and collision-free."
+ },
+ {
+  "item": 78,
+  "text_A": "o The local realm's identity is encoded in the Origin-Realm AVP.",
+  "text_B": "o The local host's identity is encoded in the Origin-Host AVP. o The Destination-Host and Destination-Realm AVPs MUST NOT be present in the answer message."
+ },
+ {
+  "item": 79,
+  "text_A": "(1) At an ingress LSR, accounting of traffic through LSPs that | begin at each egress in question. ^^^^^ (2) At an intermediate LSR, accounting of traffic through LSPs for | each pair of ingress to egress. ^^ v | (3) At egress LSR, accounting of traffic through LSPs for each ingress.",
+  "text_B": "(1) At an ingress LSR, accounting of traffic through LSPs that | end at each egress in question. (2) At an intermediate LSR, accounting of traffic through LSPs for | each pair of ingress and egress. | (3) At an egress LSR, accounting of traffic through LSPs for each ingress."
+ },
+ {
+  "item": 80,
+  "text_A": "In order to address this problem, \"Packetization Layer Path MTU Discovery\" [RFC4821] does depend on the delivery of ICMP messages.",
+  "text_B": "In order to address this problem, \"Packetization Layer Path MTU Discovery\" [RFC4821] does not depend on the delivery of ICMP messages."
+ },
+ {
+  "item": 81,
+  "text_A": "After completing a full synchronization, the client MUST also take note of any unsolicited MODSEQ FETCH data items received from the server. Whenever the client receives a tagged response to a command, it calculates the highest value among all MODSEQ FETCH data items received since the last tagged response. If this value is bigger than the client's copy of the HIGHESTMODSEQ value, then the client MUST use this value as its new HIGHESTMODSEQ value. Note: It is not safe to update the client's copy of the HIGHESTMODSEQ value with a MODSEQ FETCH data item value as soon as it is received because servers are not required to send MODSEQ FETCH data items in increasing modseqence order. This can lead to the client missing some changes in case of connectivity loss.",
+  "text_B": "After completing a full synchronization, the client MUST also take note of any unsolicited MODSEQ FETCH data items and HIGHESTMODSEQ response codes received from the server. Whenever the client receives a tagged response to a command, it checks the received unsolicited responses to calculate the new HIGHESTMODSEQ value. If the HIGHESTMODSEQ response code is received, the client MUST use it even if it has seen higher mod-sequences. Otherwise, the client calculates the highest value among all MODSEQ FETCH data items received since the last tagged response. If this value is bigger than the client's copy of the HIGHESTMODSEQ value, then the client MUST use this value as its new HIGHESTMODSEQ value. Example: C: A1 STORE 1:2 (UNCHANGEDSINCE 96) +FLAGS.SILENT \\Seen S: * 1 FETCH (UID 6 MODSEQ (103)) S: * 2 FETCH (UID 7 MODSEQ (101)) S: * OK [HIGHESTMODSEQ 99] VANISHED reply with MODSEQ 100 is delayed S: A1 OK [MODIFIED 3] done C: A2 STORE 3 +FLAGS.SILENT \\Seen S: * 3 FETCH (UID 8 MODSEQ (104)) S: A2 OK [HIGHESTMODSEQ 99] Still delaying VANISHED C: A3 NOOP S: * VANISHED 8 S: A3 OK [HIGHESTMODSEQ 104] done Note: It is not safe to update the client's copy of the HIGHESTMODSEQ value with a MODSEQ FETCH data item value as soon as it is received because servers are not required to send MODSEQ FETCH data items in increasing modseqence order. Some commands may also delay EXPUNGE (or VANISHED) replies with smaller mod-sequences. These can lead to the client missing some changes in case of connectivity loss."
+ },
+ {
+  "item": 82,
+  "text_A": "Chunks of this type MUST contain XML conformant to the schema specified in [9] and MUST have the <versions> element as the root element, unless sent by the Client to solicit version information; client to server chunks may be zero length, as detailed below.",
+  "text_B": "Chunks of this type contain XML conformant to the schema specified in [9] and MUST have the <versions> element as the root element."
+ },
+ {
+  "item": 83,
+  "text_A": "The IS-IS FAD sub-TLV MAY be advertised in a Link State PDU (LSP) of any number.",
+  "text_B": "The IS-IS FAD sub-TLV MAY be advertised in a Label Switched Path (LSP) of any number."
+ },
+ {
+  "item": 84,
+  "text_A": "ipfixSelectorFunctions (1) | +- ipfixFuncMyFunc (?) | +- ipfixFuncMyFuncAvail (1) = true +- ipfixFuncMyFuncParameters (2) | +- ipfixFuncMyFuncParametersEntry (1) | +- index (1) (ipfixFuncMyFuncParametersIndex) | +- ipfixFuncMyFuncParam1 (1) = 47 | +- ipfixFuncMyFuncParam2 (2) = -128 | +- ipficFuncMyFuncParam3 (3) = 19 | +- index(4) (ipfixFuncMyFuncParametersIndex) +- ipfixFuncMyFuncParam1 (1) = 19 +- ipfixFuncMyFuncParam2 (2) = -1 +- ipficFuncMyFuncParam3 (3) = 728",
+  "text_B": "ipfixSelectorFunctions (1) | +- ipfixFuncMyFunc (?) | +- ipfixFuncMyFuncAvail (1) = true +- ipfixFuncMyFuncParameters (2) | +- ipfixFuncMyFuncParametersEntry (1) | +- index (1) (ipfixFuncMyFuncParametersIndex) | +- ipfixFuncMyFuncParam1 (1) = 47 | +- ipfixFuncMyFuncParam2 (2) = -128 | +- ipfixFuncMyFuncParam3 (3) = 19 | +- index(4) (ipfixFuncMyFuncParametersIndex) +- ipfixFuncMyFuncParam1 (1) = 19 +- ipfixFuncMyFuncParam2 (2) = -1 +- ipfixFuncMyFuncParam3 (3) = 728"
+ },
+ {
+  "item": 85,
+  "text_A": "or more decoding steps to determine a Unicode code point that can be used to look up the character in a table.",
+  "text_B": "or more decoding steps to determine a Unicode code point that can used to look up the character in a table."
+ },
+ {
+  "item": 86,
+  "text_A": "A router looks at the RS- Flag to detect if a neighbor is restarting. From the restarting router's perspective, if a neighboring router detects the RS- Flag is set, the neighboring router will maintain the adjacency with the restarting router. The restarting router will set the RS-Flag in its UPDATE packet to indicate it is performing a soft restart.",
+  "text_B": "The router looks at the RS- Flag to detect if a neighbor is restarting. From the restarting routers perspective, if a neighboring router detects the RS-Flag set, it will maintain the adjacency, and will set the RS-Flag in its UPDATE packet to indicated it is doing a soft restart."
+ },
+ {
+  "item": 87,
+  "text_A": "For example, if the administrative policy for the server is that it may only respond to a client that is willing to accept a Reconfigure message, if the client indicates with a Reconfigure Accept option in the Solicit message that it will not accept a Reconfigure message, the servers discard the Solicit message.",
+  "text_B": "For example, if the administrative policy for the server is that it may only respond to a client that is willing to accept a Reconfigure message, if the client does not include a Reconfigure Accept option (see section 22.20) in the Solicit message, the servers discard the Solicit message."
+ },
+ {
+  "item": 88,
+  "text_A": "By submission of a contribution, each person actually submitting the contribution is deemed to agree to the following terms and conditions on his own behalf, on behalf of the organization (if any) he represents and on behalf of the owners of any propriety rights in the contribution.",
+  "text_B": "By submission of a contribution, each person actually submitting the contribution is deemed to agree to the following terms and conditions on his own behalf, on behalf of the organization (if any) he represents and on behalf of the owners of any propriety rights in the contribution.."
+ },
+ {
+  "item": 89,
+  "text_A": "Note that the file extension is not part of the draft name, so in general it should end with the current draft number (\"-\", plus two digits).",
+  "text_B": "Note that the file extension is not part of the draft, so in general it should end with the current draft number (\"-\", plus two digits)."
+ },
+ {
+  "item": 90,
+  "text_A": "| .well-known URL (split over 2 lines): | | http://example.com/.well-known/ni/sha-256/ | | UyaQV-Ev4rdLoHyJJWCi11OHfrYv9E1aGQAlMO2X_-Q |",
+  "text_B": "| .well-known URL (split over 2 lines): | | http://example.com/.well-known/ni/sha256/ | | UyaQV-Ev4rdLoHyJJWCi11OHfrYv9E1aGQAlMO2X_-Q |"
+ },
+ {
+  "item": 91,
+  "text_A": "If the Cumulative Acknowledgment field didn\u2019t cover more than recover, check to see if the congestion window is greater than SMSS bytes and the difference between highest_ack and prev_highest_ack is at most 4*SMSS bytes.",
+  "text_B": "If the Cumulative Acknowledgment field didn\u2019t cover more than recover, check to see if the congestion window is greater than SMSS bytes and the difference between highest_ack and prev_highest_ack is at most 3*SMSS bytes."
+ },
+ {
+  "item": 92,
+  "text_A": "The 'dcObject' object class permits an entry to contains domain",
+  "text_B": "The 'dcObject' object class permits an entry to contain domain"
+ },
+ {
+  "item": 93,
+  "text_A": "SSH_MSG_DISCONNECT 1 SSH_MSG_IGNORE 2 SSH_MSG_UNIMPLEMENTED 3 SSH_MSG_DEBUG 4 SSH_MSG_SERVICE_REQUEST 5 SSH_MSG_SERVICE_ACCEPT 6 SSH_MSG_KEXINIT 20 SSH_MSG_NEWKEYS 21",
+  "text_B": "SSH_MSG_DISCONNECT 1 SSH_MSG_IGNORE 2 SSH_MSG_UNIMPLEMENTED 3 SSH_MSG_DEBUG 4 SSH_MSG_SERVICE_REQUEST 5 SSH_MSG_SERVICE_ACCEPT 6 SSH_MSG_KEXINIT 20 SSH_MSG_NEWKEYS 21 SSH_MSG_KEXDH_INIT 30 SSH_MSG_KEXDH_REPLY 31"
+ },
+ {
+  "item": 94,
+  "text_A": "Comments: * The \"inline-or-keystore-end-entity-cert-with-key-grouping\" grouping is provided solely as convenience to consuming modules that wish to offer an option for an asymmetric key and certificate pair that is defined either inline or as a reference to an asymmetric key and certificate in the keystore.",
+  "text_B": "Comments: * The \"inline-or-keystore-end-entity-cert-with-key-grouping\" grouping is provided solely as convenience to consuming modules that wish to offer an option for a symmetric key that is defined either inline or as a reference to a symmetric key in the keystore."
+ },
+ {
+  "item": 95,
+  "text_A": "The encoder MUST follow a received codec mode request as soon as possible. It SHOULD use the requested mode, but MAY change to a lower-numbered mode if it so chooses, for example, to control congestion. However, the encoder MUST NOT use a higher-numbered mode than the received codec mode request.",
+  "text_B": "The encoder SHOULD follow a received codec mode request, but MAY change to a lower-numbered mode if it so chooses, for example, to control congestion."
+ },
+ {
+  "item": 96,
+  "text_A": "mgmt(5) - the value of the corresponding instance of dot1qTpFdbAddress is also the value of an existing instance of dot1qStaticUnicastAddress.\"",
+  "text_B": "mgmt(5) - the value of the corresponding instance of dot1qTpFdbAddress is also the value of an existing instance of dot1qStaticAddress.\""
+ },
+ {
+  "item": 97,
+  "text_A": "However, URI-s in Content-Location headers (if absolute, or resolvable to absolute URIs) SHOULD still be",
+  "text_B": "However, URIs in Content-Location headers (if absolute, or resolvable to absolute URIs) SHOULD still be"
+ },
+ {
+  "item": 98,
+  "text_A": "certificateRequestInfo is the \"certification request information.\"",
+  "text_B": "certificationRequestInfo is the \"certification request information.\""
+ },
+ {
+  "item": 99,
+  "text_A": "The LDAP \"Who am I?\" operation takes it's name from the UNIX",
+  "text_B": "The LDAP \"Who am I?\" operation takes its name from the UNIX"
+ },
+ {
+  "item": 100,
+  "text_A": "Alternatively, the sending of no-hop-by-hop Notify messages can be disabled.",
+  "text_B": "Alternatively, the sending of non-hop-by-hop Notify messages can be disabled."
+ },
+ {
+  "item": 101,
+  "text_A": "Future, backward- | compatible changes to the protocol may specify the contents of the | Reserved field or add new options; backward-incompatible changes may use different Code values.",
+  "text_B": "Future, backward- | compatible changes to the protocol MAY specify the contents of the | Reserved field or add new options; backward-incompatible changes MUST use different Code values."
+ },
+ {
+  "item": 102,
+  "text_A": "Proxy servers, redirect servers, and registrars SHOULD possess a site certificate whose subject corresponds to their canonical hostname.",
+  "text_B": "Proxy servers, redirect servers, and registrars SHOULD possess a site certificate whose subject corresponds to the DNS name other SIP devices will use to reach them."
+ },
+ {
+  "item": 103,
+  "text_A": "An MI-RTR will use the AllL1ISs or AllL2ISs ISIS MAC-layer address (as defined in [ISO10589]) as the destination address when sending an IS-IS PDU for the standard instance. An MI-RTR will use one of two new dedicated layer 2 multicast addresses (AllL1MI-ISs or AllL2MI-ISs) as the destination address when sending an IS-IS PDU for any non-zero IID. These addresses are specified in Section 6. If operating in point-to-point mode on a broadcast circuit [RFC5309], an MI-RTR will use the AllL1ISs, AllL2ISs or AllISs MAC-layer address (as defined in [ISO10589]) as the destination address when sending an IS-IS PDU for the standard instance, and will use one of two new multicast addresses (AllL1MI-ISs or AllL2MI-ISs; either address will do) as the destination address when sending an IS-IS PDU for any non-zero IID. MI-RTRs MUST discard IS-IS PDUs received if either of the following is true: o The destination multicast address is AllL1ISs, AllL2ISs or AllISs and the PDU contains an IID-TLV. o The destination multicast address is one of the two new addresses and the PDU contains an IID-TLV with a zero value for the IID or has no IID-TLV. NOTE: If the multicast addresses AllL1ISs and/or AllL2ISs and/or AllISs are improperly used to send IS-IS PDUs for non-zero IIDs, legacy systems will interpret these PDUs as being associated with IID #0.",
+  "text_B": "An MI-RTR will use the AllL1IS or AllL2IS ISIS MAC-layer address (as defined in [ISO10589]) as the destination address when sending an IS-IS PDU for the standard instance. An MI-RTR will use one of two new dedicated layer 2 multicast addresses (AllL1MI-ISs or AllL2MI- ISs) as the destination address when sending an IS-IS PDU for any non-zero IID. These addresses are specified in Section 6. If operating in point-to-point mode on a broadcast circuit [RFC5309], an MI-RTR MUST use one of the two new multicast addresses as the destination address when sending point-to-point IIHs associated with a non-zero instance. (Either address will do.) MI-RTRs MUST discard IS-IS PDUs received if either of the following is true: o The destination multicast address is AllL1IS or AllL2IS and the PDU contains an IID-TLV. o The destination multicast address is one of the two new addresses, and the PDU contains an IID-TLV with a zero value for the IID or has no IID-TLV. NOTE: If the multicast addresses AllL1IS and/or AllL2IS are improperly used to send IS-IS PDUs for non-zero IIDs, legacy systems will interpret these PDUs as being associated with IID #0."
+ },
+ {
+  "item": 104,
+  "text_A": "bag checksum algorithm: The name of a cryptographic checksum algorithm that has been normalized for use in a manifest or tag manifest file name. See Section 2.4.",
+  "text_B": "bag checksum algorithm: The name of a cryptographic checksum algorithm that has been normalized for use in a manifest or tag manifest file name (e.g., \"sha512\") as described in Section 2.4."
+ },
+ {
+  "item": 105,
+  "text_A": "<x:include href=\"file://home/chris/ietf/drafts/commontext.xml\"/>",
+  "text_B": "<xi:include href=\"file://home/chris/ietf/drafts/commontext.xml\"/>"
+ },
+ {
+  "item": 106,
+  "text_A": "ranges-specifier = range-unit \"=\" OWS range-set range-set = 1#range-spec range-spec = int-range / suffix-range / other-range",
+  "text_B": "ranges-specifier = range-unit \"=\" range-set range-set = 1#range-spec range-spec = int-range / suffix-range / other-range"
+ },
+ {
+  "item": 107,
+  "text_A": "M Mandatory, set to one (1)",
+  "text_B": "M 0 (Optional)"
+ },
+ {
+  "item": 108,
+  "text_A": "The range of ifSpeed is limited to reporting a maximum speed of (2**32)-1 bits/second, or approximately 4.3Gbs.",
+  "text_B": "The range of ifSpeed is limited to reporting a maximum speed of (2**31)-1 bits/second, or approximately 2.2Gbs."
+ },
+ {
+  "item": 109,
+  "text_A": "IANA has registered the SMTP extension defined in section 3.",
+  "text_B": "IANA has registered the MIME subtype defined in section 3."
+ },
+ {
+  "item": 110,
+  "text_A": "Signature Format The \"ssh-ed25519\" key format has the following encoding: string \"ssh-ed25519\" string signature Here, 'signature' is the 64-octet signature produced in accordance with [RFC8032], Section 5.1.6. The \"ssh-ed448\" key format has the following encoding: string \"ssh-ed448\" string signature Here, 'signature' is the 114-octet signature produced in accordance with [RFC8032], Section 5.2.6.",
+  "text_B": "Signature Format The \"ssh-ed25519\" signature format has the following encoding: string \"ssh-ed25519\" string signature Here, 'signature' is the 64-octet signature produced in accordance with [RFC8032], Section 5.1.6. The \"ssh-ed448\" signature format has the following encoding: string \"ssh-ed448\" string signature Here, 'signature' is the 114-octet signature produced in accordance with [RFC8032], Section 5.2.6."
+ },
+ {
+  "item": 111,
+  "text_A": "SHOULD NOT This phrase, or the phrase \"NOT RECOMMENDED\" mean that there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label.",
+  "text_B": "SHOULD NOT This phrase, or the phrase \"NOT RECOMMENDED\", means that there may exist valid reasons in particular circumstances when the particular behavior is acceptable or even useful, but the full implications should be understood and the case carefully weighed before implementing any behavior described with this label."
+ },
+ {
+  "item": 112,
+  "text_A": "<< last paragraph of 3.5 >> When the requested Receiver Port is not available (e.g., port in use), the Server at the Session-Reflector MAY suggest an alternate and available port for this session in the Port field. The Session- Sender either accepts the alternate port, or composes a new Session- | Request message with suitable parameters. Otherwise, the Server at vvvvvvvvvvvvvvvvvv !!!!!!!!!!^^^ | the Control-Client uses the Accept field to convey other forms of | session rejection or failure and MUST NOT suggest an alternate port; ^ in this case, the Port field MUST be set to zero.",
+  "text_B": "When the requested Receiver Port is not available (e.g., port in use), the Server at the Session-Reflector MAY suggest an alternate and available port for this session in the Port field. The Session- Sender either accepts the alternate port, or composes a new Session- | Request message with suitable parameters. Otherwise, the Server uses ^ | the Accept field to convey other forms of session rejection or | failure to the Control-Client and MUST NOT suggest an alternate port; ^^^^^^^^^^^^^^^^^^^^^^^ in this case, the Port field MUST be set to zero."
+ },
+ {
+  "item": 113,
+  "text_A": "For example, if the PLR has determined to use a bypass tunnel and set up the necessary local forwarding state to be able to use it as a backup path, then that PLR has a backup path available.",
+  "text_B": "Whenever the PLR has a backup path available, the PLR MUST set the \"local protection available\" flag."
+ },
+ {
+  "item": 114,
+  "text_A": "[C] MODE READER [S] 200 Reader mode, posting permitted [C] IHAVE <i.am.an.article.you.have@example.com> [S] 500 Unknown command [C] GROUP misc.test [S] 211 1234 3000234 3002322 misc.test",
+  "text_B": "[C] MODE READER [S] 200 Reader mode, posting permitted [C] IHAVE <i.am.an.article.you.have@example.com> [S] 500 Permission denied [C] GROUP misc.test [S] 211 1234 3000234 3002322 misc.test"
+ },
+ {
+  "item": 115,
+  "text_A": "<Removed from RFC 2765 where it had existed after Destination Address field description>",
+  "text_B": "If any of an IPv6 Hop-by-Hop Options header, Destination Options header, or Routing header with the Segments Left field equal to zero are present in the IPv6 packet, those IPv6 extension headers MUST be ignored (i.e., there is no attempt to translate the extension headers) and the packet translated normally. However, the Total Length field and the Protocol field are adjusted to \"skip\" these extension headers."
+ },
+ {
+  "item": 116,
+  "text_A": "taken from the \u2019with-defaults-type\u2019 typedef in Section 5.",
+  "text_B": "taken from the \u2019with-defaults-mode\u2019 typedef in Section 5."
+ },
+ {
+  "item": 117,
+  "text_A": "If absent, the SHAKE128 or SHAKE256 output length used in KMAC is 32 or 64 bytes, respectively,",
+  "text_B": "If absent, the SHAKE256 output length used in KMAC is 32 or 64 bytes, respectively,"
+ },
+ {
+  "item": 118,
+  "text_A": "The service should be prepared for either the careful close or the rude abort.",
+  "text_B": "The service should be prepared for either the carfull close or the rude abort."
+ },
+ {
+  "item": 119,
+  "text_A": "Timestamp In: A one-octet field that characterizes the method by which the ingress of the Session-Reflector obtained the timestamp T2. A timestamp may be obtained with hardware assistance via a software API from a local wall clock or from a remote clock (the latter is referred to as a \"control plane\"). Table 9 lists the possible values. Sync Src Out: A one-octet field that characterizes the source of clock synchronization at the egress of the Session-Reflector. Table 7 lists the possible values. Timestamp Out: A one-octet field that characterizes the method by which the egress of the Session-Reflector obtained the timestamp T3.",
+  "text_B": "Timestamp In: A one-octet field that characterizes the method by which timestamps are obtained at the ingress of the Session-Reflector. A timestamp may be obtained with hardware assistance via a software API from a local wall clock or from a remote clock (the latter is referred to as a \"control plane\"). Table 9 lists the possible values. Sync Src Out: A one-octet field that characterizes the source of clock synchronization at the egress of the Session-Reflector. Table 7 lists the possible values. Timestamp Out: A one-octet field that characterizes the method by which timestamps are obtained at the egress of the Session-Reflector."
+ },
+ {
+  "item": 120,
+  "text_A": "bfd.MinRxInterval",
+  "text_B": "bfd.RequiredMinRxInterval"
+ },
+ {
+  "item": 121,
+  "text_A": "Accept-Encoding = \"Accept-Encoding\" \":\" 1#( codings [ \";\" \"q\" \"=\" qvalue ] ) codings = ( content-coding | \"*\" ) Examples of its use are: Accept-Encoding: compress, gzip Accept-Encoding: Accept-Encoding: * Accept-Encoding: compress;q=0.5, gzip;q=1.0 Accept-Encoding: gzip;q=1.0, identity; q=0.5, *;q=0",
+  "text_B": "Accept-Encoding = \"Accept-Encoding\" \":\" 1#( codings [ \";\" \"q\" \"=\" qvalue ] ) codings = ( content-coding | \"*\" ) Examples of its use are: Accept-Encoding: compress, gzip Accept-Encoding: * Accept-Encoding: compress;q=0.5, gzip;q=1.0 Accept-Encoding: gzip;q=1.0, identity; q=0.5, *;q=0"
+ },
+ {
+  "item": 122,
+  "text_A": "v | Slides 47 to 48 provide a description of how the forwarding and the ACH OAM mechanism work in detail.",
+  "text_B": "v | Slides 47 to 78 provide a description of how the forwarding and the ACH OAM mechanism work in detail."
+ },
+ {
+  "item": 123,
+  "text_A": "(Top of Section)",
+  "text_B": "Add to top of Section 6: Please note that the macedir.org domain used in the names of the two SAML Attributes defined in this specification has been taken over by a third party that is not affiliated with the original owner of the domain at the time this specification was authored. As discussed in the erratum to Section 3.1, implementations MUST NOT attempt to resolve those names as URLs, and readers are advised that doing so will yield no information related to this work."
+ },
+ {
+  "item": 124,
+  "text_A": "In particular, representatives of the ISC made changes to the framework to better suite it to the legal environment and make it more accessible to lawyers.",
+  "text_B": "In particular, representatives of the ISC made changes to the framework to better suit it to the legal environment and make it more accessible to lawyers."
+ },
+ {
+  "item": 125,
+  "text_A": "Additionally, confederations (as well as route reflectors), by excluding different reachability information from consideration at different locations in a confederation, have been shown [RFC3345] to cause persistent oscillation between candidate routes when using the tie-breaking rules required by BGP [BGP-4].",
+  "text_B": "Additionally, confederations (as well as route reflectors), by excluding different reachability information from consideration at different locations in a confederation, have been shown [RFC3345] to cause permanent oscillation between candidate routes when using the tie-breaking rules required by BGP [BGP-4]."
+ },
+ {
+  "item": 126,
+  "text_A": "Optional parameters: none [Note: legacy implementations MAY include a version parameter, which SHOULD be ignored if present.]",
+  "text_B": "Optional parameters: version (default value is \"1\")"
+ },
+ {
+  "item": 127,
+  "text_A": "The server MUST specify an ONC RPC program number equal to csa_cb_program and an ONC RPC version number equal to 4 in callbacks sent to the client.",
+  "text_B": "The server MUST specify an ONC RPC program number equal to csa_cb_program and an ONC RPC version number equal to 1 in callbacks sent to the client."
+ },
+ {
+  "item": 128,
+  "text_A": "| \"The address type of ipAddressPrefixPrefix.\"",
+  "text_B": "\"The address type of ipAddressPrefix.\""
+ },
+ {
+  "item": 129,
+  "text_A": "reasonable to expect that the status of a MUST-",
+  "text_B": "reasonable to expect that a the status of a MUST-"
+ },
+ {
+  "item": 130,
+  "text_A": "In all other cases, the value of the ORIGIN attribute of the aggregated route is IGP.",
+  "text_B": "In all other cases,, the value of the ORIGIN attribute of the aggregated route is IGP."
+ },
+ {
+  "item": 131,
+  "text_A": "This document specifies an Internet Best Current Practice",
+  "text_B": "This document specifies an Internet Best Current Practices"
+ },
+ {
+  "item": 132,
+  "text_A": "It is not appropriate for situations where routes need to be chosen based on real-time parameters such a measured delay, reliability, or load.",
+  "text_B": "It is not appropriate for situations where routes need to be chosen based on real-time parameters such as measured delay, reliability, or load."
+ },
+ {
+  "item": 133,
+  "text_A": "This specification describes the encoding of digital signatures generated with the following cryptographic algorithms: | * Rivest-Shamir-Adelman (RSA); * Digital Signature Algorithm (DSA); and * Elliptic Curve Digital Signature Algorithm (ECDSA).",
+  "text_B": "This specification describes the encoding of digital signatures generated with the following cryptographic algorithms: | * Rivest-Shamir-Adleman (RSA); * Digital Signature Algorithm (DSA); and * Elliptic Curve Digital Signature Algorithm (ECDSA)."
+ },
+ {
+  "item": 134,
+  "text_A": "The OVERLOADED-DURATION TLV is compliant with the PCEP TLV format defined in Section 7.1 and is comprised of 2 bytes for the type, 2 bytes specifying the TLV length (length of the value portion in bytes), followed by a fixed-length value field of 4 bytes. Type: 2 Length: 4 bytes Value: 4 bytes field indicates the estimated PCE congestion duration in seconds.",
+  "text_B": "The OVERLOADED-DURATION TLV is compliant with the PCEP TLV format defined in Section 7.1 and is comprised of 2 bytes for the type, 2 bytes specifying the TLV length (length of the value portion in bytes), followed by a fixed-length value field of a 32-bit flags field. Type: 2 Length: 4 bytes Value: 32-bit flags field indicates the estimated PCE congestion duration in seconds."
+ },
+ {
+  "item": 135,
+  "text_A": "NOTE ON PARAMETER VALUE LENGHTS: A short (length <= 78 characters)",
+  "text_B": "NOTE ON PARAMETER VALUE LENGTHS: A short (length <= 78 characters)"
+ },
+ {
+  "item": 136,
+  "text_A": "When the mechanism described in this document is in effect, this is modified so that data written by upper-level protocol clients of DTLS is assumed to be RTP/RTCP and is encrypted using SRTP rather than the standard TLS record encoding.",
+  "text_B": "When the mechanism described in this document is in effect, this is modified so that data written by upper-level protocol clients of DTLS is assumed to be RTP/RTP and is encrypted using SRTP rather than the standard TLS record encoding."
+ },
+ {
+  "item": 137,
+  "text_A": "If the operation does not modify the resource identified by the Request- URI in a predictable way that's defined by the semantics of the PATCH media type, POST should be considered instead of PATCH or PUT. [Also, I suggest adding this to section two, after the sixth paragraph:] The means of applying a PATCH request to a resource's state is determined by the request's media type. If a server receives a PATCH request with a media type whose specification does not define semantics specific to PATCH, the server SHOULD reject the request by returning the 415 Unsupported Media Type status code, unless a more specific error status code takes priority. In particular, servers SHOULD NOT assume PATCH semantics for generic media types that don't define them, such as \"application/xml\" or \"application/json\". Doing so will cause interoperability issues, because the semantics of PATCH become specific to that resource, rather than general.",
+  "text_B": "If the operation does not modify the resource identified by the Request- URI in a predictable way, POST should be considered instead of PATCH or PUT."
+ },
+ {
+  "item": 138,
+  "text_A": "In particular, all of these header fields except for Content-Disposition can include RFC 822 comments, which have no semantic content and should be ignored during MIME processing.",
+  "text_B": "In particular, all of these header fields can include RFC 822 comments, which have no semantic content and should be ignored during MIME processing."
+ },
+ {
+  "item": 139,
+  "text_A": "- In the Cur Hop Limit field: the interface's configured AdvCurHopLimit.",
+  "text_B": "- In the Cur Hop Limit field: the interface's configured CurHopLimit."
+ },
+ {
+  "item": 140,
+  "text_A": "Varying this setting allows IGMPv2 routers to tune the \"leave latency\" (the time between the moment the last host leaves a group and when the routing protocol is notified that there are no more members), as discussed in section 7.8. It also allows tuning of the burstiness of IGMP traffic on a subnet, as discussed in section 7.3",
+  "text_B": "Varying this setting allows IGMPv2 routers to tune the \"leave latency\" (the time between the moment the last host leaves a group and when the routing protocol is notified that there are no more members), as discussed in section 8.8. It also allows tuning of the burstiness of IGMP traffic on a subnet, as discussed in section 8.3"
+ },
+ {
+  "item": 141,
+  "text_A": "{ removeflag \"MyFlags\" \"\\\\Flagged\"; fileinto :flags \"${MyFlags}\" \"spam\"; } else",
+  "text_B": "{ remove \"MyFlags\" \"\\\\Flagged\"; fileinto :flags \"${MyFlags}\" \"spam\"; } else"
+ },
+ {
+  "item": 142,
+  "text_A": "o The restriction applies to the encoding of the COSE_KDF_Context, Sig_structure, the Enc_structure, and the MAC_structure.",
+  "text_B": "o The restriction applies to the encoding of the Sig_structure, the Enc_structure, and the MAC_structure."
+ },
+ {
+  "item": 143,
+  "text_A": "For other types of DNS server, the RECONFIRM operation is currently undefined and SHOULD result in a NOERROR response, but it need not cause any other action to occur.",
+  "text_B": "For other types of DNS server, the RECONFIRM operation is currently undefined and MUST be silently ignored on reception."
+ },
+ {
+  "item": 144,
+  "text_A": "1 0 0 The variant specified in this document.",
+  "text_B": "1 0 x The variant specified in this document."
+ },
+ {
+  "item": 145,
+  "text_A": "9.3. MKCOL Method MKCOL creates a new collection resource at the location specified by the Request-URI.",
+  "text_B": "9.3 MKCOL Method The MKCOL method is used to create a new collection. All DAV compliant resources MUST support the MKCOL method. MKCOL creates a new collection resource at the location specified by the Request-URI."
+ },
+ {
+  "item": 146,
+  "text_A": "A sequence of three or more 16 codes in a row or three of more 17 codes in a row is possible, modifying the count each time.",
+  "text_B": "A sequence of three or more 16 codes in a row or three or more 17 codes in a row is possible, modifying the count each time."
+ },
+ {
+  "item": 147,
+  "text_A": "The collection of SRROs is controlled via the segment-recording-desired flag in the SESSION_ATTRIBUTE object. This flag MAY be set even when SEROs are not used.",
+  "text_B": "The collection of SRROs is controlled via the presence of an RRO in the message being processed."
+ },
+ {
+  "item": 148,
+  "text_A": "The sender's measurement of the round-trip time uses DCCP's mechanisms for round-trip time measurement. This includes Elapsed Time and/or Timestamp Echo options. As described in Section 8.2, feedback packets must carry an Elapsed Time option; Timestamp Echo is optional. The sender maintains an average round-trip time heavily weighted on the most recent measurements. Senders MAY use any available round-trip time measurements, including from the initial Request-Response packet exchange, to maintain this average. This differs from [RFC 3448], which constrains round-trip time measurements to feedback packets only.",
+  "text_B": "The sender's measurement of the round-trip time uses the Elapsed Time and/or Timestamp Echo option contained in feedback packets, as described in Section 8.2. The Elapsed Time option is required, while the Timestamp Echo option is not. The sender maintains an average round-trip time heavily weighted on the most recent measurements."
+ },
+ {
+  "item": 149,
+  "text_A": "The syslogMsgControl group contains two scalars controlling the | maximum number of SYSLOG messages recorded in the tables and also controlling whether SNMP notifications are generated for SYSLOG messages.",
+  "text_B": "The syslogMsgControl group contains two scalars controlling the | maximum size of SYSLOG messages recorded in the tables and also controlling whether SNMP notifications are generated for SYSLOG messages."
+ },
+ {
+  "item": 150,
+  "text_A": "For a presented request, a CoAP endpoint MUST NOT use a stored response, unless: o the presented request method and that used to obtain the stored response match, o all options match between those in the presented request and those of the request used to obtain the stored response (which includes the request URI), except that there is no need for a match of any request options marked as NoCacheKey (Section 5.4) or recognized by the Cache and fully interpreted with respect to its specified cache behavior (such as the ETag request option described in Section 5.10.6; see also Section 5.4.2), o the payload of the presented request and the payload of the request used to obtain the stored response match, and o the stored response is either fresh or successfully validated as defined below. The set of request options that is used for matching the cache entry plus (if applicable) the request payload are also collectively referred to as the \"Cache-Key\".",
+  "text_B": "For a presented request, a CoAP endpoint MUST NOT use a stored response, unless: o the presented request method and that used to obtain the stored response match, o all options match between those in the presented request and those of the request used to obtain the stored response (which includes the request URI), except that there is no need for a match of any request options marked as NoCacheKey (Section 5.4) or recognized by the Cache and fully interpreted with respect to its specified cache behavior (such as the ETag request option described in Section 5.10.6; see also Section 5.4.2), and o the stored response is either fresh or successfully validated as defined below. The set of request options that is used for matching the cache entry is also collectively referred to as the \"Cache-Key\"."
+ },
+ {
+  "item": 151,
+  "text_A": "The \"utf8-realm\" SHOULD be supplied by the \"next hop\" or \"home\" system that also supplies the routing information necessary for packets to reach the next hop.",
+  "text_B": "The final home system SHOULD validate the NAI in the received packet against the list of Realms hosted by the home system. If no match is found, the request SHOULD be rejected."
+ },
+ {
+  "item": 152,
+  "text_A": "* OSPFv3 Prefix-SID flags as defined in Section 6 of [RFC8666].",
+  "text_B": "* OSPFv3 Prefix-SID flags as defined in Section 6 of [RFC8665]."
+ },
+ {
+  "item": 153,
+  "text_A": "Leurent,",
+  "text_B": "Leuren,"
+ },
+ {
+  "item": 154,
+  "text_A": "A receiver of an INIT ACK chunk with the a_rwnd value set to a value smaller than 1500 MUST discard the packet, SHOULD send a packet in response containing an ABORT chunk and using the Initiate Tag as the Verification Tag, and MUST NOT change the state of any existing association.",
+  "text_B": "If an endpoint in the COOKIE-WAIT state receives an INIT ACK chunk with the a_rwnd value set to a value smaller than 1500, it MUST destroy the TCB and SHOULD send an ABORT chunk. If such an INIT ACK chunk is received in any state other than CLOSED or COOKIE-WAIT, it SHOULD be discarded silently (see Section 5.2.3)."
+ },
+ {
+  "item": 155,
+  "text_A": "When the Reflect Octets mode is selected, the Session-Sender SHALL use the following TWAMP-Test Packet Format in Unauthenticated mode: It should be Session-Reflector that SHALL use the following format.",
+  "text_B": "When the Reflect Octets mode is selected, the Session-Reflector SHALL use the following TWAMP-Test Packet Format in Unauthenticated mode:"
+ },
+ {
+  "item": 156,
+  "text_A": "<xs:element name=\"TrafficType\" default=\"Attack\">",
+  "text_B": "<xs:element name=\"TrafficType\">"
+ },
+ {
+  "item": 157,
+  "text_A": "Thus, filter elements that formerly were specified as accept 172.16.0.0 accept 172.25.120.0 accept 172.31.0.0 deny 10.2.0.0 accept 10.0.0.0",
+  "text_B": "Thus, filter elements that formerly were specified as accept 172.16.0.0 accept 172.25.120.0.0 accept 172.31.0.0 deny 10.2.0.0 accept 10.0.0.0"
+ },
+ {
+  "item": 158,
+  "text_A": "The FU header consists of an S bit, an E bit, an P bit, and a 5-bit FuType field, as shown in Figure 10.",
+  "text_B": "The FU header consists of an S bit, an E bit, an R bit, and a 5-bit FuType field, as shown in Figure 10."
+ },
+ {
+  "item": 159,
+  "text_A": "RFC 1274 is now obsolete. The usage description of these identifiers now appears in RFC 4524 and the relevant registry is defined in RFC 4520. This document specifies the \"oid\" URN namespace [2]. This namespace is for encoding an Object Identifier as specified in ASN.1 [3] as a URI. RFC 3001 [1] is obsoleted by this specification. The namespace specification is for a formal namespace. A complete database of OIDs appears at http://www.oid-info.com/",
+  "text_B": "This document specifies the \"oid\" URN namespace [2]. This namespace is for encoding an Object Identifier as specified in ASN.1 [3] as a URI. RFC 3001 [1] is obsoleted by this specification. The namespace specification is for a formal namespace."
+ },
+ {
+  "item": 160,
+  "text_A": "of [SNMP-APPL].\"",
+  "text_B": "of RFC3413.\""
+ },
+ {
+  "item": 161,
+  "text_A": "(7) It is always something.",
+  "text_B": "(7) It is always something"
+ },
+ {
+  "item": 162,
+  "text_A": "id-pe-clearanceConstraints OBJECT IDENTIFIER ::= { iso(1) identified-organization(3) dod(6) internet(1) security(5) mechanisms(5) pkix(7) pe(1) 21 }",
+  "text_B": "id-pe-authorityClearanceConstraints OBJECT IDENTIFIER ::= { iso(1) identified-organization(3) dod(6) internet(1) security(5) mechanisms(5) pkix(7) pe(1) 21 }"
+ },
+ {
+  "item": 163,
+  "text_A": "The value is a quoted-string that specifies an ordered, forward slash- separated (\"/\") list of parameters.",
+  "text_B": "The value is a quoted-string that specifies an ordered, backslash- separated (\"/\") list of parameters."
+ },
+ {
+  "item": 164,
+  "text_A": "Privacy-hdr = \"Privacy\" HCOLON priv-value *(\";\" priv-value)",
+  "text_B": "Privacy-hdr = \"Privacy\" HCOLON priv-value *(\",\" priv-value)"
+ },
+ {
+  "item": 165,
+  "text_A": "The effect for the various streams is: o \"independent\": none. o \"IAB\": mention that there was an IAB consensus.",
+  "text_B": "The effect for the various streams is: o \"independent\" and \"IAB\": none."
+ },
+ {
+  "item": 166,
+  "text_A": "Within Simple-ref productions, senders MUST NOT use dot-segments (\".\" or \"..\"). Simple-ref productions used in Multi-Status responses MUST NOT have prefixes that do not match the Request-URI (using the comparison rules defined in Section 3.2.3 of [RFC2616]).",
+  "text_B": "Within Simple-ref productions, senders MUST NOT: o use dot-segments (\".\" or \"..\"), or o have prefixes that do not match the Request-URI (using the comparison rules defined in Section 3.2.3 of [RFC2616])."
+ },
+ {
+  "item": 167,
+  "text_A": "vendor to do remote diagnostics on discreet elements of the device.",
+  "text_B": "vendor to do remote diagnostics on discrete elements of the device."
+ },
+ {
+  "item": 168,
+  "text_A": "rid REQUIRED -- MUST contain the subjectKeyIdentifier of the CMP protection -- certificate, if available, in the rKeyId choice, and the -- subjectKeyIdentifier MUST equal the senderKID in the -- PKIHeader. -- If the CMP protection certificate does not contain a -- subjectKeyIdentifier, the issuerAndSerialNumber choice MUST -- be used.",
+  "text_B": "rid REQUIRED -- MUST contain the subjectKeyIdentifier of the CMP protection -- certificate of the request message, if available. The -- subjectKeyIdentifier is equal the senderKID in the -- PKIHeader of that message. -- If the CMP protection certificate of the request message does -- not contain a subjectKeyIdentifier, the issuerAndSerialNumber -- choice MUST be used."
+ },
+ {
+  "item": 169,
+  "text_A": "Allowable values of RESPONSE-PORT are 0-65536.",
+  "text_B": "Allowable values of RESPONSE-PORT are 0-65535."
+ },
+ {
+  "item": 170,
+  "text_A": "Upon receipt of a Registration Reply that satisfies validity checks,",
+  "text_B": "Upon receipt of a Registration Request that satisfies validity checks,"
+ },
+ {
+  "item": 171,
+  "text_A": "Numeric Replies: ERR_NEEDMOREPARAMS ERR_BANNEDFROMCHAN ERR_INVITEONLYCHAN ERR_BADCHANNELKEY ERR_CHANNELISFULL ERR_BADCHANMASK ERR_NOSUCHCHANNEL ERR_TOOMANYCHANNELS ERR_TOOMANYTARGETS ERR_UNAVAILRESOURCE RPL_TOPIC",
+  "text_B": "Numeric Replies: ERR_NEEDMOREPARAMS ERR_BANNEDFROMCHAN ERR_INVITEONLYCHAN ERR_BADCHANNELKEY ERR_CHANNELISFULL ERR_BADCHANMASK ERR_NOSUCHCHANNEL ERR_TOOMANYCHANNELS ERR_TOOMANYTARGETS ERR_UNAVAILRESOURCE RPL_TOPIC RPL_NAMREPLY"
+ },
+ {
+  "item": 172,
+  "text_A": "If the value received by the authentication server matches the value calculated by the server, then the HOTP value is validated. In this case, the server increments the counter value by one. If the value received by the server does not match the value calculated by the server, the server initiate the resynch protocol (look-ahead window) before it requests another pass.",
+  "text_B": "If the value received by the authentication server matches the value calculated by the client, then the HOTP value is validated. In this case, the server increments the counter value by one. If the value received by the server does not match the value calculated by the client, the server initiate the resynch protocol (look-ahead window) before it requests another pass."
+ },
+ {
+  "item": 173,
+  "text_A": "To fetch certificate chains, the certificate can use the SubjectInfoAccess and techniques such as RFC 4387 can be used to retrieve the chain.",
+  "text_B": "The verifier processes this certificate in the usual ways, including checking that it has not expired, that the chain is valid back to a trusted certification authority (CA), and that it does not appear on revocation lists. Once the certificate is acquired, it MUST be validated following the procedures in RFC 3280 [9]."
+ },
+ {
+  "item": 174,
+  "text_A": "NFS4ERR_NXIO (Error Code 6)",
+  "text_B": "NFS4ERR_NXIO (Error Code 5)"
+ },
+ {
+  "item": 175,
+  "text_A": "A common set of DSCPs is defined for both IPv4 and IPv6",
+  "text_B": "A common set of DSCPs are defined for both IPv4 and IPv6"
+ },
+ {
+  "item": 176,
+  "text_A": "All PCEP messages MUST be sent using the registered TCP port for the source and destination TCP port.",
+  "text_B": "A PCE MUST listen for incoming connections at the registered port and a PCC SHOULD use the registered port as source port but MAY use any source port (e.g. ephemeral port)."
+ },
+ {
+  "item": 177,
+  "text_A": "The client should assume that the server supports RPCSEC_GSS_VERS_1 and issue a Context Creation message (as described in the section 'Context Creation'). If the server does not support RPCSEC_GSS_VERS_1, the RPC response will have a reply_stat of MSG_DENIED, a rejection status of AUTH_ERROR, and an auth_stat of AUTH_REJECTED_CRED.",
+  "text_B": "The client should assume that the server supports RPCSEC_GSS_VERS_1 and issue a Context Creation message (as described in the section RPCSEC_GSS_VERS_1, the RPC response will have a reply_stat of MSG_DENIED, a rejection status of AUTH_ERROR, and an auth_stat of AUTH_REJECTED_CRED."
+ },
+ {
+  "item": 178,
+  "text_A": "lang-range-quoted = astring ; Once any literal wrapper or quoting is removed, this ; follows the language-range rule in [RFC4647]",
+  "text_B": "lang-range-quoted = astring ; Once any literal wrapper or quoting is removed, this ; follows the language-range rule in [RFC4647], ; or is the 7-character string \"default\""
+ },
+ {
+  "item": 179,
+  "text_A": "Implementations SHOULD use the mechanisms defined in Section 5.4 to mitigate this attack.",
+  "text_B": "Implementations MUST use the padding mechanisms defined in Section 5.4 to mitigate this attack."
+ },
+ {
+  "item": 180,
+  "text_A": "They must instead be added to the \"foo\" registry.",
+  "text_B": "IANA is requested to add this note to [reference-to-the-iana-foo- registry]: When this registry is modified, the YANG module \"iana-foo\" [IANA_FOO_URL] must be updated as defined in RFC IIII."
+ },
+ {
+  "item": 181,
+  "text_A": "[RFC5472] describes the applicability of IPFIX and makes a comparison with RTFM, pointing out that, architecturally, while RTFM talks about devices, IPFIX deals with processes to clarify that multiple of those processes may be co- located on the same machine.",
+  "text_B": "[RFC5472] describes the applicability of IPFIX and makes a comparison with RTFM, pointing out that, architecturally, while RTM talks about devices, IPFIX deals with processes to clarify that multiple of those processes may be co- located on the same machine."
+ },
+ {
+  "item": 182,
+  "text_A": "Section 2.3.1.1, page 8: old: A 32-bit value assigned to each message, which when used with the unique identifier validity value (see below) forms a 64-bit value that MUST NOT refer to any other message in the mailbox or any subsequent mailbox with the same name forever. Unique identifiers [...] new: An unsigned 32-bit value assigned to each message, which when used with the unique identifier validity value (see below) forms a 64-bit value that MUST NOT refer to any other message in the mailbox or any subsequent mailbox with the same name forever. Unique identifiers [...] ----- Section 2.3.1.1, page 9: old: Associated with every mailbox are two values which aid in unique identifier handling: the next unique identifier value and the unique identifier validity value. new: Associated with every mailbox are two 32-bit unsigned values which aid in unique identifier handling: the next unique identifier value (UIDNEXT) and the unique identifier validity value (UIDVALIDITY). ----- Section 5.1.3, page 19: old: All other characters (octet values 0x00-0x1f and 0x7f-0xff) are represented in modified BASE64, with a further modification from [UTF-7] that \",\" is used instead of \"/\". Modified BASE64 MUST NOT be used to represent any printing US-ASCII character which can represent itself. new: All other characters (octet values 0x00-0x1f and 0x7f-0xff) are represented in modified BASE64, with a further modification from [UTF-7] that \",\" is used instead of \"/\". Modified BASE64 MUST NOT be used to represent any printing US-ASCII character which can represent itself. Only characters inside the modified BASE64 alphabet are permitted in modified BASE64 text. ----- Section 5.4, page 22: old: If a server has an inactivity autologout timer, the duration of that timer MUST be at least 30 minutes. The receipt of ANY command from the client during that interval SHOULD suffice to reset the autologout timer. new: If a server has an inactivity autologout timer that applies to sessions after authentication, the duration of that timer MUST be at least 30 minutes. The receipt of ANY command from the client during that interval SHOULD suffice to reset the autologout timer. Section 5.5, page 22: old: Note: UID FETCH, UID STORE, and UID SEARCH are different commands from FETCH, STORE, and SEARCH. If the client sends a UID command, it must wait for a completion result response before sending a command with message sequence numbers. new: Note: EXPUNGE responses are permitted while UID FETCH, UID STORE, and UID SEARCH are in progress. If the client sends a UID command, it must wait for a completion result response before sending a command which uses message sequence numbers (this may include UID SEARCH). Any message sequence numbers in an argument to UID SEARCH are associated with messages prior to the effect of any untagged EXPUNGE returned by the UID SEARCH. ----- Section 6.2.1, page 27: old: Once [TLS] has been started, the client MUST discard cached information about server capabilities and SHOULD re-issue the CAPABILITY command. This is necessary to protect against man-in- the-middle attacks which alter the capabilities list prior to STARTTLS. The server MAY advertise different capabilities after STARTTLS. new: Once [TLS] has been started, the client MUST discard cached information about server capabilities and SHOULD re-issue the CAPABILITY command. This is necessary to protect against man-in- the-middle attacks which alter the capabilities list prior to STARTTLS. The server MAY advertise different capabilities, and in particular SHOULD NOT advertise the STARTTLS capability, after a successful STARTTLS command. ----- Section 6.2.2, page 28: old: The authentication protocol exchange consists of a series of server challenges and client responses that are specific to the authentication mechanism. A server challenge consists of a command continuation request response with the \"+\" token followed by a BASE64 encoded string. The client response consists of a single line consisting of a BASE64 encoded string. If the client wishes to cancel an authentication exchange, it issues a line consisting of a single \"*\". If the server receives such a response, it MUST reject the AUTHENTICATE command by sending a tagged BAD response. new: The authentication protocol exchange consists of a series of server challenges and client responses that are specific to the authentication mechanism. A server challenge consists of a command continuation request response with the \"+\" token followed by a BASE64 encoded string. The client response consists of a single line consisting of a BASE64 encoded string. If the client wishes to cancel an authentication exchange, it issues a line consisting of a single \"*\". If the server receives such a response, or if it receives an invalid BASE64 string (e.g. characters outside the BASE64 alphabet, or non-terminal \"=\"), it MUST reject the AUTHENTICATE command by sending a tagged BAD response. Section 6.3.4, page 36: old: It is permitted to delete a name that has inferior hierarchical names and does not have the \\Noselect mailbox name attribute. In this case, all messages in that mailbox are removed, and the name will acquire the \\Noselect mailbox name attribute. new: It is permitted to delete a name that has inferior hierarchical names and does not have the \\Noselect mailbox name attribute. If the server implementation does not permit deleting the name while inferior hierarchical names exists the \\Noselect mailbox name attribute is set for that name. In any case, all messages in that mailbox are removed by the DELETE command. ----- Section 6.3.10, page 44: old: Responses: untagged responses: STATUS new: Responses: REQUIRED untagged response: STATUS ----- Section 6.4.3, page 49: old: The EXPUNGE command permanently removes all messages that have the \\Deleted flag set from the currently selected mailbox. Before returning an OK to the client, an untagged EXPUNGE response is sent for each message that is removed. new: The EXPUNGE command permanently removes all messages that have the \\Deleted flag set from the currently selected mailbox. Before returning an OK to the client, an untagged EXPUNGE response is sent for each message that is removed. Note that if any messages with the \\Recent flag set are expunged, an untagged RECENT response is sent after the untagged EXPUNGE(s) to update the client's count of RECENT messages. ----- Section 6.4.4, page 50: old: [MIME-IMB] content transfer encodings, and [MIME-HDRS] strings in [RFC-2822]/[MIME-IMB] headers, MUST be decoded before comparing text in a [CHARSET] other than US-ASCII. US-ASCII MUST be supported; other [CHARSET]s MAY be supported. new: [MIME-IMB] content transfer encodings, and [MIME-HDRS] strings in [RFC-2822]/[MIME-IMB] headers, MUST be decoded before comparing text. US-ASCII MUST be supported; other [CHARSET]s MAY be supported. ----- Section 6.4.4, page 50: old: In all search keys that use strings, a message matches the key if the string is a substring of the field. The matching is case-insensitive. new: In all search keys that use strings, a message matches the key if the string is a substring of the associated text. The matching is case-insensitive. Note that the empty string is a substring; this is useful when doing a HEADER search. ----- Section 6.4.4, page 54: old: C: A284 SEARCH CHARSET UTF-8 TEXT {6} C: XXXXXX S: * SEARCH 43 S: A284 OK SEARCH completed new: C: A284 SEARCH CHARSET UTF-8 TEXT {6} S: + Ready for literal text C: XXXXXX S: * SEARCH 43 S: A284 OK SEARCH completed ----- Section 7.2.2, page 70: old: If it is not feasible for the server to determine whether or not the mailbox is \"interesting\", or if the name is a \\Noselect name, the server SHOULD NOT send either \\Marked or \\Unmarked. new: If it is not feasible for the server to determine whether or not the mailbox is \"interesting\", the server SHOULD NOT send either \\Marked or \\Unmarked. The server MUST NOT send more than one of \\Marked, \\Unmarked, and \\Noselect for a single mailbox, and MAY send none of these. ----- Section 7.4.2, page 75: old: body location A string list giving the body content URI as defined in [LOCATION]. new: body location A string giving the body content URI as defined in [LOCATION]. Section 7.4.2, page 77: old: body location A string list giving the body content URI as defined in [LOCATION]. new: body location A string giving the body content URI as defined in [LOCATION]. Formal Syntax, Page 84: old: CHAR8 = %x01-ff ; any OCTET except NUL, %x00 new: CHAR8 = %x01-ff ; any OCTET except NUL, %x00 charset = atom / quoted ----- Formal Syntax, Page 89: old: resp-text-code = \"ALERT\" / \"BADCHARSET\" [SP \"(\" astring *(SP astring) \")\" ] / new: resp-text-code = \"ALERT\" / \"BADCHARSET\" [SP \"(\" charset *(SP charset) \")\" ] / ----- Formal Syntax, Page 89: old: search = \"SEARCH\" [SP \"CHARSET\" SP astring] 1*(SP search-key) new: search = \"SEARCH\" [SP \"CHARSET\" SP charset] 1*(SP search-key) ----- Formal Syntax, Page 90: old: sequence-set = (seq-number / seq-range) *(\",\" sequence-set) new: sequence-set = (seq-number / seq-range) [\",\" sequence-set] ----- Formal Syntax, Page 90: old: status-att-list = status-att SP number *(SP status-att SP number) new: status-att-val = (\"MESSAGES\" SP number) / (\"RECENT\" SP number) / (\"UIDNEXT\" SP nz-number) / (\"UIDVALIDITY\" SP nz-number) / (\"UNSEEN\" SP number) status-att-list = status-att-val *(SP status-att-val) ----- IANA Considerations, Page 94: new: GSSAPI/Kerberos/SASL service names are registered by publishing a standards track or IESG approved experimental RFC. The registry is currently located at: http://www.iana.org/assignments/gssapi-service-names As this specification defines the \"imap\" service name previously defined in RFC 1731, the registry will be updated accordingly. ----- Normative References, Page 95: old: [LANGUAGE-TAGS] Alvestrand, H., \"Tags for the Identification of Languages\", BCP 47, RFC 3066, January 2001. new: [LANGUAGE-TAGS] Alvestrand, H., \"Content Language Headers\", RFC 3282, May 2002. Appendix B, Page 103: new: 115) Add support for Content-Location to BODYSTRUCTURE.",
+  "text_B": "[see above]"
+ },
+ {
+  "item": 183,
+  "text_A": "Note that on some systems it's possible to input RS by typing",
+  "text_B": "Note that on some systems it\"s possible to input RS by typing"
+ },
+ {
+  "item": 184,
+  "text_A": "Documents approved for publication by the [stream approver -- currently, one of: \"IAB\", \"IRSG\", or \"RFC Editor\"] are not a candidate for any level of Internet Standard; ...",
+  "text_B": "Documents approved for publication by the [stream approver -- currently, one of: \"IAB\", \"IRSG\", or \"RFC Editor\"] are not candidates for any level of Internet Standard; ..."
+ },
+ {
+  "item": 185,
+  "text_A": "To:A Group(Some people) :Chris Jones <c@public.example(Chris's host.)>, joe@example.org, John <jdoe@one.test> (my dear friend); (the end of the group)",
+  "text_B": "To:A Group(Some people) :Chris Jones <c@(Chris's host.)public.example>, joe@example.org, John <jdoe@one.test> (my dear friend); (the end of the group)"
+ },
+ {
+  "item": 186,
+  "text_A": "This value is set to 3 (three).",
+  "text_B": "This value is set to 2 (two)."
+ },
+ {
+  "item": 187,
+  "text_A": "A given object class A may be a subclass of another class B, in which case object class A inherits all the mandatory and optional attributes of B in addition to its own.",
+  "text_B": "An given object class A may be a subclass of another class B, in which case object class A inherits all the mandatory and optional attributes of B in addition to its own."
+ },
+ {
+  "item": 188,
+  "text_A": "In this case, the mod-sequence attribute of the message is not updated, and the message number (or unique identifier in the case of the UID STORE command) is added to the list of messages that failed the UNCHANGEDSINCE test. When the server finished performing the operation on all the messages in the message set, it checks for a non-empty list of messages that failed the UNCHANGEDSINCE test. If this list is non-empty, the server MUST return in the tagged response a MODIFIED response code. The MODIFIED response code includes the message set (for STORE) or set of UIDs (for UID STORE) of all messages that failed the UNCHANGEDSINCE test. Example 3: All messages pass the UNCHANGEDSINCE test.",
+  "text_B": "In this case, the mod-sequence attribute of the message is not updated, and the message number (or unique identifier in the case of the UID STORE command) is added to the list of messages that failed the UNCHANGESINCE test. When the server finished performing the operation on all the messages in the message set, it checks for a non-empty list of messages that failed the UNCHANGESINCE test. If this list is non-empty, the server MUST return in the tagged response a MODIFIED response code. The MODIFIED response code includes the message set (for STORE) or set of UIDs (for UID STORE) of all messages that failed the UNCHANGESINCE test. Example 3: All messages pass the UNCHANGESINCE test."
+ },
+ {
+  "item": 189,
+  "text_A": "When a point on an elliptic curve is given to an input of a hash function, affine coordinates for short Weierstrass form are used (see Section 5): an x coordinate value is fed first, a y coordinate value is fed second, both in little-endian format.",
+  "text_B": "If the point to be fed to the hash function is zero point, the calculation MUST NOT be performed and an error SHOULD be reported on a protocol level."
+ },
+ {
+  "item": 190,
+  "text_A": "struct { ClientCertificateType certificate_types<1..2^8-1>; SignatureAndHashAlgorithm supported_signature_algorithms<2..2^16-2>; DistinguishedName certificate_authorities<0..2^16-1>; } CertificateRequest;",
+  "text_B": "struct { ClientCertificateType certificate_types<1..2^8-1>; SignatureAndHashAlgorithm supported_signature_algorithms<2^16-1>; DistinguishedName certificate_authorities<0..2^16-1>; } CertificateRequest;"
+ },
+ {
+  "item": 191,
+  "text_A": "(4) a material change to the IETF Document covered by the Disclosure that causes the Disclosure to be covered by additional IPR.",
+  "text_B": "(4) a material change to the IETF Document covered by the Disclosure that causes the *Document* to be covered by additional IPR."
+ },
+ {
+  "item": 192,
+  "text_A": "unstructured = *([FWS] utext) [FWS]",
+  "text_B": "unstructured = *([FWS] utext) (*WSP / obs-FWS)"
+ },
+ {
+  "item": 193,
+  "text_A": "The AC will signal the update to the GTK using an IEEE 802.11 Configuration Request message, including an IEEE 802.11 Update WLAN message element with the new GTK, its index, the Transmit Sequence Counter (TSC) for the Group Key and the Key Status set to 3 (begin GTK update). ... When the AC has completed the GTK update to all STAs in the BSS, the AC MUST transmit an IEEE 802.11 Configuration Request message including an IEEE 802.11 Update WLAN message element containing the new GTK, its index, and the Key Status set to 4 (GTK update complete).",
+  "text_B": "The AC will signal the update to the GTK using an IEEE 802.11 Configuration Request message, including an IEEE 802.11 Update WLAN message element with the new GTK, its index, the Transmit Sequence Counter (TSC) for the Group Key and the Key Status set to 2 (begin GTK update). ... When the AC has completed the GTK update to all STAs in the BSS, the AC MUST transmit an IEEE 802.11 Configuration Request message including an IEEE 802.11 Update WLAN message element containing the new GTK, its index, and the Key Status set to 3 (GTK update complete)."
+ },
+ {
+  "item": 194,
+  "text_A": "Each of these elements may contain more than one <geopriv> element.",
+  "text_B": "Each of these elements contains a single <status> element that may contain more than one <geopriv> element as a child."
+ },
+ {
+  "item": 195,
+  "text_A": "(from erratum 1003) In addition to restrictions on syntax, there is a length limit on email addresses. That limit is a maximum of 64 characters (octets) in the \"local part\" (before the \"@\") and a maximum of 255 characters (octets) in the domain part (after the \"@\") for a total length of 320 characters. However, there is a restriction in RFC 2821 on the length of an address in MAIL and RCPT commands of 256 characters. Since addresses that do not fit in those fields are not normally useful, the upper limit on address lengths should normally be considered to be 256.",
+  "text_B": "In addition to restrictions on syntax, there is a length limit on email addresses. That limit is a maximum of 64 characters (octets) in the \"local part\" (before the \"@\") and a maximum of 255 characters (octets) in the domain part (after the \"@\") for a total length of 320 characters. However, there is a restriction in RFC 2821 on the length of an address in MAIL and RCPT commands of 254 characters. Since addresses that do not fit in those fields are not normally useful, the upper limit on address lengths should normally be considered to be 254."
+ },
+ {
+  "item": 196,
+  "text_A": "The current values of bfdSessDiag MUST be included. The two instances of bfdSessDiag in this notification indicate the range of indexes that are affected. Note that all the indexes of the two ends of the range can be derived from the instance identifiers of these two objects. For the state from some other state. The current values of bfdSessDiag MUST be included. The two instances of the same time, the device SHOULD issue a single notification for each range of contiguous indexes in an effort to minimize the emission of a large number of notifications. If a notification has to be issued for just a single bfdSessEntry, then the instance identifier (and values) of the two bfdSessDiag objects MUST be identical.\" ::= { bfdNotifications 1 } bfdSessDown NOTIFICATION-TYPE OBJECTS { bfdSessDiag, -- low range value bfdSessDiag -- high range value } STATUS current DESCRIPTION \"This notification is generated when the bfdSessState object for one or more contiguous entries in bfdSessTable are about to enter the down(2) or adminDown(1) states from some other state. The current values of bfdSessDiag MUST be included.",
+  "text_B": "The included values of bfdSessDiag MUST both be set equal to this new state (i.e., up(4)). The two instances of bfdSessDiag in this notification indicate the range of indexes that are affected. Note that all the indexes of the two ends of the range can be derived from the instance identifiers of these two objects. For the cases where a contiguous range of sessions have transitioned into the up(4) state at roughly the same time, the device SHOULD issue a single notification for each range of contiguous indexes in an effort to minimize the emission of a large number of notifications. If a notification has to be issued for just a single bfdSessEntry, then the instance identifier (and values) of the two bfdSessDiag objects MUST be identical.\" ::= { bfdNotifications 1 } bfdSessDown NOTIFICATION-TYPE OBJECTS { bfdSessDiag, -- low range value bfdSessDiag -- high range value } STATUS current DESCRIPTION \"This notification is generated when the bfdSessState object for one or more contiguous entries in bfdSessTable are about to enter the down(2) or adminDown(1) states from some other state. The included values of bfdSessDiag MUST both be set equal to this new state (i.e., down(2) or adminDown(1))."
+ },
+ {
+  "item": 197,
+  "text_A": "All other types of messages (i.e., any message which is not required by a standards-track RFC to have a null reverse-path) SHOULD be sent with a valid, non-null reverse-path.",
+  "text_B": "All other types of messages (i.e., any message which is not required by a standards-track RFC to have a null reverse-path) SHOULD be sent with with a valid, non-null reverse-path."
+ },
+ {
+  "item": 198,
+  "text_A": "definition cannot be retrieved, and the client should report and error or retry the command.",
+  "text_B": "definition cannot be retrieved, and the client should report an error or retry the command."
+ },
+ {
+  "item": 199,
+  "text_A": "The format and definition of PKS when it appears as an XRO subobject are as defined in [RFC5520], except that the L bit described in [RFC5220] is replaced with the X bit as discussed in Section 2.1.1 of this document.",
+  "text_B": "The format and definition of PKS when it appears as an XRO subobject are as defined in [RFC5520], except for the definition of the L bit. The L bit of the PKS subobject in the XRO MUST be ignored."
+ },
+ {
+  "item": 200,
+  "text_A": "Side A Side",
+  "text_B": "Side A Side B"
+ },
+ {
+  "item": 201,
+  "text_A": "Set A = find_integer_2(s). | 2. If -3 = A*Z^4 mod p is not solvable, then set s = update_seed(s) and go to Step 1. 3. Compute one solution Z of -3 = A*Z^4 mod p. 4. Set s = update_seed(s). 5. Set B = find_integer_2(s). 6. If B is a square mod p, then set s = update_seed(s) and go to Step 5. 7. If 4*A^3 + 27*B^2 = 0 mod p, then set s = update_seed(s) and go to Step 1. 8. Check that the elliptic curve E over GF(p) given by y^2 = x^3 + A*x + B fulfills all security and functional requirements given in Section 3. If not, then set s = update_seed(s) and go to Step 1. 9. Set s = update_seed(s). 10. Set k = find_integer_2(s). 11.",
+  "text_B": "Set h = find_integer_2(s). | | 2. Convert h to an integer A. 3. If -3 = A*Z^4 mod p is not solvable, then set s = update_seed(s) and go to Step 1. 4. Compute one solution Z of -3 = A*Z^4 mod p. 5. Set s = update_seed(s). 6. Set B = find_integer_2(s). 7. If B is a square mod p, then set s = update_seed(s) and go to Step 6. 8. If 4*A^3 + 27*B^2 = 0 mod p, then set s = update_seed(s) and go to Step 1. 9. Check that the elliptic curve E over GF(p) given by y^2 = x^3 + A*x + B fulfills all security and functional requirements given in Section 3. If not, then set s = update_seed(s) and go to Step 1. 10. Set s = update_seed(s). 11. Set k = find_integer_2(s). 12."
+ },
+ {
+  "item": 202,
+  "text_A": "Before the invalid routes are deleted from the system, it advertises, to its peers, either withdraws for the routes marked as invalid, or the new best routes.",
+  "text_B": "Before the invalid routes are deleted from the system, it advertises, to its peers, either withdraws for the routes marked as invalid, or the new best routes before the invalid routes are deleted from the system."
+ },
+ {
+  "item": 203,
+  "text_A": "In NTPv4, one or more extension fields can be inserted after the header and before the MAC, if a MAC is present. If a MAC is not present, one or more extension fields can be inserted after the header, according to the following rules: o If the packet includes a single extension field, the length of the extension field MUST be at least 7 words, i.e., at least 28 octets. o If the packet includes more than one extension field, the length of the last extension field MUST be at least 28 octets. The length of the other extension fields in this case MUST be at least 16 octets each.",
+  "text_B": "In NTPv4, one or more extension fields can be inserted after the header and before the MAC, which is always present when an extension field is present."
+ },
+ {
+  "item": 204,
+  "text_A": "When tracking interface statistics, the counter of the | outgoing interface is incremented for a datagram requiring | fragmentation.",
+  "text_B": "When tracking interface statistics, the counter of the outgoing interface is incremented for a successfully fragmented datagram."
+ },
+ {
+  "item": 205,
+  "text_A": "Media Translators, Mesh with independent RTP Sessions, mixers, SFMs,",
+  "text_B": "Media Translators, Mesh with independent RTP Sessions, mixers, SFUs,"
+ },
+ {
+  "item": 206,
+  "text_A": "* Noted that all members of the \"events\" and \"Public IDs\" arrays are REQUIRED.",
+  "text_B": "* Noted which members of the \"events\" and \"Public IDs\" arrays are REQUIRED."
+ },
+ {
+  "item": 207,
+  "text_A": "Add this document as an additional reference for AD in the DNS Parameters - DNS Header Flags registry.",
+  "text_B": "This document specifies no IANA Actions."
+ },
+ {
+  "item": 208,
+  "text_A": "* It MUST verify that IPvX Addr Count is non zero.",
+  "text_B": "* It MUST verify that the VRID is configured on the receiving interface and the local router is not the IPvX address owner (Priority = 255 (decimal)). If any one of the above checks fails, the receiver MUST discard the packet, SHOULD log the event (subject to rate-limiting), and MAY indicate via network management that an error occurred."
+ },
+ {
+  "item": 209,
+  "text_A": "HeartbeartResponse",
+  "text_B": "HeartbeatResponse"
+ },
+ {
+  "item": 210,
+  "text_A": "Whether all of the document data has been accepted or not before returning the success or error response depends on implementation.",
+  "text_B": "The Printer object MUST accept all document data before returning the success or error response."
+ },
+ {
+  "item": 211,
+  "text_A": "The window size is decremented by the amount of data sent.",
+  "text_B": "The window size is decremented by the length of the data sent, length field included."
+ },
+ {
+  "item": 212,
+  "text_A": "Responses: REQUIRED untagged responses: FLAGS, EXISTS, RECENT REQUIRED OK untagged responses: PERMANENTFLAGS, UIDNEXT, UIDVALIDITY, UNSEEN (if any unseen exist) [...] OK [UNSEEN <n>] The message sequence number of the first unseen message in the mailbox. If there are any unseen messages in the mailbox, an UNSEEN response MUST be sent, if not it MUST be omitted. If this is missing, the client cannot make any assumptions about the first unseen message in the mailbox, and needs to issue a SEARCH command if it wants to find it.",
+  "text_B": "Responses: REQUIRED untagged responses: FLAGS, EXISTS, RECENT REQUIRED OK untagged responses: UNSEEN, PERMANENTFLAGS, UIDNEXT, UIDVALIDITY [...] OK [UNSEEN <n>] The message sequence number of the first unseen message in the mailbox. If this is missing, the client can not make any assumptions about the first unseen message in the mailbox, and needs to issue a SEARCH command if it wants to find it."
+ },
+ {
+  "item": 213,
+  "text_A": "Request for Comments: 5890 Obsoletes: 3490 Updates: 4343 Category: Standards Track",
+  "text_B": "Request for Comments: 5890 Obsoletes: 3490 Category: Standards Track"
+ },
+ {
+  "item": 214,
+  "text_A": "At the egress node, the normal traffic is selected | from either its working or one of the protection LSPs/spans. Unprotected extra traffic can be transported over the M protection | LSPs/spans whenever the protection LSPs/spans is not used to carry a normal traffic.",
+  "text_B": "At the egress node, the normal traffic is selected | from either its working or one of the protection LSP/span. Unprotected extra traffic can be transported over the M protection | LSP/span whenever the protection LSPs/spans is not used to carry a normal traffic."
+ },
+ {
+  "item": 215,
+  "text_A": "DNS_ALG would simply respond back",
+  "text_B": "DNS_ALG would simply simply respond back"
+ },
+ {
+  "item": 216,
+  "text_A": "Some bootstrapping protocols using the voucher artifact defined in this document include: [ZERO-TOUCH], [SECUREJOIN], and [KEYINFRA]).",
+  "text_B": "Some bootstrapping protocols using the voucher artifact defined in this document include: [ZERO-TOUCH], [SECUREJOIN], and [KEYINFRA]."
+ },
+ {
+  "item": 217,
+  "text_A": "To add an opportunistic encryption mode of access to [IEEE802.11], it is necessary to perform a Diffie-Hellman key exchange during 802.11 association and use the resulting pairwise secret with the 4-way handshake.",
+  "text_B": "To add an opportunistic encryption mode of access to [IEEE802.11], it is necessary to perform a Diffie-Hellman key exchange during 802.11 authentication and use the resulting pairwise secret with the 4-way handshake."
+ },
+ {
+  "item": 218,
+  "text_A": "Optional attributes: o Upper Layer Abort Reason - reason of the abort to be passed to the peer.",
+  "text_B": "None."
+ },
+ {
+  "item": 219,
+  "text_A": "Table 1: IANA Hash Function Textual Name Registry",
+  "text_B": "Table 1: IANA \"Hash Function Textual Names\" Registry"
+ },
+ {
+  "item": 220,
+  "text_A": "[[ A paragraph is missing in this section to clarify implementation requirements for the reserved field. This paragraph could suitably be inserted after the description of first_kex_packet_follows. ]]",
+  "text_B": "(reserved field) Servers and clients may or may not be aware of a future extension to this RFC that specifies a use for this field. Servers and clients that are NOT aware of such an extension: - MUST send this field with value zero; - MUST NOT act on any value of this field when received, whether the received value is zero or non-zero; - in key exchange, MUST properly hash the actual received value of this field. This behavior is REQUIRED to allow use of this field in future protocol extension."
+ },
+ {
+  "item": 221,
+  "text_A": "By definition, all TSNs acknowledged by Gap Ack Blocks are greater than the value of the Cumulative TSN Ack.",
+  "text_B": "The sequence of Gap Ack Blocks MUST be an increasing sequence of ranges, non-intersecting, and with at least one TSN as a gap between each Block and between the Cumulative TSN Ack and the first Block."
+ },
+ {
+  "item": 222,
+  "text_A": "An identity MUST NOT reference itself, neither directly nor indirectly through a chain of other identities.",
+  "text_B": "The derivation of identities has the following properties: o It is irreflexive, which means that an identity is not derived from itself. o It is transitive, which means that if identity B is derived from A and C is derived from B, then C is also derived from A."
+ },
+ {
+  "item": 223,
+  "text_A": "The DHCPv4 server MAY include a single instance of the OPTION_V4_SZTP_REDIRECT option in DHCP messages it sends. Servers MUST NOT send more than one instance of the OPTION_V4_SZTP_REDIRECT option.",
+  "text_B": "The DHCPv4 server MAY include OPTION_V4_SZTP_REDIRECT in DHCP messages it sends."
+ },
+ {
+  "item": 224,
+  "text_A": "Example 1: If the following router addresses (loopback addresses) need to be mapped into the corresponding Prefix-SID indexes: Router-A: 2001:DB8::1/128, Prefix-SID: Index 1 Router-B: 2001:DB8::2/128, Prefix-SID: Index 2 Router-C: 2001:DB8::3/128, Prefix-SID: Index 3 Router-D: 2001:DB8::4/128, Prefix-SID: Index 4 then the Address Prefix field in the OSPFv3 Extended Prefix Range TLV would be set to 2001:DB8::1, the Prefix Length would be set to 128, the Range Size would be set to 4, and the Index value in the Prefix- SID sub-TLV would be set to 1. Example 2: If the following prefixes need to be mapped into the corresponding Prefix-SID indexes: 2001:DB8:1::0/120, Prefix-SID: Index 51 2001:DB8:1::100/120, Prefix-SID: Index 52 2001:DB8:1::200/120, Prefix-SID: Index 53 2001:DB8:1::300/120, Prefix-SID: Index 54 2001:DB8:1::400/120, Prefix-SID: Index 55 2001:DB8:1::500/120, Prefix-SID: Index 56 2001:DB8:1::600/120, Prefix-SID: Index 57 then the Prefix field in the OSPFv3 Extended Prefix Range TLV would be set to 2001:DB8:1::0, the Prefix Length would be set to 120, the Range Size would be set to 7, and the Index value in the Prefix-SID sub-TLV would be set to 51.",
+  "text_B": "Example 1: If the following router addresses (loopback addresses) need to be mapped into the corresponding Prefix-SID indexes: Router-A: 2001:db8::1/128, Prefix-SID: Index 1 Router-B: 2001:db8::2/128, Prefix-SID: Index 2 Router-C: 2001:db8::3/128, Prefix-SID: Index 3 Router-D: 2001:db8::4/128, Prefix-SID: Index 4 then the Address Prefix field in the OSPFv3 Extended Prefix Range TLV would be set to 2001:db8::1, the Prefix Length would be set to 128, the Range Size would be set to 4, and the Index value in the Prefix- SID sub-TLV would be set to 1. Example 2: If the following prefixes need to be mapped into the corresponding Prefix-SID indexes: 2001:db8:1::0/120, Prefix-SID: Index 51 2001:db8:1::100/120, Prefix-SID: Index 52 2001:db8:1::200/120, Prefix-SID: Index 53 2001:db8:1::300/120, Prefix-SID: Index 54 2001:db8:1::400/120, Prefix-SID: Index 55 2001:db8:1::500/120, Prefix-SID: Index 56 2001:db8:1::600/120, Prefix-SID: Index 57 then the Prefix field in the OSPFv3 Extended Prefix Range TLV would be set to 2001:DB8:1::0, the Prefix Length would be set to 120, the Range Size would be set to 7, and the Index value in the Prefix-SID sub-TLV would be set to 51."
+ },
+ {
+  "item": 225,
+  "text_A": "[2] Harvest: A distributed Search System: <URL:http://harvest.sourceforge.net/>",
+  "text_B": "[2] The Harvest Information Discovery and Access System: <URL:http://harvest.transarc.com/>"
+ },
+ {
+  "item": 226,
+  "text_A": "* It MUST verify that the VRID is configured on the receiving interface and the local router is not the IPvX address owner (Priority = 255 (decimal)). If any one of the above checks fails, the receiver MUST discard the packet, SHOULD log the event (subject to rate-limiting), and MAY indicate via network management that an error occurred.",
+  "text_B": "* If the received packet is an IPv6 packet, then: - It MUST verify that the first address in the IPvX Address(es) field is an IPv6 link-local address."
+ },
+ {
+  "item": 227,
+  "text_A": "Fong, \"NetWare/IP Domain Name and Information\", RFC 2242, November 1997.",
+  "text_B": "Fong, \"NetWare/IP Domain Name and Information\", RFC 2142, November 1997."
+ },
+ {
+  "item": 228,
+  "text_A": "Page_1 consists of the first three segments of packet_1, page_2 contains the remaining 2 segments from packet_1, and page_3 contains the first three pages of packet_2.",
+  "text_B": "Page_1 consists of the first three segments of packet_1, page_2 contains the remaining 2 segments from packet_1, and page_3 contains the first three segments of packet_2."
+ },
+ {
+  "item": 229,
+  "text_A": "\"It is possible to have multiple possible targets for a single application service+protocol pair.\"",
+  "text_B": "\"As shown in the example set above, it is possible to have multiple possible targets for a single application service+protocol pair.\""
+ },
+ {
+  "item": 230,
+  "text_A": "The Commit Exchange consists of an exchange of data that is the output of the random function, H(), the key confirmation key, and the two scalars and two elements exchanged in the Commit Exchange.",
+  "text_B": "The Confirm Exchange consists of an exchange of data that is the output of the random function, H(), the key confirmation key, and the two scalars and two elements exchanged in the Commit Exchange."
+ },
+ {
+  "item": 231,
+  "text_A": "$ openssl smime -decrypt -in SN19842256.enc -inform PEM\\ -out config.cfg -inkey key.pem",
+  "text_B": "$ openssl smime -decrypt -in SN19842256.enc -inform pkcs7\\ -out config.cfg -inkey key.pem"
+ },
+ {
+  "item": 232,
+  "text_A": "header-field = \"Received-SPF:\" [CFWS] result [ FWS comment ] [ FWS key-value-list ] [FWS] CRLF",
+  "text_B": "header-field = \"Received-SPF:\" [CFWS] result FWS [comment FWS] [ key-value-list ] CRLF"
+ },
+ {
+  "item": 233,
+  "text_A": "Value: This is the value used to identify the key type. These values MUST be unique. The values are positive integers. Description: This field contains a brief description of the key type. References: This contains a pointer to the public specification for the key type if one exists.",
+  "text_B": "Value: This is the value used to identify the curve. These values MUST be unique. The value can be a positive integer, a negative integer, or a string. Description: This field contains a brief description of the curve. References: This contains a pointer to the public specification for the curve if one exists."
+ },
+ {
+  "item": 234,
+  "text_A": "Any options whose length exceeds that of the UDP packet (i.e., intending to use data that would have been beyond the surplus area) SHOULD be silently ignored (again to model legacy behavior).",
+  "text_B": "The procedure for processing options whose length exceeds that of the UDP packet (i.e., intending to use data that would have been beyond the surplus area) is specified in Section 10."
+ },
+ {
+  "item": 235,
+  "text_A": "In the remainder this section, we provide an example of how this works, along with an informal description of the procedures.",
+  "text_B": "In the remainder of this section, we provide an example of how this works, along with an informal description of the procedures."
+ },
+ {
+  "item": 236,
+  "text_A": "Examples of underlying encryption schemes are given in Appendix B.3.",
+  "text_B": "Examples of underlying message authentication schemes are given in Appendix B.3."
+ },
+ {
+  "item": 237,
+  "text_A": "The requesting router MUST ignore any Advertise message that includes a Status Code option containing the value NoPrefixAvail, with the exception that the requesting router MAY display the associated status message to the user.",
+  "text_B": "The requesting router MUST ignore any IA_PDs in an Advertise message that includes a Status Code option containing the value NoPrefixAvail, with the exception that the requesting router MAY display the associated status message to the user."
+ },
+ {
+  "item": 238,
+  "text_A": "If the user signals a push function then the data must be sent even if it is a small segment.",
+  "text_B": "If the the user signals a push function then the data must be sent even if it is a small segment."
+ },
+ {
+  "item": 239,
+  "text_A": "rid REQUIRED -- MUST contain the subjectKeyIdentifier of the CMP protection -- certificate of the request message, if available, in the -- rKeyId choice. The subjectKeyIdentifier is equal -- the senderKID in the PKIHeader of that message. -- If the CMP protection certificate of the request message does -- not contain a subjectKeyIdentifier, the issuerAndSerialNumber -- choice MUST be used.",
+  "text_B": "rid REQUIRED -- MUST contain the subjectKeyIdentifier of the CMP protection -- certificate, if available, in the rKeyId choice, and the -- subjectKeyIdentifier MUST equal the senderKID in the -- PKIHeader. -- If the CMP protection certificate does not contain a -- subjectKeyIdentifier, the issuerAndSerialNumber choice MUST -- be used"
+ },
+ {
+  "item": 240,
+  "text_A": "To form the key, the password is truncated to eight characters, or padded with null bytes on the right.",
+  "text_B": "To form the key, the password is truncated to eight characters, or padded with null bytes on the right; then the bits of each byte of the key are reversed."
+ },
+ {
+  "item": 241,
+  "text_A": "<group name=\"partialMatchGroup\"> <choice> <sequence> <element name=\"beginsWith\"> <simpleType> <restriction base=\"token\"> <minLength value=\"1\"/> </restriction> </simpleType> </element> <element minOccurs=\"0\" name=\"endsWith\"> <simpleType> <restriction base=\"token\"> <minLength value=\"1\"/> </restriction> </simpleType> </element> </sequence> <element name=\"endsWith\"> <simpleType> <restriction base=\"token\"> <minLength value=\"1\"/> </restriction> </simpleType> </element> </choice> </group>",
+  "text_B": "<group name=\"partialMatchGroup\"> <choice> <sequence> <element name=\"beginsWith\" type=\"dreg:partialMatchComponentType\"/> <element name=\"endsWith\" type=\"dreg:partialMatchComponentType\" minOccurs=\"0\"/> </sequence> <element name=\"endsWith\" type=\"dreg:partialMatchComponentType\"/> </choice> </group> <simpleType name=\"partialMatchComponentType\"> <restriction base=\"token\"> <minLength value=\"1\"/> </restriction> </simpleType>"
+ },
+ {
+  "item": 242,
+  "text_A": "applied to all source addresses",
+  "text_B": "applied to all source address"
+ },
+ {
+  "item": 243,
+  "text_A": "In particular: of the root. @ A free standing @ is used to denote the current origin.",
+  "text_B": "In particular: @ A free standing @ is used to denote the current origin."
+ },
+ {
+  "item": 244,
+  "text_A": "The only exception is if a discovery session (see Section 3.3 iSCSI Session Types) is to be established.",
+  "text_B": "The only exception is if a discovery session (see Section 2.3 iSCSI Session Types) is to be established."
+ },
+ {
+  "item": 245,
+  "text_A": "[RFC4511].",
+  "text_B": "[RFC4511."
+ },
+ {
+  "item": 246,
+  "text_A": "In the OCSPStatusRequest, the \"ResponderIDs\" provides a list of OCSP responders that the client trusts.",
+  "text_B": "In the OCSPStatusRequest, the \"ResponderID\" provides a list of OCSP responders that the client trusts. or clearer In OCSPStatusRequest, the \"responder_id_list\" provides a list of \"ResponderID\", OCSP responders that the client trusts."
+ },
+ {
+  "item": 247,
+  "text_A": "c-nonce = printable s-nonce = printable",
+  "text_B": "c-nonce = 1*(printable) s-nonce = 1*(printable)"
+ },
+ {
+  "item": 248,
+  "text_A": "Configure the printer to save to a file or click 'save to file' when printing. A printed file will have a .prn file suffix.",
+  "text_B": "Configure the paper size to be US Letter."
+ },
+ {
+  "item": 249,
+  "text_A": "print \"Status: 302 Moved temporarily0;",
+  "text_B": "print \"Status: 302 Moved temporarily\";"
+ },
+ {
+  "item": 250,
+  "text_A": "o L_HEARD_time MUST NOT be greater than L_time.",
+  "text_B": "o L_HEARD_time MUST NOT be greater than L_time, unless L_lost = true."
+ },
+ {
+  "item": 251,
+  "text_A": "If set, the Adj-SID refers to an adjacency that is eligible for protection (e.g., using IP Fast Reroute or MPLS-FRR (MPLS-Fast Reroute) as described in Section 2.1 of [RFC8402].",
+  "text_B": "If set, the Adj-SID refers to an adjacency that is eligible for protection (e.g., using IP Fast Reroute or MPLS-FRR (MPLS-Fast Reroute) as described in Section 3.4 of [RFC8402]."
+ },
+ {
+  "item": 252,
+  "text_A": "No other CRL extensions are allowed.",
+  "text_B": "The extensions mentioned above MUST NOT appear more than once each."
+ },
+ {
+  "item": 253,
+  "text_A": "then the block number (NUM), more bit (M), and block size (2**(SZX+4)) separated by slashes.",
+  "text_B": "then the block number (NUM), more bit (M), and block size exponent (2**(SZX+4)) separated by slashes."
+ },
+ {
+  "item": 254,
+  "text_A": "Values to be added to this name space are subject to IETF review ([12], Section 4.1). (where [12] would refer to RFC 5226 in the References Section)",
+  "text_B": "Values to be added to this name space SHOULD be subject to review in the form of a standards track document within the IETF Applications Area. Any such document SHOULD be traceable through statuses of either 'Obsoletes' or 'Updates' to the Draft Standard for HTTP/1.1 [1]."
+ },
+ {
+  "item": 255,
+  "text_A": "When a Proxied Authorization Control is be attached to the \"Who am",
+  "text_B": "When a Proxied Authorization Control is attached to the \"Who am"
+ },
+ {
+  "item": 256,
+  "text_A": "4 - Base MAC Address: The WTP's Base MAC address MUST be included in the WTP Board Data message element, and MAY be assigned to the primary Ethernet interface.",
+  "text_B": "4 - Base MAC Address: The WTP's Base MAC address, which MAY be assigned to the primary Ethernet interface."
+ },
+ {
+  "item": 257,
+  "text_A": "Example: ATTACH;FMTYPE=IMAGE/JPEG;ENCODING=BASE64;VALUE=BINARY:MIICajC CAdOgAwIBAgICBEUwDQYJKoZIhvcNAQEEBQAwdzELMAkGA1UEBhMCVVMxLDA qBgNVBAoTI05ldHNjYXBlIENvbW11bmljYXRpb25zIENvcnBvcmF0aW9uMRw <...remainder of \"BASE64\" encoded binary data...>",
+  "text_B": "Example: ATTACH;FMTTYPE=IMAGE/JPEG;ENCODING=BASE64;VALUE=BINARY:MIICajC ^ CAdOgAwIBAgICBEUwDQYJKoZIhvcNAQEEBQAwdzELMAkGA1UEBhMCVVMxLDA qBgNVBAoTI05ldHNjYXBlIENvbW11bmljYXRpb25zIENvcnBvcmF0aW9uMRw <...remainder of \"BASE64\" encoded binary data...>"
+ },
+ {
+  "item": 258,
+  "text_A": "country -- a string containing the two-character country code of the autnum",
+  "text_B": "country -- a string containing the name of the two-character country code of the autnum"
+ },
+ {
+  "item": 259,
+  "text_A": "Confirming AC users MUST be able to accept a \"SEQUENCE OF Targets\".",
+  "text_B": "Conforming AC users MUST be able to accept a \"SEQUENCE OF Targets\"."
+ },
+ {
+  "item": 260,
+  "text_A": "Add a clause e) to the end of \"Sending point-to-point IIH PDUs\" (section 8.2.4 of [ISIS]):",
+  "text_B": "Add a clause e) to the end of \"Sending point-to-point IIH PDUs\" (section 8.2.3 of [ISIS]):"
+ },
+ {
+  "item": 261,
+  "text_A": "Implementations that combine update messages (as described above in Appendix F.1) may prefer to see all path attributes presented in a known order.",
+  "text_B": "Implementations that combine update messages (as described above in Section 6.1) may prefer to see all path attributes presented in a known order."
+ },
+ {
+  "item": 262,
+  "text_A": "struct{ AuthorizationDataEntry authz_data_list[supp_data_length]; } AuthorizationData;",
+  "text_B": "struct{ AuthorizationDataEntry authz_data_list<1..2^16\u00ad1>; } AuthorizationData;"
+ },
+ {
+  "item": 263,
+  "text_A": "This section provides templates for HPKE APIs that implement stateless \"single-shot\" encryption and decryption using APIs specified in Sections 5.1 and 5.2:",
+  "text_B": "This section provides templates for HPKE APIs that implement stateless \"single-shot\" encryption and decryption using APIs specified in Sections 5.1.1 and 5.2:"
+ },
+ {
+  "item": 264,
+  "text_A": "The CPE should return ICMPv6 Destination Unreachable message to a source address or silently discard the packets, when the original packet is destined for the unassigned prefix in the delegated prefix.",
+  "text_B": "The CPE should return an ICMPv6 Destination Unreachable message to the source address or silently discard the packet when the original packet is destined for an unassigned prefix in the delegated prefix."
+ },
+ {
+  "item": 265,
+  "text_A": "CMR value 15 indicates that no mode request is present, and other values are for future use. The codec mode request received in the CMR field is valid until the next codec mode request is received, i.e., a newly received CMR value corresponding to a speech mode, or NO_DATA overrides the previously received CMR value corresponding to a speech mode or NO_DATA. Therefore, if a terminal continuously wishes to receive frames in the same mode X, it needs to set CMR=X for all its outbound payloads, and if a terminal has no preference in which mode to receive, it SHOULD set CMR=15 in all its outbound payloads. If receiving a payload with a CMR value that is not a speech mode or NO_DATA, the CMR MUST be ignored by the receiver.",
+  "text_B": "CMR value 15 indicates that the receiver has no preference in which mode within the negotiated mode set to receive, and other values are for future use. The codec mode request received in the CMR field is valid until the next codec mode request is received, i.e., a newly received CMR value corresponding to a speech mode, or CMR=15 overrides the previously received CMR value corresponding to a speech mode or CMR=15. Therefore, if a terminal continuously wishes to receive frames not higher than mode X, it needs to set CMR=X for all its outbound payloads, and if a terminal has no preference in which mode within the negotiated mode set to receive, it SHOULD set CMR=15 in all its outbound payloads. If receiving a payload with a CMR value that is not a speech mode or CMR=15, the CMR MUST be ignored by the receiver."
+ },
+ {
+  "item": 266,
+  "text_A": "It is computed once at system start (rather than each time it is used) and must never be greater than (TEMP_PREFERRED_LIFETIME - REGEN_ADVANCE).",
+  "text_B": "It is computed once at system start (rather than each time it is used) and must never be greater than (TEMP_VALID_LIFETIME - REGEN_ADVANCE)."
+ },
+ {
+  "item": 267,
+  "text_A": "fields =/ *( approved / archive / control / distribution / expires / followup-to / injection-date / injection-info / lines / newsgroups / organization / path / summary / supersedes / user-agent / xref )",
+  "text_B": "optional-field = <see RFC 5322 Section 3.6.8> news-fields = approved / archive / control / distribution / expires / followup-to / injection-date / injection-info / lines / newsgroups / organization / path / summary / supersedes / user-agent / xref optional-field =/ news-fields"
+ },
+ {
+  "item": 268,
+  "text_A": "If the Reply Mode in the echo request is \"Reply via an IPv4 UDP packet with Router Alert\", then the IP header MUST contain the Router Alert IP Option of value 0x0 [RFC2113] for IPv4 or 69 [RFC7506] for IPv6.",
+  "text_B": "If the Reply Mode in the echo request is \"Reply via an IPv4/IPv6 UDP packet with Router Alert\", then the IP header MUST contain the Router Alert IP Option of value 0x0 [RFC2113] for IPv4 or 69 [RFC7506] for IPv6."
+ },
+ {
+  "item": 269,
+  "text_A": "Section 5.6 says for both I- and R-: Open - \"Rcv-DPR\" - \"Snd-DPA,Disc\" - \"Closed\"",
+  "text_B": "Per section 5.4, the receiver of the Disconnect-Peer-Answer initiates the transport disconnect, so it should say, for both I- and R-: Open - \"Rcv-DPR\" - \"Snd-DPA\" - \"Closing\""
+ },
+ {
+  "item": 270,
+  "text_A": "The Phase 1 decision function is a separate process, which completes when it has no further work to do.",
+  "text_B": "The Phase 1 decision function is a separate process,f which completes when it has no further work to do."
+ },
+ {
+  "item": 271,
+  "text_A": "1993 ASN.1 Module PKIXpermanentidentifier93 {iso(1) identified-organization(3) dod(6) internet(1) security(5) mechanisms(5) pkix(7) id-mod(0) id-mod-perm-id-93(29) } DEFINITIONS EXPLICIT TAGS ::= BEGIN -- EXPORTS ALL -- IMPORTS id-pkix FROM PKIX1Explicit88 { iso(1) identified-organization(3) dod(6) internet(1) security(5) mechanisms(5) pkix(7) id-mod(0) id-pkix1-explicit(18) } -- from [RFC3280] ATTRIBUTE FROM InformationFramework {joint-iso-itu-t ds(5) module(1) informationFramework(1) 4}; -- from [X.501] -- Permanent identifier Object Identifiers id-on OBJECT IDENTIFIER ::= { id-pkix 8 } id-on-permanentIdentifier OBJECT IDENTIFIER ::= { id-on 3 } -- Permanent Identifier permanentIdentifier ATTRIBUTE ::= { WITH SYNTAX PermanentIdentifier ID id-on-permanentIdentifier } PermanentIdentifier ::= SEQUENCE { identifierValue UTF8String OPTIONAL, -- if absent, use the serialNumber attribute -- if there is a single such attribute present -- in the subject DN assigner OBJECT IDENTIFIER OPTIONAL -- if absent, the assigner is -- the certificate issuer } END",
+  "text_B": "1993 ASN.1 Module PKIXpermanentidentifier93 {iso(1) identified-organization(3) dod(6) internet(1) security(5) mechanisms(5) pkix(7) id-mod(0) id-mod-perm-id-93(29) } DEFINITIONS EXPLICIT TAGS ::= BEGIN -- EXPORTS ALL -- IMPORTS OTHER-NAME FROM CertificateExtensions {joint-iso-itu-t ds(5) module(1) certificateExtensions(26) 4} ; -- from Module CertificateExtensions (X.509:03/2000) -- Permanent identifier Object Identifiers id-pkix OBJECT IDENTIFIER ::= { iso(1) identified-organization(3) dod(6) internet(1)security(5) mechanisms(5) pkix(7) } id-on OBJECT IDENTIFIER ::= { id-pkix 8 } id-on-permanentIdentifier OBJECT IDENTIFIER ::= { id-on 3 } -- Permanent Identifier permanentIdentifier OTHER-NAME ::= { PermanentIdentifier IDENTIFIED BY id-on-permanentIdentifier } PermanentIdentifier ::= SEQUENCE { identifierValue UTF8String OPTIONAL, -- if absent, use the serialNumber attribute -- if there is a single such attribute present -- in the subject DN assigner OBJECT IDENTIFIER OPTIONAL -- if absent, the assigner is -- the certificate issuer } END"
+ },
+ {
+  "item": 272,
+  "text_A": "Intermediate path elements should not add visible signals that identify the user, origin node, or origin network [RFC8165].",
+  "text_B": "Intermediate path elements should not add visible signals that identify the user, origin node, or origin network [RFC8164]."
+ },
+ {
+  "item": 273,
+  "text_A": "[CMSALG] Housley, R., \"Cryptographic Message Syntax (CMS) Algorithms\", RFC 3370, August 2002.",
+  "text_B": "[CMSALG] Housley, R., \"Cryptographic Message Syntax (CMS) Algorithms\", RFC 3269, August 2002."
+ },
+ {
+  "item": 274,
+  "text_A": "The IP source and destination fields (addresses and ports) in the packet MUST be set by swapping the values received in the Peer Discovery Signal, with the exception that the new source address on the Offer Signal, which was the well-known destination address, becomes a local IP from the DLEP modem. The source port remains the well-known port from the Peer Discovery Signal. The Peer Offer signal contains zero or more connection points as described in 13.2 and 13.3 completes the discovery process; see Section 7.1",
+  "text_B": "The IP source and destination fields in the packet MUST be set by swapping the values received in the Peer Discovery Signal. The Peer Offer Signal completes the discovery process; see Section 7.1."
+ },
+ {
+  "item": 275,
+  "text_A": "FH4_VOLATILE_ANY The filehandle may expire at any time, except as specifically excluded (i.e., FH4_NO_EXPIRE_WITH_OPEN).",
+  "text_B": "FH4_VOLATILE_ANY The filehandle may expire at any time, except as specifically excluded (i.e., FH4_NOEXPIRE_WITH_OPEN)."
+ },
+ {
+  "item": 276,
+  "text_A": "if StateRefreshCapable(I) == TRUE set PT(S,G,I) to the Holdtime from an active Prune received on interface I. The Holdtime used SHOULD be the largest active one but MAY be the most recently received active Prune Holdtime.",
+  "text_B": "if StateRefreshCapable(I) == TRUE set PT(S,G) to largest active holdtime read from a Prune message accepted on I;"
+ },
+ {
+  "item": 277,
+  "text_A": "<component access=\"read-write\" componentID=\"7\"> <name>FEState</name> <synopsis>State of this FE</synopsis> <typeRef>FEStateValues</typeRef> </component>",
+  "text_B": "<component access=\"read-only\" componentID=\"7\"> <name>FEState</name> <synopsis>State of this FE</synopsis> <typeRef>FEStateValues</typeRef> </component>"
+ },
+ {
+  "item": 278,
+  "text_A": "and interpreted as ASCII [ANSI.X3-4.1986] characters. For brevity, this document sometimes refers to this range of characters as simply \"ASCII characters\".",
+  "text_B": "and interpreted as US-ASCII [ANSI.X3-4.1986] characters. For brevity, this document sometimes refers to this range of characters as simply \"US-ASCII characters\"."
+ },
+ {
+  "item": 279,
+  "text_A": "One way to deal with this problem is to deliberately delay emitting segments for one MSL after recovery from a crash- this is the \"quite time\" specification. Hosts which prefer to avoid waiting are willing to risk possible confusion of old and new packets at a given destination may choose not to wait for the \"quite time\". Implementors may provide TCP users with the ability to select on a connection by connection basis whether to wait after a crash, or may informally implement the \"quite time\" for all connections.",
+  "text_B": "One way to deal with this problem is to deliberately delay emitting segments for one MSL after recovery from a crash- this is the \"quiet time\" specification. Hosts which prefer to avoid waiting are willing to risk possible confusion of old and new packets at a given destination may choose not to wait for the \"quiet time\". Implementors may provide TCP users with the ability to select on a connection by connection basis whether to wait after a crash, or may informally implement the \"quiet time\" for all connections."
+ },
+ {
+  "item": 280,
+  "text_A": "HTTP/1.1 200 OK Status: 200 OK Content-Type: application/pkcs7-mime Transfer-Encoding: base64",
+  "text_B": "HTTP/1.1 200 OK Status: 200 OK Content-Type: application/pkcs7-mime Content-Transfer-Encoding: base64 Content-Length: 4246"
+ },
+ {
+  "item": 281,
+  "text_A": "Algorithm 1: Simple Port Randomization Algorithm - if(check_suitable_port(port)) 3.3.2. Algorithm 2: Another Simple Port Randomization Algorithm - if(check_suitable_port(port))",
+  "text_B": "Algorithm 1: Simple Port Randomization Algorithm + if(check_suitable_port(next_ephemeral)) 3.3.2. Algorithm 2: Another Simple Port Randomization Algorithm + if(check_suitable_port(next_ephemeral))"
+ },
+ {
+  "item": 282,
+  "text_A": "The EE certificate MUST NOT use \"inherit\" elements as described in [RFC3779].",
+  "text_B": "...EE certificate's IP address delegation extension."
+ },
+ {
+  "item": 283,
+  "text_A": "Nevertheless, for each evaluated device, it is recommended to perform as many of the applicable tests described in Section 7 as possible.",
+  "text_B": "Nevertheless, for each evaluated device, it is recommended to perform as many of the applicable tests described in Section 6 as possible."
+ },
+ {
+  "item": 284,
+  "text_A": "o A potential blind reset attack is described in RFC 5961 [9]. The mitigation described in that document has specific applicability explained therein, and is not a substitute for cryptographic protection (e.g., IPsec or TCP-AO). A TCP implementation that supports the mitigation described in RFC 5961 SHOULD first check that the sequence number exactly matches RCV.NXT prior to executing the action in the next paragraph.",
+  "text_B": "[ The text is removed - see notes]"
+ },
+ {
+  "item": 285,
+  "text_A": "In the meantime, however, a 6to4 relay may be provided for optimized 6to4 connectivity and may also be combined with a tunnel broker for extended functionality.",
+  "text_B": "In the meantime, however, a 6to4 relay may be provided in the meantime for optimized 6to4 connectivity and may also be combined with a tunnel broker for extended functionality."
+ },
+ {
+  "item": 286,
+  "text_A": "DESCRIPTION:Networld+Interop Conference and Exhibit\\nAtlanta World Congress Center\\n Atlanta\\, Georgia END:VEVENT END:VCALENDAR",
+  "text_B": "DESCRIPTION:Networld+Interop Conference and Exhibit\\nAtlanta World Congress Center\\n Atlanta, Georgia END:VEVENT END:VCALENDAR"
+ },
+ {
+  "item": 287,
+  "text_A": "7. AUTHENTICATION_DATA: The authentication data of the Session Authorization Object.",
+  "text_B": "NSLP_OBJECT_LIST: A list of all NSLP objects that are included in an HMAC calculation. 8."
+ },
+ {
+  "item": 288,
+  "text_A": "Since -0 is a valid JSON Number but is serialized as 0, a JSON parser following this specification SHOULD generate an error condition (which in turn SHOULD stop processing) when it encounters -0, in order to thwart potential attacks on not yet parsed data.",
+  "text_B": "<end of section>"
+ },
+ {
+  "item": 289,
+  "text_A": "Host Number Host Socket Socket New-Prot, Options (Oct) (Dec) Name 1 27 Implemented (if any)",
+  "text_B": "Host Number Host Socket Socket New-Prot, Options (Oct) (Dec) Name 1 27 Implementated (if any)"
+ },
+ {
+  "item": 290,
+  "text_A": "If the keyword is not recognised, or if an argument is specified and the keyword does not expect one, a 501 response code MUST be returned. If the keyword is recognised but the server does not maintain the information, a 503 response code MUST be returned.",
+  "text_B": "If the keyword is not recognised, or if an argument is specified and the keyword does not expect one, a 501 response code MUST BE returned. If the keyword is recognised but the server does not maintain the information, a 503 response code MUST BE returned."
+ },
+ {
+  "item": 291,
+  "text_A": "This document does not update the IANA allocation procedures for the DCCP Port Number Registry as defined in RFC 4340. Section 2.2 of this document updated the IANA allocation procedures for the DCCP Service Codes Registry by requiring Service Code assignments by a Standards-Track specification to be assigned from the Specifications-Required portion of the Service Code registry.",
+  "text_B": "This document does not update the IANA allocation procedures for the DCCP Port Number and DCCP Service Codes Registries as defined in RFC 4340."
+ },
+ {
+  "item": 292,
+  "text_A": "Tourism: Variety in site-seeing experiences.",
+  "text_B": "Tourism: Variety in sightseeing experiences."
+ },
+ {
+  "item": 293,
+  "text_A": "[nothing]",
+  "text_B": "| 18| <juliet@example.com/ foo> | Leading space in resourcepart |"
+ },
+ {
+  "item": 294,
+  "text_A": "=2= SHDSL optional wire-pair-2 (Not applicable to HDSL2) and SHDSL.bis optional wire-pair-3 and wire-pair-4 (not applicable to HDSL2 and 'classic' SHDSL)",
+  "text_B": "=2= SHDSL optional wire-pair-2 (Not applicable to HDSL2)"
+ },
+ {
+  "item": 295,
+  "text_A": "o Police - police, by dropping any packets received with a DSCP indicating PCN transport that do not belong to an admitted flow. (A prospective PCN-flow that is rejected could be blocked or admitted into a lower-priority behaviour aggregate.)",
+  "text_B": "o Police - drop or re-mark to a lower-priority behaviour aggregate i) packets received with a DSCP indicating PCN transport that do not belong to an admitted flow and ii) packets that are part of a flow that asked to be admitted as a PCN-flow but was rejected."
+ },
+ {
+  "item": 296,
+  "text_A": "The server verifies the nonce and the proof, verifies that the authorization identity (if supplied by the client in the first message) is authorized to act as the authentication identity, and, finally, it responds with a \"server-final-message\", concluding the authentication exchange.",
+  "text_B": "The server verifies the nonce and the proof, verifies that the authentication identity is authorized to act as the authorization identity (if supplied by the client in the first message) , and, finally, it responds with a \"server-final-message\", concluding the authentication exchange."
+ },
+ {
+  "item": 297,
+  "text_A": "(1) if a maximum-sized segment can be sent, i.e, if:",
+  "text_B": "(1) if a maximum-sized segment can be sent, i.e., if:"
+ },
+ {
+  "item": 298,
+  "text_A": "CAs that issue certificates with the id-RSASSA-PSS algorithm identifier SHOULD require the presence of parameters in the publicKeyAlgorithms field if the cA boolean flag is set in the basic constraints certificate extension. CAs MAY require that the parameters be present in the publicKeyAlgorithms field for end-entity certificates.",
+  "text_B": "CAs that issue certificates with the id-RSASSA-PSS algorithm identifier SHOULD require the presence of parameters in the subjectPublicKeyInfo algorithm field if the cA boolean flag is set in the basic constraints certificate extension. CAs MAY require that the parameters be present in the subjectPublicKeyInfo algorithm field for end-entity certificates."
+ },
+ {
+  "item": 299,
+  "text_A": "The lowest-order two bits (XY) are currently unused and reserved for a rainy day.",
+  "text_B": "The lowest-order two bits (XY) are currently unused and reserved for future use."
+ }
+]
