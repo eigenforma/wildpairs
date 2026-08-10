@@ -1,0 +1,29 @@
+{
+  "computed": "2026-08-10, from rescued annotator vectors (A8)",
+  "checksums": {
+    "kappa_AB": 0.6622,
+    "disagreements": 35,
+    "precision_transitions": "84/99",
+    "leak_rewordings": "37/100"
+  },
+  "machine_label_medians": {
+    "strength_transition": 0.6504,
+    "keyword_preserved_rewording": 0.8666,
+    "n": [
+      100,
+      100
+    ]
+  },
+  "true_label_medians": {
+    "meaning_changing": 0.6842,
+    "meaning_preserving": 0.8988,
+    "n": [
+      121,
+      78
+    ]
+  },
+  "true_label_gap_preserving_minus_changing": 0.2146,
+  "orientation": "aligned",
+  "review_bounds_check": "exact value must lie in [+0.080, +0.259] from the 2026-08-08 admissible-bounds computation",
+  "join_note": "1 duplicate text-pair groups in the 200-sample (identical texts => identical label+Jaccard; join unaffected)"
+}
