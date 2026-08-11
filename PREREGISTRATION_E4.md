@@ -1,10 +1,10 @@
 # PREREGISTRATION — E4: The Floor Lemma survey (the deaf-gate bound)
 
-> **STATUS: DRAFT.** Binds nothing until frozen by tagged commit `prereg-e4`. Per the E3
-> precedent, **the tag must land before any embedding pass runs** — the proposal document
-> (`docs/proposals/floor_lemma_2026-08-06.md`, approved 2026-08-06 as partner science) is not a
-> pre-registration; this file is. The B1–B3 numbers below carry the proposal's stated values;
-> **operator ruling finalizes them at the freeze.**
+> **STATUS: FROZEN at tag `prereg-e4`** (2026-08-11). B1–B3 numbers ratified by operator ruling
+> 2026-08-11 ("freeze as drafted"); registers and per-config devices pinned in §2; the embedding
+> pass is legal only after this tag, per the E3 precedent. Proposal provenance:
+> `docs/proposals/floor_lemma_2026-08-06.md` (approved 2026-08-06 as partner science).
+> Amendments below the tag line hereafter.
 
 ## 1. The lemma (the claim being surveyed, not tested — the algebra is checkable today)
 

@@ -16,11 +16,13 @@ Anchor-side inputs: corpus/e2_dilution/anchors_frozen.jsonl (j_para/j_affirm/j_s
 payload texts) and results/verification/e2_attrition_tables.json (cross-checked).
 
 Optional inputs (TBD at tag time, PENDING verdicts when absent):
-  --stimuli   jsonl of constructed pair members, rows either
-              {anchor_id, L, text_orig, text_para, text_affirm[, text_scope]
-               [, host="enwiki"][, arm="splice"][, position]}
-              or {anchor_id, L, pair, text_a, text_b[, ...]}. Drives Delta_lex(L),
-              alpha_lex, and H5 observed r(L).
+  --stimuli   member-row jsonl emitted by harness/e2/titration_build.py:
+              {stim_id, anchor_id, arm, host_domain, host_id, L, position,
+               pair ("flip"|"faithful"|"scope"), member ("a"|"b"), text, payload_ws}.
+              Pair members join on (anchor_id, arm, host_domain, host_id, L, position,
+              pair); member a carries the orig-side text, member b the edited side.
+              Restricted here to arm=splice, host_domain=enwiki (the fit domain).
+              Drives Delta_lex(L), alpha_lex, and H5 observed r(L).
   --membership json {"mean_pooled": [names], "nevir_at_below_random": [names],
               "production": name} — the section-6 membership lists.
   --relabel   jsonl {anchor_id, annotator_a, annotator_b} — E2-P5 relabel; Cohen kappa
@@ -269,7 +271,8 @@ def lstar_block(bins, knots_point, knots_boot, level):
         ci = [None, None]
     else:
         lo, hi = np.percentile(ext, 2.5), np.percentile(ext, 97.5)
-        ci = [f"<={bins[0]}" if lo <= bins[0] else round(float(lo), 1),
+        ci = [right_lab if np.isinf(lo)
+              else (f"<={bins[0]}" if lo <= bins[0] else round(float(lo), 1)),
               right_lab if np.isinf(hi) else round(float(hi), 1)]
     return {"level": level, "lstar": point if point is not None else censor_label(point_code, bins),
             "censored": point_code != 0, "ci95": ci, "censored_notes": notes}
@@ -452,29 +455,32 @@ def load_scores(path, anchor_index):
 
 
 def load_stimuli(path):
-    """Tolerant reader for the (TBD) titration stimuli metadata. Returns
-    {(anchor_id, L): {"orig": text, "para": text, "affirm": text, "scope"?: text}}
-    restricted to arm=splice, host=enwiki (the fit domain for H1/H5)."""
-    out = {}
+    """Reader for titration_build.py member rows. Pair members join on
+    (anchor_id, arm, host_domain, host_id, L, position, pair); member a is the
+    orig-side text, member b the edited side. Returns
+    {(anchor_id, L): [variant, ...]} restricted to arm=splice, host_domain=enwiki
+    (the fit domain for H1/H5), one variant = one built (host_id, position) cell:
+    {"orig": text, "para": text, "affirm": text, "scope"?: text}. Variants missing
+    orig/para/affirm are dropped (counted by the caller as absent cells)."""
+    cells = {}
     for line in Path(path).read_text(encoding="utf-8").splitlines():
         if not line.strip():
             continue
         r = json.loads(line)
-        if r.get("arm", "splice") != "splice" or r.get("host", "enwiki") != "enwiki":
+        if r.get("arm") != "splice" or r.get("host_domain") != "enwiki":
             continue
-        key = (r["anchor_id"], int(r["L"]))
-        slot = out.setdefault(key, {})
-        if "text_orig" in r:
-            slot["orig"] = r["text_orig"]
-            slot["para"] = r.get("text_para", slot.get("para"))
-            slot["affirm"] = r.get("text_affirm", slot.get("affirm"))
-            if "text_scope" in r:
-                slot["scope"] = r["text_scope"]
-        elif "pair" in r and "text_a" in r:
-            slot.setdefault("orig", r["text_a"])
+        ck = (r["anchor_id"], r["host_id"], int(r["L"]), r["position"])
+        slot = cells.setdefault(ck, {})
+        if r["member"] == "a":
+            slot.setdefault("orig", r["text"])   # byte-identical across the cell's pairs
+        else:
             slot[{"faithful": "para", "flip": "affirm", "scope": "scope"}.get(
-                r["pair"], r["pair"])] = r["text_b"]
-    return {k: v for k, v in out.items() if "orig" in v and "para" in v and "affirm" in v}
+                r["pair"], r["pair"])] = r["text"]
+    out = {}
+    for (aid, _hid, L, _pos), v in sorted(cells.items()):
+        if "orig" in v and "para" in v and "affirm" in v:
+            out.setdefault((aid, L), []).append(v)
+    return out
 
 
 # --------------------------------------------------------------------------- main logic
@@ -548,6 +554,11 @@ def main(argv=None):
         "constant cohort and the 400 floor are computed on the full frozen anchor file (not the subset present in scores), so the fit floor is a property of the frozen population",
         "gate-term critical length population: splice/enwiki, positions pooled, full set",
         "NevIR bridge: pairwise accuracy = mean over (anchor,position) matched flip/faithful pairs of 1[cos_flip<cos_faithful] (ties 0.5) at L=64, splice/enwiki, with anchor-bootstrap CI",
+        "H3a denominator: '>= half the configurations' scored over EVALUABLE configs (ceil(evaluable/2)); non-evaluable configs listed",
+        "H2a/H2b/H4 all-config conjunctions: vacuous/non-evaluable configs are listed and excluded, verdict downgraded to PASS_EXCLUDING_* rather than bare PASS",
+        "stimuli lexical unit: per (anchor, L) the mean over built (host_id, position) variants of the pair Jaccard (one host draw per cell in the current build; robust to multi-draw pins)",
+        "monotonicity violations (section 3): reported per (config, population) as per-bin AUROC increases over the within-window domain; the PAV/spline smoothing serves only the L* carrier",
+        "NATIVE confirmatory reports H2a+H2b (the intersection-test bars) and H4 on the native arm's host",
     ]
 
     report = {
@@ -584,10 +595,11 @@ def main(argv=None):
         cohort = [g for g in present if cohort_mask[g]]
         g2p_coh = {g: i for i, g in enumerate(cohort)}
         pops = {"full_set": (present, g2p_full,
-                             weight_matrix([SEED, 11, ci_idx, 0], len(present), n_boot))}
-        if cohort:
-            pops["constant_cohort"] = (cohort, g2p_coh,
-                                       weight_matrix([SEED, 11, ci_idx, 1], len(cohort), n_boot))
+                             weight_matrix([SEED, 11, ci_idx, 0], len(present), n_boot)),
+                # always present (possibly empty) so every pop_key indexes safely;
+                # empty cohort -> cell_metrics returns None per cell -> no curve
+                "constant_cohort": (cohort, g2p_coh,
+                                    weight_matrix([SEED, 11, ci_idx, 1], len(cohort), n_boot))}
         window = windows.get(enc)
 
         # ------- organize obs per (arm, host, L): arrays
@@ -613,11 +625,16 @@ def main(argv=None):
             bin_frac[(arm, host, L)] = float(trunc.mean()) if len(trunc) else 0.0
 
         def cell_metrics(arm, host, L, pos_sel, pop_key="full_set", excl_trunc=True,
-                         with_ci=True):
+                         with_ci=True, *, _pops=pops, _cellarr=cellarr, _ci_idx=ci_idx):
             """AUROC / Delta / operating points for one cell. pos_sel: list of position
-            codes or None for pooled."""
-            plist, g2p, Wm = pops[pop_key]
-            arrs = cellarr.get((arm, host, L))
+            codes or None for pooled. The keyword-only defaults freeze THIS config's
+            state at def time: the function is stored in S[enc] and called after the
+            config loop, where a plain closure would late-bind every stored copy to the
+            last config's cellarr/pops (the loop rebinds those names each iteration)."""
+            if pop_key not in _pops:
+                return None
+            plist, g2p, Wm = _pops[pop_key]
+            arrs = _cellarr.get((arm, host, L))
             if arrs is None:
                 return None
             pos, aid, pair, cos, rmax, trunc = arrs
@@ -674,7 +691,7 @@ def main(argv=None):
             # caliper point estimate (payload-Jaccard within +/-0.05)
             jf = j_affirm[aid[fm]]
             jp = j_para[aid[pm]]
-            rng = np.random.default_rng([SEED, 5, ci_idx, GRID.index(L) if L in GRID else 99])
+            rng = np.random.default_rng([SEED, 5, _ci_idx, GRID.index(L) if L in GRID else 99])
             kf, kp = caliper_match(jf, jp, rng)
             out["caliper"] = {"auroc": r4(plain_auroc(cf[kf], cp[kp])) if len(kf) >= 30 else None,
                               "n_matched": int(len(kf))}
@@ -730,7 +747,8 @@ def main(argv=None):
                 continue
             bins = [L for (L, _) in per_bin]
             au_pt = np.array([cm["auroc"] for (_, cm) in per_bin], dtype=np.float64)
-            de_pt = np.array([(cm.get("delta") or {}).get("mean") or np.nan
+            de_pt = np.array([np.nan if (cm.get("delta") or {}).get("mean") is None
+                              else (cm.get("delta") or {}).get("mean")
                               for (_, cm) in per_bin], dtype=np.float64)
             au_boot = np.empty((n_boot, len(bins)))
             de_boot = np.empty((n_boot, len(bins)))
@@ -754,7 +772,13 @@ def main(argv=None):
                     "auroc_by_bin": {str(L): r4(v) for L, v in zip(bins, au_pt)},
                     "spline_knots": {str(L): r4(v) for L, v in zip(bins, knots_pt)},
                     "delta_by_bin": {str(L): r4(v) for L, v in zip(bins, de_pt)},
-                    "measured_delta_64": r4(de_pt[0]) if bins and bins[0] == 64 else None}
+                    "measured_delta_64": r4(de_pt[0]) if bins and bins[0] == 64 else None,
+                    # section 3 scoring convention: violations reported per cell, never
+                    # smoothed (the PAV/spline smoothing serves only the L* carrier)
+                    "monotonicity_violations": [
+                        {"bin": bins[k], "prev_bin": bins[k - 1], "auroc": r4(au_pt[k]),
+                         "prev_auroc": r4(au_pt[k - 1])}
+                        for k in range(1, len(bins)) if au_pt[k] > au_pt[k - 1]]}
             if len(bins) >= MIN_BINS_POWER:
                 a_pt, d0_pt, npos = power_fit_rows(bins, de_pt[None, :])
                 a_bt, d0_bt, _ = power_fit_rows(bins, de_boot)
@@ -807,10 +831,10 @@ def main(argv=None):
         s_host = np.full_like(dflip, np.nan)       # measured host set size
         payload = {}
         for k, L in enumerate(lex_bins):
-            for aidn, t in by_bin[L]:
+            for aidn, variants in by_bin[L]:
                 i = la2i[aidn]
-                jf = jaccard(t["orig"], t["affirm"])
-                jp = jaccard(t["orig"], t["para"])
+                jf = float(np.mean([jaccard(v["orig"], v["affirm"]) for v in variants]))
+                jp = float(np.mean([jaccard(v["orig"], v["para"]) for v in variants]))
                 dflip[i, k] = 1.0 - jf
                 dfaith[i, k] = 1.0 - jp
                 jflip_pass[i, k] = jf
@@ -821,7 +845,8 @@ def main(argv=None):
                     Qa, Qp = toks(a["payload_affirm"]), toks(a["payload_para"])
                     payload[aidn] = (P, Qa, Qp)
                 P, Qa, Qp = payload[aidn]
-                s_host[i, k] = len(toks(t["orig"]) - (P | Qa | Qp))
+                s_host[i, k] = float(np.mean(
+                    [len(toks(v["orig"]) - (P | Qa | Qp)) for v in variants]))
         # Delta_lex means + alpha_lex (flip primary)
         mflip = np.nanmean(dflip, axis=0)[None, :]
         mfaith = np.nanmean(dfaith, axis=0)[None, :]
@@ -888,16 +913,19 @@ def main(argv=None):
         return [L for L in bins if lo is None or L >= lo]
 
     def bar_auroc_upper(enc, pop_key, arm, host, bins):
-        """Per-bin AUROC bootstrap 95% upper bounds (intersection-test ingredient)."""
+        """Per-bin AUROC bootstrap 95% upper bounds (intersection-test ingredient).
+        Returns (per-bin table, bins with no scoreable data — disclosed, never silently
+        dropped from the 'every larger bin' conjunction)."""
         st = S[enc]
-        outs = {}
+        outs, no_data = {}, []
         for L in bins:
             cm = st["cell_metrics"](arm, host, L, None, pop_key=pop_key,
                                     excl_trunc=True, with_ci=True)
             if cm is None:
+                no_data.append(L)
                 continue
             outs[str(L)] = {"auroc": cm["auroc"], "ci95": cm["auroc_ci95"]}
-        return outs
+        return outs, no_data
 
     hyp = report["hypotheses"]
 
@@ -942,9 +970,6 @@ def main(argv=None):
     hyp["H1"] = h1_blocks
 
     # ---- H2a / H2b / H2c
-    for pop_key in ("full_set", "constant_cohort"):
-        pass  # populations handled inside each clause below
-
     def h2a_block(pop_key, arm, host, confirmatory=False):
         per, vac = {}, []
         allpass = True
@@ -954,14 +979,18 @@ def main(argv=None):
                 vac.append(enc)
                 per[enc] = {"evaluable_bins": [], "verdict": "NO_WITHIN_WINDOW_BIN_>=512"}
                 continue
-            tab = bar_auroc_upper(enc, pop_key, arm, host, bins)
+            tab, no_data = bar_auroc_upper(enc, pop_key, arm, host, bins)
             uppers = [v["ci95"][1] for v in tab.values() if v["ci95"][1] is not None]
             ok = bool(uppers) and all(u < 0.60 for u in uppers)
             per[enc] = {"evaluable_bins": bins, "per_bin": tab,
+                        "no_data_bins": no_data,
                         "max_upper": max(uppers) if uppers else None,
                         "pass": ok}
             allpass &= ok
-        verdict = "PASS" if allpass and not vac else ("FAIL" if not allpass else "PASS")
+        # vacuous configs are listed, never counted as passes (pin): a clean sweep over
+        # the evaluable configs with vacuous ones present cannot claim the bare PASS
+        verdict = ("PASS" if allpass and not vac else
+                   "PASS_EXCLUDING_VACUOUS" if allpass else "FAIL")
         if confirmatory:
             verdict = f"CONFIRMATORY_{verdict}"
         return {"bar": "every config: anchor-boot 95% upper bound of flip-vs-faithful AUROC < 0.60 "
@@ -973,12 +1002,12 @@ def main(argv=None):
 
     hyp["H2a"] = [h2a_block(pk, "splice", "enwiki") for pk in ("full_set", "constant_cohort")]
 
-    def h2b_block(pop_key):
+    def h2b_block(pop_key, arm="splice", host="enwiki", confirmatory=False):
         per, vac = {}, []
         allpass = True
         for enc in configs:
             st = S[enc]
-            bins = within_window_bins(enc, "splice", "enwiki", lo=1024)
+            bins = within_window_bins(enc, arm, host, lo=1024)
             if not bins:
                 vac.append(enc)
                 per[enc] = {"evaluable_bins": [], "verdict": "VACUOUS_FOR_CONFIG"}
@@ -987,12 +1016,13 @@ def main(argv=None):
             rows = {}
             uppers = []
             for L in bins:
-                cm = st["cell_metrics"]("splice", "enwiki", L, None, pop_key=pop_key,
+                cm = st["cell_metrics"](arm, host, L, None, pop_key=pop_key,
                                         excl_trunc=True, with_ci=False)
                 if cm is None:
                     continue
                 cf, af, cp, ap, jf, jp = cm["_arrs"]
-                rng = np.random.default_rng([SEED, 6, configs.index(enc), GRID.index(L)])
+                rng = np.random.default_rng([SEED, 6, configs.index(enc),
+                                             GRID.index(L) if L in GRID else 99])
                 cb = caliper_boot(cf, af, jf, cp, ap, jp, Wm, rng)
                 kf, kp = caliper_match(jf, jp, rng)
                 pt = plain_auroc(cf[kf], cp[kp]) if len(kf) >= 30 else float("nan")
@@ -1005,12 +1035,17 @@ def main(argv=None):
             per[enc] = {"evaluable_bins": bins, "per_bin": rows,
                         "max_upper": max(uppers) if uppers else None, "pass": ok}
             allpass &= ok
+        verdict = ("PASS" if allpass and not vac else
+                   "PASS_EXCLUDING_VACUOUS" if allpass else "FAIL")
+        if confirmatory:
+            verdict = f"CONFIRMATORY_{verdict}"
         return {"bar": "every config: caliper-matched (payload-Jaccard +/-0.05) anchor-boot 95% "
                        "upper bound < 0.65 at L=1024 and every larger within-window bin",
                 "population": pop_key, "statistic": per, "ci": "per-bin ci95 in statistic",
-                "verdict": "PASS" if allpass else "FAIL",
+                "verdict": verdict,
                 "censored_notes": ([f"vacuous (window < 1024): {vac} — bar binds only "
-                                    "long-context configs; flagged as amendment candidate"] if vac else [])}
+                                    "long-context configs; flagged as amendment candidate"] if vac else [])
+                + [f"host={host}, arm={arm} (host pin: see meta.pinned_by_module)"]}
 
     hyp["H2b"] = [h2b_block(pk) for pk in ("full_set", "constant_cohort")]
 
@@ -1038,11 +1073,12 @@ def main(argv=None):
                     if worst is None or lo_ > worst:
                         worst = lo_
                     ok &= lo_ <= 0.55
+        verdict = "PENDING_DATA" if not cellsb else ("PASS" if ok else "FAIL")
         return {"bar": "production path <=0.55 at every bin incl L=64 (CI lower bound <=0.55 "
                        "in every within-window SPLICE cell)",
                 "population": pop_key, "statistic": {"config": production, "cells": cellsb,
                                                      "max_ci_lower": worst},
-                "ci": "per-cell ci95 in statistic", "verdict": "PASS" if ok else "FAIL",
+                "ci": "per-cell ci95 in statistic", "verdict": verdict,
                 "censored_notes": ["short-L failure is reported as such, not absorbed (prereg scoring note)"]}
 
     hyp["H2c"] = [h2c_block(pk) for pk in ("full_set", "constant_cohort")]
@@ -1103,8 +1139,9 @@ def main(argv=None):
 
     # ---- H4 + degeneracy twin + gate-term critical length
     def h4_block(pop_key, arm="splice", host="enwiki", confirmatory=False):
-        per = {}
+        per, not_eval = {}, []
         allpass = True
+        n_eval = 0
         for enc in configs:
             st = S[enc]
             ww = within_window_bins(enc, arm, host)
@@ -1127,17 +1164,25 @@ def main(argv=None):
                     m = cm["ops"]["0.95"]["miss"]
                     det["clause_095"][str(L)] = m
                     ok2 &= (m is not None and m >= 0.90); have2 = True
-            cfg_pass = (ok1 and have1) and (ok2 and have2)
+            evaluable = have1 and have2
+            cfg_pass = evaluable and ok1 and ok2
             per[enc] = {"miss_0.85_by_bin_L>=256": det["clause_085"],
                         "miss_0.95_by_bin_L>=128": det["clause_095"],
-                        "evaluable": bool(have1 and have2), "pass": bool(cfg_pass)}
-            allpass &= cfg_pass
-        v = "PASS" if allpass else "FAIL"
+                        "evaluable": bool(evaluable), "pass": bool(cfg_pass)}
+            if evaluable:
+                n_eval += 1
+                allpass &= cfg_pass
+            else:
+                not_eval.append(enc)
+        v = ("PENDING_DATA" if n_eval == 0 else
+             "PASS" if allpass and not not_eval else
+             "PASS_EXCLUDING_NONEVALUABLE" if allpass else "FAIL")
         return {"bar": "miss@0.85 >= 0.95 for every config at every within-window bin >=256; "
                        "miss@0.95 >= 0.90 at every within-window bin >=128 (SPLICE, positions pooled)",
                 "population": pop_key, "statistic": per, "ci": None,
                 "verdict": f"CONFIRMATORY_{v}" if confirmatory else v,
-                "censored_notes": [f"host={host} (pin)"]}
+                "censored_notes": [f"host={host} (pin)"]
+                + ([f"not evaluable (no qualifying cells): {not_eval}"] if not_eval else [])}
 
     hyp["H4"] = [h4_block(pk) for pk in ("full_set", "constant_cohort")]
 
@@ -1199,10 +1244,9 @@ def main(argv=None):
                     "censored_notes": ["whole-passage Jaccard needs the titration stimuli"]}
         tab = lex["h5_by_bin"]
         need = [L for L in GRID if L >= 512]
-        have = [L for L in need if str(L) in tab]
-        missing = [L for L in need if str(L) not in tab]
-        ok = bool(have) and all(abs(tab[str(L)]["r_obs"]) < 0.10 for L in have
-                                if tab[str(L)]["r_obs"] is not None)
+        have = [L for L in need if str(L) in tab and tab[str(L)]["r_obs"] is not None]
+        missing = [L for L in need if L not in have]
+        ok = bool(have) and all(abs(tab[str(L)]["r_obs"]) < 0.10 for L in have)
         verdict = "PASS" if ok and not missing else ("FAIL" if have and not ok else "PENDING_STIMULI_BINS")
         if ok and missing:
             verdict = "PASS_ON_AVAILABLE_BINS"
@@ -1309,6 +1353,7 @@ def main(argv=None):
     if native_hosts:
         report["descriptives"]["native_confirmatory"] = {
             "H2a": [h2a_block("full_set", "native", native_hosts[0], confirmatory=True)],
+            "H2b": [h2b_block("full_set", "native", native_hosts[0], confirmatory=True)],
             "H4": [h4_block("full_set", arm="native", host=native_hosts[0], confirmatory=True)]}
     else:
         report["descriptives"]["native_confirmatory"] = {"status": "no native-arm cells present"}
