@@ -1,0 +1,60 @@
+[start] 50 sampled passages, 50 distinct titles
+[index] resolving offsets in 20210701 index...
+[index] 20210701: 50/50 titles resolved
+[index] resolving offsets in 20210720 index...
+[index] 20210720: 50/50 titles resolved
+[remote] block 1/47 (offset 5507681) done
+[remote] block 2/47 (offset 8698546) done
+[remote] block 3/47 (offset 20449920) done
+[remote] block 4/47 (offset 34492206) done
+[remote] block 5/47 (offset 40303852) done
+[remote] block 6/47 (offset 54122858) done
+[remote] block 7/47 (offset 63685865) done
+[remote] block 8/47 (offset 66648092) done
+[remote] block 9/47 (offset 79315681) done
+[remote] block 10/47 (offset 80442421) done
+[remote] block 11/47 (offset 84739311) done
+[remote] block 12/47 (offset 90457932) done
+[remote] block 13/47 (offset 91694454) done
+[remote] block 14/47 (offset 99752881) done
+[remote] block 15/47 (offset 113705377) done
+[remote] block 16/47 (offset 143978372) done
+[remote] block 17/47 (offset 149417457) done
+[remote] block 18/47 (offset 150825735) done
+[remote] block 19/47 (offset 153763155) done
+[remote] block 20/47 (offset 165926631) done
+[remote] block 21/47 (offset 173089390) done
+[remote] block 22/47 (offset 179325926) done
+[remote] block 23/47 (offset 187761783) done
+[remote] block 24/47 (offset 190480427) done
+[remote] block 25/47 (offset 193097836) done
+[remote] block 26/47 (offset 204426573) done
+[remote] block 27/47 (offset 213476209) done
+[remote] block 28/47 (offset 217693625) done
+[remote] block 29/47 (offset 227016549) done
+[remote] block 30/47 (offset 232902564) done
+[remote] block 31/47 (offset 241206045) done
+[remote] block 32/47 (offset 248233699) done
+[remote] block 33/47 (offset 250601004) done
+[remote] block 34/47 (offset 256058458) done
+[remote] block 35/47 (offset 257637783) done
+[remote] block 36/47 (offset 262305056) done
+[remote] block 37/47 (offset 268994397) done
+[remote] block 38/47 (offset 288765646) done
+[remote] block 39/47 (offset 290386739) done
+[remote] block 40/47 (offset 306895943) done
+[remote] block 41/47 (offset 308597593) done
+[remote] block 42/47 (offset 309301509) done
+[remote] block 43/47 (offset 316809088) done
+[remote] block 44/47 (offset 320236697) done
+[remote] block 45/47 (offset 330100863) done
+[remote] block 46/47 (offset 431157319) done
+[remote] block 47/47 (offset 585206157) done
+================================================================
+[verdict] two-dump test over 50 sampled passages (seed 20260810)
+  in both dumps      : 44
+  only 20210701      : 0
+  only 20210720      : 0
+  in neither         : 6
+  -> sample does not discriminate between the two dumps (equal support; both plausibly upstream of CondaQA)
+================================================================
