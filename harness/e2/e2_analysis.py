@@ -252,14 +252,17 @@ def censor_label(code, bins):
 
 def lstar_block(bins, knots_point, knots_boot, level):
     """L*(level) with censoring code and anchor-bootstrap CI (refit per resample).
-    Censored resamples enter the percentile order as bins[0] (left) / +inf (right);
-    a CI endpoint landing on +inf is reported as the right-censor code."""
+    Censored resamples enter the percentile order as bins[0] (left) or a finite
+    right-censor sentinel far beyond the domain (linear percentile interpolation over
+    +inf yields NaN via inf-inf); a CI endpoint landing on or interpolating into a
+    censored mass is reported as the censoring code, never as a number."""
     v, c = spline_crossings(bins, knots_point[None, :], level)
     point_code = int(c[0])
     point = None if point_code != 0 else round(float(v[0]), 1)
     bv, bc = spline_crossings(bins, knots_boot, level)
     usable = bc != 3
-    ext = np.where(bc == 1, float(bins[0]), np.where(bc == 2, np.inf, bv))
+    big = float(bins[-1]) * 1e9                 # right-censor sentinel
+    ext = np.where(bc == 1, float(bins[0]), np.where(bc == 2, big, bv))
     ext = ext[usable]
     notes = {
         "boot_left_censored_frac": round(float((bc == 1).mean()), 4),
@@ -267,13 +270,21 @@ def lstar_block(bins, knots_point, knots_boot, level):
         "boot_undefined_frac": round(float((bc == 3).mean()), 4),
     }
     right_lab = ">4096" if bins[-1] == 4096 else ">window"
+
+    def lab(x):
+        # numeric crossings live in [bins[0], bins[-1]]; anything above the domain
+        # ceiling was pulled by the sentinel mass, anything at/below the floor sits
+        # on the left-censor mass
+        if x > bins[-1]:
+            return right_lab
+        if x <= bins[0]:
+            return f"<={bins[0]}"
+        return round(float(x), 1)
+
     if len(ext) == 0:
         ci = [None, None]
     else:
-        lo, hi = np.percentile(ext, 2.5), np.percentile(ext, 97.5)
-        ci = [right_lab if np.isinf(lo)
-              else (f"<={bins[0]}" if lo <= bins[0] else round(float(lo), 1)),
-              right_lab if np.isinf(hi) else round(float(hi), 1)]
+        ci = [lab(np.percentile(ext, 2.5)), lab(np.percentile(ext, 97.5))]
     return {"level": level, "lstar": point if point is not None else censor_label(point_code, bins),
             "censored": point_code != 0, "ci95": ci, "censored_notes": notes}
 
@@ -542,7 +553,7 @@ def main(argv=None):
         "H2a/H2b evaluability: bins beyond a config's window are outside the scoring convention's within-window set; configs with no qualifying bin are listed as vacuous, never counted as passes",
         "power-law fit: both parameters (Delta0, alpha) by least squares in log space; measured Delta(64) reported beside fitted Delta0 (prereg's 'Delta0 == Delta(64)' read as identifiability statement, not a parameter pin)",
         "spline carrier: isotonic (PAV, uniform knot weights) non-increasing regression on per-bin AUROC over x=log2(L), monotone cubic Hermite (Fritsch-Carlson harmonic slopes, secant endpoints) through the isotonic knots; L*(A)=infimum L with spline<=A",
-        "L* CI: censored resamples enter the percentile order at first-bin / +inf; a CI endpoint on a censored mass is reported as the censoring code",
+        "L* CI: censored resamples enter the percentile order at first-bin / a finite right-censor sentinel beyond the domain; a CI endpoint landing on or interpolating into a censored mass is reported as the censoring code",
         "power-law alpha CI: refit per anchor resample on the same weight draws as the spline (shared resample stream per (config, population))",
         "caliper CIs (match refit per resample) computed for H2b bar cells; caliper point estimates + n_matched reported for every cell (E3 precedent reports caliper without CI)",
         "H3a aggregation: single pooled AUROC(early)-AUROC(late) over all bins with L <= window/2 (window unknown -> L <= max_within_window_bin/2); config counts as a hit on the point estimate, CI reported",
