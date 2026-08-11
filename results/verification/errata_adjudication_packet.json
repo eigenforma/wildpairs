@@ -1,0 +1,247 @@
+{
+ "instructions": "Operator adjudication, errata label-noise arm (amendment A5). For each item below the two blind annotators disagreed. Judge per the protocol in docs/annotation_protocol_errata.md \u2014 from the two texts alone; the machine labels remain sealed until every verdict is recorded.",
+ "n": 300,
+ "kappa_AB": 0.6813,
+ "agreement_raw": 0.8867,
+ "n_disagreements": 34,
+ "items": [
+  {
+   "item": 3,
+   "text_A": "Input: private key sk, Message M, WOTS+ seed SEED, address ADRS",
+   "text_B": "Input: Message M, WOTS+ private key sk, address ADRS, seed SEED",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 5,
+   "text_A": "RFC 4824 completely fails to appropriatey point out the benefits and merits of IP-SFS, and to perform a fair comparison with industry standard strenght security for common wireless protocols. Apparently, IP-SFS provides for industry standard Wireless Equivalent Privacy (WEP). It *is* a wireless protocol! Its interfaces do not consume electrical power (if used under daylight conditions) and do not produce any electromagnetical interference. The former property results in great applicability to developing economies that lack substantial ubiquitous electrical power distribution but have a lot of cheap manpower available, but it also makes IP-SFS great for countries with instable electrical power distribution systems, like the U.S. (and, yet currently still to a lesser degree, Europe). Both properties together make IP-SFS strictly immune to any modern cryptanalytical methods based on the variation of power consumption over time and to the suspected industry espionage by the electronical 'sky ears' still deployed in Europe and otherwise mostly idle, since the end of the Cold War. Furthermore, IP-SFS apparently is very well suited for environments with stringent legal requirements for the war against the Axis of Evil, with its step-by-step increasing legal custody of privacy and political correctness of content to be performed / enforced by legal authorities and cooperating access and content providers. That should make IP-SFS particularly interesting for the emerging infrastructure of the .cn domain (and for many other countries, as well). To change the disadvantageous presentation of IP-SFS and to address at least a few of its benefits, I recommend to change, via an RFC Errata Note, the first paragraph of Section 5, | By its nature of line-of-sight signaling, IP-SFS is considered | insecure. The transmission of sensitive data over IP-SFS is strongly | discouraged unless security is provided by higher level protocols. to say: | By its nature of line-of-sight signaling, IP-SFS is considered to | provide industry strength wireless equivalent security and privacy | (WEP). The transmission of sensitive data over IP-SFS is strongly | discouraged unless security is provided by legal environments or | corporate guidelines of conduct, impending punishment of the | interfaces, or other higher level protocols. :-)",
+   "text_B": "[see above]",
+   "annotator_A": "unjudgeable",
+   "annotator_B": "different"
+  },
+  {
+   "item": 7,
+   "text_A": "Data in the operational state datastore can come from multiple sources.",
+   "text_B": "Data in the operational state datatstore can come from multiple sources.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 30,
+   "text_A": "Variant code points are specified using one or more \"var\" elements as children of a \"char\" element.",
+   "text_B": "Variant code points are specified using one of more \"var\" elements as children of a \"char\" element.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 44,
+   "text_A": "If the PCC receives a PCUpd message for an LSP object identified with a PLSP-ID that does not exist on the PCC, it MUST generate a PCErr with Error-type=19 (Invalid Operation), error-value 3, (Attempted LSP Update Request for an LSP identified by an unknown PSP-ID) (see Section 8.5).",
+   "text_B": "If the PCC receives a PCUpd message for an LSP object identified with a PLSP-ID that does not exist on the PCC, it MUST generate a PCErr with Error-type=19 (Invalid Operation), error-value 3, (Attempted LSP Update Request for an LSP identified by an unknown PLSP-ID) (see Section 8.5).",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 53,
+   "text_A": "bit-stmt = bit-keyword sep identifier-arg-str optsep (\";\" / \"{\" stmtsep ;; these stmts can appear in any order [position-stmt stmtsep] [status-stmt stmtsep] [description-stmt stmtsep] [reference-stmt stmtsep] \"}\" \"}\")",
+   "text_B": "bit-stmt = bit-keyword sep identifier-arg-str optsep (\";\" / \"{\" stmtsep ;; these stmts can appear in any order [position-stmt stmtsep] [status-stmt stmtsep] [description-stmt stmtsep] [reference-stmt stmtsep] \"}\")",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 72,
+   "text_A": "[RFDSL] \"Russian Federal Electronic Digital Signature Law\", 10 Jan 2002 N 1-FZ.",
+   "text_B": "[RFDSL] \"Russian Federal Digital Signature Law\", 10 Jan 2002 N 1-FZ",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 84,
+   "text_A": "ipfixSelectorFunctions (1) | +- ipfixFuncMyFunc (?) | +- ipfixFuncMyFuncAvail (1) = true +- ipfixFuncMyFuncParameters (2) | +- ipfixFuncMyFuncParametersEntry (1) | +- index (1) (ipfixFuncMyFuncParametersIndex) | +- ipfixFuncMyFuncParam1 (1) = 47 | +- ipfixFuncMyFuncParam2 (2) = -128 | +- ipficFuncMyFuncParam3 (3) = 19 | +- index(4) (ipfixFuncMyFuncParametersIndex) +- ipfixFuncMyFuncParam1 (1) = 19 +- ipfixFuncMyFuncParam2 (2) = -1 +- ipficFuncMyFuncParam3 (3) = 728",
+   "text_B": "ipfixSelectorFunctions (1) | +- ipfixFuncMyFunc (?) | +- ipfixFuncMyFuncAvail (1) = true +- ipfixFuncMyFuncParameters (2) | +- ipfixFuncMyFuncParametersEntry (1) | +- index (1) (ipfixFuncMyFuncParametersIndex) | +- ipfixFuncMyFuncParam1 (1) = 47 | +- ipfixFuncMyFuncParam2 (2) = -128 | +- ipfixFuncMyFuncParam3 (3) = 19 | +- index(4) (ipfixFuncMyFuncParametersIndex) +- ipfixFuncMyFuncParam1 (1) = 19 +- ipfixFuncMyFuncParam2 (2) = -1 +- ipfixFuncMyFuncParam3 (3) = 728",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 86,
+   "text_A": "A router looks at the RS- Flag to detect if a neighbor is restarting. From the restarting router's perspective, if a neighboring router detects the RS- Flag is set, the neighboring router will maintain the adjacency with the restarting router. The restarting router will set the RS-Flag in its UPDATE packet to indicate it is performing a soft restart.",
+   "text_B": "The router looks at the RS- Flag to detect if a neighbor is restarting. From the restarting routers perspective, if a neighboring router detects the RS-Flag set, it will maintain the adjacency, and will set the RS-Flag in its UPDATE packet to indicated it is doing a soft restart.",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 89,
+   "text_A": "Note that the file extension is not part of the draft name, so in general it should end with the current draft number (\"-\", plus two digits).",
+   "text_B": "Note that the file extension is not part of the draft, so in general it should end with the current draft number (\"-\", plus two digits).",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 104,
+   "text_A": "bag checksum algorithm: The name of a cryptographic checksum algorithm that has been normalized for use in a manifest or tag manifest file name. See Section 2.4.",
+   "text_B": "bag checksum algorithm: The name of a cryptographic checksum algorithm that has been normalized for use in a manifest or tag manifest file name (e.g., \"sha512\") as described in Section 2.4.",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 112,
+   "text_A": "<< last paragraph of 3.5 >> When the requested Receiver Port is not available (e.g., port in use), the Server at the Session-Reflector MAY suggest an alternate and available port for this session in the Port field. The Session- Sender either accepts the alternate port, or composes a new Session- | Request message with suitable parameters. Otherwise, the Server at vvvvvvvvvvvvvvvvvv !!!!!!!!!!^^^ | the Control-Client uses the Accept field to convey other forms of | session rejection or failure and MUST NOT suggest an alternate port; ^ in this case, the Port field MUST be set to zero.",
+   "text_B": "When the requested Receiver Port is not available (e.g., port in use), the Server at the Session-Reflector MAY suggest an alternate and available port for this session in the Port field. The Session- Sender either accepts the alternate port, or composes a new Session- | Request message with suitable parameters. Otherwise, the Server uses ^ | the Accept field to convey other forms of session rejection or | failure to the Control-Client and MUST NOT suggest an alternate port; ^^^^^^^^^^^^^^^^^^^^^^^ in this case, the Port field MUST be set to zero.",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 121,
+   "text_A": "Accept-Encoding = \"Accept-Encoding\" \":\" 1#( codings [ \";\" \"q\" \"=\" qvalue ] ) codings = ( content-coding | \"*\" ) Examples of its use are: Accept-Encoding: compress, gzip Accept-Encoding: Accept-Encoding: * Accept-Encoding: compress;q=0.5, gzip;q=1.0 Accept-Encoding: gzip;q=1.0, identity; q=0.5, *;q=0",
+   "text_B": "Accept-Encoding = \"Accept-Encoding\" \":\" 1#( codings [ \";\" \"q\" \"=\" qvalue ] ) codings = ( content-coding | \"*\" ) Examples of its use are: Accept-Encoding: compress, gzip Accept-Encoding: * Accept-Encoding: compress;q=0.5, gzip;q=1.0 Accept-Encoding: gzip;q=1.0, identity; q=0.5, *;q=0",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 125,
+   "text_A": "Additionally, confederations (as well as route reflectors), by excluding different reachability information from consideration at different locations in a confederation, have been shown [RFC3345] to cause persistent oscillation between candidate routes when using the tie-breaking rules required by BGP [BGP-4].",
+   "text_B": "Additionally, confederations (as well as route reflectors), by excluding different reachability information from consideration at different locations in a confederation, have been shown [RFC3345] to cause permanent oscillation between candidate routes when using the tie-breaking rules required by BGP [BGP-4].",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 131,
+   "text_A": "This document specifies an Internet Best Current Practice",
+   "text_B": "This document specifies an Internet Best Current Practices",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 133,
+   "text_A": "This specification describes the encoding of digital signatures generated with the following cryptographic algorithms: | * Rivest-Shamir-Adelman (RSA); * Digital Signature Algorithm (DSA); and * Elliptic Curve Digital Signature Algorithm (ECDSA).",
+   "text_B": "This specification describes the encoding of digital signatures generated with the following cryptographic algorithms: | * Rivest-Shamir-Adleman (RSA); * Digital Signature Algorithm (DSA); and * Elliptic Curve Digital Signature Algorithm (ECDSA).",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 153,
+   "text_A": "Leurent,",
+   "text_B": "Leuren,",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 160,
+   "text_A": "of [SNMP-APPL].\"",
+   "text_B": "of RFC3413.\"",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 167,
+   "text_A": "vendor to do remote diagnostics on discreet elements of the device.",
+   "text_B": "vendor to do remote diagnostics on discrete elements of the device.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 181,
+   "text_A": "[RFC5472] describes the applicability of IPFIX and makes a comparison with RTFM, pointing out that, architecturally, while RTFM talks about devices, IPFIX deals with processes to clarify that multiple of those processes may be co- located on the same machine.",
+   "text_B": "[RFC5472] describes the applicability of IPFIX and makes a comparison with RTFM, pointing out that, architecturally, while RTM talks about devices, IPFIX deals with processes to clarify that multiple of those processes may be co- located on the same machine.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 182,
+   "text_A": "Section 2.3.1.1, page 8: old: A 32-bit value assigned to each message, which when used with the unique identifier validity value (see below) forms a 64-bit value that MUST NOT refer to any other message in the mailbox or any subsequent mailbox with the same name forever. Unique identifiers [...] new: An unsigned 32-bit value assigned to each message, which when used with the unique identifier validity value (see below) forms a 64-bit value that MUST NOT refer to any other message in the mailbox or any subsequent mailbox with the same name forever. Unique identifiers [...] ----- Section 2.3.1.1, page 9: old: Associated with every mailbox are two values which aid in unique identifier handling: the next unique identifier value and the unique identifier validity value. new: Associated with every mailbox are two 32-bit unsigned values which aid in unique identifier handling: the next unique identifier value (UIDNEXT) and the unique identifier validity value (UIDVALIDITY). ----- Section 5.1.3, page 19: old: All other characters (octet values 0x00-0x1f and 0x7f-0xff) are represented in modified BASE64, with a further modification from [UTF-7] that \",\" is used instead of \"/\". Modified BASE64 MUST NOT be used to represent any printing US-ASCII character which can represent itself. new: All other characters (octet values 0x00-0x1f and 0x7f-0xff) are represented in modified BASE64, with a further modification from [UTF-7] that \",\" is used instead of \"/\". Modified BASE64 MUST NOT be used to represent any printing US-ASCII character which can represent itself. Only characters inside the modified BASE64 alphabet are permitted in modified BASE64 text. ----- Section 5.4, page 22: old: If a server has an inactivity autologout timer, the duration of that timer MUST be at least 30 minutes. The receipt of ANY command from the client during that interval SHOULD suffice to reset the autologout timer. new: If a server has an inactivity autologout timer that applies to sessions after authentication, the duration of that timer MUST be at least 30 minutes. The receipt of ANY command from the client during that interval SHOULD suffice to reset the autologout timer. Section 5.5, page 22: old: Note: UID FETCH, UID STORE, and UID SEARCH are different commands from FETCH, STORE, and SEARCH. If the client sends a UID command, it must wait for a completion result response before sending a command with message sequence numbers. new: Note: EXPUNGE responses are permitted while UID FETCH, UID STORE, and UID SEARCH are in progress. If the client sends a UID command, it must wait for a completion result response before sending a command which uses message sequence numbers (this may include UID SEARCH). Any message sequence numbers in an argument to UID SEARCH are associated with messages prior to the effect of any untagged EXPUNGE returned by the UID SEARCH. ----- Section 6.2.1, page 27: old: Once [TLS] has been started, the client MUST discard cached information about server capabilities and SHOULD re-issue the CAPABILITY command. This is necessary to protect against man-in- the-middle attacks which alter the capabilities list prior to STARTTLS. The server MAY advertise different capabilities after STARTTLS. new: Once [TLS] has been started, the client MUST discard cached information about server capabilities and SHOULD re-issue the CAPABILITY command. This is necessary to protect against man-in- the-middle attacks which alter the capabilities list prior to STARTTLS. The server MAY advertise different capabilities, and in particular SHOULD NOT advertise the STARTTLS capability, after a successful STARTTLS command. ----- Section 6.2.2, page 28: old: The authentication protocol exchange consists of a series of server challenges and client responses that are specific to the authentication mechanism. A server challenge consists of a command continuation request response with the \"+\" token followed by a BASE64 encoded string. The client response consists of a single line consisting of a BASE64 encoded string. If the client wishes to cancel an authentication exchange, it issues a line consisting of a single \"*\". If the server receives such a response, it MUST reject the AUTHENTICATE command by sending a tagged BAD response. new: The authentication protocol exchange consists of a series of server challenges and client responses that are specific to the authentication mechanism. A server challenge consists of a command continuation request response with the \"+\" token followed by a BASE64 encoded string. The client response consists of a single line consisting of a BASE64 encoded string. If the client wishes to cancel an authentication exchange, it issues a line consisting of a single \"*\". If the server receives such a response, or if it receives an invalid BASE64 string (e.g. characters outside the BASE64 alphabet, or non-terminal \"=\"), it MUST reject the AUTHENTICATE command by sending a tagged BAD response. Section 6.3.4, page 36: old: It is permitted to delete a name that has inferior hierarchical names and does not have the \\Noselect mailbox name attribute. In this case, all messages in that mailbox are removed, and the name will acquire the \\Noselect mailbox name attribute. new: It is permitted to delete a name that has inferior hierarchical names and does not have the \\Noselect mailbox name attribute. If the server implementation does not permit deleting the name while inferior hierarchical names exists the \\Noselect mailbox name attribute is set for that name. In any case, all messages in that mailbox are removed by the DELETE command. ----- Section 6.3.10, page 44: old: Responses: untagged responses: STATUS new: Responses: REQUIRED untagged response: STATUS ----- Section 6.4.3, page 49: old: The EXPUNGE command permanently removes all messages that have the \\Deleted flag set from the currently selected mailbox. Before returning an OK to the client, an untagged EXPUNGE response is sent for each message that is removed. new: The EXPUNGE command permanently removes all messages that have the \\Deleted flag set from the currently selected mailbox. Before returning an OK to the client, an untagged EXPUNGE response is sent for each message that is removed. Note that if any messages with the \\Recent flag set are expunged, an untagged RECENT response is sent after the untagged EXPUNGE(s) to update the client's count of RECENT messages. ----- Section 6.4.4, page 50: old: [MIME-IMB] content transfer encodings, and [MIME-HDRS] strings in [RFC-2822]/[MIME-IMB] headers, MUST be decoded before comparing text in a [CHARSET] other than US-ASCII. US-ASCII MUST be supported; other [CHARSET]s MAY be supported. new: [MIME-IMB] content transfer encodings, and [MIME-HDRS] strings in [RFC-2822]/[MIME-IMB] headers, MUST be decoded before comparing text. US-ASCII MUST be supported; other [CHARSET]s MAY be supported. ----- Section 6.4.4, page 50: old: In all search keys that use strings, a message matches the key if the string is a substring of the field. The matching is case-insensitive. new: In all search keys that use strings, a message matches the key if the string is a substring of the associated text. The matching is case-insensitive. Note that the empty string is a substring; this is useful when doing a HEADER search. ----- Section 6.4.4, page 54: old: C: A284 SEARCH CHARSET UTF-8 TEXT {6} C: XXXXXX S: * SEARCH 43 S: A284 OK SEARCH completed new: C: A284 SEARCH CHARSET UTF-8 TEXT {6} S: + Ready for literal text C: XXXXXX S: * SEARCH 43 S: A284 OK SEARCH completed ----- Section 7.2.2, page 70: old: If it is not feasible for the server to determine whether or not the mailbox is \"interesting\", or if the name is a \\Noselect name, the server SHOULD NOT send either \\Marked or \\Unmarked. new: If it is not feasible for the server to determine whether or not the mailbox is \"interesting\", the server SHOULD NOT send either \\Marked or \\Unmarked. The server MUST NOT send more than one of \\Marked, \\Unmarked, and \\Noselect for a single mailbox, and MAY send none of these. ----- Section 7.4.2, page 75: old: body location A string list giving the body content URI as defined in [LOCATION]. new: body location A string giving the body content URI as defined in [LOCATION]. Section 7.4.2, page 77: old: body location A string list giving the body content URI as defined in [LOCATION]. new: body location A string giving the body content URI as defined in [LOCATION]. Formal Syntax, Page 84: old: CHAR8 = %x01-ff ; any OCTET except NUL, %x00 new: CHAR8 = %x01-ff ; any OCTET except NUL, %x00 charset = atom / quoted ----- Formal Syntax, Page 89: old: resp-text-code = \"ALERT\" / \"BADCHARSET\" [SP \"(\" astring *(SP astring) \")\" ] / new: resp-text-code = \"ALERT\" / \"BADCHARSET\" [SP \"(\" charset *(SP charset) \")\" ] / ----- Formal Syntax, Page 89: old: search = \"SEARCH\" [SP \"CHARSET\" SP astring] 1*(SP search-key) new: search = \"SEARCH\" [SP \"CHARSET\" SP charset] 1*(SP search-key) ----- Formal Syntax, Page 90: old: sequence-set = (seq-number / seq-range) *(\",\" sequence-set) new: sequence-set = (seq-number / seq-range) [\",\" sequence-set] ----- Formal Syntax, Page 90: old: status-att-list = status-att SP number *(SP status-att SP number) new: status-att-val = (\"MESSAGES\" SP number) / (\"RECENT\" SP number) / (\"UIDNEXT\" SP nz-number) / (\"UIDVALIDITY\" SP nz-number) / (\"UNSEEN\" SP number) status-att-list = status-att-val *(SP status-att-val) ----- IANA Considerations, Page 94: new: GSSAPI/Kerberos/SASL service names are registered by publishing a standards track or IESG approved experimental RFC. The registry is currently located at: http://www.iana.org/assignments/gssapi-service-names As this specification defines the \"imap\" service name previously defined in RFC 1731, the registry will be updated accordingly. ----- Normative References, Page 95: old: [LANGUAGE-TAGS] Alvestrand, H., \"Tags for the Identification of Languages\", BCP 47, RFC 3066, January 2001. new: [LANGUAGE-TAGS] Alvestrand, H., \"Content Language Headers\", RFC 3282, May 2002. Appendix B, Page 103: new: 115) Add support for Content-Location to BODYSTRUCTURE.",
+   "text_B": "[see above]",
+   "annotator_A": "unjudgeable",
+   "annotator_B": "different"
+  },
+  {
+   "item": 185,
+   "text_A": "To:A Group(Some people) :Chris Jones <c@public.example(Chris's host.)>, joe@example.org, John <jdoe@one.test> (my dear friend); (the end of the group)",
+   "text_B": "To:A Group(Some people) :Chris Jones <c@(Chris's host.)public.example>, joe@example.org, John <jdoe@one.test> (my dear friend); (the end of the group)",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 200,
+   "text_A": "Side A Side",
+   "text_B": "Side A Side B",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 214,
+   "text_A": "At the egress node, the normal traffic is selected | from either its working or one of the protection LSPs/spans. Unprotected extra traffic can be transported over the M protection | LSPs/spans whenever the protection LSPs/spans is not used to carry a normal traffic.",
+   "text_B": "At the egress node, the normal traffic is selected | from either its working or one of the protection LSP/span. Unprotected extra traffic can be transported over the M protection | LSP/span whenever the protection LSPs/spans is not used to carry a normal traffic.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 219,
+   "text_A": "Table 1: IANA Hash Function Textual Name Registry",
+   "text_B": "Table 1: IANA \"Hash Function Textual Names\" Registry",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 241,
+   "text_A": "<group name=\"partialMatchGroup\"> <choice> <sequence> <element name=\"beginsWith\"> <simpleType> <restriction base=\"token\"> <minLength value=\"1\"/> </restriction> </simpleType> </element> <element minOccurs=\"0\" name=\"endsWith\"> <simpleType> <restriction base=\"token\"> <minLength value=\"1\"/> </restriction> </simpleType> </element> </sequence> <element name=\"endsWith\"> <simpleType> <restriction base=\"token\"> <minLength value=\"1\"/> </restriction> </simpleType> </element> </choice> </group>",
+   "text_B": "<group name=\"partialMatchGroup\"> <choice> <sequence> <element name=\"beginsWith\" type=\"dreg:partialMatchComponentType\"/> <element name=\"endsWith\" type=\"dreg:partialMatchComponentType\" minOccurs=\"0\"/> </sequence> <element name=\"endsWith\" type=\"dreg:partialMatchComponentType\"/> </choice> </group> <simpleType name=\"partialMatchComponentType\"> <restriction base=\"token\"> <minLength value=\"1\"/> </restriction> </simpleType>",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 242,
+   "text_A": "applied to all source addresses",
+   "text_B": "applied to all source address",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 243,
+   "text_A": "In particular: of the root. @ A free standing @ is used to denote the current origin.",
+   "text_B": "In particular: @ A free standing @ is used to denote the current origin.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 259,
+   "text_A": "Confirming AC users MUST be able to accept a \"SEQUENCE OF Targets\".",
+   "text_B": "Conforming AC users MUST be able to accept a \"SEQUENCE OF Targets\".",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 264,
+   "text_A": "The CPE should return ICMPv6 Destination Unreachable message to a source address or silently discard the packets, when the original packet is destined for the unassigned prefix in the delegated prefix.",
+   "text_B": "The CPE should return an ICMPv6 Destination Unreachable message to the source address or silently discard the packet when the original packet is destined for an unassigned prefix in the delegated prefix.",
+   "annotator_A": "same",
+   "annotator_B": "different"
+  },
+  {
+   "item": 267,
+   "text_A": "fields =/ *( approved / archive / control / distribution / expires / followup-to / injection-date / injection-info / lines / newsgroups / organization / path / summary / supersedes / user-agent / xref )",
+   "text_B": "optional-field = <see RFC 5322 Section 3.6.8> news-fields = approved / archive / control / distribution / expires / followup-to / injection-date / injection-info / lines / newsgroups / organization / path / summary / supersedes / user-agent / xref optional-field =/ news-fields",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  },
+  {
+   "item": 282,
+   "text_A": "The EE certificate MUST NOT use \"inherit\" elements as described in [RFC3779].",
+   "text_B": "...EE certificate's IP address delegation extension.",
+   "annotator_A": "unjudgeable",
+   "annotator_B": "different"
+  },
+  {
+   "item": 284,
+   "text_A": "o A potential blind reset attack is described in RFC 5961 [9]. The mitigation described in that document has specific applicability explained therein, and is not a substitute for cryptographic protection (e.g., IPsec or TCP-AO). A TCP implementation that supports the mitigation described in RFC 5961 SHOULD first check that the sequence number exactly matches RCV.NXT prior to executing the action in the next paragraph.",
+   "text_B": "[ The text is removed - see notes]",
+   "annotator_A": "different",
+   "annotator_B": "unjudgeable"
+  },
+  {
+   "item": 295,
+   "text_A": "o Police - police, by dropping any packets received with a DSCP indicating PCN transport that do not belong to an admitted flow. (A prospective PCN-flow that is rejected could be blocked or admitted into a lower-priority behaviour aggregate.)",
+   "text_B": "o Police - drop or re-mark to a lower-priority behaviour aggregate i) packets received with a DSCP indicating PCN transport that do not belong to an admitted flow and ii) packets that are part of a flow that asked to be admitted as a PCN-flow but was rejected.",
+   "annotator_A": "different",
+   "annotator_B": "same"
+  }
+ ]
+}
