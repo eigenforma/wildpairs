@@ -1,0 +1,14 @@
+{
+  "dump": "/mnt/coldstore/wildpairs/enwiki/enwiki-20210701-pages-articles-multistream.xml.bz2",
+  "pages_seen": 21344690,
+  "articles_ns0": 6328523,
+  "redirects_skipped": 9646397,
+  "non_ns0_skipped": 5369770,
+  "passages": 1289,
+  "tier_full": 820,
+  "tier_partial": 402,
+  "tier_none": 67,
+  "match_rate_any": 0.948,
+  "match_rate_full": 0.6362,
+  "elapsed_sec": 3992
+}
