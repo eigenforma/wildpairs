@@ -1,0 +1,177 @@
+{
+ "n_judgeable": 296,
+ "n_changing": 238,
+ "n_preserving": 58,
+ "note": "post-hoc by construction (labels adjudicated 2026-08-11 after the frozen sweep); primary per the A5 promotion trigger; cluster bootstrap by RFC doc, seed 20260805",
+ "configs": {
+  "BAAI/bge-base-en-v1.5": {
+   "g1": {
+    "auroc": 0.7974,
+    "ci95_cluster": [
+     0.7424,
+     0.8546
+    ],
+    "n": 296
+   },
+   "g2": {
+    "auroc": 0.7553,
+    "ci95_cluster": [
+     0.6936,
+     0.8188
+    ],
+    "n": 296
+   }
+  },
+  "e5-base-v2 [NO prefix \u2014 sensitivity variant]": {
+   "g1": {
+    "auroc": 0.7734,
+    "ci95_cluster": [
+     0.7152,
+     0.8316
+    ],
+    "n": 296
+   },
+   "g2": {
+    "auroc": 0.7321,
+    "ci95_cluster": [
+     0.6724,
+     0.7968
+    ],
+    "n": 296
+   }
+  },
+  "e5-base-v2 [query: \u2014 card's symmetric convention]": {
+   "g1": {
+    "auroc": 0.8028,
+    "ci95_cluster": [
+     0.744,
+     0.8572
+    ],
+    "n": 296
+   },
+   "g2": {
+    "auroc": 0.77,
+    "ci95_cluster": [
+     0.7085,
+     0.8293
+    ],
+    "n": 296
+   }
+  },
+  "mixedbread-ai/mxbai-embed-large-v1": {
+   "g1": {
+    "auroc": 0.8044,
+    "ci95_cluster": [
+     0.7521,
+     0.8588
+    ],
+    "n": 296
+   },
+   "g2": {
+    "auroc": 0.7737,
+    "ci95_cluster": [
+     0.7138,
+     0.8325
+    ],
+    "n": 296
+   }
+  },
+  "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": {
+   "g1": {
+    "auroc": 0.752,
+    "ci95_cluster": [
+     0.6899,
+     0.8127
+    ],
+    "n": 296
+   },
+   "g2": {
+    "auroc": 0.7215,
+    "ci95_cluster": [
+     0.6534,
+     0.7888
+    ],
+    "n": 296
+   }
+  },
+  "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": {
+   "g1": {
+    "auroc": 0.7144,
+    "ci95_cluster": [
+     0.6481,
+     0.7766
+    ],
+    "n": 296
+   },
+   "g2": {
+    "auroc": 0.6802,
+    "ci95_cluster": [
+     0.6124,
+     0.75
+    ],
+    "n": 296
+   }
+  },
+  "sentence-transformers/all-MiniLM-L6-v2": {
+   "g1": {
+    "auroc": 0.7699,
+    "ci95_cluster": [
+     0.7118,
+     0.8281
+    ],
+    "n": 296
+   },
+   "g2": {
+    "auroc": 0.7407,
+    "ci95_cluster": [
+     0.6759,
+     0.8042
+    ],
+    "n": 296
+   }
+  },
+  "sentence-transformers/all-mpnet-base-v2": {
+   "g1": {
+    "auroc": 0.7291,
+    "ci95_cluster": [
+     0.6677,
+     0.7906
+    ],
+    "n": 296
+   },
+   "g2": {
+    "auroc": 0.6935,
+    "ci95_cluster": [
+     0.631,
+     0.7583
+    ],
+    "n": 296
+   }
+  },
+  "thenlper/gte-base": {
+   "g1": {
+    "auroc": 0.7779,
+    "ci95_cluster": [
+     0.7168,
+     0.8351
+    ],
+    "n": 296
+   },
+   "g2": {
+    "auroc": 0.7476,
+    "ci95_cluster": [
+     0.6833,
+     0.8111
+    ],
+    "n": 296
+   }
+  }
+ },
+ "jaccard_baseline_g1": {
+  "auroc": 0.7722,
+  "ci95_cluster": [
+   0.7123,
+   0.837
+  ]
+ }
+}

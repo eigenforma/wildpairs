@@ -1,0 +1,121 @@
+{
+ "closed": "2026-08-11T13:22:40.822Z (operator adjudication of all 34 disagreements; sitting page)",
+ "n": 300,
+ "unjudgeable_excluded": 4,
+ "kappa_AB": 0.6813,
+ "raw_agreement": 0.8867,
+ "operator_adjudications": {
+  "3": "same",
+  "5": "unjudgeable",
+  "7": "same",
+  "30": "different",
+  "44": "different",
+  "53": "different",
+  "72": "different",
+  "84": "different",
+  "86": "different",
+  "89": "different",
+  "104": "different",
+  "112": "different",
+  "121": "same",
+  "125": "different",
+  "131": "different",
+  "133": "same",
+  "153": "different",
+  "160": "different",
+  "167": "same",
+  "181": "different",
+  "182": "unjudgeable",
+  "185": "different",
+  "200": "different",
+  "214": "same",
+  "219": "same",
+  "241": "different",
+  "242": "different",
+  "243": "different",
+  "259": "different",
+  "264": "same",
+  "267": "different",
+  "282": "different",
+  "284": "unjudgeable",
+  "295": "different"
+ },
+ "adjudication_split": {
+  "different": 23,
+  "same": 8,
+  "unjudgeable": 3
+ },
+ "construct_vs_institution": {
+  "technical_confirmed_changing": {
+   "count": 139,
+   "of": 146,
+   "rate": 0.9521,
+   "wilson95": [
+    0.9043,
+    0.9766
+   ]
+  },
+  "editorial_adjudicated_changing_LEAK": {
+   "count": 99,
+   "of": 150,
+   "rate": 0.66,
+   "wilson95": [
+    0.581,
+    0.731
+   ]
+  },
+  "by_edit_class_rate_different": {
+   "kw2119": {
+    "count": 47,
+    "of": 47,
+    "rate": 1.0,
+    "wilson95": [
+     0.9244,
+     1.0
+    ]
+   },
+   "number": {
+    "count": 49,
+    "of": 49,
+    "rate": 1.0,
+    "wilson95": [
+     0.9273,
+     1.0
+    ]
+   },
+   "other": {
+    "count": 43,
+    "of": 50,
+    "rate": 0.86,
+    "wilson95": [
+     0.7381,
+     0.9305
+    ]
+   }
+  }
+ },
+ "noise_rates": {
+  "rho_T": 0.0479,
+  "rho_E": 0.66
+ },
+ "auroc_machinery": {
+  "attenuation_factor": 0.2921,
+  "max_observable_auroc_ceiling": 0.6461,
+  "h2_naive_range_corrected": [
+   0.6797,
+   0.7372
+  ],
+  "h2_stratified_range_corrected": [
+   0.5082,
+   0.5811
+  ],
+  "note": "first-order asymmetric correction A_true = 0.5 + (A_obs - 0.5)/(1 - rho_T - rho_E); the A5-registered symmetric form is its rho_T = rho_E special case"
+ },
+ "promotion_trigger_A5": {
+  "rule": "construct disagreement > 15% in either class promotes the adjudicated-construct subsample to primary",
+  "technical_disagreement": 0.0479,
+  "editorial_disagreement": 0.66,
+  "verdict": "TRIGGERED"
+ },
+ "provenance": "seat A: firewalled Claude context; seat B: gpt-oss-120b (Forge, temp 0); operator sitting 2026-08-11 via the adjudication page; machine labels sealed until all verdicts recorded"
+}
