@@ -1,0 +1,46 @@
+{
+ "note": "population-reweighted (Verified-prose g1 frame); construct labels; post-hoc, primary per A5 trigger; weights = pool/sample per stratum",
+ "weighted_class_shares": {
+  "changing": 0.7889,
+  "preserving": 0.2111
+ },
+ "configs": {
+  "BAAI/bge-base-en-v1.5": {
+   "g1": 0.7604,
+   "g2": 0.7164
+  },
+  "e5-base-v2 [NO prefix \u2014 sensitivity variant]": {
+   "g1": 0.7275,
+   "g2": 0.6838
+  },
+  "e5-base-v2 [query: \u2014 card's symmetric convention]": {
+   "g1": 0.7607,
+   "g2": 0.7254
+  },
+  "mixedbread-ai/mxbai-embed-large-v1": {
+   "g1": 0.7581,
+   "g2": 0.7278
+  },
+  "nomic-embed-text-v1.5 [clustering: \u2014 documented symmetric prefix]": {
+   "g1": 0.7176,
+   "g2": 0.6882
+  },
+  "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]": {
+   "g1": 0.6694,
+   "g2": 0.6432
+  },
+  "sentence-transformers/all-MiniLM-L6-v2": {
+   "g1": 0.7322,
+   "g2": 0.7018
+  },
+  "sentence-transformers/all-mpnet-base-v2": {
+   "g1": 0.6939,
+   "g2": 0.6566
+  },
+  "thenlper/gte-base": {
+   "g1": 0.7434,
+   "g2": 0.7131
+  }
+ },
+ "jaccard_baseline_g1": 0.7298
+}
