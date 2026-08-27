@@ -1,0 +1,364 @@
+% Paper B bibliography.
+% Every entry below was fetched from a primary source and verified during the 2026-08-12
+% characterization pass; the audit trail, including which of our sentences were wrong and how,
+% is docs/reference_verification.md. Do not add an entry here from memory.
+
+% ── the companion paper ────────────────────────────────────────────────────────────────────
+@misc{frias2026similarity,
+  author        = {Frias, Scott E.},
+  title         = {Similarity Gates Approve Reversals: A Validity Audit of Embedding-Cosine
+                   Thresholds in Agent Systems},
+  year          = {2026},
+  eprint        = {2608.10216},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2608.10216},
+  note          = {Artifact: \url{https://github.com/eigenforma/polaritycheck},
+                   DOI 10.5281/zenodo.21796531}
+}
+
+% ── auditing the vector-matching layer ────────────────────────────────────────────────────
+@inproceedings{wang2024metmap,
+  author    = {Wang, Guanyu and Li, Yuekang and Liu, Yi and Deng, Gelei and Li, Tianlin and
+               Xu, Guosheng and Liu, Yang and Wang, Haoyu and Wang, Kailong},
+  title     = {{MeTMaP}: Metamorphic Testing for Detecting False Vector Matching Problems in
+               {LLM} Augmented Generation},
+  booktitle = {Proceedings of the 2024 IEEE/ACM First International Conference on AI Foundation
+               Models and Software Engineering (FORGE '24)},
+  pages     = {12--23},
+  year      = {2024},
+  address   = {Lisbon, Portugal},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3650105.3652297},
+  note      = {Preprint: arXiv:2402.14480}
+}
+
+@inproceedings{steck2024cosine,
+  author    = {Steck, Harald and Ekanadham, Chaitanya and Kallus, Nathan},
+  title     = {Is Cosine-Similarity of Embeddings Really About Similarity?},
+  booktitle = {Companion Proceedings of the ACM Web Conference 2024 (WWW '24 Companion)},
+  pages     = {887--890},
+  year      = {2024},
+  address   = {Singapore},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3589335.3651526},
+  note      = {Short paper. Preprint: arXiv:2403.05440}
+}
+
+% ── length, dilution, position ────────────────────────────────────────────────────────────
+@inproceedings{zhou2025length,
+  author    = {Zhou, Yuqi and Dai, Sunhao and Cao, Zhanshuo and Zhang, Xiao and Xu, Jun},
+  title     = {Length-Induced Embedding Collapse in {PLM}-based Models},
+  booktitle = {Proceedings of the 63rd Annual Meeting of the Association for Computational
+               Linguistics (Volume 1: Long Papers)},
+  pages     = {28767--28791},
+  year      = {2025},
+  month     = jul,
+  address   = {Vienna, Austria},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2025.acl-long.1396},
+  url       = {https://aclanthology.org/2025.acl-long.1396/},
+  note      = {Cite this title; the arXiv v1 title (``Transformer-based'') is superseded}
+}
+
+@misc{lee2024positional,
+  author        = {Lee, Reagan J. and Goel, Samarth and Ramchandran, Kannan},
+  title         = {Quantifying Positional Biases in Text Embedding Models},
+  year          = {2024},
+  eprint        = {2412.15241},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2412.15241},
+  note          = {Venue unconfirmed at time of writing; cited as preprint}
+}
+
+@misc{lyu2026lost,
+  author        = {Lyu, Shanshan and Wang, Yiwei and Cai, Yujun and Guo, Jiafeng and
+                   Liu, Shenghua},
+  title         = {Lost in a Single Vector: Improving Long-Document Retrieval with Chunk
+                   Evidence Aggregation},
+  year          = {2026},
+  eprint        = {2606.18781},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.CL},
+  url           = {https://arxiv.org/abs/2606.18781}
+}
+
+% ── thresholds in deployed caches ─────────────────────────────────────────────────────────
+@inproceedings{schroeder2026vcache,
+  author    = {Schroeder, Luis Gaspar and Desai, Aditya and Cuadron, Alejandro and Chu, Kyle and
+               Liu, Shu and Zhao, Mark and Krusche, Stephan and Kemper, Alfons and
+               Zaharia, Matei and Gonzalez, Joseph E.},
+  title     = {{vCache}: Verified Semantic Prompt Caching},
+  booktitle = {The Fourteenth International Conference on Learning Representations (ICLR)},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=zF0A0xw3HZ},
+  note      = {Preprint: arXiv:2502.03771}
+}
+
+@misc{baral2026calibration,
+  author        = {Baral, Aditeya and Ralev, Radoslav and Zhechev, Iliya Sotirov and
+                   Rajamohan, Srijith and Agarwal, Jen},
+  title         = {Closing the Calibration Gap in Semantic Caching},
+  year          = {2026},
+  eprint        = {2606.19719},
+  archivePrefix = {arXiv},
+  primaryClass  = {cs.IR},
+  url           = {https://arxiv.org/abs/2606.19719},
+  note          = {Preprint; no conference venue}
+}
+
+% ── negation, NLI, and the instruments we build on ────────────────────────────────────────
+@inproceedings{weller2024nevir,
+  author    = {Weller, Orion and Lawrie, Dawn and Van Durme, Benjamin},
+  title     = {{NevIR}: Negation in Neural Information Retrieval},
+  booktitle = {Proceedings of the 18th Conference of the European Chapter of the Association for
+               Computational Linguistics (Volume 1: Long Papers)},
+  pages     = {2274--2287}, year = {2024}, month = mar, address = {St. Julian's, Malta},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2024.eacl-long.139},
+  url       = {https://aclanthology.org/2024.eacl-long.139/},
+  note      = {Documents derive from CondaQA; queries were newly crowdsourced}
+}
+
+@inproceedings{vandenelsen2025reproducing,
+  author    = {{van den Elsen}, Coen and Barkhof, Francien and Nijdam, Thijmen and
+               Lupart, Simon and Aliannejadi, Mohammad},
+  title     = {Reproducing {NevIR}: Negation in Neural Information Retrieval},
+  booktitle = {Proceedings of the 48th International ACM SIGIR Conference on Research and
+               Development in Information Retrieval (SIGIR '25)},
+  pages     = {3346--3356}, year = {2025}, address = {Padua, Italy},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3726302.3730294},
+  note      = {Reproducibility track. Preprint: arXiv:2502.13506}
+}
+
+@inproceedings{ravichander2022condaqa,
+  author    = {Ravichander, Abhilasha and Gardner, Matt and Marasovic, Ana},
+  title     = {{CONDAQA}: A Contrastive Reading Comprehension Dataset for Reasoning about Negation},
+  booktitle = {Proceedings of the 2022 Conference on Empirical Methods in Natural Language
+               Processing (EMNLP)},
+  pages     = {8729--8755}, year = {2022}, month = dec,
+  address   = {Abu Dhabi, United Arab Emirates},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2022.emnlp-main.598},
+  url       = {https://aclanthology.org/2022.emnlp-main.598/},
+  note      = {1,289 passages; 14,182 question-answer pairs. The scope edit retains the
+               negation cue}
+}
+
+@misc{truong2025learning,
+  author        = {Truong, Thinh Hung and Verspoor, Karin and Cohn, Trevor and Baldwin, Timothy},
+  title         = {Learning Robust Negation Text Representations},
+  year          = {2025}, eprint = {2507.12782}, archivePrefix = {arXiv},
+  primaryClass  = {cs.CL}, url = {https://arxiv.org/abs/2507.12782},
+  note          = {Preprint as of 2026-08-12; no public HedgeMPNet checkpoint located}
+}
+
+@inproceedings{hossain2020analysis,
+  author    = {Hossain, Md Mosharaf and Kovatchev, Venelin and Dutta, Pranoy and Kao, Tiffany and
+               Wei, Elizabeth and Blanco, Eduardo},
+  title     = {An Analysis of Natural Language Inference Benchmarks through the Lens of Negation},
+  booktitle = {Proceedings of the 2020 Conference on Empirical Methods in Natural Language
+               Processing (EMNLP)},
+  pages     = {9106--9118}, year = {2020}, month = nov, address = {Online},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2020.emnlp-main.732},
+  url       = {https://aclanthology.org/2020.emnlp-main.732/},
+  note      = {Contributes a new negation-critical NLI benchmark, not only the analysis}
+}
+
+@inproceedings{anschutz2023correct,
+  author    = {Anschutz, Miriam and Miguel Lozano, Diego and Groh, Georg},
+  title     = {This is not correct! Negation-aware Evaluation of Language Generation Systems},
+  booktitle = {Proceedings of the 16th International Natural Language Generation Conference (INLG)},
+  pages     = {163--175}, year = {2023}, month = sep, address = {Prague, Czechia},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/2023.inlg-main.12},
+  url       = {https://aclanthology.org/2023.inlg-main.12/},
+  note      = {Source of the CANNOT dataset, NegBLEURT, and the NegMPNet encoder}
+}
+
+@inproceedings{zhang2019paws,
+  author    = {Zhang, Yuan and Baldridge, Jason and He, Luheng},
+  title     = {{PAWS}: Paraphrase Adversaries from Word Scrambling},
+  booktitle = {Proceedings of the 2019 Conference of the North American Chapter of the Association
+               for Computational Linguistics: Human Language Technologies (NAACL-HLT)},
+  pages     = {1298--1308}, year = {2019}, month = jun, address = {Minneapolis, Minnesota},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/N19-1131}, url = {https://aclanthology.org/N19-1131/},
+  note      = {108,463 pairs by controlled word swapping and back-translation; both paraphrases
+               and non-paraphrases carry high lexical overlap}
+}
+
+@inproceedings{ethayarajh2019contextual,
+  author    = {Ethayarajh, Kawin},
+  title     = {How Contextual are Contextualized Word Representations? Comparing the Geometry of
+               {BERT}, {ELM}o, and {GPT-2} Embeddings},
+  booktitle = {Proceedings of the 2019 Conference on Empirical Methods in Natural Language
+               Processing and the 9th International Joint Conference on Natural Language
+               Processing (EMNLP-IJCNLP)},
+  pages     = {55--65}, year = {2019}, month = nov, address = {Hong Kong, China},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/D19-1006}, url = {https://aclanthology.org/D19-1006/},
+  note      = {SCOPE: contextualized TOKEN representations, per layer. Not sentence embeddings}
+}
+
+@inproceedings{gao2019representation,
+  author    = {Gao, Jun and He, Di and Tan, Xu and Qin, Tao and Wang, Liwei and Liu, Tie-Yan},
+  title     = {Representation Degeneration Problem in Training Natural Language Generation Models},
+  booktitle = {7th International Conference on Learning Representations (ICLR)},
+  year      = {2019}, address = {New Orleans, LA, USA},
+  url       = {https://openreview.net/forum?id=SkEYojRqtm},
+  note      = {SCOPE: tied output WORD-embedding matrices. Frames the cone as a trainable-away
+               defect and contributes a regularizer against it}
+}
+
+% ── institutional labels, measurement, and the statistical precedent ──────────────────────
+@inproceedings{mcquistin2023errare,
+  author    = {McQuistin, Stephen and Karan, Mladen and Khare, Prashant and Perkins, Colin and
+               Purver, Matthew and Healey, Patrick and Castro, Ignacio and Tyson, Gareth},
+  title     = {Errare humanum est: What do {RFC} Errata say about {Internet} Standards?},
+  booktitle = {2023 7th Network Traffic Measurement and Analysis Conference (TMA)},
+  pages     = {1--9}, year = {2023}, month = jun, address = {Naples, Italy}, publisher = {IEEE},
+  doi       = {10.23919/TMA58422.2023.10198980},
+  note      = {6,759 errata, Jan 2001 -- Dec 2022. Claims FIRST study, not only. Code:
+               10.5281/zenodo.8008032}
+}
+
+@inproceedings{jacobs2021measurement,
+  author    = {Jacobs, Abigail Z. and Wallach, Hanna},
+  title     = {Measurement and Fairness},
+  booktitle = {Proceedings of the 2021 ACM Conference on Fairness, Accountability, and
+               Transparency (FAccT '21)},
+  pages     = {375--385}, year = {2021}, month = mar, address = {Virtual Event, Canada},
+  publisher = {Association for Computing Machinery},
+  doi       = {10.1145/3442188.3445901},
+  note      = {Their terms: construct validity and construct RELIABILITY}
+}
+
+@misc{li2026proxy,
+  author        = {Li, Baishi and Yu, Ta and Koa, Kelvin J. L. and Huang, Ke-Wei},
+  title         = {The Proxy Presumption: From Semantic Embeddings to Valid Social Measures},
+  year          = {2026}, eprint = {2605.07409}, archivePrefix = {arXiv}, primaryClass = {cs.CL},
+  doi           = {10.48550/arXiv.2605.07409},
+  note          = {Cite v2 (9 July 2026). ACL 2026, Oral + SAC Highlight}
+}
+
+@inproceedings{chen2022seeing,
+  author    = {Chen, Yi and Tang, Di and Yao, Yepeng and Zha, Mingming and Wang, XiaoFeng and
+               Liu, Xiaozhong and Tang, Haixu and Zhao, Dongfang},
+  title     = {Seeing the Forest for the Trees: Understanding Security Hazards in the {3GPP}
+               Ecosystem through Intelligent Analysis on Change Requests},
+  booktitle = {31st USENIX Security Symposium (USENIX Security 22)},
+  pages     = {17--34}, year = {2022}, month = aug, address = {Boston, MA, USA},
+  publisher = {USENIX Association},
+  url       = {https://www.usenix.org/conference/usenixsecurity22/presentation/chen-yi},
+  note      = {CREEK pipeline. The CR Category field is used only as a pre-filter, never as a
+               feature or label}
+}
+
+@inproceedings{nikbakht2024tspec,
+  author    = {Nikbakht, Rasoul and Benzaghta, Mohamed and Geraci, Giovanni},
+  title     = {{TSpec-LLM}: An Open-source Dataset for {LLM} Understanding of {3GPP}
+               Specifications},
+  booktitle = {2024 IEEE Globecom Workshops (GC Wkshps)},
+  pages     = {1--6}, year = {2024}, publisher = {IEEE},
+  doi       = {10.1109/GCWKSHP64532.2024.11101012},
+  note      = {Published version; arXiv:2406.01768 is the superseded preprint}
+}
+
+@inproceedings{shen2025psmbench,
+  author    = {Shen, Zilin and Luo, Xinyu and Karim, Imtiaz and Bertino, Elisa},
+  title     = {{PSMBench}: A Benchmark and Dataset for Evaluating {LLMs} Extraction of Protocol
+               State Machines from {RFC} Specifications},
+  booktitle = {Advances in Neural Information Processing Systems 38 (NeurIPS 2025) Datasets and
+               Benchmarks Track},
+  year      = {2025}, url = {https://openreview.net/forum?id=5HGBErIHuV},
+  note      = {TWO artifacts: RFC2PSM is the dataset (1,580 pages, 14 protocols, 108 states,
+               297 transitions); PsmBench is the benchmark over it}
+}
+
+@article{simpson1951interpretation,
+  author  = {Simpson, E. H.},
+  title   = {The Interpretation of Interaction in Contingency Tables},
+  journal = {Journal of the Royal Statistical Society: Series B (Methodological)},
+  year    = {1951}, volume = {13}, number = {2}, pages = {238--241},
+  doi     = {10.1111/j.2517-6161.1951.tb00088.x}
+}
+
+@article{blyth1972simpson,
+  author  = {Blyth, Colin R.},
+  title   = {On Simpson's Paradox and the Sure-Thing Principle},
+  journal = {Journal of the American Statistical Association},
+  year    = {1972}, volume = {67}, number = {338}, pages = {364--366},
+  doi     = {10.1080/01621459.1972.10482387},
+  note    = {Coins the name}
+}
+
+@article{yule1903notes,
+  author  = {Yule, G. Udny},
+  title   = {Notes on the Theory of Association of Attributes in Statistics},
+  journal = {Biometrika},
+  year    = {1903}, volume = {2}, number = {2}, pages = {121--134},
+  doi     = {10.1093/biomet/2.2.121},
+  note    = {Association CREATED by amalgamation, not reversed. Do not cite alone for reversal}
+}
+
+@article{chapman2001simple,
+  author  = {Chapman, Wendy W. and Bridewell, Will and Hanbury, Paul and Cooper, Gregory F. and
+             Buchanan, Bruce G.},
+  title   = {A Simple Algorithm for Identifying Negated Findings and Diseases in Discharge
+             Summaries},
+  journal = {Journal of Biomedical Informatics},
+  year    = {2001}, volume = {34}, number = {5}, pages = {301--310}, month = oct,
+  doi     = {10.1006/jbin.2001.1029},
+  note    = {Scope: discharge summaries. Makes NO claim about similarity of any kind}
+}
+
+% ── the elicited corpora the validity ladder runs on (see docs/reference_verification.md:
+%    QQP has no canonical paper; it is a Quora data release, conventionally cited via GLUE) ──
+@inproceedings{bowman2015snli,
+  author    = {Bowman, Samuel R. and Angeli, Gabor and Potts, Christopher and Manning,
+               Christopher D.},
+  title     = {A Large Annotated Corpus for Learning Natural Language Inference},
+  booktitle = {Proceedings of the 2015 Conference on Empirical Methods in Natural Language
+               Processing (EMNLP)},
+  pages     = {632--642}, year = {2015}, address = {Lisbon, Portugal},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/D15-1075}, url = {https://aclanthology.org/D15-1075/}
+}
+
+@inproceedings{williams2018mnli,
+  author    = {Williams, Adina and Nangia, Nikita and Bowman, Samuel R.},
+  title     = {A Broad-Coverage Challenge Corpus for Sentence Understanding through Inference},
+  booktitle = {Proceedings of the 2018 Conference of the North American Chapter of the
+               Association for Computational Linguistics: Human Language Technologies
+               (NAACL-HLT)},
+  pages     = {1112--1122}, year = {2018}, address = {New Orleans, Louisiana},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/N18-1101}, url = {https://aclanthology.org/N18-1101/}
+}
+
+@inproceedings{wang2018glue,
+  author    = {Wang, Alex and Singh, Amanpreet and Michael, Julian and Hill, Felix and
+               Levy, Omer and Bowman, Samuel R.},
+  title     = {{GLUE}: A Multi-Task Benchmark and Analysis Platform for Natural Language
+               Understanding},
+  booktitle = {Proceedings of the 2018 EMNLP Workshop BlackboxNLP: Analyzing and Interpreting
+               Neural Networks for NLP},
+  pages     = {353--355}, year = {2018}, address = {Brussels, Belgium},
+  publisher = {Association for Computational Linguistics},
+  doi       = {10.18653/v1/W18-5446}, url = {https://aclanthology.org/W18-5446/},
+  note      = {Cited as the distribution route for Quora Question Pairs, which has no paper}
+}
+
+@article{pearson1899genetic,
+  author  = {Pearson, Karl and Lee, Alice and Bramley-Moore, Lesley},
+  title   = {Mathematical Contributions to the Theory of Evolution. {VI}. Genetic (Reproductive)
+             Selection: Inheritance of Fertility in Man, and of Fecundity in Thoroughbred
+             Racehorses},
+  journal = {Philosophical Transactions of the Royal Society A},
+  year    = {1899}, volume = {192}, pages = {257--330},
+  note    = {Usual earliest citation for the amalgamation phenomenon}
+}

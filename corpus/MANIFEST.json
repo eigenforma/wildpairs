@@ -45,7 +45,7 @@
     },
     {
       "path": "wildpairs/rfc-text.sha256list",
-      "host": "10.1.20.207",
+      "host": "agora",
       "mount": "/mnt/coldstore",
       "external": true,
       "source_url": "rsync://rsync.rfc-editor.org/rfcs-text-only",
@@ -57,7 +57,7 @@
     },
     {
       "path": "wildpairs/e3_composed/multinli_1.0.zip",
-      "host": "10.1.20.207",
+      "host": "agora",
       "mount": "/mnt/coldstore",
       "external": true,
       "source_url": "https://cims.nyu.edu/~sbowman/multinli/multinli_1.0.zip",
@@ -69,7 +69,7 @@
     },
     {
       "path": "wildpairs/e3_composed/QQP-clean.zip",
-      "host": "10.1.20.207",
+      "host": "agora",
       "mount": "/mnt/coldstore",
       "external": true,
       "source_url": "https://dl.fbaipublicfiles.com/glue/data/QQP-clean.zip",
@@ -81,7 +81,7 @@
     },
     {
       "path": "wildpairs/e3_composed/snli_1.0.zip",
-      "host": "10.1.20.207",
+      "host": "agora",
       "mount": "/mnt/coldstore",
       "external": true,
       "source_url": "https://nlp.stanford.edu/projects/snli/snli_1.0.zip",
@@ -93,7 +93,7 @@
     },
     {
       "path": "wildpairs/e3_composed/paws_labeled_final_test.parquet",
-      "host": "10.1.20.207",
+      "host": "agora",
       "mount": "/mnt/coldstore",
       "external": true,
       "source_url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/main/labeled_final/test-00000-of-00001.parquet",
@@ -105,7 +105,7 @@
     },
     {
       "path": "wildpairs/e3_composed/paws_labeled_final_train.parquet",
-      "host": "10.1.20.207",
+      "host": "agora",
       "mount": "/mnt/coldstore",
       "external": true,
       "source_url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/main/labeled_final/train-00000-of-00001.parquet",
@@ -117,7 +117,7 @@
     },
     {
       "path": "wildpairs/e3_composed/paws_labeled_final_validation.parquet",
-      "host": "10.1.20.207",
+      "host": "agora",
       "mount": "/mnt/coldstore",
       "external": true,
       "source_url": "https://huggingface.co/datasets/google-research-datasets/paws/resolve/main/labeled_final/validation-00000-of-00001.parquet",
@@ -129,7 +129,7 @@
     },
     {
       "path": "wildpairs/pmc/CHECKSUMS",
-      "host": "10.1.20.207",
+      "host": "agora",
       "mount": "/mnt/coldstore",
       "external": true,
       "source_url": "s3://pmc-oa-opendata/deprecated/oa_comm/txt/all/ (legacy prefix, DELETED on/after 2026-08-24 per NCBI announcement 2026-02-12; post-expiry reproduction: eSearch->S3 per-article pipeline)",
@@ -140,7 +140,7 @@
     },
     {
       "path": "pmc_frozen_slice.tgz",
-      "host": "10.1.20.223",
+      "host": "forge",
       "mount": "/mnt/weight_vault",
       "external": true,
       "source_url": "redundancy copy of agora:/mnt/coldstore/wildpairs/pmc (source S3 prefix deleted 2026-08-24; two-site rule for irreplaceable data)",

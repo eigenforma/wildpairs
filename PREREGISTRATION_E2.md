@@ -1,14 +1,11 @@
 # PREREGISTRATION — E2: The Dilution Law
 
-> **STATUS: DRAFT.** Binds nothing until frozen by tagged commit `prereg-e2`. The tag lands
-> only after the host slices of §2 are pinned (PMC slice definition, native-arm match rate);
-> **no encoder output will be observed on any titrated passage before the tag.** Everything in
-> §6 is encoder-blind lexical computation.
->
-> **Sharpened 2026-08-08 by the five-lens adversarial review** (`docs/reviews/adversarial_review_2026-08-08.md`).
-> No numeric bar moved; the pass pins definitions (L, k, L\*, numerics, intersection tests) that a
-> hostile reader could otherwise exploit, and adds the review's named secondary analyses.
-> **Time-critical: the PMC legacy S3 path is deleted on or after 2026-08-24 — freeze the slice this week (§2).**
+> **STATUS: FROZEN at tag `prereg-e2`** (2026-08-11, operator ratification). Everything above the
+> amendment divider binds; amendments append below it, dated. No encoder scored any titrated
+> passage before the tag. Provenance: drafted 2026-08-05, sharpened 2026-08-08 by the five-lens
+> adversarial review (`docs/reviews/adversarial_review_2026-08-08.md`), pinned 2026-08-11 by the
+> build and verification passes (member arithmetic, position slots, shard axes, bar semantics).
+> The PMC slice was frozen two-site on 2026-08-10, ahead of the source path's 2026-08-24 deletion.
 
 ## 1. Population and payloads
 
@@ -65,3 +62,23 @@ From `harness/e2/build_anchors.py` + `scripts/verify_condaqa.py` on the frozen s
 *Landed 2026-08-10, second batch ([docs/e2_pretag_provenance.md](docs/e2_pretag_provenance.md) carries full evidence): **H1 mean-pooled membership = 6 of 9** (e5 ×2, gte, nomic-clustering, MiniLM, mpnet; CLS: bge, mxbai, nomic-MRL-256-production — pooling is a configuration property, the same nomic weights sit in both sets); **NevIR external anchor: all-mpnet-base-v2 is the sole directly tested member of the nine** (8.1% vs 25% random, Table 2) — model-level clause applies to it alone, class-level otherwise; **chunk-size survey**: deployed defaults concentrate on the 1024 bin (LlamaIndex 1024 tok, kernel-memory 1000 tok, LangChain ≈800 ws-tok; GPTCache ships no length default), none below 512 — the L grid now carries opened-and-read deployment provenance. **PMC slice frozen two-site** (agora coldstore + forge vault, MANIFEST entries, deadline beaten).*
 
 *Landed 2026-08-11, final batch — **the tag-time list is complete**: NATIVE match rate 94.8% and the two-dump resolution (§2); host assignment pinned with seed (§2); tokenizer conversion + effective-window tables (`scripts/tokenizer_conversion_tables.py` → `results/verification/e2_tokenizer_tables.json`): ×1.3 covers the fit domain (Wikipedia medians 1.26–1.31) while the RFC register runs 1.36–1.56 median / up to 2.13 p90 — realized-token medians per cell (the pinned second axis) carry the overrun, and p90 stimuli at nominal L=512 truncate on the seven 510-effective-window configs, which the registered L=512 dual analysis absorbs; specials = 2 everywhere; nomic windows 8190 (at L=4096 on RFC, p90 realized can brush even that — flagged). **The tag now waits only on operator ratification** (this document as amended + the two "ratified at tag" pins + the harness verification pass).*
+
+---
+
+## Amendments (append-only, below the `prereg-e2` tag line)
+
+- **A1 — numerics re-pin for gte-base and mxbai-embed-large (2026-08-11, operator ruling; E3
+  amendment-A1 precedent).** §2 pinned both fp16-native checkpoints to the Paper A/E1 Wu-CPU
+  reference path, with the wall-clock caveat the same section recorded. Measured on the first
+  two executed cells (gte, Wu CPU: 0.460 s/pair at L=64, 0.649 s/pair at L=96), the pinned path
+  projects to **≈512 CPU-hours (21 days)** for these two configurations over the built grid
+  (218,415 pairs, 510-token cap) — the caveat bound. **Ruling: for E2 only, gte-base and
+  mxbai-embed-large run under declared fresh fp32 GPU numerics (Agora), exactly as E3 declared
+  its own regime for a fresh experiment.** The other seven configurations keep the pinned-path
+  regime and must still clear the §2 parity gate before any shard of theirs is admitted.
+  **The seam is measured, not assumed:** the parity gate (`scripts/e2_parity_gate.py`) scores
+  these two on both paths at L ∈ {64, 512, 4096} and reports max |Δcos| per bin; that number is
+  published beside every gte/mxbai figure and beside the L=64 bridge to Paper A. No E2 bar
+  compares these two configurations' cosines to any Paper A or E1 cosine; all E2 bars are
+  within-E2 comparisons (decay, L\*, thresholds), which the regime change leaves intact.
+  Everything above the tag line is unchanged.

@@ -63,3 +63,34 @@ independent section or §9-style note — one theorem, one measured table, one m
 One commit that (a) finalizes B1–B3 numbers by operator ruling, (b) pins the register file list
 and per-config devices, (c) is tagged `prereg-e4`. Amendments below the tag line thereafter.
 The embedding pass runs only after the tag exists.
+
+---
+
+**AMENDMENT A1 (2026-08-11, device failure re-pin — E3 A1 precedent):** the two Agora cells
+(gte-base, nomic-clustering) OOM'd twice beside the resident 20B (4.5 GB free vs ~1.1 GB
+attention allocations; eviction requires an operator password and the operator is in
+low-wattage mode). Re-pinned to **Forge** (slice complete, CUDA, fp32 unchanged, batch 8,
+expandable segments); per-cell meta records the executed device as always. CPU-on-Agora is
+the recorded fallback if Forge's 3.5 GB beside the 120B also refuses.
+
+**AMENDMENT A2 (2026-08-11, B3 investigation closed):** the six flagged cells are all
+scope-condition breaches (θ_max > π/2) on the MiniLM/mpnet configurations, cross-device
+verified (Forge CUDA reproduces Lear MPS θ_max = 99.796° to 1e-3). Not an instrument error:
+the lemma is inapplicable to non-cone clouds, which the flag correctly detected. Full reading:
+`docs/findings_e4_2026-08-11.md`. B1/B2 stand as honest substantive misses per the
+falsifier-honesty clause.
+
+**AMENDMENT A3 (2026-08-12, correcting A2's provenance — append-only, A2 stands as written above).**
+A2 asserted "cross-device verified (Forge CUDA reproduces Lear MPS θ_max = 99.796° to 1e-3)". The
+2026-08-12 number-fidelity audit correctly flagged that claim **unsourced**: the probe that
+justified it was written to `/tmp` on Forge and never frozen, and every committed vector cell
+records `lear/mps`. Two corrections, neither of which changes A2's conclusion:
+1. **The claim is now sourced.** Re-run 2026-08-12 and frozen at
+   `results/verification/e4_cross_arch_theta.json`: Forge CUDA fp32 reproduces the Lear MPS θ_max on
+   **all six breaching cells with maximum deviation 0.000°**.
+2. **The figure A2 quotes is the wrong one.** 99.796° is MiniLM on the CondaQA register alone. The
+   maximum over breaching cells is **106.321°** (mpnet on the E3 register), and the breach spans
+   **six cells** (two configurations × three registers), not one number.
+B3's frozen verdict string remains `FAIL (instrument-error investigation per prereg §3)`; the
+investigation's *conclusion* is a scope finding, and both are now reported that way rather than the
+verdict being softened to its interpretation. Full ledger: `docs/CORRECTIONS_2026-08-12.md`.

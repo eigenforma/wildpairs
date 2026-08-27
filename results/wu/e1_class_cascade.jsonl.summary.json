@@ -1,0 +1,40 @@
+{
+ "population": "Verified-prose Technical g1 pairs (status==Verified, type==Technical, code_primary==false, g1 present)",
+ "n_pairs": 1425,
+ "skipped_no_g1": 0,
+ "n_disagreements_arbitrated_uncapped": 356,
+ "regex_unseen_class_pool": {
+  "eligible_denominator": 773,
+  "sampled": 200,
+  "cap": 200,
+  "seed": 20260805,
+  "unsampled_kept_bulk_flagged": 573
+ },
+ "arbiter_unresolved_fallbacks": 0,
+ "final_class_counts": {
+  "identifier-constant": 547,
+  "scope-other": 478,
+  "number": 267,
+  "kw2119": 97,
+  "polarity-negation": 36
+ },
+ "bulk_class_counts": {
+  "identifier-constant": 482,
+  "scope-other": 539,
+  "number": 262,
+  "kw2119": 89,
+  "unparseable": 14,
+  "polarity-negation": 39
+ },
+ "regex_label_counts": {
+  "none": 832,
+  "number": 475,
+  "kw2119": 118
+ },
+ "pins": [
+  "kw2119 precedence over number when both multisets change (flags recorded)",
+  "arbiter blind to bulk and regex labels",
+  "arbiter verdict wins where arbitrated; unparseable arbiter falls back to bulk (else regex, else scope-other), counted"
+ ],
+ "generated_utc": "2026-08-12T00:35:15Z"
+}

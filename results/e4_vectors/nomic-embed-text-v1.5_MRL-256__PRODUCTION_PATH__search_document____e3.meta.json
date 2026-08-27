@@ -1,0 +1,20 @@
+{
+ "config": "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]",
+ "register": "e3",
+ "n_texts": 28747,
+ "device": "cpu",
+ "fp32_forced": false,
+ "runtime": {
+  "path": "intern.pipeline.embedding_router.MRLEmbeddingRouter"
+ },
+ "hostname": "Wu",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "sources": [
+  {
+   "path": "C:\\Users\\poeti\\wildpairs\\corpus\\e3_composed_sweep_sample.jsonl",
+   "sha256": "ceb307849323b1dd27e89a2b21ace89d84266ab8f37e30abd9c04047f5abc497"
+  }
+ ],
+ "vector_dtype": "float16",
+ "created_utc": "2026-08-11T20:52:14Z"
+}

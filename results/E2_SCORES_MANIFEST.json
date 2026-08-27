@@ -1,0 +1,30 @@
+{
+ "results/forge/e2_shard_odd.json": {
+  "bytes": 167831734,
+  "sha256": "f57e3fae0da87b5ee0e8671559a63e49c59cfb04e5948bdfd4f27c65dc6a7504"
+ },
+ "results/forge/e2_shard_even.json": {
+  "bytes": 163436878,
+  "sha256": "5d4748ef5e8291a3aff5aede0e1b6944356b351f81d08ba982ee6367d9b5cd89"
+ },
+ "results/agora/e2_shard_odd.json": {
+  "bytes": 103107894,
+  "sha256": "a55473791b4d6ad084315fdc5aece66543bbe39fa2dc041f6811b0feea2dcbd2"
+ },
+ "results/agora/e2_shard_even.json": {
+  "bytes": 100410475,
+  "sha256": "3534797efe1202a52e7673d3fb29251f50a8579c1d694290ba6bdc98f0e91954"
+ },
+ "results/odd/e2_shard.json": {
+  "bytes": 271935481,
+  "sha256": "2c36e1ddb62ff88cb7899549fb235ab1ef34b94ed2582196257f46bbb8871e57"
+ },
+ "results/even/e2_shard.json": {
+  "bytes": 264817206,
+  "sha256": "da9ede8a5ebfb960c0e57c9013d021bb50fece22d3c8a58044df09e9d748cde5"
+ },
+ "results/e2_scores_merged.json": {
+  "bytes": 534781344,
+  "sha256": "ed7cc52ef60de43495944d3232d415bdff47867ac5ef06597a21276313261d9b"
+ }
+}

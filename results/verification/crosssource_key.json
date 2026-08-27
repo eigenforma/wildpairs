@@ -1,0 +1,2672 @@
+{
+ "seed": 20260812,
+ "rubric": "docs/annotation_protocol_errata.md (span-level construct, identical for every source)",
+ "purpose": "refutation test for the labelling-convention objection to the sign-flip law",
+ "n_by_source": {
+  "authored": 80,
+  "errata": 150,
+  "bis": 150
+ },
+ "items": {
+  "0": {
+   "source": "errata",
+   "pair_id": "eid4330",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "1": {
+   "source": "errata",
+   "pair_id": "eid908",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "2": {
+   "source": "bis",
+   "pair_id": "bis-RFC8407-RFC9907-11227",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "3": {
+   "source": "authored",
+   "pair_id": "D-A-05",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "4": {
+   "source": "authored",
+   "pair_id": "D-A-03",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "second"
+  },
+  "5": {
+   "source": "bis",
+   "pair_id": "bis-RFC4971-RFC7981-8114",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "6": {
+   "source": "bis",
+   "pair_id": "bis-RFC2407-RFC4306-280",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "7": {
+   "source": "bis",
+   "pair_id": "bis-RFC2566-RFC2911-2013",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "8": {
+   "source": "errata",
+   "pair_id": "eid4023",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "9": {
+   "source": "errata",
+   "pair_id": "eid4207",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "10": {
+   "source": "bis",
+   "pair_id": "bis-RFC6429-RFC9293-1770",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "11": {
+   "source": "authored",
+   "pair_id": "D-B-01",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "12": {
+   "source": "authored",
+   "pair_id": "C-D-05",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "first"
+  },
+  "13": {
+   "source": "authored",
+   "pair_id": "D-B-08",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "second"
+  },
+  "14": {
+   "source": "bis",
+   "pair_id": "bis-RFC6347-RFC9147-10048",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "15": {
+   "source": "errata",
+   "pair_id": "eid5117",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "16": {
+   "source": "errata",
+   "pair_id": "eid2299",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "17": {
+   "source": "authored",
+   "pair_id": "D-D-08",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "first"
+  },
+  "18": {
+   "source": "errata",
+   "pair_id": "eid5715",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "19": {
+   "source": "bis",
+   "pair_id": "bis-RFC7752-RFC9552-1951",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "20": {
+   "source": "bis",
+   "pair_id": "bis-RFC6112-RFC8062-9854",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "21": {
+   "source": "errata",
+   "pair_id": "eid4380",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "22": {
+   "source": "errata",
+   "pair_id": "eid5423",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "23": {
+   "source": "bis",
+   "pair_id": "bis-RFC2446-RFC5546-322",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "24": {
+   "source": "bis",
+   "pair_id": "bis-RFC2911-RFC8011-632",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "25": {
+   "source": "bis",
+   "pair_id": "bis-RFC2402-RFC4302-1241",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "26": {
+   "source": "authored",
+   "pair_id": "D-D-03",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "first"
+  },
+  "27": {
+   "source": "errata",
+   "pair_id": "eid6369",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "28": {
+   "source": "errata",
+   "pair_id": "eid2520",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "29": {
+   "source": "errata",
+   "pair_id": "eid4405",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "30": {
+   "source": "errata",
+   "pair_id": "eid6184",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "31": {
+   "source": "bis",
+   "pair_id": "bis-RFC3588-RFC6733-4817",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "32": {
+   "source": "errata",
+   "pair_id": "eid5754",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "33": {
+   "source": "errata",
+   "pair_id": "eid8294",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "34": {
+   "source": "bis",
+   "pair_id": "bis-RFC2960-RFC4960-3396",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "35": {
+   "source": "authored",
+   "pair_id": "D-B-05",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "36": {
+   "source": "errata",
+   "pair_id": "eid2575",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "37": {
+   "source": "errata",
+   "pair_id": "eid8771",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "38": {
+   "source": "errata",
+   "pair_id": "eid7960",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "39": {
+   "source": "errata",
+   "pair_id": "eid340",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "40": {
+   "source": "bis",
+   "pair_id": "bis-RFC8446-RFC9846-11357",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "41": {
+   "source": "authored",
+   "pair_id": "D-A-10",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "42": {
+   "source": "authored",
+   "pair_id": "D-D-10",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "first"
+  },
+  "43": {
+   "source": "bis",
+   "pair_id": "bis-RFC4870-RFC4871-1398",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "44": {
+   "source": "errata",
+   "pair_id": "eid6926",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "45": {
+   "source": "bis",
+   "pair_id": "bis-RFC7170-RFC9930-10440",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "46": {
+   "source": "bis",
+   "pair_id": "bis-RFC6844-RFC8659-1826",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "47": {
+   "source": "authored",
+   "pair_id": "D-D-02",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "first"
+  },
+  "48": {
+   "source": "bis",
+   "pair_id": "bis-RFC3768-RFC5798-988",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "49": {
+   "source": "errata",
+   "pair_id": "eid561",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "50": {
+   "source": "bis",
+   "pair_id": "bis-RFC4566-RFC8866-7245",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "51": {
+   "source": "bis",
+   "pair_id": "bis-RFC5203-RFC8003-8636",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "52": {
+   "source": "bis",
+   "pair_id": "bis-RFC2284-RFC3748-1042",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "53": {
+   "source": "errata",
+   "pair_id": "eid3156",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "54": {
+   "source": "errata",
+   "pair_id": "eid606",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "55": {
+   "source": "bis",
+   "pair_id": "bis-RFC2327-RFC4566-249",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "56": {
+   "source": "authored",
+   "pair_id": "C-A-08",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "second"
+  },
+  "57": {
+   "source": "bis",
+   "pair_id": "bis-RFC8399-RFC9549-11220",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "58": {
+   "source": "bis",
+   "pair_id": "bis-RFC6824-RFC8684-10277",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "59": {
+   "source": "bis",
+   "pair_id": "bis-RFC5272-RFC10002-1564",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "60": {
+   "source": "errata",
+   "pair_id": "eid4726",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "61": {
+   "source": "bis",
+   "pair_id": "bis-RFC2910-RFC8010-616",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "62": {
+   "source": "errata",
+   "pair_id": "eid2256",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "63": {
+   "source": "authored",
+   "pair_id": "C-C-07",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "64": {
+   "source": "bis",
+   "pair_id": "bis-RFC2616-RFC7231-477",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "65": {
+   "source": "authored",
+   "pair_id": "C-D-09",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "first"
+  },
+  "66": {
+   "source": "errata",
+   "pair_id": "eid3033",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "67": {
+   "source": "bis",
+   "pair_id": "bis-RFC5661-RFC8881-9264",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "68": {
+   "source": "errata",
+   "pair_id": "eid8113",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "69": {
+   "source": "errata",
+   "pair_id": "eid6557",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "70": {
+   "source": "authored",
+   "pair_id": "D-A-01",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "second"
+  },
+  "71": {
+   "source": "errata",
+   "pair_id": "eid4673",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "72": {
+   "source": "bis",
+   "pair_id": "bis-RFC3603-RFC5503-5006",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "73": {
+   "source": "errata",
+   "pair_id": "eid5831",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "74": {
+   "source": "authored",
+   "pair_id": "D-B-10",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "second"
+  },
+  "75": {
+   "source": "errata",
+   "pair_id": "eid826",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "76": {
+   "source": "authored",
+   "pair_id": "C-C-05",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "77": {
+   "source": "bis",
+   "pair_id": "bis-RFC2401-RFC4301-264",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "78": {
+   "source": "errata",
+   "pair_id": "eid6499",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "79": {
+   "source": "bis",
+   "pair_id": "bis-RFC3720-RFC7143-5370",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "80": {
+   "source": "authored",
+   "pair_id": "C-A-06",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "81": {
+   "source": "errata",
+   "pair_id": "eid6838",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "82": {
+   "source": "errata",
+   "pair_id": "eid483",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "83": {
+   "source": "errata",
+   "pair_id": "eid7583",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "84": {
+   "source": "authored",
+   "pair_id": "D-D-01",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "first"
+  },
+  "85": {
+   "source": "errata",
+   "pair_id": "eid989",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "86": {
+   "source": "authored",
+   "pair_id": "D-B-06",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "87": {
+   "source": "bis",
+   "pair_id": "bis-RFC7752-RFC9552-11014",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "88": {
+   "source": "errata",
+   "pair_id": "eid761",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "89": {
+   "source": "bis",
+   "pair_id": "bis-RFC5101-RFC7011-8413",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "90": {
+   "source": "authored",
+   "pair_id": "C-B-01",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "91": {
+   "source": "bis",
+   "pair_id": "bis-RFC3344-RFC5944-4213",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "92": {
+   "source": "errata",
+   "pair_id": "eid3665",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "93": {
+   "source": "errata",
+   "pair_id": "eid3492",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "94": {
+   "source": "errata",
+   "pair_id": "eid6157",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "95": {
+   "source": "bis",
+   "pair_id": "bis-RFC4306-RFC5996-1218",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "96": {
+   "source": "errata",
+   "pair_id": "eid5927",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "97": {
+   "source": "errata",
+   "pair_id": "eid376",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "98": {
+   "source": "authored",
+   "pair_id": "D-A-04",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "second"
+  },
+  "99": {
+   "source": "errata",
+   "pair_id": "eid5808",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "100": {
+   "source": "errata",
+   "pair_id": "eid8639",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "101": {
+   "source": "bis",
+   "pair_id": "bis-RFC4366-RFC5246-1254",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "102": {
+   "source": "bis",
+   "pair_id": "bis-RFC2065-RFC2535-717",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "103": {
+   "source": "errata",
+   "pair_id": "eid1978",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "104": {
+   "source": "errata",
+   "pair_id": "eid4759",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "105": {
+   "source": "errata",
+   "pair_id": "eid6645",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "106": {
+   "source": "authored",
+   "pair_id": "C-A-01",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "second"
+  },
+  "107": {
+   "source": "errata",
+   "pair_id": "eid4569",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "108": {
+   "source": "bis",
+   "pair_id": "bis-RFC2440-RFC4880-308",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "109": {
+   "source": "authored",
+   "pair_id": "D-D-09",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "second"
+  },
+  "110": {
+   "source": "errata",
+   "pair_id": "eid3473",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "111": {
+   "source": "authored",
+   "pair_id": "C-C-04",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "first"
+  },
+  "112": {
+   "source": "bis",
+   "pair_id": "bis-RFC1716-RFC1812-39",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "113": {
+   "source": "bis",
+   "pair_id": "bis-RFC2830-RFC4513-581",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "114": {
+   "source": "errata",
+   "pair_id": "eid3060",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "115": {
+   "source": "bis",
+   "pair_id": "bis-RFC4566-RFC8866-1318",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "116": {
+   "source": "errata",
+   "pair_id": "eid858",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "117": {
+   "source": "bis",
+   "pair_id": "bis-RFC8540-RFC9260-1992",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "118": {
+   "source": "bis",
+   "pair_id": "bis-RFC2617-RFC7235-511",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "119": {
+   "source": "errata",
+   "pair_id": "eid3349",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "120": {
+   "source": "authored",
+   "pair_id": "D-D-04",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "first"
+  },
+  "121": {
+   "source": "bis",
+   "pair_id": "bis-RFC3530-RFC7530-4722",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "122": {
+   "source": "errata",
+   "pair_id": "eid6871",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "123": {
+   "source": "errata",
+   "pair_id": "eid171",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "124": {
+   "source": "bis",
+   "pair_id": "bis-RFC2616-RFC7234-2240",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "125": {
+   "source": "errata",
+   "pair_id": "eid476",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "126": {
+   "source": "bis",
+   "pair_id": "bis-RFC2326-RFC7826-244",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "127": {
+   "source": "authored",
+   "pair_id": "D-C-01",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "second"
+  },
+  "128": {
+   "source": "bis",
+   "pair_id": "bis-RFC2002-RFC3220-584",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "129": {
+   "source": "bis",
+   "pair_id": "bis-RFC2461-RFC4861-1543",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "130": {
+   "source": "errata",
+   "pair_id": "eid5735",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "131": {
+   "source": "bis",
+   "pair_id": "bis-RFC4695-RFC6295-7487",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "132": {
+   "source": "errata",
+   "pair_id": "eid6714",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "133": {
+   "source": "bis",
+   "pair_id": "bis-RFC2911-RFC8011-620",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "134": {
+   "source": "bis",
+   "pair_id": "bis-RFC2068-RFC2616-753",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "135": {
+   "source": "errata",
+   "pair_id": "eid1249",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "136": {
+   "source": "errata",
+   "pair_id": "eid5174",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "137": {
+   "source": "bis",
+   "pair_id": "bis-RFC5337-RFC6533-1589",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "138": {
+   "source": "authored",
+   "pair_id": "D-C-02",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "first"
+  },
+  "139": {
+   "source": "bis",
+   "pair_id": "bis-RFC8109-RFC9609-1973",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "140": {
+   "source": "errata",
+   "pair_id": "eid3004",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "141": {
+   "source": "bis",
+   "pair_id": "bis-RFC3775-RFC6275-5582",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "142": {
+   "source": "errata",
+   "pair_id": "eid4585",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "143": {
+   "source": "errata",
+   "pair_id": "eid422",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "144": {
+   "source": "bis",
+   "pair_id": "bis-RFC6407-RFC9838-1761",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "145": {
+   "source": "bis",
+   "pair_id": "bis-RFC8446-RFC9846-11387",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "146": {
+   "source": "authored",
+   "pair_id": "D-D-05",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "first"
+  },
+  "147": {
+   "source": "bis",
+   "pair_id": "bis-RFC5019-RFC9919-1466",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "148": {
+   "source": "authored",
+   "pair_id": "D-C-08",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "second"
+  },
+  "149": {
+   "source": "authored",
+   "pair_id": "D-A-07",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "second"
+  },
+  "150": {
+   "source": "bis",
+   "pair_id": "bis-RFC4695-RFC6295-7516",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "151": {
+   "source": "errata",
+   "pair_id": "eid6955",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "152": {
+   "source": "errata",
+   "pair_id": "eid5791",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "153": {
+   "source": "bis",
+   "pair_id": "bis-RFC2251-RFC4511-188",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "154": {
+   "source": "bis",
+   "pair_id": "bis-RFC4695-RFC6295-7537",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "155": {
+   "source": "errata",
+   "pair_id": "eid7078",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "156": {
+   "source": "authored",
+   "pair_id": "D-B-07",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "157": {
+   "source": "errata",
+   "pair_id": "eid7408",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "158": {
+   "source": "errata",
+   "pair_id": "eid2053",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "159": {
+   "source": "errata",
+   "pair_id": "eid3682",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "160": {
+   "source": "bis",
+   "pair_id": "bis-RFC5008-RFC6318-8158",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "161": {
+   "source": "bis",
+   "pair_id": "bis-RFC2822-RFC5322-2687",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "162": {
+   "source": "authored",
+   "pair_id": "C-C-03",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "163": {
+   "source": "bis",
+   "pair_id": "bis-RFC4460-RFC9260-7019",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "164": {
+   "source": "errata",
+   "pair_id": "eid577",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "165": {
+   "source": "errata",
+   "pair_id": "eid9033",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "166": {
+   "source": "bis",
+   "pair_id": "bis-RFC5206-RFC8046-8684",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "167": {
+   "source": "errata",
+   "pair_id": "eid7291",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "168": {
+   "source": "bis",
+   "pair_id": "bis-RFC4306-RFC5996-1202",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "169": {
+   "source": "errata",
+   "pair_id": "eid7095",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "170": {
+   "source": "bis",
+   "pair_id": "bis-RFC7320-RFC8820-1885",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "171": {
+   "source": "bis",
+   "pair_id": "bis-RFC5751-RFC8551-1644",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "172": {
+   "source": "authored",
+   "pair_id": "C-D-07",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "first"
+  },
+  "173": {
+   "source": "errata",
+   "pair_id": "eid1242",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "174": {
+   "source": "bis",
+   "pair_id": "bis-RFC6126-RFC8966-9893",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "175": {
+   "source": "errata",
+   "pair_id": "eid1656",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "176": {
+   "source": "errata",
+   "pair_id": "eid1743",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "177": {
+   "source": "authored",
+   "pair_id": "D-C-10",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "second"
+  },
+  "178": {
+   "source": "bis",
+   "pair_id": "bis-RFC5296-RFC6696-1577",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "179": {
+   "source": "bis",
+   "pair_id": "bis-RFC3546-RFC4366-891",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "180": {
+   "source": "bis",
+   "pair_id": "bis-RFC5988-RFC8288-9652",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "181": {
+   "source": "errata",
+   "pair_id": "eid7926",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "182": {
+   "source": "authored",
+   "pair_id": "D-C-07",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "second"
+  },
+  "183": {
+   "source": "bis",
+   "pair_id": "bis-RFC5661-RFC8881-9319",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "184": {
+   "source": "bis",
+   "pair_id": "bis-RFC3940-RFC5740-6020",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "185": {
+   "source": "errata",
+   "pair_id": "eid3012",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "186": {
+   "source": "errata",
+   "pair_id": "eid2995",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "187": {
+   "source": "errata",
+   "pair_id": "eid7654",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "188": {
+   "source": "authored",
+   "pair_id": "C-D-03",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "189": {
+   "source": "errata",
+   "pair_id": "eid2006",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "190": {
+   "source": "bis",
+   "pair_id": "bis-RFC5661-RFC8881-9276",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "191": {
+   "source": "bis",
+   "pair_id": "bis-RFC2406-RFC4303-276",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "192": {
+   "source": "authored",
+   "pair_id": "C-C-01",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "193": {
+   "source": "errata",
+   "pair_id": "eid5567",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "194": {
+   "source": "authored",
+   "pair_id": "C-B-09",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "195": {
+   "source": "errata",
+   "pair_id": "eid429",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "196": {
+   "source": "authored",
+   "pair_id": "D-B-09",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "197": {
+   "source": "authored",
+   "pair_id": "C-C-02",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "198": {
+   "source": "bis",
+   "pair_id": "bis-RFC1970-RFC2461-545",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "199": {
+   "source": "errata",
+   "pair_id": "eid5952",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "200": {
+   "source": "authored",
+   "pair_id": "C-D-08",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "201": {
+   "source": "errata",
+   "pair_id": "eid383",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "202": {
+   "source": "bis",
+   "pair_id": "bis-RFC3658-RFC4035-956",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "203": {
+   "source": "authored",
+   "pair_id": "C-A-03",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "second"
+  },
+  "204": {
+   "source": "bis",
+   "pair_id": "bis-RFC3265-RFC6665-748",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "205": {
+   "source": "authored",
+   "pair_id": "D-D-07",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "second"
+  },
+  "206": {
+   "source": "bis",
+   "pair_id": "bis-RFC2252-RFC4512-984",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "207": {
+   "source": "bis",
+   "pair_id": "bis-RFC5549-RFC8950-1621",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "208": {
+   "source": "errata",
+   "pair_id": "eid538",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "209": {
+   "source": "authored",
+   "pair_id": "C-D-06",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "first"
+  },
+  "210": {
+   "source": "errata",
+   "pair_id": "eid7727",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "211": {
+   "source": "authored",
+   "pair_id": "C-B-05",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "212": {
+   "source": "bis",
+   "pair_id": "bis-RFC4996-RFC6846-1463",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "213": {
+   "source": "authored",
+   "pair_id": "C-A-07",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "second"
+  },
+  "214": {
+   "source": "bis",
+   "pair_id": "bis-RFC6087-RFC8407-9780",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "215": {
+   "source": "errata",
+   "pair_id": "eid9047",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "216": {
+   "source": "errata",
+   "pair_id": "eid6449",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "217": {
+   "source": "authored",
+   "pair_id": "C-B-10",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "218": {
+   "source": "bis",
+   "pair_id": "bis-RFC2459-RFC3280-332",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "219": {
+   "source": "bis",
+   "pair_id": "bis-RFC4306-RFC5996-1206",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "220": {
+   "source": "bis",
+   "pair_id": "bis-RFC2633-RFC3851-529",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "221": {
+   "source": "authored",
+   "pair_id": "C-C-08",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "first"
+  },
+  "222": {
+   "source": "errata",
+   "pair_id": "eid899",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "223": {
+   "source": "authored",
+   "pair_id": "C-A-02",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "224": {
+   "source": "errata",
+   "pair_id": "eid395",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "225": {
+   "source": "bis",
+   "pair_id": "bis-RFC2911-RFC8011-2954",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "226": {
+   "source": "errata",
+   "pair_id": "eid4439",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "227": {
+   "source": "authored",
+   "pair_id": "C-C-10",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "228": {
+   "source": "errata",
+   "pair_id": "eid5394",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "229": {
+   "source": "errata",
+   "pair_id": "eid7127",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "230": {
+   "source": "errata",
+   "pair_id": "eid3047",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "231": {
+   "source": "errata",
+   "pair_id": "eid2783",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "232": {
+   "source": "authored",
+   "pair_id": "C-D-02",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "233": {
+   "source": "bis",
+   "pair_id": "bis-RFC3731-RFC4931-5459",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "234": {
+   "source": "bis",
+   "pair_id": "bis-RFC2421-RFC3801-290",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "235": {
+   "source": "bis",
+   "pair_id": "bis-RFC2068-RFC2616-139",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "236": {
+   "source": "bis",
+   "pair_id": "bis-RFC4474-RFC8224-1307",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "237": {
+   "source": "bis",
+   "pair_id": "bis-RFC2828-RFC4949-563",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "238": {
+   "source": "bis",
+   "pair_id": "bis-RFC7233-RFC9110-10710",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "239": {
+   "source": "authored",
+   "pair_id": "D-B-02",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "240": {
+   "source": "bis",
+   "pair_id": "bis-RFC2911-RFC8011-647",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "241": {
+   "source": "errata",
+   "pair_id": "eid7790",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "242": {
+   "source": "bis",
+   "pair_id": "bis-RFC4006-RFC8506-1117",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "243": {
+   "source": "bis",
+   "pair_id": "bis-RFC5246-RFC9846-1556",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "244": {
+   "source": "errata",
+   "pair_id": "eid1758",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "245": {
+   "source": "errata",
+   "pair_id": "eid4760",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "246": {
+   "source": "bis",
+   "pair_id": "bis-RFC3921-RFC6121-1079",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "247": {
+   "source": "bis",
+   "pair_id": "bis-RFC4329-RFC9239-1237",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "248": {
+   "source": "errata",
+   "pair_id": "eid5896",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "249": {
+   "source": "errata",
+   "pair_id": "eid5385",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "250": {
+   "source": "bis",
+   "pair_id": "bis-RFC3491-RFC5891-857",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "251": {
+   "source": "bis",
+   "pair_id": "bis-RFC3810-RFC9777-1015",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "252": {
+   "source": "authored",
+   "pair_id": "C-C-09",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "first"
+  },
+  "253": {
+   "source": "authored",
+   "pair_id": "D-B-04",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "second"
+  },
+  "254": {
+   "source": "errata",
+   "pair_id": "eid7773",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "255": {
+   "source": "errata",
+   "pair_id": "eid1777",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "256": {
+   "source": "bis",
+   "pair_id": "bis-RFC3344-RFC5944-4202",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "257": {
+   "source": "errata",
+   "pair_id": "eid45",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "258": {
+   "source": "errata",
+   "pair_id": "eid7155",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "259": {
+   "source": "bis",
+   "pair_id": "bis-RFC3501-RFC9051-859",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "260": {
+   "source": "bis",
+   "pair_id": "bis-RFC3315-RFC8415-789",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "261": {
+   "source": "bis",
+   "pair_id": "bis-RFC2616-RFC7232-491",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "262": {
+   "source": "errata",
+   "pair_id": "eid7917",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "263": {
+   "source": "authored",
+   "pair_id": "D-A-08",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "second"
+  },
+  "264": {
+   "source": "errata",
+   "pair_id": "eid6428",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "265": {
+   "source": "bis",
+   "pair_id": "bis-RFC2543-RFC3261-386",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "266": {
+   "source": "bis",
+   "pair_id": "bis-RFC8407-RFC9907-11228",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "267": {
+   "source": "authored",
+   "pair_id": "C-B-08",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "second"
+  },
+  "268": {
+   "source": "bis",
+   "pair_id": "bis-RFC4835-RFC7321-1388",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "269": {
+   "source": "bis",
+   "pair_id": "bis-RFC2560-RFC6960-399",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "270": {
+   "source": "errata",
+   "pair_id": "eid7529",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "271": {
+   "source": "bis",
+   "pair_id": "bis-RFC4492-RFC8422-1311",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "272": {
+   "source": "authored",
+   "pair_id": "D-C-05",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "second"
+  },
+  "273": {
+   "source": "authored",
+   "pair_id": "D-D-06",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "second"
+  },
+  "274": {
+   "source": "errata",
+   "pair_id": "eid2740",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "275": {
+   "source": "errata",
+   "pair_id": "eid402",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "276": {
+   "source": "bis",
+   "pair_id": "bis-RFC8229-RFC9329-11192",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "277": {
+   "source": "errata",
+   "pair_id": "eid3178",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "278": {
+   "source": "authored",
+   "pair_id": "C-B-03",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "279": {
+   "source": "authored",
+   "pair_id": "D-C-09",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "first"
+  },
+  "280": {
+   "source": "bis",
+   "pair_id": "bis-RFC4909-RFC5410-7795",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "281": {
+   "source": "errata",
+   "pair_id": "eid2894",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "282": {
+   "source": "bis",
+   "pair_id": "bis-RFC3588-RFC6733-909",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "283": {
+   "source": "bis",
+   "pair_id": "bis-RFC4893-RFC6793-1410",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "284": {
+   "source": "bis",
+   "pair_id": "bis-RFC5101-RFC7011-8451",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "285": {
+   "source": "authored",
+   "pair_id": "C-B-04",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "second"
+  },
+  "286": {
+   "source": "errata",
+   "pair_id": "eid4420",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "287": {
+   "source": "errata",
+   "pair_id": "eid1806",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "288": {
+   "source": "bis",
+   "pair_id": "bis-RFC3015-RFC3525-3514",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "289": {
+   "source": "errata",
+   "pair_id": "eid1726",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "290": {
+   "source": "bis",
+   "pair_id": "bis-RFC2910-RFC8010-610",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "291": {
+   "source": "errata",
+   "pair_id": "eid8405",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "292": {
+   "source": "errata",
+   "pair_id": "eid162",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "293": {
+   "source": "bis",
+   "pair_id": "bis-RFC7170-RFC9930-10429",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "294": {
+   "source": "errata",
+   "pair_id": "eid8490",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "295": {
+   "source": "authored",
+   "pair_id": "C-D-04",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "296": {
+   "source": "authored",
+   "pair_id": "C-B-07",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "297": {
+   "source": "bis",
+   "pair_id": "bis-RFC5048-RFC7143-8345",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "298": {
+   "source": "errata",
+   "pair_id": "eid3932",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "299": {
+   "source": "errata",
+   "pair_id": "eid6775",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "300": {
+   "source": "bis",
+   "pair_id": "bis-RFC2301-RFC3949-1085",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "301": {
+   "source": "errata",
+   "pair_id": "eid2713",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "302": {
+   "source": "bis",
+   "pair_id": "bis-RFC3016-RFC6416-689",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "303": {
+   "source": "bis",
+   "pair_id": "bis-RFC7601-RFC8601-10950",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "304": {
+   "source": "errata",
+   "pair_id": "eid3957",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "305": {
+   "source": "authored",
+   "pair_id": "C-A-04",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "second"
+  },
+  "306": {
+   "source": "errata",
+   "pair_id": "eid646",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "307": {
+   "source": "bis",
+   "pair_id": "bis-RFC3332-RFC4666-4145",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "308": {
+   "source": "authored",
+   "pair_id": "C-A-09",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "309": {
+   "source": "bis",
+   "pair_id": "bis-RFC2401-RFC4301-1213",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "310": {
+   "source": "errata",
+   "pair_id": "eid1206",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "311": {
+   "source": "authored",
+   "pair_id": "C-C-06",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "first"
+  },
+  "312": {
+   "source": "bis",
+   "pair_id": "bis-RFC3576-RFC5176-4789",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "313": {
+   "source": "authored",
+   "pair_id": "C-A-05",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "second"
+  },
+  "314": {
+   "source": "errata",
+   "pair_id": "eid8196",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "315": {
+   "source": "errata",
+   "pair_id": "eid4003",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "316": {
+   "source": "bis",
+   "pair_id": "bis-RFC5246-RFC8446-1554",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "317": {
+   "source": "errata",
+   "pair_id": "eid234",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "318": {
+   "source": "errata",
+   "pair_id": "eid4292",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "319": {
+   "source": "errata",
+   "pair_id": "eid5402",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "320": {
+   "source": "errata",
+   "pair_id": "eid4235",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "321": {
+   "source": "errata",
+   "pair_id": "eid2148",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "322": {
+   "source": "bis",
+   "pair_id": "bis-RFC5661-RFC8881-9302",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "323": {
+   "source": "bis",
+   "pair_id": "bis-RFC5046-RFC7145-8282",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "324": {
+   "source": "bis",
+   "pair_id": "bis-RFC7170-RFC9930-1849",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "325": {
+   "source": "errata",
+   "pair_id": "eid4700",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "326": {
+   "source": "authored",
+   "pair_id": "C-B-02",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "second"
+  },
+  "327": {
+   "source": "bis",
+   "pair_id": "bis-RFC7482-RFC9082-1891",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "328": {
+   "source": "bis",
+   "pair_id": "bis-RFC2461-RFC4861-1551",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "329": {
+   "source": "bis",
+   "pair_id": "bis-RFC1827-RFC2406-63",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "330": {
+   "source": "bis",
+   "pair_id": "bis-RFC3940-RFC5740-6050",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "331": {
+   "source": "errata",
+   "pair_id": "eid4768",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "332": {
+   "source": "bis",
+   "pair_id": "bis-RFC5201-RFC7401-8507",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "333": {
+   "source": "errata",
+   "pair_id": "eid6100",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "334": {
+   "source": "errata",
+   "pair_id": "eid1572",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "335": {
+   "source": "errata",
+   "pair_id": "eid1515",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "336": {
+   "source": "errata",
+   "pair_id": "eid3260",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "337": {
+   "source": "bis",
+   "pair_id": "bis-RFC4960-RFC9260-8012",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "338": {
+   "source": "authored",
+   "pair_id": "D-A-09",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "339": {
+   "source": "errata",
+   "pair_id": "eid2136",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "340": {
+   "source": "errata",
+   "pair_id": "eid1877",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "341": {
+   "source": "authored",
+   "pair_id": "C-A-10",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "342": {
+   "source": "bis",
+   "pair_id": "bis-RFC3315-RFC8415-4097",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "343": {
+   "source": "authored",
+   "pair_id": "D-C-04",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "second"
+  },
+  "344": {
+   "source": "errata",
+   "pair_id": "eid829",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "345": {
+   "source": "bis",
+   "pair_id": "bis-RFC1147-RFC1470-7",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "346": {
+   "source": "errata",
+   "pair_id": "eid539",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "second"
+  },
+  "347": {
+   "source": "errata",
+   "pair_id": "eid6554",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "348": {
+   "source": "bis",
+   "pair_id": "bis-RFC3926-RFC6726-6002",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "349": {
+   "source": "errata",
+   "pair_id": "eid6675",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "350": {
+   "source": "errata",
+   "pair_id": "eid7872",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "351": {
+   "source": "bis",
+   "pair_id": "bis-RFC2821-RFC5321-2537",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "352": {
+   "source": "errata",
+   "pair_id": "eid4664",
+   "native_class": "changing",
+   "native_label": "Technical",
+   "A_is": "first"
+  },
+  "353": {
+   "source": "errata",
+   "pair_id": "eid2584",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "354": {
+   "source": "bis",
+   "pair_id": "bis-RFC5048-RFC7143-1474",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "355": {
+   "source": "bis",
+   "pair_id": "bis-RFC3023-RFC7303-706",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "356": {
+   "source": "authored",
+   "pair_id": "C-D-10",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "second"
+  },
+  "357": {
+   "source": "bis",
+   "pair_id": "bis-RFC2256-RFC4519-217",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "358": {
+   "source": "authored",
+   "pair_id": "C-D-01",
+   "native_class": "preserving",
+   "native_label": "FAITHFUL",
+   "A_is": "first"
+  },
+  "359": {
+   "source": "errata",
+   "pair_id": "eid4721",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "360": {
+   "source": "authored",
+   "pair_id": "C-B-06",
+   "native_class": "changing",
+   "native_label": "VIOLATION",
+   "A_is": "first"
+  },
+  "361": {
+   "source": "bis",
+   "pair_id": "bis-RFC2965-RFC6265-670",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "362": {
+   "source": "errata",
+   "pair_id": "eid7200",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "first"
+  },
+  "363": {
+   "source": "authored",
+   "pair_id": "D-A-02",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "364": {
+   "source": "authored",
+   "pair_id": "D-B-03",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "first"
+  },
+  "365": {
+   "source": "authored",
+   "pair_id": "D-A-06",
+   "native_class": "changing",
+   "native_label": "OPPOSITE",
+   "A_is": "second"
+  },
+  "366": {
+   "source": "authored",
+   "pair_id": "D-C-03",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "first"
+  },
+  "367": {
+   "source": "bis",
+   "pair_id": "bis-RFC4306-RFC5996-1199",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "368": {
+   "source": "bis",
+   "pair_id": "bis-RFC2434-RFC5226-1344",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  },
+  "369": {
+   "source": "errata",
+   "pair_id": "eid5632",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "370": {
+   "source": "authored",
+   "pair_id": "D-C-06",
+   "native_class": "preserving",
+   "native_label": "SAME",
+   "A_is": "second"
+  },
+  "371": {
+   "source": "bis",
+   "pair_id": "bis-RFC2446-RFC5546-1434",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "372": {
+   "source": "errata",
+   "pair_id": "eid6810",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "373": {
+   "source": "bis",
+   "pair_id": "bis-RFC5245-RFC8445-1539",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "second"
+  },
+  "374": {
+   "source": "bis",
+   "pair_id": "bis-RFC6830-RFC9300-10303",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "375": {
+   "source": "bis",
+   "pair_id": "bis-RFC7895-RFC8525-1962",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "376": {
+   "source": "bis",
+   "pair_id": "bis-RFC4695-RFC6295-7542",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "first"
+  },
+  "377": {
+   "source": "bis",
+   "pair_id": "bis-RFC4288-RFC6838-1178",
+   "native_class": "changing",
+   "native_label": "strength_transition",
+   "A_is": "first"
+  },
+  "378": {
+   "source": "errata",
+   "pair_id": "eid8338",
+   "native_class": "preserving",
+   "native_label": "Editorial",
+   "A_is": "second"
+  },
+  "379": {
+   "source": "bis",
+   "pair_id": "bis-RFC5306-RFC8706-9026",
+   "native_class": "preserving",
+   "native_label": "keyword_preserved_rewording",
+   "A_is": "second"
+  }
+ }
+}

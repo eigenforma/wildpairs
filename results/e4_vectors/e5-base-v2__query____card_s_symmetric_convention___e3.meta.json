@@ -1,0 +1,22 @@
+{
+ "config": "e5-base-v2 [query: \u2014 card's symmetric convention]",
+ "register": "e3",
+ "n_texts": 28747,
+ "device": "cuda",
+ "fp32_forced": true,
+ "runtime": {
+  "path": "sentence_transformers",
+  "sentence_transformers_version": "5.7.0",
+  "prefix": "query: "
+ },
+ "hostname": "forge",
+ "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+ "sources": [
+  {
+   "path": "$WORKDIR/corpus/e3_composed_sweep_sample.jsonl",
+   "sha256": "ceb307849323b1dd27e89a2b21ace89d84266ab8f37e30abd9c04047f5abc497"
+  }
+ ],
+ "vector_dtype": "float16",
+ "created_utc": "2026-08-11T20:08:02Z"
+}

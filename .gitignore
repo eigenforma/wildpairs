@@ -2,3 +2,14 @@ __pycache__/
 *.pyc
 .venv/
 logs/
+
+# E2 derived corpora: 3.32 GB, deterministic from frozen inputs + committed code.
+# sha256 manifest + rebuild route: corpus/e2_dilution/REGENERATION.md
+# (also: spliced RFC text must not be redistributed - PREREGISTRATION_E2 section 2)
+corpus/e2_dilution/stimuli/
+corpus/e2_dilution/hostpools/
+results/odd/
+results/even/
+results/e2_scores_merged.json
+results/*/e2_shard_*.json
+!results/*/e2_shard_*.json.gz

@@ -2,7 +2,7 @@
 hypothesis) judges the same 200 blind items under the same protocol, one item per call,
 temperature 0. Runs on a fleet node against Forge's llama-server:
 
-  python3 harness/e1/annotator_b_120b.py http://10.1.20.223:8080 /tmp/annotator_B_judgments.json
+  python3 harness/e1/annotator_b_120b.py http://⟨forge⟩:8080 ⟨tmpdir⟩/annotator_B_judgments.json
 
 The prompt contains ONLY the protocol text and the two versions. No labels, no context,
 no mention of what is being tested. Progress logged per item; resumable (skips items

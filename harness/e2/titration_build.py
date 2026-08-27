@@ -8,12 +8,17 @@ operative cuts REUSED from the frozen table (never re-derived), cross-checked ag
 the formula max(ws of orig/para/affirm) > W(L)/2, W(L) = ceil(L/1.3).
 
 Recompute: python harness/e2/titration_build.py --host-domain enwiki \
-    --hosts <hostpool.jsonl> --seed <int> [--native <extended.jsonl>]
+    --hosts <hostpool.jsonl> --draw results/verification/e2_host_draw.json \
+    --seed 20260805 [--native <extended.jsonl>]
 Inputs : corpus/e2_dilution/anchors_frozen.jsonl (frozen),
          results/verification/e2_attrition_tables.json (frozen drop-rule arithmetic),
-         SPLICE host pool jsonl rows {host_id, text},
-         NATIVE extended-passages jsonl rows {passage_id, extended_text} (the enwiki
-         scan output feeds it - TBD until that scan lands, see NATIVE block below).
+         results/verification/e2_host_draw.json (the FROZEN host assignment: one host
+         per (anchor x domain), seed 20260805, reused across all (L, position) cells -
+         the tag-time section-2 pin; this build takes the first draw candidate passing
+         the contamination exclusion and records every substitution),
+         SPLICE host pool jsonl rows {host_id, text} (scripts/e2_pack_hostpools.py),
+         NATIVE extended-passages jsonl rows {passage_id, extended_text}
+         (passage_id == anchor_id; same pack script, from the native-scan join).
 Output : corpus/e2_dilution/stimuli/stimuli_<domain>_<arm>.jsonl, one row per pair
          member: {stim_id, anchor_id, arm, host_domain, host_id, L, position, pair,
          member, text, payload_ws}; plus a .manifest.json beside each file (counts,
@@ -24,7 +29,6 @@ import argparse
 import hashlib
 import json
 import math
-import random
 import re
 import sys
 import time
@@ -114,13 +118,6 @@ def crosscheck_attrition(anchors, cuts):
     return table
 
 
-def cell_seed(seed: int, anchor_id: str, L: int, position: str) -> int:
-    """Deterministic per-cell RNG key: stable across sessions/platforms (sha256, not
-    Python's salted hash), so the drawn hosts are byte-identical on every rebuild."""
-    h = hashlib.sha256(f"{seed}|{anchor_id}|{L}|{position}".encode("utf-8")).hexdigest()
-    return int(h, 16)
-
-
 def build_frame(host_text: str, budget: int):
     """Host frame = the first `budget` whitespace tokens of the host document as a list
     of sentence strings; the final sentence is word-truncated so the frame lands on
@@ -161,93 +158,113 @@ def pairs_for(anchor, cut):
 
 
 # =============================================================================
-# TBD AT TAG TIME -- PREREGISTRATION_E2 section 2, "Host assignment (pinned before
-# tag)": which enwiki articles QUALIFY as hosts, HOW MANY DRAWS per (anchor, L,
-# position), and the operative RNG SEED are specified in section 6 at tag time.
-# Until that pin lands, the draw below is a PROVISIONAL placeholder: one uniform
-# draw per (anchor, L, position) from the supplied --hosts pool, deterministic in
-# (--seed, anchor_id, L, position), host text consumed from document start.
-# The CONTAMINATION EXCLUSION is already the pinned rule and IS implemented here:
-# a host must not contain the payload sentence (any member) or the anchor's source
-# passage (substring test on whitespace-collapsed, casefolded text).
+# HOST ASSIGNMENT -- PINNED (PREREGISTRATION_E2 section 2, frozen at tag prereg-e2):
+# ONE host document per (anchor x domain), drawn once with seed 20260805 by
+# scripts/e2_host_draw.py, REUSED across all (L, position) cells - dilution is
+# titrated within a fixed host, so cross-L comparisons never confound host identity;
+# each (L, position) frame is carved deterministically from that document (prefix
+# frame of the budget, slot per position). The frozen draw carries seeded backup
+# candidates; the build takes the FIRST candidate passing the pinned contamination
+# exclusion (a host must not contain the payload sentence, any member, or the
+# anchor's source passage - whitespace-collapsed casefolded substring test) and
+# records every substitution. The pool length rule (>= W(4096) ws tokens) guarantees
+# every bin's frame budget by construction; a short host is an invariant violation.
 # =============================================================================
-def draw_host(pool, host_norms, host_ws, needles, budget: int, rng: random.Random):
-    """Uniform order without replacement until a qualifying host is found. Qualifying =
-    long enough for the frame budget AND not contaminated for this anchor. Returns
-    (host_id, frame) or (None, None) when the pool is exhausted."""
-    order = list(range(len(pool)))
-    rng.shuffle(order)
-    for i in order:
-        if host_ws[i] < budget:
+def select_host(candidates, pool, needles):
+    """(host_id, text, candidate_index) for the first candidate present in the pool and
+    not contaminated for this anchor; (None, None, None) when the list is exhausted."""
+    for i, hid in enumerate(candidates):
+        text = pool.get(hid)
+        if text is None:
             continue
-        if any(n in host_norms[i] for n in needles):
+        hnorm = norm(text)
+        if any(n in hnorm for n in needles):
             continue
-        frame = build_frame(pool[i]["text"], budget)
-        if frame is not None:
-            return pool[i]["host_id"], frame
-    return None, None
+        return hid, text, i
+    return None, None, None
 
 
-def build_splice(anchors, cuts, pool, bins, positions, seed, writer, counts):
-    host_norms = [norm(h["text"]) for h in pool]
-    host_ws = [ws(h["text"]) for h in pool]
-    unfilled, collisions = [], {}
-    for L in bins:
-        W, cut = cuts[L]["W"], cuts[L]["cut"]
-        for a in anchors:
+def build_splice(anchors, cuts, pool, draw_map, bins, positions, writer, counts):
+    unfilled, collisions, substitutions = [], {}, {}
+    for a in anchors:
+        aid = a["anchor_id"]
+        candidates = draw_map.get(aid)
+        if not candidates:
+            sys.exit(f"frozen draw carries no candidates for anchor {aid} - draw file "
+                     f"damaged or wrong domain")
+        needles = [norm(a["passage"]), norm(a["payload_orig"]), norm(a["payload_para"]),
+                   norm(a["payload_affirm"])]
+        if "payload_scope" in a:
+            needles.append(norm(a["payload_scope"]))
+        host_id, host_text, ci = select_host(candidates, pool, needles)
+        if host_id is None:
+            for L in bins:
+                if max_member_ws(a) <= cuts[L]["cut"]:
+                    unfilled.extend({"anchor_id": aid, "L": L, "position": p}
+                                    for p in positions)
+            continue
+        if ci > 0:
+            substitutions[aid] = {"candidate_index_used": ci, "host_id": host_id}
+        for L in bins:
+            W, cut = cuts[L]["W"], cuts[L]["cut"]
             if max_member_ws(a) > cut:
                 continue
-            needles = [norm(a["passage"]), norm(a["payload_orig"]), norm(a["payload_para"]),
-                       norm(a["payload_affirm"])]
-            if "payload_scope" in a:
-                needles.append(norm(a["payload_scope"]))
             budget = W - ws(a["payload_orig"])   # PIN: orig member realizes exactly W(L)
-            slots_seen, cells_ok = set(), 0
+            frame = build_frame(host_text, budget)
+            if frame is None:
+                sys.exit(f"invariant violated: host {host_id} shorter than budget "
+                         f"{budget} at L={L} despite the >= W(4096) pool rule")
+            slots_seen = set()
             for position in positions:
-                rng = random.Random(cell_seed(seed, a["anchor_id"], L, position))
-                host_id, frame = draw_host(pool, host_norms, host_ws, needles, budget, rng)
-                if frame is None:
-                    unfilled.append({"anchor_id": a["anchor_id"], "L": L, "position": position})
-                    continue
                 slot = slot_index(len(frame), position)
                 slots_seen.add(slot)
-                cells_ok += 1
                 a_text = splice(frame, slot, a["payload_orig"])
                 for pair, payload_b in pairs_for(a, cut):
-                    writer(a["anchor_id"], "splice", host_id, L, position, pair,
+                    writer(aid, "splice", host_id, L, position, pair,
                            "a", a_text, ws(a["payload_orig"]))
-                    writer(a["anchor_id"], "splice", host_id, L, position, pair,
+                    writer(aid, "splice", host_id, L, position, pair,
                            "b", splice(frame, slot, payload_b), ws(payload_b))
                     counts["splice"][str(L)][pair] += 1
-            if cells_ok > 1 and len(slots_seen) < cells_ok:
+            if len(positions) > 1 and len(slots_seen) < len(positions):
                 # short frames can map distinct position labels onto one slot; counted,
                 # never smoothed (inherent at small L, disclosed via the manifest)
                 collisions[str(L)] = collisions.get(str(L), 0) + 1
-    return unfilled, collisions
+    return unfilled, collisions, substitutions
 
 
 # =============================================================================
-# TBD AT TAG TIME -- NATIVE arm (prereg section 2, "NATIVE arm (supporting,
-# ecological)"): the extended-passages file is the enwiki scan output (in flight,
-# prereg section 6 "NATIVE-arm substring-match rate"); until it lands, the join key
-# (passage_id == anchor_id), the dump version (20210701 vs 20210720 test), and the
-# sentence-slot reconciliation of position are PROVISIONAL. Position is realized
-# here as a whitespace-token allocation: floor/round(q * host_budget) tokens before
-# the payload, the rest after (decile-midpoint q as in the SPLICE arm), deficits
-# shifted to the other side; anchors whose passage is not an exact substring of
-# extended_text drop from NATIVE ONLY (recorded, per the prereg's 70-90% expected
-# match rate).
+# NATIVE arm (prereg section 2, measured match rate 94.8%, dump 20210701 disclosed
+# as the NATIVE host source). Join key passage_id == anchor_id, realized by
+# scripts/e2_host_draw.py's native join (scan passage ids -> anchor passages by
+# exact text equality). Position is realized as a whitespace-token allocation:
+# round(q * host_budget) tokens before the payload, the rest after (decile-midpoint
+# q as in the SPLICE arm), deficits shifted to the other side. Locating is done on
+# whitespace-collapsed text, case-insensitive with a length-preservation guard (the
+# scan matched under lowercase normalization); residual failures drop from NATIVE
+# ONLY, per reason, disclosed in the manifest.
 # =============================================================================
+def _find_ci(hay: str, needle: str) -> int:
+    """Case-insensitive find with a length-preservation guard (exact-find fallback
+    when lowercasing changes string length, which would corrupt offsets)."""
+    hl, nl = hay.lower(), needle.lower()
+    if len(hl) == len(hay) and len(nl) == len(needle):
+        return hl.find(nl)
+    return hay.find(needle)
+
+
 def native_members(extended: str, anchor, budget: int, position: str):
-    g = extended.find(anchor["passage"])
+    ext = " ".join(extended.split())
+    pas = " ".join(anchor["passage"].split())
+    pay = " ".join(anchor["payload_orig"].split())
+    g = _find_ci(ext, pas)
     if g < 0:
         return None, "passage_not_found"
-    off = anchor["passage"].find(anchor["payload_orig"])
+    off = _find_ci(pas, pay)
     if off < 0:
         return None, "payload_not_in_passage"
     start = g + off
-    before_all = extended[:start].split()
-    after_all = extended[start + len(anchor["payload_orig"]):].split()
+    before_all = ext[:start].split()
+    after_all = ext[start + len(pay):].split()
     nb = min(int(round(POS_Q[position] * budget)), len(before_all))
     na = min(budget - nb, len(after_all))
     short = budget - nb - na
@@ -281,12 +298,14 @@ def build_native(anchors, cuts, native_rows, bins, positions, writer, counts):
                     continue
                 before, after = got
                 matched.add(a["anchor_id"])
-                a_text = " ".join(before + [a["payload_orig"]] + after)
+                pay = " ".join(a["payload_orig"].split())
+                a_text = " ".join(before + [pay] + after)
                 for pair, payload_b in pairs_for(a, cut):
+                    pb = " ".join(payload_b.split())
                     writer(a["anchor_id"], "native", a["anchor_id"], L, position, pair,
-                           "a", a_text, ws(a["payload_orig"]))
+                           "a", a_text, ws(pay))
                     writer(a["anchor_id"], "native", a["anchor_id"], L, position, pair,
-                           "b", " ".join(before + [payload_b] + after), ws(payload_b))
+                           "b", " ".join(before + [pb] + after), ws(pb))
                     counts["native"][str(L)][pair] += 1
     return drops, matched
 
@@ -297,7 +316,11 @@ def main(argv=None):
     ap.add_argument("--attrition", default=str(ATTRITION))
     ap.add_argument("--host-domain", required=True, choices=DOMAINS)
     ap.add_argument("--hosts", default=None, help="SPLICE host pool jsonl {host_id, text}")
-    ap.add_argument("--seed", type=int, default=None, help="required with --hosts")
+    ap.add_argument("--draw", default=None,
+                    help="frozen host draw json (required with --hosts): "
+                         "results/verification/e2_host_draw.json")
+    ap.add_argument("--seed", type=int, default=None,
+                    help="required with --hosts; must equal the frozen draw's seed")
     ap.add_argument("--native", default=None,
                     help="NATIVE extended-passages jsonl {passage_id, extended_text}")
     ap.add_argument("--out-dir", default=str(OUT_DIR))
@@ -307,8 +330,9 @@ def main(argv=None):
 
     if not args.hosts and not args.native:
         sys.exit("nothing to build: pass --hosts (SPLICE) and/or --native (NATIVE)")
-    if args.hosts and args.seed is None:
-        sys.exit("--seed is required with --hosts (deterministic host draw)")
+    if args.hosts and (args.seed is None or not args.draw):
+        sys.exit("--hosts requires --draw (the frozen assignment) and --seed "
+                 "(cross-checked against the draw's recorded seed)")
     bins = [int(b) for b in args.bins.split(",") if b.strip()]
     if any(b not in BINS for b in bins):
         sys.exit(f"--bins must be a subset of the registered grid {BINS}")
@@ -351,15 +375,16 @@ def main(argv=None):
             "scope pair emitted when anchor-eligible AND max(ws(orig), ws(scope)) <= cut "
             "(the frozen table's scope arithmetic)",
             "NATIVE position realized as ws-token allocation around the payload at the "
-            "decile-midpoint fractions, deficits shifted",
+            "decile-midpoint fractions, deficits shifted; locate on ws-collapsed text, "
+            "case-insensitive with length-preservation guard",
+            "host assignment (frozen at tag): ONE host per (anchor x domain) from "
+            "results/verification/e2_host_draw.json (seed 20260805), reused across all "
+            "(L, position) cells; first candidate passing contamination is the operative "
+            "host, substitutions recorded below",
         ],
         "tbd_at_tag": [
-            "PREREGISTRATION_E2 section 2 'Host assignment': host qualification, draws per "
-            "(anchor, L, position), operative seed - pinned in section 6 at tag time",
-            "NATIVE join key passage_id == anchor_id (provisional until the enwiki scan "
-            "output lands) and the winning July-2021 dump version",
-            "NATIVE sentence-slot reconciliation of position",
-            "unfillable-SPLICE-cell policy (currently: hard fail)",
+            "none - the pre-tag TBDs (host assignment, native join key, dump version) "
+            "are discharged by the tag-time section-2 pins; see 'pins'",
         ],
     }
 
@@ -377,23 +402,36 @@ def main(argv=None):
     failures = []
 
     if args.hosts:
-        hosts_path = Path(args.hosts)
-        pool = [json.loads(l) for l in hosts_path.read_text(encoding="utf-8").splitlines()
-                if l.strip()]
+        hosts_path, draw_path = Path(args.hosts), Path(args.draw)
+        pool = {}
+        for l in hosts_path.read_text(encoding="utf-8").splitlines():
+            if l.strip():
+                r = json.loads(l)
+                if r["host_id"] in pool:
+                    sys.exit(f"duplicate host_id {r['host_id']!r} in {hosts_path}")
+                pool[r["host_id"]] = r["text"]
         if not pool:
             sys.exit(f"empty host pool: {hosts_path}")
+        draw_doc = json.loads(draw_path.read_text(encoding="utf-8"))
+        if draw_doc["meta"]["seed"] != args.seed:
+            sys.exit(f"--seed {args.seed} != frozen draw seed {draw_doc['meta']['seed']}")
+        draw_map = {d["anchor_id"]: d["candidates"] for d in draw_doc["draws"]
+                    if d["domain"] == dom}
         inputs["hosts"] = {"path": str(hosts_path), "sha256": sha256_file(hosts_path),
                            "n_hosts": len(pool)}
+        inputs["draw"] = {"path": str(draw_path), "sha256": sha256_file(draw_path),
+                          "n_draws_this_domain": len(draw_map)}
         out_path = out_dir / f"stimuli_{dom}_splice.jsonl"
         with out_path.open("w", encoding="utf-8") as fh:
             w = make_writer(fh)
-            unfilled, collisions = build_splice(anchors, cuts, pool, bins, positions,
-                                                args.seed, w, counts)
+            unfilled, collisions, subs = build_splice(anchors, cuts, pool, draw_map,
+                                                      bins, positions, w, counts)
         manifest["splice"] = {
             "output": {"path": str(out_path), "sha256": sha256_file(out_path),
                        "rows": w.rows},
             "per_bin_pairs": counts["splice"], "unfilled_cells": unfilled,
             "position_slot_collision_anchors_per_bin": collisions,
+            "host_substitutions": {"n": len(subs), "detail": subs},
         }
         if unfilled:
             failures.append(f"{len(unfilled)} SPLICE cells unfillable from this host pool "

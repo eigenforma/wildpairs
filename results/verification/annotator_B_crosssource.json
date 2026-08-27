@@ -1,0 +1,1526 @@
+{
+ "annotator": "B",
+ "context": "gpt-oss-120b local, blind protocol, temp 0",
+ "judgments": [
+  {
+   "item": 0,
+   "verdict": "different"
+  },
+  {
+   "item": 1,
+   "verdict": "same"
+  },
+  {
+   "item": 2,
+   "verdict": "different"
+  },
+  {
+   "item": 3,
+   "verdict": "different"
+  },
+  {
+   "item": 4,
+   "verdict": "different"
+  },
+  {
+   "item": 5,
+   "verdict": "same"
+  },
+  {
+   "item": 6,
+   "verdict": "different"
+  },
+  {
+   "item": 7,
+   "verdict": "same"
+  },
+  {
+   "item": 8,
+   "verdict": "different"
+  },
+  {
+   "item": 9,
+   "verdict": "different"
+  },
+  {
+   "item": 10,
+   "verdict": "same"
+  },
+  {
+   "item": 11,
+   "verdict": "different"
+  },
+  {
+   "item": 12,
+   "verdict": "different"
+  },
+  {
+   "item": 13,
+   "verdict": "different"
+  },
+  {
+   "item": 14,
+   "verdict": "different"
+  },
+  {
+   "item": 15,
+   "verdict": "different"
+  },
+  {
+   "item": 16,
+   "verdict": "different"
+  },
+  {
+   "item": 17,
+   "verdict": "different"
+  },
+  {
+   "item": 18,
+   "verdict": "different"
+  },
+  {
+   "item": 19,
+   "verdict": "different"
+  },
+  {
+   "item": 20,
+   "verdict": "same"
+  },
+  {
+   "item": 21,
+   "verdict": "different"
+  },
+  {
+   "item": 22,
+   "verdict": "different"
+  },
+  {
+   "item": 23,
+   "verdict": "different"
+  },
+  {
+   "item": 24,
+   "verdict": "different"
+  },
+  {
+   "item": 25,
+   "verdict": "same"
+  },
+  {
+   "item": 26,
+   "verdict": "different"
+  },
+  {
+   "item": 27,
+   "verdict": "different"
+  },
+  {
+   "item": 28,
+   "verdict": "different"
+  },
+  {
+   "item": 29,
+   "verdict": "different"
+  },
+  {
+   "item": 30,
+   "verdict": "same"
+  },
+  {
+   "item": 31,
+   "verdict": "different"
+  },
+  {
+   "item": 32,
+   "verdict": "different"
+  },
+  {
+   "item": 33,
+   "verdict": "different"
+  },
+  {
+   "item": 34,
+   "verdict": "same"
+  },
+  {
+   "item": 35,
+   "verdict": "different"
+  },
+  {
+   "item": 36,
+   "verdict": "different"
+  },
+  {
+   "item": 37,
+   "verdict": "different"
+  },
+  {
+   "item": 38,
+   "verdict": "different"
+  },
+  {
+   "item": 39,
+   "verdict": "same"
+  },
+  {
+   "item": 40,
+   "verdict": "different"
+  },
+  {
+   "item": 41,
+   "verdict": "different"
+  },
+  {
+   "item": 42,
+   "verdict": "different"
+  },
+  {
+   "item": 43,
+   "verdict": "different"
+  },
+  {
+   "item": 44,
+   "verdict": "different"
+  },
+  {
+   "item": 45,
+   "verdict": "same"
+  },
+  {
+   "item": 46,
+   "verdict": "different"
+  },
+  {
+   "item": 47,
+   "verdict": "same"
+  },
+  {
+   "item": 48,
+   "verdict": "different"
+  },
+  {
+   "item": 49,
+   "verdict": "different"
+  },
+  {
+   "item": 50,
+   "verdict": "same"
+  },
+  {
+   "item": 51,
+   "verdict": "same"
+  },
+  {
+   "item": 52,
+   "verdict": "different"
+  },
+  {
+   "item": 53,
+   "verdict": "different"
+  },
+  {
+   "item": 54,
+   "verdict": "different"
+  },
+  {
+   "item": 55,
+   "verdict": "same"
+  },
+  {
+   "item": 56,
+   "verdict": "different"
+  },
+  {
+   "item": 57,
+   "verdict": "same"
+  },
+  {
+   "item": 58,
+   "verdict": "different"
+  },
+  {
+   "item": 59,
+   "verdict": "different"
+  },
+  {
+   "item": 60,
+   "verdict": "different"
+  },
+  {
+   "item": 61,
+   "verdict": "different"
+  },
+  {
+   "item": 62,
+   "verdict": "same"
+  },
+  {
+   "item": 63,
+   "verdict": "different"
+  },
+  {
+   "item": 64,
+   "verdict": "different"
+  },
+  {
+   "item": 65,
+   "verdict": "same"
+  },
+  {
+   "item": 66,
+   "verdict": "different"
+  },
+  {
+   "item": 67,
+   "verdict": "same"
+  },
+  {
+   "item": 68,
+   "verdict": "different"
+  },
+  {
+   "item": 69,
+   "verdict": "different"
+  },
+  {
+   "item": 70,
+   "verdict": "different"
+  },
+  {
+   "item": 71,
+   "verdict": "different"
+  },
+  {
+   "item": 72,
+   "verdict": "same"
+  },
+  {
+   "item": 73,
+   "verdict": "different"
+  },
+  {
+   "item": 74,
+   "verdict": "different"
+  },
+  {
+   "item": 75,
+   "verdict": "different"
+  },
+  {
+   "item": 76,
+   "verdict": "different"
+  },
+  {
+   "item": 77,
+   "verdict": "different"
+  },
+  {
+   "item": 78,
+   "verdict": "different"
+  },
+  {
+   "item": 79,
+   "verdict": "different"
+  },
+  {
+   "item": 80,
+   "verdict": "different"
+  },
+  {
+   "item": 81,
+   "verdict": "different"
+  },
+  {
+   "item": 82,
+   "verdict": "different"
+  },
+  {
+   "item": 83,
+   "verdict": "different"
+  },
+  {
+   "item": 84,
+   "verdict": "different"
+  },
+  {
+   "item": 85,
+   "verdict": "different"
+  },
+  {
+   "item": 86,
+   "verdict": "different"
+  },
+  {
+   "item": 87,
+   "verdict": "same"
+  },
+  {
+   "item": 88,
+   "verdict": "different"
+  },
+  {
+   "item": 89,
+   "verdict": "same"
+  },
+  {
+   "item": 90,
+   "verdict": "different"
+  },
+  {
+   "item": 91,
+   "verdict": "same"
+  },
+  {
+   "item": 92,
+   "verdict": "different"
+  },
+  {
+   "item": 93,
+   "verdict": "different"
+  },
+  {
+   "item": 94,
+   "verdict": "same"
+  },
+  {
+   "item": 95,
+   "verdict": "same"
+  },
+  {
+   "item": 96,
+   "verdict": "different"
+  },
+  {
+   "item": 97,
+   "verdict": "same"
+  },
+  {
+   "item": 98,
+   "verdict": "different"
+  },
+  {
+   "item": 99,
+   "verdict": "different"
+  },
+  {
+   "item": 100,
+   "verdict": "different"
+  },
+  {
+   "item": 101,
+   "verdict": "different"
+  },
+  {
+   "item": 102,
+   "verdict": "different"
+  },
+  {
+   "item": 103,
+   "verdict": "different"
+  },
+  {
+   "item": 104,
+   "verdict": "same"
+  },
+  {
+   "item": 105,
+   "verdict": "different"
+  },
+  {
+   "item": 106,
+   "verdict": "different"
+  },
+  {
+   "item": 107,
+   "verdict": "different"
+  },
+  {
+   "item": 108,
+   "verdict": "same"
+  },
+  {
+   "item": 109,
+   "verdict": "same"
+  },
+  {
+   "item": 110,
+   "verdict": "different"
+  },
+  {
+   "item": 111,
+   "verdict": "same"
+  },
+  {
+   "item": 112,
+   "verdict": "different"
+  },
+  {
+   "item": 113,
+   "verdict": "different"
+  },
+  {
+   "item": 114,
+   "verdict": "different"
+  },
+  {
+   "item": 115,
+   "verdict": "different"
+  },
+  {
+   "item": 116,
+   "verdict": "same"
+  },
+  {
+   "item": 117,
+   "verdict": "different"
+  },
+  {
+   "item": 118,
+   "verdict": "different"
+  },
+  {
+   "item": 119,
+   "verdict": "different"
+  },
+  {
+   "item": 120,
+   "verdict": "same"
+  },
+  {
+   "item": 121,
+   "verdict": "same"
+  },
+  {
+   "item": 122,
+   "verdict": "different"
+  },
+  {
+   "item": 123,
+   "verdict": "different"
+  },
+  {
+   "item": 124,
+   "verdict": "different"
+  },
+  {
+   "item": 125,
+   "verdict": "same"
+  },
+  {
+   "item": 126,
+   "verdict": "different"
+  },
+  {
+   "item": 127,
+   "verdict": "same"
+  },
+  {
+   "item": 128,
+   "verdict": "different"
+  },
+  {
+   "item": 129,
+   "verdict": "different"
+  },
+  {
+   "item": 130,
+   "verdict": "different"
+  },
+  {
+   "item": 131,
+   "verdict": "same"
+  },
+  {
+   "item": 132,
+   "verdict": "same"
+  },
+  {
+   "item": 133,
+   "verdict": "same"
+  },
+  {
+   "item": 134,
+   "verdict": "same"
+  },
+  {
+   "item": 135,
+   "verdict": "different"
+  },
+  {
+   "item": 136,
+   "verdict": "different"
+  },
+  {
+   "item": 137,
+   "verdict": "different"
+  },
+  {
+   "item": 138,
+   "verdict": "same"
+  },
+  {
+   "item": 139,
+   "verdict": "different"
+  },
+  {
+   "item": 140,
+   "verdict": "different"
+  },
+  {
+   "item": 141,
+   "verdict": "same"
+  },
+  {
+   "item": 142,
+   "verdict": "different"
+  },
+  {
+   "item": 143,
+   "verdict": "different"
+  },
+  {
+   "item": 144,
+   "verdict": "different"
+  },
+  {
+   "item": 145,
+   "verdict": "same"
+  },
+  {
+   "item": 146,
+   "verdict": "same"
+  },
+  {
+   "item": 147,
+   "verdict": "different"
+  },
+  {
+   "item": 148,
+   "verdict": "same"
+  },
+  {
+   "item": 149,
+   "verdict": "different"
+  },
+  {
+   "item": 150,
+   "verdict": "same"
+  },
+  {
+   "item": 151,
+   "verdict": "different"
+  },
+  {
+   "item": 152,
+   "verdict": "different"
+  },
+  {
+   "item": 153,
+   "verdict": "different"
+  },
+  {
+   "item": 154,
+   "verdict": "same"
+  },
+  {
+   "item": 155,
+   "verdict": "same"
+  },
+  {
+   "item": 156,
+   "verdict": "different"
+  },
+  {
+   "item": 157,
+   "verdict": "different"
+  },
+  {
+   "item": 158,
+   "verdict": "different"
+  },
+  {
+   "item": 159,
+   "verdict": "different"
+  },
+  {
+   "item": 160,
+   "verdict": "different"
+  },
+  {
+   "item": 161,
+   "verdict": "same"
+  },
+  {
+   "item": 162,
+   "verdict": "different"
+  },
+  {
+   "item": 163,
+   "verdict": "different"
+  },
+  {
+   "item": 164,
+   "verdict": "different"
+  },
+  {
+   "item": 165,
+   "verdict": "different"
+  },
+  {
+   "item": 166,
+   "verdict": "different"
+  },
+  {
+   "item": 167,
+   "verdict": "different"
+  },
+  {
+   "item": 168,
+   "verdict": "different"
+  },
+  {
+   "item": 169,
+   "verdict": "same"
+  },
+  {
+   "item": 170,
+   "verdict": "different"
+  },
+  {
+   "item": 171,
+   "verdict": "different"
+  },
+  {
+   "item": 172,
+   "verdict": "same"
+  },
+  {
+   "item": 173,
+   "verdict": "same"
+  },
+  {
+   "item": 174,
+   "verdict": "different"
+  },
+  {
+   "item": 175,
+   "verdict": "different"
+  },
+  {
+   "item": 176,
+   "verdict": "different"
+  },
+  {
+   "item": 177,
+   "verdict": "different"
+  },
+  {
+   "item": 178,
+   "verdict": "different"
+  },
+  {
+   "item": 179,
+   "verdict": "different"
+  },
+  {
+   "item": 180,
+   "verdict": "different"
+  },
+  {
+   "item": 181,
+   "verdict": "same"
+  },
+  {
+   "item": 182,
+   "verdict": "same"
+  },
+  {
+   "item": 183,
+   "verdict": "same"
+  },
+  {
+   "item": 184,
+   "verdict": "same"
+  },
+  {
+   "item": 185,
+   "verdict": "different"
+  },
+  {
+   "item": 186,
+   "verdict": "different"
+  },
+  {
+   "item": 187,
+   "verdict": "same"
+  },
+  {
+   "item": 188,
+   "verdict": "different"
+  },
+  {
+   "item": 189,
+   "verdict": "different"
+  },
+  {
+   "item": 190,
+   "verdict": "same"
+  },
+  {
+   "item": 191,
+   "verdict": "different"
+  },
+  {
+   "item": 192,
+   "verdict": "same"
+  },
+  {
+   "item": 193,
+   "verdict": "different"
+  },
+  {
+   "item": 194,
+   "verdict": "different"
+  },
+  {
+   "item": 195,
+   "verdict": "different"
+  },
+  {
+   "item": 196,
+   "verdict": "different"
+  },
+  {
+   "item": 197,
+   "verdict": "same"
+  },
+  {
+   "item": 198,
+   "verdict": "different"
+  },
+  {
+   "item": 199,
+   "verdict": "same"
+  },
+  {
+   "item": 200,
+   "verdict": "different"
+  },
+  {
+   "item": 201,
+   "verdict": "different"
+  },
+  {
+   "item": 202,
+   "verdict": "different"
+  },
+  {
+   "item": 203,
+   "verdict": "different"
+  },
+  {
+   "item": 204,
+   "verdict": "different"
+  },
+  {
+   "item": 205,
+   "verdict": "different"
+  },
+  {
+   "item": 206,
+   "verdict": "different"
+  },
+  {
+   "item": 207,
+   "verdict": "different"
+  },
+  {
+   "item": 208,
+   "verdict": "different"
+  },
+  {
+   "item": 209,
+   "verdict": "same"
+  },
+  {
+   "item": 210,
+   "verdict": "different"
+  },
+  {
+   "item": 211,
+   "verdict": "different"
+  },
+  {
+   "item": 212,
+   "verdict": "different"
+  },
+  {
+   "item": 213,
+   "verdict": "different"
+  },
+  {
+   "item": 214,
+   "verdict": "same"
+  },
+  {
+   "item": 215,
+   "verdict": "same"
+  },
+  {
+   "item": 216,
+   "verdict": "same"
+  },
+  {
+   "item": 217,
+   "verdict": "different"
+  },
+  {
+   "item": 218,
+   "verdict": "same"
+  },
+  {
+   "item": 219,
+   "verdict": "same"
+  },
+  {
+   "item": 220,
+   "verdict": "same"
+  },
+  {
+   "item": 221,
+   "verdict": "different"
+  },
+  {
+   "item": 222,
+   "verdict": "same"
+  },
+  {
+   "item": 223,
+   "verdict": "different"
+  },
+  {
+   "item": 224,
+   "verdict": "different"
+  },
+  {
+   "item": 225,
+   "verdict": "different"
+  },
+  {
+   "item": 226,
+   "verdict": "different"
+  },
+  {
+   "item": 227,
+   "verdict": "different"
+  },
+  {
+   "item": 228,
+   "verdict": "same"
+  },
+  {
+   "item": 229,
+   "verdict": "same"
+  },
+  {
+   "item": 230,
+   "verdict": "different"
+  },
+  {
+   "item": 231,
+   "verdict": "different"
+  },
+  {
+   "item": 232,
+   "verdict": "different"
+  },
+  {
+   "item": 233,
+   "verdict": "same"
+  },
+  {
+   "item": 234,
+   "verdict": "different"
+  },
+  {
+   "item": 235,
+   "verdict": "different"
+  },
+  {
+   "item": 236,
+   "verdict": "different"
+  },
+  {
+   "item": 237,
+   "verdict": "different"
+  },
+  {
+   "item": 238,
+   "verdict": "same"
+  },
+  {
+   "item": 239,
+   "verdict": "different"
+  },
+  {
+   "item": 240,
+   "verdict": "different"
+  },
+  {
+   "item": 241,
+   "verdict": "different"
+  },
+  {
+   "item": 242,
+   "verdict": "different"
+  },
+  {
+   "item": 243,
+   "verdict": "different"
+  },
+  {
+   "item": 244,
+   "verdict": "different"
+  },
+  {
+   "item": 245,
+   "verdict": "same"
+  },
+  {
+   "item": 246,
+   "verdict": "different"
+  },
+  {
+   "item": 247,
+   "verdict": "different"
+  },
+  {
+   "item": 248,
+   "verdict": "same"
+  },
+  {
+   "item": 249,
+   "verdict": "same"
+  },
+  {
+   "item": 250,
+   "verdict": "different"
+  },
+  {
+   "item": 251,
+   "verdict": "same"
+  },
+  {
+   "item": 252,
+   "verdict": "same"
+  },
+  {
+   "item": 253,
+   "verdict": "different"
+  },
+  {
+   "item": 254,
+   "verdict": "different"
+  },
+  {
+   "item": 255,
+   "verdict": "different"
+  },
+  {
+   "item": 256,
+   "verdict": "same"
+  },
+  {
+   "item": 257,
+   "verdict": "same"
+  },
+  {
+   "item": 258,
+   "verdict": "same"
+  },
+  {
+   "item": 259,
+   "verdict": "different"
+  },
+  {
+   "item": 260,
+   "verdict": "different"
+  },
+  {
+   "item": 261,
+   "verdict": "same"
+  },
+  {
+   "item": 262,
+   "verdict": "same"
+  },
+  {
+   "item": 263,
+   "verdict": "different"
+  },
+  {
+   "item": 264,
+   "verdict": "different"
+  },
+  {
+   "item": 265,
+   "verdict": "different"
+  },
+  {
+   "item": 266,
+   "verdict": "same"
+  },
+  {
+   "item": 267,
+   "verdict": "different"
+  },
+  {
+   "item": 268,
+   "verdict": "different"
+  },
+  {
+   "item": 269,
+   "verdict": "different"
+  },
+  {
+   "item": 270,
+   "verdict": "different"
+  },
+  {
+   "item": 271,
+   "verdict": "different"
+  },
+  {
+   "item": 272,
+   "verdict": "different"
+  },
+  {
+   "item": 273,
+   "verdict": "same"
+  },
+  {
+   "item": 274,
+   "verdict": "different"
+  },
+  {
+   "item": 275,
+   "verdict": "different"
+  },
+  {
+   "item": 276,
+   "verdict": "same"
+  },
+  {
+   "item": 277,
+   "verdict": "different"
+  },
+  {
+   "item": 278,
+   "verdict": "different"
+  },
+  {
+   "item": 279,
+   "verdict": "same"
+  },
+  {
+   "item": 280,
+   "verdict": "same"
+  },
+  {
+   "item": 281,
+   "verdict": "different"
+  },
+  {
+   "item": 282,
+   "verdict": "different"
+  },
+  {
+   "item": 283,
+   "verdict": "different"
+  },
+  {
+   "item": 284,
+   "verdict": "different"
+  },
+  {
+   "item": 285,
+   "verdict": "different"
+  },
+  {
+   "item": 286,
+   "verdict": "different"
+  },
+  {
+   "item": 287,
+   "verdict": "different"
+  },
+  {
+   "item": 288,
+   "verdict": "different"
+  },
+  {
+   "item": 289,
+   "verdict": "same"
+  },
+  {
+   "item": 290,
+   "verdict": "different"
+  },
+  {
+   "item": 291,
+   "verdict": "different"
+  },
+  {
+   "item": 292,
+   "verdict": "different"
+  },
+  {
+   "item": 293,
+   "verdict": "same"
+  },
+  {
+   "item": 294,
+   "verdict": "different"
+  },
+  {
+   "item": 295,
+   "verdict": "same"
+  },
+  {
+   "item": 296,
+   "verdict": "different"
+  },
+  {
+   "item": 297,
+   "verdict": "different"
+  },
+  {
+   "item": 298,
+   "verdict": "different"
+  },
+  {
+   "item": 299,
+   "verdict": "same"
+  },
+  {
+   "item": 300,
+   "verdict": "same"
+  },
+  {
+   "item": 301,
+   "verdict": "same"
+  },
+  {
+   "item": 302,
+   "verdict": "different"
+  },
+  {
+   "item": 303,
+   "verdict": "different"
+  },
+  {
+   "item": 304,
+   "verdict": "different"
+  },
+  {
+   "item": 305,
+   "verdict": "different"
+  },
+  {
+   "item": 306,
+   "verdict": "same"
+  },
+  {
+   "item": 307,
+   "verdict": "same"
+  },
+  {
+   "item": 308,
+   "verdict": "different"
+  },
+  {
+   "item": 309,
+   "verdict": "same"
+  },
+  {
+   "item": 310,
+   "verdict": "same"
+  },
+  {
+   "item": 311,
+   "verdict": "different"
+  },
+  {
+   "item": 312,
+   "verdict": "different"
+  },
+  {
+   "item": 313,
+   "verdict": "different"
+  },
+  {
+   "item": 314,
+   "verdict": "different"
+  },
+  {
+   "item": 315,
+   "verdict": "same"
+  },
+  {
+   "item": 316,
+   "verdict": "different"
+  },
+  {
+   "item": 317,
+   "verdict": "different"
+  },
+  {
+   "item": 318,
+   "verdict": "different"
+  },
+  {
+   "item": 319,
+   "verdict": "different"
+  },
+  {
+   "item": 320,
+   "verdict": "different"
+  },
+  {
+   "item": 321,
+   "verdict": "different"
+  },
+  {
+   "item": 322,
+   "verdict": "different"
+  },
+  {
+   "item": 323,
+   "verdict": "same"
+  },
+  {
+   "item": 324,
+   "verdict": "different"
+  },
+  {
+   "item": 325,
+   "verdict": "different"
+  },
+  {
+   "item": 326,
+   "verdict": "different"
+  },
+  {
+   "item": 327,
+   "verdict": "different"
+  },
+  {
+   "item": 328,
+   "verdict": "same"
+  },
+  {
+   "item": 329,
+   "verdict": "different"
+  },
+  {
+   "item": 330,
+   "verdict": "different"
+  },
+  {
+   "item": 331,
+   "verdict": "different"
+  },
+  {
+   "item": 332,
+   "verdict": "same"
+  },
+  {
+   "item": 333,
+   "verdict": "different"
+  },
+  {
+   "item": 334,
+   "verdict": "different"
+  },
+  {
+   "item": 335,
+   "verdict": "same"
+  },
+  {
+   "item": 336,
+   "verdict": "different"
+  },
+  {
+   "item": 337,
+   "verdict": "different"
+  },
+  {
+   "item": 338,
+   "verdict": "different"
+  },
+  {
+   "item": 339,
+   "verdict": "same"
+  },
+  {
+   "item": 340,
+   "verdict": "same"
+  },
+  {
+   "item": 341,
+   "verdict": "different"
+  },
+  {
+   "item": 342,
+   "verdict": "same"
+  },
+  {
+   "item": 343,
+   "verdict": "same"
+  },
+  {
+   "item": 344,
+   "verdict": "same"
+  },
+  {
+   "item": 345,
+   "verdict": "different"
+  },
+  {
+   "item": 346,
+   "verdict": "different"
+  },
+  {
+   "item": 347,
+   "verdict": "different"
+  },
+  {
+   "item": 348,
+   "verdict": "same"
+  },
+  {
+   "item": 349,
+   "verdict": "different"
+  },
+  {
+   "item": 350,
+   "verdict": "same"
+  },
+  {
+   "item": 351,
+   "verdict": "different"
+  },
+  {
+   "item": 352,
+   "verdict": "different"
+  },
+  {
+   "item": 353,
+   "verdict": "different"
+  },
+  {
+   "item": 354,
+   "verdict": "same"
+  },
+  {
+   "item": 355,
+   "verdict": "same"
+  },
+  {
+   "item": 356,
+   "verdict": "same"
+  },
+  {
+   "item": 357,
+   "verdict": "different"
+  },
+  {
+   "item": 358,
+   "verdict": "different"
+  },
+  {
+   "item": 359,
+   "verdict": "different"
+  },
+  {
+   "item": 360,
+   "verdict": "different"
+  },
+  {
+   "item": 361,
+   "verdict": "different"
+  },
+  {
+   "item": 362,
+   "verdict": "same"
+  },
+  {
+   "item": 363,
+   "verdict": "different"
+  },
+  {
+   "item": 364,
+   "verdict": "different"
+  },
+  {
+   "item": 365,
+   "verdict": "different"
+  },
+  {
+   "item": 366,
+   "verdict": "same"
+  },
+  {
+   "item": 367,
+   "verdict": "different"
+  },
+  {
+   "item": 368,
+   "verdict": "different"
+  },
+  {
+   "item": 369,
+   "verdict": "different"
+  },
+  {
+   "item": 370,
+   "verdict": "same"
+  },
+  {
+   "item": 371,
+   "verdict": "same"
+  },
+  {
+   "item": 372,
+   "verdict": "different"
+  },
+  {
+   "item": 373,
+   "verdict": "different"
+  },
+  {
+   "item": 374,
+   "verdict": "different"
+  },
+  {
+   "item": 375,
+   "verdict": "different"
+  },
+  {
+   "item": 376,
+   "verdict": "same"
+  },
+  {
+   "item": 377,
+   "verdict": "different"
+  },
+  {
+   "item": 378,
+   "verdict": "different"
+  },
+  {
+   "item": 379,
+   "verdict": "same"
+  }
+ ]
+}

@@ -1,0 +1,163 @@
+{
+ "note": "Machine-readable twin of docs/bar_ledger.md. Figures and any N-of-M statement read THIS file, so the arithmetic cannot drift into prose. One row per pre-registered bar. E2 H3b is excluded by design: demoted to a reported construction fact before the tag, carries no pass/fail.",
+ "built": "2026-08-12",
+ "bars": [
+  {
+   "id": "E1-H1",
+   "exp": "E1",
+   "short": "approval ≥90% at ≥0.80",
+   "verdict": "FAIL",
+   "detail": "89.3 / 89.7 on two configs"
+  },
+  {
+   "id": "E1-H2",
+   "exp": "E1",
+   "short": "AUROC band + matched certification",
+   "verdict": "QUALIFIED",
+   "detail": "range clause passed; certification clause failed → stratified-only fallback"
+  },
+  {
+   "id": "E1-H3",
+   "exp": "E1",
+   "short": "modal + quantity are top classes",
+   "verdict": "FAIL",
+   "detail": "0/9 under both partitions"
+  },
+  {
+   "id": "E1-H4",
+   "exp": "E1",
+   "short": "fitted repairs drop ≥0.10 on bis",
+   "verdict": "FAIL",
+   "detail": "improved instead — became the sign-flip law"
+  },
+  {
+   "id": "E1-H5",
+   "exp": "E1",
+   "short": "granularity decay ≥0.10",
+   "verdict": "FAIL",
+   "detail": "drop 0.019 (floor effect)"
+  },
+  {
+   "id": "E2-H1",
+   "exp": "E2",
+   "short": "α ∈ [0.8,1.2] mean-pooled",
+   "verdict": "UNRESOLVED",
+   "detail": "7/10 spline-only; membership pending"
+  },
+  {
+   "id": "E2-H2a",
+   "exp": "E2",
+   "short": "AUROC <0.60 by L=512",
+   "verdict": "QUALIFIED",
+   "detail": "pass excluding 7 vacuous configs"
+  },
+  {
+   "id": "E2-H2b",
+   "exp": "E2",
+   "short": "<0.65 by L=1024, caliper",
+   "verdict": "QUALIFIED",
+   "detail": "pass excluding vacuous"
+  },
+  {
+   "id": "E2-H2c",
+   "exp": "E2",
+   "short": "production ≤0.55 at every bin",
+   "verdict": "PASS",
+   "detail": "max CI-lower 0.528"
+  },
+  {
+   "id": "E2-H3a",
+   "exp": "E2",
+   "short": "position effect ≥0.05",
+   "verdict": "FAIL",
+   "detail": "0/10; deltas −0.014…+0.015"
+  },
+  {
+   "id": "E2-H4",
+   "exp": "E2",
+   "short": "miss rates at shipped thresholds",
+   "verdict": "QUALIFIED",
+   "detail": "pass excluding non-evaluable (MiniLM)"
+  },
+  {
+   "id": "E2-H5",
+   "exp": "E2",
+   "short": "|r| < 0.10 by L=512",
+   "verdict": "PASS",
+   "detail": ""
+  },
+  {
+   "id": "E2-H6",
+   "exp": "E2",
+   "short": "transfer inside fitted bands",
+   "verdict": "FAIL",
+   "detail": "69/101 evaluable cells"
+  },
+  {
+   "id": "E3-HE3-1",
+   "exp": "E3",
+   "short": "caliper collapses elicited separability",
+   "verdict": "FAIL",
+   "detail": "0/9 → minimal-pairhood criterion"
+  },
+  {
+   "id": "E3-HE3-2",
+   "exp": "E3",
+   "short": "every config ≥0.80 naive on QQP",
+   "verdict": "PASS",
+   "detail": "9/9"
+  },
+  {
+   "id": "E3-HE3-3",
+   "exp": "E3",
+   "short": "all nine in [0.50,0.75] on PAWS",
+   "verdict": "FAIL",
+   "detail": "production 0.679 highest of nine"
+  },
+  {
+   "id": "E3-HE3-4",
+   "exp": "E3",
+   "short": "no shipped-threshold cell >0.70 BA",
+   "verdict": "FAIL",
+   "detail": "28 cells"
+  },
+  {
+   "id": "E3-HE3-5",
+   "exp": "E3",
+   "short": "AUROC ranks by coupling magnitude",
+   "verdict": "FAIL",
+   "detail": "1/9"
+  },
+  {
+   "id": "E4-B1",
+   "exp": "E4",
+   "short": "practical floor >0.40 for ≥7/9",
+   "verdict": "FAIL",
+   "detail": "1/9 (gte only)"
+  },
+  {
+   "id": "E4-B2",
+   "exp": "E4",
+   "short": "practical floor >0.60 for ≥5/9",
+   "verdict": "FAIL",
+   "detail": "0/9"
+  },
+  {
+   "id": "E4-B3",
+   "exp": "E4",
+   "short": "observed min ≥ hard floor, 100% of cells",
+   "verdict": "FAIL",
+   "detail": "6 cells breach the scope condition; investigated per prereg §3"
+  }
+ ],
+ "counts": {
+  "total": 21,
+  "FAIL": 13,
+  "QUALIFIED": 4,
+  "PASS": 3,
+  "UNRESOLVED": 1
+ },
+ "canonical_sentence": "Of 21 pre-registered bars, 13 failed outright, one failed at its certification clause, one is unresolved, and three passed only for the configurations able to evaluate them.",
+ "counts_note": "2026-08-13: recomputed from the 21 rows. The previous block read FAIL 12 / PASS 4 while the rows tallied FAIL 13 / PASS 3. It was a hybrid: it carried the markdown ledger's stale FAIL count and inflated PASS to make the total reach 21. The rows already encoded the 2026-08-12 rulings that E4-B3's verdict is FAIL (the scope finding is its interpretation, not its verdict) and that E2-H4 is a pass qualified by non-evaluability. Neither ruling had reached the summary. The rows are the record; any count is derived from them.",
+ "form_note": "2026-08-26: sentence form re-ruled by the operator to numerals for numbers over 10 (21, 13). Counts unchanged; the spelled form is retired from every surface. The harness now asserts the manuscript carries this sentence verbatim."
+}

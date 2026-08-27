@@ -1,0 +1,97 @@
+{
+ "floor": 0.4,
+ "why": "bis_mine.py accepts an alignment only at token-Jaccard >= 0.40; errata pairs carried no overlap filter. The comparison is otherwise between a truncated and an untruncated distribution.",
+ "arms": {
+  "errata": {
+   "n_full": {
+    "changing": 100,
+    "preserving": 32
+   },
+   "n_on_common_support": {
+    "changing": 88,
+    "preserving": 32
+   },
+   "removed_by_floor": {
+    "changing": 12,
+    "preserving": 0
+   },
+   "removed_frac": {
+    "changing": 0.12,
+    "preserving": 0.0
+   },
+   "gap_full": 0.081,
+   "ci_full": [
+    0.0263,
+    0.1475
+   ],
+   "gap_common_support": 0.0525,
+   "ci_common_support": [
+    0.0015,
+    0.1133
+   ],
+   "median_changing_common": 0.8889,
+   "median_preserving_common": 0.9414
+  },
+  "bis": {
+   "n_full": {
+    "changing": 80,
+    "preserving": 51
+   },
+   "n_on_common_support": {
+    "changing": 78,
+    "preserving": 51
+   },
+   "removed_by_floor": {
+    "changing": 2,
+    "preserving": 0
+   },
+   "removed_frac": {
+    "changing": 0.025,
+    "preserving": 0.0
+   },
+   "gap_full": 0.3313,
+   "ci_full": [
+    0.2564,
+    0.3957
+   ],
+   "gap_common_support": 0.3265,
+   "ci_common_support": [
+    0.2521,
+    0.3889
+   ],
+   "median_changing_common": 0.6458,
+   "median_preserving_common": 0.9722
+  },
+  "authored": {
+   "n_full": {
+    "changing": 40,
+    "preserving": 22
+   },
+   "n_on_common_support": {
+    "changing": 20,
+    "preserving": 12
+   },
+   "removed_by_floor": {
+    "changing": 20,
+    "preserving": 10
+   },
+   "removed_frac": {
+    "changing": 0.5,
+    "preserving": 0.4545
+   },
+   "gap_full": 0.1962,
+   "ci_full": [
+    -0.5417,
+    0.6272
+   ],
+   "gap_common_support": 0.0179,
+   "ci_common_support": [
+    -0.0476,
+    0.0655
+   ],
+   "median_changing_common": 0.7143,
+   "median_preserving_common": 0.7321
+  }
+ },
+ "verdict": "MAGNITUDE DIFFERENCE SURVIVES on the common support: errata and bis gap CIs remain disjoint after the bis selection floor is applied to both arms."
+}

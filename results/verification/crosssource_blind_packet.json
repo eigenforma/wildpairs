@@ -1,0 +1,1902 @@
+[
+ {
+  "item": 0,
+  "text_A": "In order to make the backbone connected, a virtual link has been configured between Routers R10 and R11.",
+  "text_B": "In order to make the backbone connected, a virtual link has been configured between Routers RT10 and RT11."
+ },
+ {
+  "item": 1,
+  "text_A": "If the link partner is ready to receive, it returns an RTR signal.",
+  "text_B": "If the link partner ready to receive, it returns an RTR signal."
+ },
+ {
+  "item": 2,
+  "text_A": "Module Copyright The module \"description\" statement MUST contain a reference to the latest approved IETF Trust Copyright statement, which is available at: <https://trustee.ietf.org/license-info/>.",
+  "text_B": "Module Copyright The module \"description\" statement MUST contain a reference to the latest approved IETF Trust Copyright statement, which is available online at: <https://trustee.ietf.org/license-info/> 3.2."
+ },
+ {
+  "item": 3,
+  "text_A": "Roll back to schema v12.",
+  "text_B": "Roll forward to schema v12."
+ },
+ {
+  "item": 4,
+  "text_A": "Disable caching for all read queries.",
+  "text_B": "Enable caching for all read queries."
+ },
+ {
+  "item": 5,
+  "text_A": "D bit (0x02): When the IS-IS Router CAPABILITY TLV is leaked from level-2 to level-1, the D bit MUST be set.",
+  "text_B": "D bit (0x02): When the IS-IS Router CAPABILITY TLV is leaked from Level 2 (L2) to Level 1 (L1), the D bit MUST be set."
+ },
+ {
+  "item": 6,
+  "text_A": "Keywords \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHOULD\", \"SHOULD NOT\" and \"MAY\" that appear in this document are to be interpreted as described in [Bra97].",
+  "text_B": "Terms and Definitions The keywords MUST, MUST NOT, REQUIRED, SHALL, SHALL NOT, SHOULD, SHOULD NOT, RECOMMENDED, MAY, and OPTIONAL, when they appear in this document, are to be interpreted as described in [RFC 2119]."
+ },
+ {
+  "item": 7,
+  "text_A": "4.4.17 charset-configured (charset) This REQUIRED Printer attribute identifies the charset that the Printer object has been configured to represent 'text' and 'name' Printer attributes that are set by the operator, system administrator, or manufacturer, i.e., for \"printer-name\" (name), \"printer-location\" (text), \"printer-info\" (text), and \"printer-make- and-model\" (text).",
+  "text_B": "4.4.14 charset-configured (charset) This REQUIRED Printer attribute identifies the charset that the Printer object has been configured to represent 'text' and 'name' Printer attributes that are set by the operator, system administrator, or manufacturer, i.e., for \"printer-name\" (name), \"printer-location\" (text), \"printer-info\" (text), and \"printer-make- and-model\" (text)."
+ },
+ {
+  "item": 8,
+  "text_A": "Link descriptions used for point-to-point interfaces are specified in Section 12.4.1.1, for broadcast and NBMA interfaces in 12.4.1.2, for virtual links in Section 12.4.1.3, and for Point-to-MultiPoint interfaces in 12.4.1.4.",
+  "text_B": "Link descriptions used for point-to-point interfaces are specified in Section 12.4.1.1, for virtual links in Section 12.4.1.2, for broadcast and NBMA interfaces in 12.4.1.3, and for Point-to-MultiPoint interfaces in 12.4.1.4."
+ },
+ {
+  "item": 9,
+  "text_A": "[SEC1] Standards for Efficient Cryptography Group, \"Elliptic Curve Cryptography\", SEC 1, May 2009, <http://www.secg.org/sec1-v2.pdf>. [SEC2] Standards for Efficient Cryptography Group, \"Recommended Elliptic Curve Domain Parameters\", SEC 2, September 2000, <http://www.secg.org/SEC2-Ver-1.0.pdf>.",
+  "text_B": "[SEC1] Standards for Efficient Cryptography Group, \"Elliptic Curve Cryptography\", SEC 1, May 2009, <http://www.secg.org/download/aid-780/sec1-v2.pdf>. [SEC2] Standards for Efficient Cryptography Group, \"Recommended Elliptic Curve Domain Parameters\", SEC 2, September 2000, <http://www.secg.org/download/aid-386/sec2_final.pdf>."
+ },
+ {
+  "item": 10,
+  "text_A": "As long as the receiving TCP continues to send acknowledgments in response to the probe segments, the sending TCP MUST allow the connection to stay open.",
+  "text_B": "As long as the receiving TCP peer continues to send acknowledgments in response to the probe segments, the sending TCP peer MUST allow the connection to stay open (MUST-37)."
+ },
+ {
+  "item": 11,
+  "text_A": "Deploy the migration to production tonight.",
+  "text_B": "Hold the schema change in staging until the audit closes."
+ },
+ {
+  "item": 12,
+  "text_A": "Alert if latency exceeds 200ms.",
+  "text_B": "Page the on-call engineer when response time passes a fifth of a second."
+ },
+ {
+  "item": 13,
+  "text_A": "Stay quiet unless failures drop beneath one in fifty.",
+  "text_B": "Alert on error rates above two percent."
+ },
+ {
+  "item": 14,
+  "text_A": "When a DTLS implementation receives a handshake message fragment corresponding to the next expected handshake message sequence number, it MUST process it, either by buffering it until it has the entire handshake message or by processing any in-order portions of the message.",
+  "text_B": "When a DTLS implementation receives a handshake message fragment, it MUST buffer it until it has the entire handshake message."
+ },
+ {
+  "item": 15,
+  "text_A": "Content-Type: multipart/form-data; boundary=---FormBoundaryjWmhtjORrn",
+  "text_B": "Content-Type: multipart/form-data; boundary=-FormBoundaryjWmhtjORrn"
+ },
+ {
+  "item": 16,
+  "text_A": "If SECINFO_STYLE4_PARENT is passed, then SECINFO_NO_NAME is querying for the required security of the current filehandle's parent, where the current filehandle MUST be that of directory (an object of type NF4DIR).",
+  "text_B": "If SECINFO_STYLE4_PARENT is passed, then SECINFO_NO_NAME is querying for the required security of the current filehandle's parent"
+ },
+ {
+  "item": 17,
+  "text_A": "Alert on error rates above two percent.",
+  "text_B": "Page somebody when more than one request in fifty fails."
+ },
+ {
+  "item": 18,
+  "text_A": "o Second, the JSON \"dest\" array MUST be populated. If the destination identity is a telephone number, then the array MUST be populated with a JSON object containing a \"tn\" element with a value set to the value of the quoted destination identity, a canonicalized telephone number (see Section 8.3). Otherwise, the array MUST be populated with a JSON object containing a \"uri\" element, set to the value of the addr-spec component of the To header field, which is the AoR to which the request is being sent, per the procedures in Section 8.5. Multiple JSON objects are permitted in \"dest\" for future compatibility reasons. ... The \"orig\" and \"dest\" arrays may contain identifiers of heterogeneous type; for example, the \"orig\" array might contain a \"tn\" claim, while the \"dest\" contains a \"uri\" claim. Also note that in some cases, the \"dest\" array may be populated with more than one value.",
+  "text_B": "o Second, the JSON \"dest\" object MUST be populated. If the destination identity is a telephone number, then the object MUST contain a \"tn\" element with a value set to an array containing the value of the quoted destination identity, a canonicalized telephone number (see Section 8.3). Otherwise, the object MUST contain a \"uri\" element, set to an array containing the value of the addr-spec component of the To header field, which is the AoR to which the request is being sent, per the procedures in Section 8.5. Additional elements are permitted in \"dest\" for future compatibility reasons. ... The \"orig\" and \"dest\" objects may contain identifiers of heterogeneous type; for example, the \"orig\" object might contain a \"tn\" claim, while the \"dest\" contains a \"uri\" claim. Also note that in some cases, the \"dest\" object may be populated with more than one claim, and its claim value arrays may contain more than one value."
+ },
+ {
+  "item": 19,
+  "text_A": "If advertised, all BGP-LS Speakers within an IGP flooding-set (set of IGP nodes within which an LSP/LSA is flooded) had to use the same (ASN, BGP-LS ID) tuple, and if an IGP domain consists of multiple flooding- sets, then all BGP-LS Speakers within the IGP domain had to use the same (ASN, BGP-LS ID) tuple.",
+  "text_B": "If an IGP domain consists of multiple flooding-sets, then all BGP-LS speakers within the IGP domain SHOULD use the same ASN, BGP-LS ID tuple."
+ },
+ {
+  "item": 20,
+  "text_A": "Standards Track [Page 8] RFC 6112 Kerberos Anonymity Support April 2011 o If the authorization data element is unknown, the TGS MAY remove it, or transfer it into the returned anonymous ticket, or reject the authentication attempt, based on local policy for that authorization data type unless otherwise specified.",
+  "text_B": "o If the authorization data element is unknown, the TGS MAY remove it, or transfer it into the returned anonymous ticket, or reject the authentication attempt, based on local policy for that authorization data type unless otherwise specified."
+ },
+ {
+  "item": 21,
+  "text_A": "At least one of the following sub-TLVs MUST be included in the MAC Flush Parameters TLV if the C-flag is set to 1: o PBB B-MAC List Sub-TLV: Type: 0x0407 Length: Value length in octets. At least one B-MAC address MUST be present in the list. Value: One or a list of 48-bit B-MAC addresses. These are the source B-MAC addresses associated with the B-VPLS instance that originated the MAC withdraw message. It will be used to identify the C-MAC(s) mapped to the B-MAC(s) listed in the sub-TLV. o PBB I-SID List Sub-TLV: Type: 0x0408 Length: Value length in octets.",
+  "text_B": "At least one of the following sub-TLVs MUST be included in the MAC Flush Parameters TLV if the C-flag is set to 1: o PBB B-MAC List Sub-TLV: Type: 0x01 Length: Value length in octets. At least one B-MAC address MUST be present in the list. Value: One or a list of 48-bit B-MAC addresses. These are the source B-MAC addresses associated with the B-VPLS instance that originated the MAC withdraw message. It will be used to identify the C-MAC(s) mapped to the B-MAC(s) listed in the sub-TLV. o PBB I-SID List Sub-TLV: Type: 0x02 Length: Value length in octets."
+ },
+ {
+  "item": 22,
+  "text_A": "<xs:element name=\"ThreatActor\"> <xs:complexType> <xs:sequence> <xs:element ref=\"iodef:ThreatActorID\" minOccurs=\"0\" maxOccurs=\"unbounded\"/> <xs:element ref=\"iodef:URL\" minOccurs=\"0\" maxOccurs=\"unbounded\"/> <xs:element ref=\"iodef:Description\" minOccurs=\"0\" maxOccurs=\"unbounded\"/> <xs:element ref=\"iodef:AdditionalData\" minOccurs=\"0\" maxOccurs=\"unbounded\"/> </xs:sequence> <xs:attribute name=\"restriction\" type=\"iodef:restriction-type\" use=\"optional\"/> <xs:attribute name=\"ext-restriction\" type=\"xs:string\" use=\"optional\"/> </xs:complexType> </xs:element>",
+  "text_B": "<xs:element name=\"ThreatActor\"> <xs:complexType> <xs:sequence> <xs:element ref=\"iodef:ThreatActorID\" minOccurs=\"0\" maxOccurs=\"unbounded\"/> <xs:element ref=\"iodef:URL\" maxOccurs=\"unbounded\"/> <xs:element ref=\"iodef:Description\" minOccurs=\"0\" maxOccurs=\"unbounded\"/> <xs:element ref=\"iodef:AdditionalData\" minOccurs=\"0\" maxOccurs=\"unbounded\"/> </xs:sequence> <xs:attribute name=\"restriction\" type=\"iodef:restriction-type\" use=\"optional\"/> <xs:attribute name=\"ext-restriction\" type=\"xs:string\" use=\"optional\"/> </xs:complexType> </xs:element>"
+ },
+ {
+  "item": 23,
+  "text_A": "Otherwise it MUST NOT be present SEQUENCE 0 or 1 MUST be the sequence number of the original REQUEST if greater than 0.",
+  "text_B": "| | SEQUENCE | 0 or 1 | MUST be the sequence number of | | | | the original REQUEST if greater | | | | than 0."
+ },
+ {
+  "item": 24,
+  "text_A": "That job identification MAY either be a single Job URI or a combination of a Printer URI with a Job ID.",
+  "text_B": "That Job identification SHOULD be the combination of a Printer URI with a Job ID but MAY be the (single) Job URI."
+ },
+ {
+  "item": 25,
+  "text_A": "Thus a compliant implementation SHOULD NOT provide this service in conjunction with SAs that are manually keyed.",
+  "text_B": "Thus, a compliant implementation SHOULD NOT provide this service in conjunction with SAs that are manually keyed."
+ },
+ {
+  "item": 26,
+  "text_A": "Enable caching for all read queries.",
+  "text_B": "Keep hot responses close to the client so origin sees little traffic."
+ },
+ {
+  "item": 27,
+  "text_A": "\"subscription-modified\" A \"subscription-modified\" encoded in JSON would look like: { \"ietf-restconf:notification\" : { \"eventTime\": \"2007-09-01T10:00:00Z\", \"ietf-subscribed-notifications:subscription-modified\": { \"id\": 39, \"uri\": \"https://example.com/restconf/subscriptions/22\" \"stream-xpath-filter\": \"/example-module:foo\", \"stream\": { \"ietf-netconf-subscribed-notifications\" : \"NETCONF\" } } } }",
+  "text_B": "\"subscription-modified\" A \"subscription-modified\" encoded in JSON would look like: { \"ietf-restconf:notification\" : { \"eventTime\": \"2007-09-01T10:00:00Z\", \"ietf-subscribed-notifications:subscription-modified\": { \"id\": 39, \"uri\": \"https://example.com/restconf/subscriptions/39\" \"stream-xpath-filter\": \"/example-module:foo\", \"stream\": { \"ietf-netconf-subscribed-notifications\" : \"NETCONF\" } } } }"
+ },
+ {
+  "item": 28,
+  "text_A": "Name The DNS domain name of the domain where the specified service is located.",
+  "text_B": "Name A DNS domain name, representing a domain for which the certificate issuer has asserted that the certified subject is a legitimate provider of the identified service."
+ },
+ {
+  "item": 29,
+  "text_A": "o Symbols after data node names: \"?\" means an optional node, \"!\" means a presence container, and \"*\" denotes either a list or a leaf-list.",
+  "text_B": "o Symbols after data node names: \"?\" means an optional node, \"!\" means a presence container, and \"*\" denotes a list and leaf-list."
+ },
+ {
+  "item": 30,
+  "text_A": "The fragmentation strategy is designed so that an unfragmented datagram has all zero fragmentation information",
+  "text_B": "The fragmentation strategy is designed so than an unfragmented datagram has all zero fragmentation information"
+ },
+ {
+  "item": 31,
+  "text_A": "Creating New Diameter Applications Every Diameter application specification MUST have an IANA-assigned Application Id (see Section 2.4).",
+  "text_B": "Every Diameter accounting application specification MUST have an IANA assigned Application Identifier (see Section 2.4) or a vendor specific Application Identifier."
+ },
+ {
+  "item": 32,
+  "text_A": "do { base = H(max(Alice,Bob) | min(Alice,Bob) | password | counter) temp = KDF-n(base, \"Dragonfly Hunting And Pecking\") seed = (temp mod (p - 1)) + 1",
+  "text_B": "do { base = H(max(Alice,Bob) | min(Alice,Bob) | password | counter) temp = KDF-n(seed, \"Dragonfly Hunting And Pecking\") seed = (temp mod (p - 1)) + 1"
+ },
+ {
+  "item": 33,
+  "text_A": "return the private key in cleartext form.",
+  "text_B": "return the private clear in cleartext form."
+ },
+ {
+  "item": 34,
+  "text_A": "An endpoint SHOULD use the following rules to calculate the rwnd, using the a_rwnd value, the Cumulative TSN Ack and Gap Ack Blocks in a received SACK.",
+  "text_B": "An endpoint SHOULD use the following rules to calculate the rwnd, using the a_rwnd value, the Cumulative TSN Ack, and Gap Ack Blocks in a received SACK."
+ },
+ {
+  "item": 35,
+  "text_A": "Roll back to schema v12.",
+  "text_B": "Advance the database to the newest available structure."
+ },
+ {
+  "item": 36,
+  "text_A": "There is some confusion in the way we describe the HA bits.",
+  "text_B": "Suggestions made by Evangelos Haleplidis for global consitency. i. For consistency of terms: Change word \"stage\" of page 17 to \"phase\". ii. Change the start of section 4.2.2.3 from: \"In this stage...\" To: \"Entering this stage...\" iii. Change the text in section 8 from: \"Figure 44 extends the state machine illustrated in Figure 4 to allow for new states that facilitate connection recovery.\" To: \"Figure 44 changes the state machine illustrated in Figure 4 to specify states that facilitate connection recovery.\" Also add the following text right after that: \"In this figure, the pre-association phase and the Association Setup Stage are merged in one state and Association Lost stage is included in the Not Associated state.\" iv. Alter wording in Figure 44 in Page 84. Where it says: \"CE issues Association Setup\" Change to: \"CE issues Association Setup Response\""
+ },
+ {
+  "item": 37,
+  "text_A": "\"secboot\": true,",
+  "text_B": "\"oemboot\": true,"
+ },
+ {
+  "item": 38,
+  "text_A": "pk-HSS-LMS-HashSig PUBLIC-KEY ::= { IDENTIFIER id-alg-hss-lms-hashsig -- KEY no ASN.1 wrapping -- PARAMS ARE absent CERT-KEY-USAGE { digitalSignature, nonRepudiation, keyCertSign, cRLSign } }",
+  "text_B": "pk-HSS-LMS-HashSig PUBLIC-KEY ::= { IDENTIFIER id-alg-hss-lms-hashsig KEY HSS-LMS-HashSig-PublicKey PARAMS ARE absent CERT-KEY-USAGE { digitalSignature, nonRepudiation, keyCertSign, cRLSign } }"
+ },
+ {
+  "item": 39,
+  "text_A": "Traditionally, LDAP users where identified by the Distinguished Name [RFC2253] of a directory entry and this entry contained a userPassword [RFC2256] attribute containing one or more passwords.",
+  "text_B": "Traditionally, LDAP users were identified by the Distinguished Name [RFC2253] of a directory entry and this entry contained a userPassword [RFC2256] attribute containing one or more passwords."
+ },
+ {
+  "item": 40,
+  "text_A": "In TLS 1.3, the client indicates its version preferences in the \"supported_versions\" extension (Section 4.2.1) and the legacy_version field MUST be set to 0x0303, which is the version number for TLS 1.2.",
+  "text_B": "In TLS 1.3, the client indicates its version preferences in the \"supported_versions\" extension (Section 4.3.1) and the legacy_version field MUST be set to 0x0303, which is the version number for TLS 1.2."
+ },
+ {
+  "item": 41,
+  "text_A": "Treat the timeout as retryable.",
+  "text_B": "Treat the timeout as fatal."
+ },
+ {
+  "item": 42,
+  "text_A": "Treat the timeout as retryable.",
+  "text_B": "When the clock runs out, try the operation once more."
+ },
+ {
+  "item": 43,
+  "text_A": "Whitespace within a value MUST be retained unless explicitly excluded by the specific tag description.",
+  "text_B": "o Values MAY be zero bytes long o Whitespace MAY surround any of the tokens; however, whitespace within a value MUST be retained unless explicitly excluded by the specific tag description."
+ },
+ {
+  "item": 44,
+  "text_A": "Set bfd.RemoteSessionState to the value of the State (Sta) field.",
+  "text_B": "Set bfd.RemoteState to the value of the State (Sta) field."
+ },
+ {
+  "item": 45,
+  "text_A": "A Result TLV indicating failure MUST NOT be accompanied by the following TLVs: NAK, EAP-Payload, or Crypto-Binding.",
+  "text_B": "A Result TLV indicating failure MUST NOT be accompanied by the following TLVs: NAK, EAP-Payload TLV, or Crypto-Binding TLV."
+ },
+ {
+  "item": 46,
+  "text_A": "Requirements Language The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in [RFC2119].",
+  "text_B": "Requirements Language The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"NOT RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here."
+ },
+ {
+  "item": 47,
+  "text_A": "Increase the retry limit.",
+  "text_B": "Give failing operations additional chances to succeed."
+ },
+ {
+  "item": 48,
+  "text_A": "(650) - MUST accept packets addressed to the IPvX address(es) associated with the virtual router if it is the IPvX address owner or if Accept_Mode is True.",
+  "text_B": "- MUST NOT accept packets addressed to the IP address(es) associated with the virtual router if it is not the IP address owner."
+ },
+ {
+  "item": 49,
+  "text_A": "If the message is submitted in response to another message (e.g., is a follow-up) the default subject should begin with the four characters \"Re:\", and the \"References\" line is required.",
+  "text_B": "If the message is submitted in response to another message (e.g., is a follow-up) the default subject should begin with the four characters \"Re: \", and the \"References\" line is required."
+ },
+ {
+  "item": 50,
+  "text_A": "If the <proto> subfield is \"udp\", the <fmt> subfields MUST reference a media type describing the format under the \"audio\", \"video\", \"text\", \"application\", or \"message\" top-level media types.",
+  "text_B": "If the <proto> sub-field is \"udp\" the <fmt> sub-fields MUST reference a media type describing the format under the \"audio\", \"video\", \"text\", \"application\", or \"message\" top-level media types."
+ },
+ {
+  "item": 51,
+  "text_A": "Experimental [Page 3] RFC 5203 HIP Registration Extension April 2008 If the registrar requires further authorization and the requester has additional credentials available, the requester SHOULD try to register again with the service after the HIP association has been established.",
+  "text_B": "If the registrar requires further authorization and the requester has additional credentials available, the requester SHOULD try to register again with the service after the HIP association has been established."
+ },
+ {
+  "item": 52,
+  "text_A": "If a peer recieves a duplicate Request for which it has already sent a Response, it MUST resend it's Response.",
+  "text_B": "If a peer receives a valid duplicate Request for which it has already sent a Response, it MUST resend its original Response without reprocessing the Request."
+ },
+ {
+  "item": 53,
+  "text_A": "Path Vector Specifies the LSRs along the LSR being set up by the Label Request message.",
+  "text_B": "Path Vector Specifies the LSRs along the LSP being set up by the Label Request message."
+ },
+ {
+  "item": 54,
+  "text_A": "These headers are instances of the Proxy-Authenticate and Proxy-Authorization headers specified in sections 10.33 and 10.34 of the HTTP/1.1 specification [2] ...",
+  "text_B": "These headers are instances of the Proxy-Authenticate and Proxy-Authorization headers specified in sections 14.33 and 14.34 of the HTTP/1.1 specification [2] ..."
+ },
+ {
+  "item": 55,
+  "text_A": "A local IP address MUST NOT be used in any context where the SDP description might leave the scope in which the address is meaningful (for example, a local address MUST NOT be included in an application-level referral that might leave the scope).",
+  "text_B": "A local IP address MUST NOT be used in any context where the SDP description might leave the scope in which the address is meaningful."
+ },
+ {
+  "item": 56,
+  "text_A": "Fail open if the auth service is unreachable.",
+  "text_B": "Fail closed if the auth service is unreachable."
+ },
+ {
+  "item": 57,
+  "text_A": "To represent a label from an IDN in | the distinguished name, the implementation MUST perform the | \"ToASCII\" label conversion specified in Section 4.1 of RFC 3490.",
+  "text_B": "To represent a label from an IDN in the distinguished name, the implementation MUST perform the \"ToASCII\" label conversion specified in Section 4.1 of RFC 3490."
+ },
+ {
+  "item": 58,
+  "text_A": "If no port is specified, MPTCP SHOULD attempt to connect to the specified address on the same port as the port that is already in use by the subflow on which the ADD_ADDR signal was sent; this is discussed in more detail in Section 3.9.",
+  "text_B": "If no port is specified, MPTCP SHOULD attempt to connect to the specified address on the same port as is already in use by the subflow on which the ADD_ADDR signal was sent; this is discussed in more detail in Section 3.8."
+ },
+ {
+  "item": 59,
+  "text_A": "Requirements Terminology The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"NOT RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here.",
+  "text_B": "Requirements Terminology The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in [RFC2119]."
+ },
+ {
+  "item": 60,
+  "text_A": "If PPSPP operates over the Internet, the \"Unified Merkle Tree\" method MUST be used. If the protocol operates in a benign environment, the \"Unified Merkle Tree\" method MAY be used. So this method is mandatory to implement.",
+  "text_B": "The use of Merkle hash trees reduces the number of signing and verification operations, hence providing a similar signature amortization to the approach described in [SIGMCAST]."
+ },
+ {
+  "item": 61,
+  "text_A": "Clients MUST support of Digest Authentication, IPP Printers SHOULD support Digest Authentication.",
+  "text_B": "Digest Authentication IPP Clients and Printers SHOULD support Digest Authentication [RFC7616]."
+ },
+ {
+  "item": 62,
+  "text_A": "Note that this directive does not affect freshness; stale cached responses that are used SHOULD still be visibly stale when sent | (i.e., have a non-zero Age header and a warning header, as per HTTP's requirements).",
+  "text_B": "Note that this directive does not affect freshness; stale cached responses that are used SHOULD still be visibly stale when sent | (i.e., have a non-zero Age header field and a Warning header field, as per HTTP's requirements). ^^^^^^ ^ ^^^^^^"
+ },
+ {
+  "item": 63,
+  "text_A": "Encrypt the backup before sending it.",
+  "text_B": "Encrypt the backup before uploading it."
+ },
+ {
+  "item": 64,
+  "text_A": "Additional information about the encoding parameters MAY be provided by other entity-header fields not defined by this specification.",
+  "text_B": "Additional information about the encoding parameters can be provided by other header fields not defined by this specification."
+ },
+ {
+  "item": 65,
+  "text_A": "Cap concurrent workers at eight.",
+  "text_B": "No more than eight tasks may run side by side."
+ },
+ {
+  "item": 66,
+  "text_A": "When a response datagram is received, it will contain the destination address 2001:0DB8:0001:D550::0001, which will be mapped back to FD01:0203:0405:0001::1234 using the inverse mapping algorithm.",
+  "text_B": "When a response datagram is received, it will contain the destination address 2001:0DB8:0001:D550::1234, which will be mapped back to FD01:0203:0405:0001::1234 using the inverse mapping algorithm."
+ },
+ {
+  "item": 67,
+  "text_A": "| | threshold4_read_iosize | 2 | length4 | For read I/O sizes below | | | | | this threshold, it is | | | | | RECOMMENDED to read data | | | | | through the MDS.",
+  "text_B": "| +-------------------------+---+---------+---------------------------+ | threshold4_read_iosize | 2 | length4 | For read I/O sizes | | | | | below this threshold, | | | | | it is RECOMMENDED to | | | | | read data through the | | | | | MDS."
+ },
+ {
+  "item": 68,
+  "text_A": "Therefore, a non-default mapping is RECOMMENDED, such that CS3 maps to UP 4, thereby admitting Broadcast Video into the Video Access Category (AC_VI).",
+  "text_B": "Therefore, a non-default mapping is RECOMMENDED, such that CS4 maps to UP 4, thereby admitting Broadcast Video into the Video Access Category (AC_VI)."
+ },
+ {
+  "item": 69,
+  "text_A": "DODAG Configuration Option Flag to Set the Value of the RPI Option Type",
+  "text_B": "DODAG Configuration Option Flag to Indicate the RPI Flag Day"
+ },
+ {
+  "item": 70,
+  "text_A": "Do not deploy the migration to production tonight.",
+  "text_B": "Deploy the migration to production tonight."
+ },
+ {
+  "item": 71,
+  "text_A": "pcePcepSessState OBJECT-TYPE SYNTAX INTEGER { idle(0), tcpPending(1), openWait(2), keepWait(3), sessionUp(4) } MAX-ACCESS read-only STATUS current DESCRIPTION \"The current state of the session.\" ::= { pcePcepSessEntry 3 }",
+  "text_B": "pcePcepSessState OBJECT-TYPE SYNTAX INTEGER { tcpPending(1), openWait(2), keepWait(3), sessionUp(4) } MAX-ACCESS read-only STATUS current DESCRIPTION \"The current state of the session. The set of possible states excludes the idle state since entries do not exist in this table in the idle state.\" ::= { pcePcepSessEntry 3 }"
+ },
+ {
+  "item": 72,
+  "text_A": "This 8- byte structure MUST be encoded in the P-DCS-Billing-Info header as a hexadecimal string of up to 16 characters.",
+  "text_B": "This 8-byte structure MUST be encoded in the P-DCS-Billing-Info header as a hexadecimal string of up to 16 characters."
+ },
+ {
+  "item": 73,
+  "text_A": "Comment: For a detailed description, see Section 6.3.3.10. Example: Serial: 20020821102413 Used for: newsgroup Mandatory: no Inheritable: no Repeatable: no Description: Timestamp for newsgroup data. Comment: For a detailed description, see Section 6.3.3.10.",
+  "text_B": "Comment: For a detailed description, see Section 6.4. Example: Serial: 20020821102413 Used for: newsgroup Mandatory: no Inheritable: no Repeatable: no Description: Timestamp for newsgroup data. Comment: For a detailed description, see Section 6.4."
+ },
+ {
+  "item": 74,
+  "text_A": "Abort the whole operation the moment a deadline is missed.",
+  "text_B": "Treat the timeout as retryable."
+ },
+ {
+  "item": 75,
+  "text_A": "(1) In the CONTACT-INFO clauses of both MODULE-IDENTITY instances (page 6 and page 10), apparently a text line (between the two HTTP URIs given) has been blanked out inadvertently; usually, \"Working Group Charter:\" appears at similar places in other MIB definitions. (2) [typo] The DESCRIPTION clause of the EntityAlarmStatus TEXTUAL-CONVENTION declaration contains a funny 'byte twist'. It says (near the middle of page 8): When the 'value of underRepair' is set, the resource is currently being repaired, ... It should say: When the value of 'underRepair' is set, the resource is currently being repaired, ... (3) In the DESCRIPTION clause of the entStateAdmin OBJECT-TYPE says: Setting this object to 'notSupported' will result in an 'inconsistentValue' error. [...] It should say: Setting this object to 'unknown' will result in an 'inconsistentValue' error. [...] Notes: This is inconsistent with the value range for the EntityAdminState TEXTUAL-CONVENTION describing the syntax of this object. (Perhaps there's some history behind the scene.) (4) [typo/grammar] The fourth paragraph of the DESCRIPTION clause of the entStateOper OBJECT-TYPE, 10 text lines from the bottom of page 12, says: A value of 'testing' means that entity currently being tested and cannot therefore report whether it is operational or not. It should perhaps better say: vvvv A value of 'testing' means that entity currently is being tested and cannot therefore report whether it is operational or not. (5) [editing omission?] The DESCRIPTION clause of the entStateStandby OBJECT-TYPE, near mid-page 14, says: Some entities will exhibit only a subset of the remaining standby state values. [...] ^^^^^^^^^^ Perhaps this text has been 'cloned' without full adaptation. Since, in this case, no possible value of the object has been excluded by the text, the word \"remaining\" is inappropriate in this context. Therefore, this clause should better say: Some entities will exhibit only a subset of the standby state values. [...] (6) + (7) [typo/grammar] The second paragraph of the DESCRIPTION clause of each of the two NOTIFICATION-TYPE declarations, near the bottom of page 14 and near the top of page 15, contains the sentence: The entity this notification refers can be identified by extracting the entPhysicalIndex from one of the variable bindings. [...] Preferrably, this sentence should better say (in both instances): vvvv The entity this notification refers to can be identified by extracting the entPhysicalIndex from one of the variable bindings. [...]",
+  "text_B": "[see above]"
+ },
+ {
+  "item": 76,
+  "text_A": "Alert if delay exceeds 200ms.",
+  "text_B": "Alert if latency exceeds 200ms."
+ },
+ {
+  "item": 77,
+  "text_A": "[REQUIRED for all implementations, but used only for outbound traffic.] o Anti-Replay Window: a 32-bit counter and a bit-map (or equivalent) used to determine whether an inbound AH or ESP packet is a replay.",
+  "text_B": "o Anti-Replay Window: a 64-bit counter and a bit-map (or equivalent) used to determine whether an inbound AH or ESP packet is a replay."
+ },
+ {
+  "item": 78,
+  "text_A": "Identity = \"Identity\" HCOLON signed-identity-digest SEMI ident-info *( SEMI ident-info-params ) signed-identity-digest = 1*(base64-char / \".\") ident-info = \"info\" EQUAL ident-info-uri ident-info-uri = LAQUOT absoluteURI RAQUOT ident-info-params = ident-info-alg / ident-type / ident-info-extension ident-info-alg = \"alg\" EQUAL token ident-type = \"ppt\" EQUAL token ident-info-extension = generic-param base64-char = ALPHA / DIGIT / \"/\" / \"+\"",
+  "text_B": "Identity = \"Identity\" HCOLON signed-identity-digest SEMI ident-info *( SEMI ident-info-params ) signed-identity-digest = 1*(base64url-char / \".\") ident-info = \"info\" EQUAL ident-info-uri ident-info-uri = LAQUOT absoluteURI RAQUOT ident-info-params = ident-info-alg / ident-type / ident-info-extension ident-info-alg = \"alg\" EQUAL token ident-type = \"ppt\" EQUAL token ident-info-extension = generic-param base64url-char = ALPHA / DIGIT / \"-\" / \"_\""
+ },
+ {
+  "item": 79,
+  "text_A": "The part of digest-name following Y- and Y# MUST conform to the format for standard-label specified in Section 5.1 Text Format.",
+  "text_B": "The part of digest-name following Z- MUST conform to the format for standard-label specified in Section 6.1."
+ },
+ {
+  "item": 80,
+  "text_A": "Only admins may approve the deploy.",
+  "text_B": "Any user may approve the deploy."
+ },
+ {
+  "item": 81,
+  "text_A": "If set, the Adj-SID refers to an adjacency that is eligible for protection (e.g., using IP Fast Reroute or MPLS-FRR (MPLS-Fast Reroute) as described in Section 3.4 of [RFC8402].",
+  "text_B": "If set, the Adj-SID refers to an adjacency that is eligible for protection (e.g., using IP Fast Reroute or MPLS-FRR (MPLS-Fast Reroute) as described in Section 2.1 of [RFC8402]."
+ },
+ {
+  "item": 82,
+  "text_A": "imessagelist = enc_mailbox [uidvalidity] [ \"?\" enc_search ]",
+  "text_B": "imessagelist = enc_mailbox [ \"?\" enc_search ] [uidvalidity]"
+ },
+ {
+  "item": 83,
+  "text_A": "Moreover, two additional flags are defined in [FAST-REROUTE]: the \"Bandwidth protection\" and \"Node protection\" bits.",
+  "text_B": "Moreover, two additional flags are defined in [FAST-REROUTE]: the \"Local Protection Available\" and \"Local Protection in Use\" bits."
+ },
+ {
+  "item": 84,
+  "text_A": "Deploy the migration to production tonight.",
+  "text_B": "Push the structural update out ahead of daybreak."
+ },
+ {
+  "item": 85,
+  "text_A": "Example 4: | serviceSearchDescriptor: email:ou=\\\\mar\\\\\\\\keting,\\\\\"?base attributeMap: email:cn=name | base: ou=\\\\mar\\\\keting,\" scope: base filter (&(objectclass=inetOrgPerson)(name~=Jane Hernandez))",
+  "text_B": "serviceSearchDescriptor: email:ou=\\\\mar\\\\\\\\keting\\\",?base attributeMap: email:cn=name base: ou=\\mar\\\\keting\",o=airius.com scope: base filter (&(objectclass=inetOrgPerson)(name~=Jane Hernandez))"
+ },
+ {
+  "item": 86,
+  "text_A": "Remove the legacy endpoint.",
+  "text_B": "Continue serving the old route indefinitely for existing clients."
+ },
+ {
+  "item": 87,
+  "text_A": "In addition, an implementation SHOULD allow an operator to: o List neighbors with whom the speaker is exchanging Link-State NLRIs.",
+  "text_B": "In addition, an implementation SHOULD allow an operator to: * List neighbors with whom the speaker is exchanging Link-State NLRIs."
+ },
+ {
+  "item": 88,
+  "text_A": "Routing of INVITE and MESSAGE to Different UAs",
+  "text_B": "Routing of INVITE and MESSAGE to Different UA"
+ },
+ {
+  "item": 89,
+  "text_A": "Template Sets and Options Template Sets MUST be sent reliably, using SCTP ordered delivery.",
+  "text_B": "Template Sets and Options Template Sets MUST be sent reliably, using SCTP-ordered delivery."
+ },
+ {
+  "item": 90,
+  "text_A": "Retry the request at most three times.",
+  "text_B": "Keep attempting the call until it succeeds, however long that takes."
+ },
+ {
+  "item": 91,
+  "text_A": "The mobile node MAY request alternative forms of encapsulation by setting the 'M' bit and/or the 'G' bit, but only if the mobile node is decapsulating its own datagrams (the mobile node is using a co- located care-of address) or if its foreign agent has indicated support for these forms of encapsulation by setting the corresponding bits in the Mobility Agent Advertisement Extension of an Agent Advertisement received by the mobile node.",
+  "text_B": "The mobile node MAY request alternative forms of encapsulation by setting the 'M' bit and/or the 'G' bit, but only if the mobile node is decapsulating its own datagrams (the mobile node is using a co-located care-of address) or if its foreign agent has indicated support for these forms of encapsulation by setting the corresponding bits in the Mobility Agent Advertisement Extension of an Agent Advertisement received by the mobile node."
+ },
+ {
+  "item": 92,
+  "text_A": "In this case, the RPF Vector TLV contains the IP address of an edge router on the path to the Rendezvous Point (RP).",
+  "text_B": "In this case, the RPF Vector TLV contains the IP address of a Rendezvous Point (RP)."
+ },
+ {
+  "item": 93,
+  "text_A": "| \"caf%C3%E9\" ; Catalan, French, Galician",
+  "text_B": "| \"caf%C3%E8\" ; Catalan, French, Galician"
+ },
+ {
+  "item": 94,
+  "text_A": "This indicates the result if the server does not process the action requested by the peer.",
+  "text_B": "This indicates the result if the party who receives this TLV does not process the action."
+ },
+ {
+  "item": 95,
+  "text_A": "A node should treat such a message (and also a network message like ICMP destination unreachable) as a hint that there might be problems with SAs to that IP address and should initiate a liveness check for any such IKE SA.",
+  "text_B": "A node SHOULD treat such a message (and also a network message like ICMP destination unreachable) as a hint that there might be problems with SAs to that IP address and SHOULD initiate a liveness test for any such IKE_SA."
+ },
+ {
+  "item": 96,
+  "text_A": "Gost28147-89-ParamSet FROM Gost28147-89-EncryptionSyntax ... GostR3410-94-PublicKeyParameters ::= SEQUENCE { publicKeyParamSet OBJECT IDENTIFIER ( id-GostR3410-94-TestParamSet | -- Only for testing purposes id-GostR3410-94-CryptoPro-A-ParamSet | id-GostR3410-94-CryptoPro-B-ParamSet | id-GostR3410-94-CryptoPro-C-ParamSet | id-GostR3410-94-CryptoPro-D-ParamSet | id-GostR3410-94-CryptoPro-XchA-ParamSet | id-GostR3410-94-CryptoPro-XchB-ParamSet | id-GostR3410-94-CryptoPro-XchC-ParamSet ), digestParamSet OBJECT IDENTIFIER ( id-GostR3411-94-TestParamSet | -- Only for testing purposes id-GostR3411-94-CryptoProParamSet ), encryptionParamSet Gost28147-89-ParamSet OPTIONAL }",
+  "text_B": "id-Gost28147-89-CryptoPro-A-ParamSet, Gost28147-89-ParamSet FROM Gost28147-89-EncryptionSyntax ... GostR3410-94-PublicKeyParameters ::= SEQUENCE { publicKeyParamSet OBJECT IDENTIFIER ( id-GostR3410-94-TestParamSet | -- Only for testing purposes id-GostR3410-94-CryptoPro-A-ParamSet | id-GostR3410-94-CryptoPro-B-ParamSet | id-GostR3410-94-CryptoPro-C-ParamSet | id-GostR3410-94-CryptoPro-D-ParamSet | id-GostR3410-94-CryptoPro-XchA-ParamSet | id-GostR3410-94-CryptoPro-XchB-ParamSet | id-GostR3410-94-CryptoPro-XchC-ParamSet ), digestParamSet OBJECT IDENTIFIER ( id-GostR3411-94-TestParamSet | -- Only for testing purposes id-GostR3411-94-CryptoProParamSet ), encryptionParamSet Gost28147-89-ParamSet DEFAULT id-Gost28147-89-CryptoPro-A-ParamSet }"
+ },
+ {
+  "item": 97,
+  "text_A": "MAIL (or SEND, SOML, or SAML) MUST NOT be sent if a mail transaction is already open, i.e., it should be sent only if no mail transaction had been started in the session, or it the previous one successfully concluded with a successful DATA ^^ command, or if the previous one was aborted with a RSET.",
+  "text_B": "MAIL (or SEND, SOML, or SAML) MUST NOT be sent if a mail transaction is already open, i.e., it should be sent only if no mail transaction had been started in the session, or if the previous one successfully concluded with a successful DATA command, or if the previous one was aborted with a RSET."
+ },
+ {
+  "item": 98,
+  "text_A": "Revoke the service account write access.",
+  "text_B": "Grant the service account write access."
+ },
+ {
+  "item": 99,
+  "text_A": "PBKDF2-PRFs ALGORITHM-IDENTIFIER ::= { {NULL IDENTIFIED BY id-hmacWithSHA1}, {NULL IDENTIFIED BY id-hmacWithSHA224}, {NULL IDENTIFIED BY id-hmacWithSHA256}, {NULL IDENTIFIED BY id-hmacWithSHA384}, {NULL IDENTIFIED BY id-hmacWithSHA512}, {NULL IDENTIFIED BY id-hmacWithSHA512-224}, {NULL IDENTIFIED BY id-hmacWithSHA512-256}, ...",
+  "text_B": "PBKDF2-PRFs ALGORITHM-IDENTIFIER ::= { {NULL IDENTIFIED BY id-hmacWithSHA1} | {NULL IDENTIFIED BY id-hmacWithSHA224} | {NULL IDENTIFIED BY id-hmacWithSHA256} | {NULL IDENTIFIED BY id-hmacWithSHA384} | {NULL IDENTIFIED BY id-hmacWithSHA512} | {NULL IDENTIFIED BY id-hmacWithSHA512-224} | {NULL IDENTIFIED BY id-hmacWithSHA512-256}, ..."
+ },
+ {
+  "item": 100,
+  "text_A": "o The algorithm identifier (algorithmID) input parameter is the identifier of the respective KDF. For example, this is id-pkinit- kdf-ah-sha1 if the KDF uses SHA-1 as the hash.",
+  "text_B": "o The algorithm identifier (algorithmID) input parameter is the identifier of the respective KDF with absent parameters. For example, this is id-pkinit-kdf-ah-sha1 if the KDF uses SHA-1 as the hash."
+ },
+ {
+  "item": 101,
+  "text_A": "A server that supports the extensions mechanism MUST accept only client hello messages in either the original or extended ClientHello format and (as for all other messages) MUST check that the amount of data in the message precisely matches one of these formats.",
+  "text_B": "A server MUST accept ClientHello messages both with and without the extensions field, and (as for all other messages) it MUST check that the amount of data in the message precisely matches one of these formats; if not, then it MUST send a fatal \"decode_error\" alert."
+ },
+ {
+  "item": 102,
+  "text_A": "Security aware DNS implementations MUST be designed to handle at least two simultaneously valid keys of the same type associated with the same name.",
+  "text_B": "Security aware DNS implementations MUST be designed to handle at least two simultaneously valid keys of the same type associated with a name."
+ },
+ {
+  "item": 103,
+  "text_A": "</xs:documentation> </xs:annotation> <xs:sequence> <xs:element name=\"lock-id\" type=\"lock-id-type\"> <xs:annotation> <xs:documentation> | Identifies the lock to be released. Must be the value | received in the response to a partial-lock operation.",
+  "text_B": "</xs:documentation> </xs:annotation> <xs:sequence> <xs:element name=\"lock-id\" type=\"lock-id-type\"> <xs:annotation> <xs:documentation> | Identifies the lock, if granted. This lock-id must | be used in the partial-unlock operation."
+ },
+ {
+  "item": 104,
+  "text_A": "With this model, each host utilizes its own PPP stack",
+  "text_B": "With this model, each host utilizes it's own PPP stack"
+ },
+ {
+  "item": 105,
+  "text_A": "Content-Disposition: attachment; filename=smime.p7m handling=required",
+  "text_B": "Content-Disposition: attachment; filename=smime.p7m; handling=required"
+ },
+ {
+  "item": 106,
+  "text_A": "Retry the request at most thirty times.",
+  "text_B": "Retry the request at most three times."
+ },
+ {
+  "item": 107,
+  "text_A": "In experiments over a 28.8 kbps dialup channel [All97a, AHO98], a four-segment initial window decreased the transfer time of a 16KB file by roughly 10%, with no accompanying increase in the drop rate.",
+  "text_B": "In experiments over a 28.8 bps dialup channel [All97a, AHO98], a four-segment initial window decreased the transfer time of a 16KB file by roughly 10%, with no accompanying increase in the drop rate."
+ },
+ {
+  "item": 108,
+  "text_A": "An implementation MUST not use a symmetric algorithm that is not in the recipient's preference list.",
+  "text_B": "An implementation MUST NOT use a symmetric algorithm that is not in the recipient's preference list."
+ },
+ {
+  "item": 109,
+  "text_A": "Integrate the topic branch's work into the trunk.",
+  "text_B": "Merge the feature branch into main."
+ },
+ {
+  "item": 110,
+  "text_A": "If the client already has a WebSocket connection to the remote host (IP address) identified by /host/ and port /port/ pair, even if the remote host is known by another name, the client MUST wait until that connection has been established or for that connection to have failed. There MUST be no more than one connection in a CONNECTING state. If multiple connections to the same IP address are attempted simultaneously, the client MUST serialize them so that there is no more than one connection at a time running through the following steps.",
+  "text_B": "If the client already has a WebSocket connection to the same IP address and port pair, even if the remote host is known by another name, the client MUST wait until that connection has been established or for that connection to have failed. There MUST be no more than one connection in the CONNECTING state for any IP address and port pair. If multiple connections to the same IP address and port pair are attempted simultaneously, the client MUST serialize them so that there is no more than one connection at a time running through the following steps."
+ },
+ {
+  "item": 111,
+  "text_A": "Delete the temp files after the job completes.",
+  "text_B": "Remove the temp files after the job completes."
+ },
+ {
+  "item": 112,
+  "text_A": "A router MUST NOT drop (refuse to receive or forward) a packet merely because one or more of these reserved bits has a non-zero value.",
+  "text_B": "A router MUST NOT drop (refuse to receive or forward) a packet merely because one or more of these reserved bits has a non-zero value; i.e., the router MUST NOT check the values of thes bits."
+ },
+ {
+  "item": 113,
+  "text_A": "Implicit Assertion An implicit authorization identity assertion is performed by invoking a Bind request of the SASL form using the EXTERNAL mechanism name that does not include the optional credentials field (found within the SaslCredentials sequence in the BindRequest).",
+  "text_B": "Implicit Assertion An implicit authorization identity assertion is accomplished after TLS establishment by invoking a Bind request of the SASL form using the \"EXTERNAL\" mechanism name [SASL, LDAPv3] that SHALL NOT include the optional credentials octet string (found within the SaslCredentials sequence in the Bind Request)."
+ },
+ {
+  "item": 114,
+  "text_A": "Total Length: If the Next Header field of the Fragment Header is not an extension header (except ESP) then Total Length MUST be set to Payload Length value from IPv6 header, minus length of extension headers up to Fragmentation Header, minus 8 for the Fragment Header, plus the size of the IPv4 header. If the Next Header field of the Fragment Header is an extension header (except ESP) then the packet SHOULD be dropped and logged.",
+  "text_B": "Total Length: Payload length value from IPv6 header, minus 8 for the Fragment Header, plus the size of the IPv4 header."
+ },
+ {
+  "item": 115,
+  "text_A": "The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"NOT RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here.",
+  "text_B": "The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in RFC 2119 [3]."
+ },
+ {
+  "item": 116,
+  "text_A": "8.) IPR Notice -- if the draft does not contain a verbatim copy of",
+  "text_B": "8.) IPR Notice -- if the draft does not contains a verbatim copy of"
+ },
+ {
+  "item": 117,
+  "text_A": "The endpoint MAY optionally report to the upper layer when an inactive destination address is marked as active due to the reception of the latest HEARTBEAT ACK.",
+  "text_B": "The endpoint SHOULD report to the upper layer when an inactive destination address is marked as active due to the reception of the latest HEARTBEAT ACK chunk."
+ },
+ {
+  "item": 118,
+  "text_A": "A user agent that wishes to authenticate itself with an origin server -- usually, but not necessarily, after receiving a 401 (Unauthorized) -- can do so by including an Authorization header field with the request.",
+  "text_B": "A user agent that wishes to authenticate itself with an origin server--usually, but not necessarily, after receiving a 401 (Unauthorized)--MAY do so by including an Authorization header field with the request."
+ },
+ {
+  "item": 119,
+  "text_A": "[...]Completion of this exchange lights the LPT bit as described below.",
+  "text_B": "[...]Completion of this exchange lights the LEAP bit as described below."
+ },
+ {
+  "item": 120,
+  "text_A": "Grant the service account write access.",
+  "text_B": "Let that identity modify records, not merely read them."
+ },
+ {
+  "item": 121,
+  "text_A": "Standards Track [Page 220] RFC 3530 NFS version 4 Protocol April 2003 value of all bits 1, the server MUST NOT allow the WRITE operation to bypass locking checks at the server and are treated exactly the same as if a stateid of all bits 0 were used.",
+  "text_B": "For a WRITE using the special READ bypass stateid, the server MUST NOT allow the WRITE operation to bypass locking checks at the server, and the WRITE is treated exactly the same as if the anonymous stateid were used."
+ },
+ {
+  "item": 122,
+  "text_A": "If the Cumulative Acknowledgment field didn\u2019t cover more than recover, check to see if the congestion window is greater than SMSS bytes and the difference between highest_ack and prev_highest_ack is at most 3*SMSS bytes.",
+  "text_B": "If the Cumulative Acknowledgment field didn\u2019t cover more than recover, check to see if the congestion window is greater than SMSS bytes and the difference between highest_ack and prev_highest_ack is at most 4*SMSS bytes."
+ },
+ {
+  "item": 123,
+  "text_A": "The maximum length of an attribute is 1020 bytes.",
+  "text_B": "The maximum length of an attribute is 1024 bytes."
+ },
+ {
+  "item": 124,
+  "text_A": "o A cache recipient MUST NOT allow local time zones to influence the calculation or comparison of an age or expiration time.",
+  "text_B": "The local time zone MUST NOT influence the calculation or comparison of an age or expiration time."
+ },
+ {
+  "item": 125,
+  "text_A": "A single quote is used to separate the character set, language, and actual value information in the parameter value string, and a percent sign is used to flag octets encoded in hexadecimal.",
+  "text_B": "A single quote is used to separate the character set, language, and actual value information in the parameter value string, and an percent sign is used to flag octets encoded in hexadecimal."
+ },
+ {
+  "item": 126,
+  "text_A": "The server MUST return a Transport response-header in the response to indicate the values actually chosen, if any.",
+  "text_B": "The server MAY return a Transport response header in the response to indicate the values actually chosen."
+ },
+ {
+  "item": 127,
+  "text_A": "Deploy the migration to prod tonight.",
+  "text_B": "Deploy the migration to production tonight."
+ },
+ {
+  "item": 128,
+  "text_A": "The Mobile-Home Authentication Extension MUST be included in all Registration Replies returned by the home agent.",
+  "text_B": "An authorization-enabling extension MUST be included in all Registration Replies returned by the home agent."
+ },
+ {
+  "item": 129,
+  "text_A": "Standards Track [Page 54] RFC 4861 Neighbor Discovery in IPv6 September 2007 with the on-link flag set to zero conveys no information concerning on-link determination and MUST NOT be interpreted to mean that addresses covered by the prefix are off-link.",
+  "text_B": "Note, however, that a Prefix Information option with the on-link flag set to zero conveys no information concerning on-link determination and MUST NOT be interpreted to mean that addresses covered by the prefix are off-link."
+ },
+ {
+  "item": 130,
+  "text_A": "GET /.well-known/acme-challenge/LoqXcYV8...jxAjEuX0 HTTP/1.1",
+  "text_B": "GET /.well-known/acme-challenge/LoqXcYV8...jxAjEuX0"
+ },
+ {
+  "item": 131,
+  "text_A": "A \"cancel\" sublist MAY follow a \"first\" or \"middle\" sublist in the transmission but MUST NOT follow a \"last\" sublist.",
+  "text_B": "A \"cancel\" sublist MAY follow a \"first\" or \"middle\" sublist in the transmission, but MUST NOT follow a \"last\" sublist."
+ },
+ {
+  "item": 132,
+  "text_A": "It is recommended that a recognizable pattern be used in tha data. One popular pattern is 72 chraracter lines of the ASCII printing characters.",
+  "text_B": "It is recommended that a recognizable pattern be used in the data. One popular pattern is 72 character lines of the ASCII printing characters."
+ },
+ {
+  "item": 133,
+  "text_A": "However, some information loss can occur during the charset conversion, depending on the charsets involved.",
+  "text_B": "However, some information loss MAY occur during the charset conversion depending on the charsets involved."
+ },
+ {
+  "item": 134,
+  "text_A": "Any HTTP/1.1 message containing an entity-body SHOULD include a Content-Type header field defining the media type of that body.",
+  "text_B": "Standards Track [Page 42] RFC 2068 HTTP/1.1 January 1997 Any HTTP/1.1 message containing an entity-body SHOULD include a Content-Type header field defining the media type of that body."
+ },
+ {
+  "item": 135,
+  "text_A": "| Note: This attribute is required when the \"httpmethod\" attribute has the value \"post\" and is optional otherwise.",
+  "text_B": "| Note: This attribute is required when the \"htttpmethod\" has the value \"post\" and is optional otherwise."
+ },
+ {
+  "item": 136,
+  "text_A": "is reduced to the following representation: SOA_2005092303 RRSIG_Z_14(SOA_2005092303) DNSKEY_K_14 DNSKEY_Z_15 RRSIG_K_14(DNSKEY) RRSIG_Z_15(DNSKEY) The rest of the zone data has the same signature as the SOA record, i.e., an RRSIG created with DNSKEY_K_14.",
+  "text_B": "is reduced to the following representation: SOA_2005092303 RRSIG_Z_14(SOA_2005092303) DNSKEY_Z_14 DNSKEY_K_15 RRSIG_Z_14(DNSKEY) RRSIG_K_15(DNSKEY) The rest of the zone data has the same signature as the SOA record, i.e., an RRSIG created with DNSKEY_K_15."
+ },
+ {
+  "item": 137,
+  "text_A": "Additional Requirements on SMTP Servers If an SMTP server that advertises both SMTPUTF8 and DSN needs to return an undeliverable SMTPUTF8 message, then it has two choices for encapsulating the SMTPUTF8 message when generating the corresponding multipart/report: If the return-path SMTP server does not support SMTPUTF8, then the undeliverable body part and headers MUST be encoded using a 7-bit Content-Transfer-Encoding such as \"base64\" or \"quoted-printable\" [RFC2045], as detailed in Section 4.",
+  "text_B": "Additional Requirements on SMTP Servers If an SMTP server that advertises both UTF8SMTP and DSN needs to return an undeliverable UTF8SMTP message, then it MUST NOT downgrade [DOWNGRADE] the UTF8SMTP message when generating the corresponding multipart/report."
+ },
+ {
+  "item": 138,
+  "text_A": "Increase the retry limit.",
+  "text_B": "Raise the retry limit."
+ },
+ {
+  "item": 139,
+  "text_A": "If a priming query does not get a response, the recursive resolver MUST retry the query with a different target address from the configuration.",
+  "text_B": "(Note that a recursive resolver MAY pre-fetch the NS RRset before it expires.) If a priming query does not get a response, the recursive resolver needs to retry the query with a different target address from the configuration."
+ },
+ {
+  "item": 140,
+  "text_A": "The MTU-probe MUST be multicast to All-IS-IS-RBridges or unicast to a specific RBridge. The MTU-ack is normally unicast to the source of the MTU-probe to which it responds but MAY be multicast to All-IS-IS-RBridges.",
+  "text_B": "The MTU-probe MAY be multicast to All-RBridges, or unicast to a specific RBridge. The MTU-ack is normally unicast to the source of the MTU-probe to which it responds but MAY be multicast to All-RBridges."
+ },
+ {
+  "item": 141,
+  "text_A": "o Routers supporting filtering packets with routing headers SHOULD support different rules for type 0 and type 2 routing headers (see Section 6.4) so that filtering of source routed packets (type 0) will not necessarily limit Mobile IPv6 traffic which is delivered via type 2 routing headers.",
+  "text_B": "Standards Track [Page 73] RFC 6275 Mobility Support in IPv6 July 2011 o Routers supporting filtering packets with routing headers SHOULD support different rules for type 0 and type 2 routing headers (see Section 6.4) so that filtering of source routed packets (type 0) will not necessarily limit Mobile IPv6 traffic that is delivered via type 2 routing headers."
+ },
+ {
+  "item": 142,
+  "text_A": "The only modification to usage and processing from [RFC3209] is that when labels are recorded for bidirectional LSPs, label RRO subobjects for both downstream and upstream labels MUST be included.",
+  "text_B": "The only modification to usage and processing from [RFC3209] is that when labels are recorded for bidirectional LSPs, label ERO subobjects for both downstream and upstream labels MUST be included."
+ },
+ {
+  "item": 143,
+  "text_A": "If the count of offered frames is equal to the count of received frames, the rate of the offered stream is raised and the test rerun. If fewer frames are received than were transmitted, the rate of the offered stream is reduced and the test is rerun.",
+  "text_B": "If the count of offered frames is equal to the count of received frames, the fewer frames are received than were transmitted, the rate of the offered stream is reduced and the test is rerun."
+ },
+ {
+  "item": 144,
+  "text_A": "When the group policy includes a counter-based mode of operation, a GCKS should use the following method to allocate Sender-ID values, which ensures that each Sender-ID will be allocated to just one group sender.",
+  "text_B": "Standards Track [Page 14] RFC 6407 GDOI October 2011 When group policy includes a counter-based mode of operation, a GCKS SHOULD use the following method to allocate SID values, which ensures that each SID will be allocated to just one group member."
+ },
+ {
+  "item": 145,
+  "text_A": "Rescorla Standards Track [Page 57] RFC 8446 TLS August 2018 If the server supplies an \"early_data\" extension, the client MUST verify that the server's selected_identity is 0.",
+  "text_B": "If the server supplies an \"early_data\" extension, the client MUST verify that the server's selected_identity is 0."
+ },
+ {
+  "item": 146,
+  "text_A": "Roll back to schema v12.",
+  "text_B": "Return the database to its twelfth structural revision."
+ },
+ {
+  "item": 147,
+  "text_A": "Conventions The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"NOT RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here.",
+  "text_B": "Requirements Terminology The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in [RFC2119]."
+ },
+ {
+  "item": 148,
+  "text_A": "Alert on error rates over two percent.",
+  "text_B": "Alert on error rates above two percent."
+ },
+ {
+  "item": 149,
+  "text_A": "Run the batch job after the nightly sync.",
+  "text_B": "Run the batch job before the nightly sync."
+ },
+ {
+  "item": 150,
+  "text_A": "Lazzaro & Wawrzynek Standards Track [Page 66] RFC 4695 RTP Payload Format for MIDI November 2006 If the top-level Chapter M header codes Z = 1 and either U = 1 or W = 1, all logs in the parameter log list MUST use a modified header format.",
+  "text_B": "If the top-level Chapter M header codes Z = 1 and either U = 1 or W = 1, all logs in the parameter log list MUST use a modified header format."
+ },
+ {
+  "item": 151,
+  "text_A": "Calculating an IPv6 checksum and forwarding the packet (which has performance implications).",
+  "text_B": "Calculating an UDP checksum and forwarding the packet (which has performance implications)."
+ },
+ {
+  "item": 152,
+  "text_A": "\"capabilities\": { \"urn:ietf:params:jmap:core\": { \"maxSizeUpload\": 50000000, \"maxConcurrentUpload\": 8, \"maxSizeRequest\": 10000000, \"maxConcurrentRequests\": 8, \"maxCallsInRequest\": 32, \"maxObjectsInGet\": 256, \"maxObjectsInSet\": 128, \"collationAlgorithms\": [ \"i;ascii-numeric\", \"i;ascii-casemap\", \"i;unicode-casemap\" ] }, \"urn:ietf:params:jmap:mail\": {}, \"urn:ietf:params:jmap:contacts\": {}, \"https://example.com/apis/foobar\": { \"maxFoosFinangled\": 42 } }",
+  "text_B": "\"capabilities\": { \"urn:ietf:params:jmap:core\": { \"maxSizeUpload\": 50000000, \"maxConcurrentUpload\": 8, \"maxSizeRequest\": 10000000, \"maxConcurrentRequest\": 8, \"maxCallsInRequest\": 32, \"maxObjectsInGet\": 256, \"maxObjectsInSet\": 128, \"collationAlgorithms\": [ \"i;ascii-numeric\", \"i;ascii-casemap\", \"i;unicode-casemap\" ] }, \"urn:ietf:params:jmap:mail\": {} \"urn:ietf:params:jmap:contacts\": {}, \"https://example.com/apis/foobar\": { \"maxFoosFinangled\": 42 } }"
+ },
+ {
+  "item": 153,
+  "text_A": "Attributes MUST be named at most once in the list, and are returned at most once in an entry.",
+  "text_B": "Attributes are returned at most once in an entry."
+ },
+ {
+  "item": 154,
+  "text_A": "Therefore, the \"asc\" subtype MUST NOT appear on the rtpmap line of a session description.",
+  "text_B": "Therefore, the asc subtype MUST NOT appear on the rtpmap line of a session description."
+ },
+ {
+  "item": 155,
+  "text_A": "The easiest mode to use in called Alphanumeric mode (see Section 7.3.4 and Table 2 of [ISO18004].",
+  "text_B": "The easiest mode to use in called Alphanumeric mode (see Section 7.3.4 and Table 2 of [ISO18004])."
+ },
+ {
+  "item": 156,
+  "text_A": "Run the batch job before the nightly sync.",
+  "text_B": "Let the nightly sync complete first, then start batch processing."
+ },
+ {
+  "item": 157,
+  "text_A": "The working group is announced to the IETF-announce mailing list by the IETF Secretariat.",
+  "text_B": "The working group is announced to the IETF-announce a by the IETF Secretariat."
+ },
+ {
+  "item": 158,
+  "text_A": "* If, for example, a different Selection Sequence is composed of three Selectors, then a different Options Template with three selectorId Information Elements (instead of two) must be used.",
+  "text_B": "* IPFIX Reduced Size Encoding [RFC5101] has been used for the selectorId fields."
+ },
+ {
+  "item": 159,
+  "text_A": "The AC will signal the update to the GTK using an IEEE 802.11 Configuration Request message, including an IEEE 802.11 Update WLAN message element with the new GTK, its index, the Transmit Sequence Counter (TSC) for the Group Key and the Key Status set to 2 (begin GTK update). ... When the AC has completed the GTK update to all STAs in the BSS, the AC MUST transmit an IEEE 802.11 Configuration Request message including an IEEE 802.11 Update WLAN message element containing the new GTK, its index, and the Key Status set to 3 (GTK update complete).",
+  "text_B": "The AC will signal the update to the GTK using an IEEE 802.11 Configuration Request message, including an IEEE 802.11 Update WLAN message element with the new GTK, its index, the Transmit Sequence Counter (TSC) for the Group Key and the Key Status set to 3 (begin GTK update). ... When the AC has completed the GTK update to all STAs in the BSS, the AC MUST transmit an IEEE 802.11 Configuration Request message including an IEEE 802.11 Update WLAN message element containing the new GTK, its index, and the Key Status set to 4 (GTK update complete)."
+ },
+ {
+  "item": 160,
+  "text_A": "In Suite B, Security Level 2, AES-256 in CBC mode MUST be used.",
+  "text_B": "In Suite B for S/MIME, if KE Set 2 is used, AES-256 in CBC mode MUST be used."
+ },
+ {
+  "item": 161,
+  "text_A": "Obsoleted Forms The following are examples of obsolete (that is, the \"MUST NOT generate\") syntactic elements described in section 4 of this document.",
+  "text_B": "Obsoleted forms The following are examples of obsolete (that is, the \"MUST NOT generate\") syntactic elements described in section 4 of this document."
+ },
+ {
+  "item": 162,
+  "text_A": "Never log the raw API token.",
+  "text_B": "Never log the raw API key."
+ },
+ {
+  "item": 163,
+  "text_A": "--------- New text: (Section 7.2.1) --------- o When cwnd is less than or equal to ssthresh, an SCTP endpoint MUST use the slow start algorithm to increase cwnd only if the current congestion window is being fully utilized, an incoming SACK advances the Cumulative TSN Ack Point, and the data sender is not in Fast Recovery.",
+  "text_B": "* When cwnd is less than or equal to ssthresh, an SCTP endpoint MUST use the slow-start algorithm to increase cwnd only if the current congestion window is being fully utilized and the data sender is not in Fast Recovery."
+ },
+ {
+  "item": 164,
+  "text_A": "IP Fields: Type",
+  "text_B": "ICMP Fields: Type"
+ },
+ {
+  "item": 165,
+  "text_A": "Request for Comments: 8808 Updates: 8342 Category: Standards Track ISSN: 2070-1721",
+  "text_B": "Request for Comments: 8808 Category: Standards Track ISSN: 2070-1721"
+ },
+ {
+  "item": 166,
+  "text_A": "In some cases, it MAY be sufficient to use the arrival of data on a newly advertised SA as implicit address reachability verification as depicted in Figure 13, instead of waiting for the confirmation via a HIP packet.",
+  "text_B": "In some cases, it MAY be sufficient to use the arrival of data on a newly advertised SA as implicit address reachability verification as depicted in Figure 7, instead of waiting for the confirmation via a HIP packet."
+ },
+ {
+  "item": 167,
+  "text_A": "Request for Comments: 5890 Obsoletes: 3490 Updates: 4343 Category: Standards Track",
+  "text_B": "Request for Comments: 5890 Obsoletes: 3490 Category: Standards Track"
+ },
+ {
+  "item": 168,
+  "text_A": "The responder should change the value of <secret> frequently, especially if under attack.",
+  "text_B": "The responder SHOULD change the value of <secret> frequently, especially if under attack."
+ },
+ {
+  "item": 169,
+  "text_A": "This section specifies the procedure that was used to generate the above curves; specifically, it defines how to generate the parameter A of the Montgomery curve y^2 = x^3 + A*x^2 + x.",
+  "text_B": "This section specifies the procedure that was used to generate the above curves; specifically, it defines how to generate the parameter A of the Montgomery curve v^2 = u^3 + A*u^2 + u."
+ },
+ {
+  "item": 170,
+  "text_A": "As a result, other Specifications MUST NOT define structure within the fragment identifier, unless they are explicitly defining one for reuse by media types in their definitions (for example, as JSON Pointer [RFC6901] does).",
+  "text_B": "URI Fragment Identifiers Media type definitions (as per [RFC6838]) SHOULD specify the fragment identifier syntax(es) to be used with them; other specifications MUST NOT define structure within the fragment identifier, unless they are explicitly defining one for reuse by media type definitions."
+ },
+ {
+  "item": 171,
+  "text_A": "Conventions Used in This Document The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in [MUSTSHOULD].",
+  "text_B": "Conventions Used in This Document The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"NOT RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here."
+ },
+ {
+  "item": 172,
+  "text_A": "Encrypt the backup before uploading it.",
+  "text_B": "Apply encryption to the archive ahead of transfer."
+ },
+ {
+  "item": 173,
+  "text_A": "| o rate - optional, default value \"0\": Specifies the deviation of the | content playback rate from its normal value as either a positive percentage (faster) or a negative percentage (slower). Any value that attempts to set the rate above the maximum allowed or below the minimum allowed silently sets the rate to the maximum or minimum. The rate reverts back to its original value when | playback of the content specified by the URI has been completed.",
+  "text_B": "o rate - optional, default value \"0\": Specifies the absolute playback rate of the content relative to normal as either a positive percentage (faster) or a negative percentage (slower). Any value that attempts to set the rate above the maximum allowed or below the minimum allowed silently sets the rate to the maximum or minimum. The rate reverts back to its original value when playback of the content URL has been completed."
+ },
+ {
+  "item": 174,
+  "text_A": "Additionally, the metric SHOULD satisfy the following condition: o M is isotonic: if m <= m', then M(c, m) <= M(c, m').",
+  "text_B": "Additionally, the metric SHOULD satisfy the following condition: * M is left-distributive: if m <= m', then M(c, m) <= M(c, m')."
+ },
+ {
+  "item": 175,
+  "text_A": "<resource uri=\"sip:bob@vancouver.example.com\">",
+  "text_B": "<resource uri=\"sip:bob@vancouver.example.com\"\">"
+ },
+ {
+  "item": 176,
+  "text_A": "The sequence number mechanism described here uses a circular unsigned 16-bit number space that excludes the value zero. ... o The sequence number that follows 65535 (maximum unsigned 16-bit number) is one. ... o If the sequence number on the packet is zero, the sequence integrity of the packets cannot be determined.",
+  "text_B": "The sequence number mechanism for all PW types except the TDM PWs SAToP [RFC4553], CESoPSN [RFC5086], and TDMoIP [RFC5087] use a circular unsigned 16-bit number space that excludes the value zero. The sequence numbers for TDM PWs include the value zero. ... o For all non-TDM PWs the sequence number that follows 65535 (maximum unsigned 16-bit number) is one. ... o If the sequence number on a non-TDM-PW packet is zero, the sequence integrity of the packets cannot be determined."
+ },
+ {
+  "item": 177,
+  "text_A": "Treat the timeout as recoverable.",
+  "text_B": "Treat the timeout as retryable."
+ },
+ {
+  "item": 178,
+  "text_A": "The authenticator MAY initiate the ERP exchange by sending the EAP-Initiate/Re-auth-Start message and if there is no response MAY send the EAP-Request/Identity message.",
+  "text_B": "The authenticator MAY initiate the ERP exchange by sending the EAP-Initiate/Re-auth-Start message, and if there is no response, it will send the EAP-Request/ Identity message."
+ },
+ {
+  "item": 179,
+  "text_A": "The extension types defined in this document are: enum { server_name(0), max_fragment_length(1), client_certificate_url(2), trusted_ca_keys(3), truncated_hmac(4), status_request(5), (65535) } ExtensionType; The list of defined extension types is maintained by the IANA.",
+  "text_B": "The extension types defined in this document are: enum { server_name(0), max_fragment_length(1), client_certificate_url(2), trusted_ca_keys(3), truncated_hmac(4), status_request(5), (65535) } ExtensionType; Note that for all extension types (including those defined in future), the extension type MUST NOT appear in the extended server hello unless the same extension type appeared in the corresponding client hello."
+ },
+ {
+  "item": 180,
+  "text_A": "In such cases, the entire link is to be ignored; consuming implementations MUST NOT process the link without applying the anchor.",
+  "text_B": "In such cases, the entire link is to be ignored; link applications MUST NOT process the link without applying the anchor."
+ },
+ {
+  "item": 181,
+  "text_A": "1.4.1. Appropriate certificate uses",
+  "text_B": "1.4.1 Appropriate certificate uses"
+ },
+ {
+  "item": 182,
+  "text_A": "Start the batch job before the nightly sync.",
+  "text_B": "Run the batch job before the nightly sync."
+ },
+ {
+  "item": 183,
+  "text_A": "The LOCKT operation's test for conflicting locks SHOULD exclude locks for the current lock-owner, and thus should return NFS4_OK in such cases.",
+  "text_B": "Standards Track [Page 431] RFC 5661 NFSv4.1 January 2010 The LOCKT operation's test for conflicting locks SHOULD exclude locks for the current lock-owner, and thus should return NFS4_OK in such cases."
+ },
+ {
+  "item": 184,
+  "text_A": "| +--------------------+-----------------------------------------------+ |NORM_CMD(CC) | Sender command used in collection of round | | | trip timing and congestion control status | | | from group (this may be OPTIONAL if | | | alternative congestion control mechanism and | | | round trip timing collection is used).",
+  "text_B": "| | NORM_CMD(CC) | Sender command used in collection of | | | round-trip timing and congestion control | | | status from group (this is OPTIONAL if | | | alternative congestion control mechanism | | | and round-trip timing collection is used)."
+ },
+ {
+  "item": 185,
+  "text_A": "| type leafref | Value must appear elsewhere in the data |",
+  "text_B": "| reference | Value must appear elsewhere in the data |"
+ },
+ {
+  "item": 186,
+  "text_A": "It MUST also populate the element with a \"first-cseq\" attribute corresponding to the first (oldest) currently active temporary GRUU that is associated with the instance ID and AOR of the registered contact. The value of the \"first-cseq\" attribute is set to the value of the CSeq header field of the REGISTER request that caused that first temporary GRUU to be assigned.",
+  "text_B": "It MUST also populate the element with a \"cseq\" attribute corresponding to the first (oldest) currently active temporary GRUU that is associated with the instance ID and AOR of the registered contact. The value of the \"cseq\" attribute is set to the value of the CSeq header field of the REGISTER request that caused that first temporary GRUU to be assigned."
+ },
+ {
+  "item": 187,
+  "text_A": "When advertising Flow Specifications, the \"Length of Next Hop Network Address\" field MUST be set to 0. The \"Network Address of Next Hop\" field MUST be ignored.",
+  "text_B": "When advertising Flow Specifications, the Length of the Next-Hop Network Address MUST be set to 0. The Network Address of the Next-Hop field MUST be ignored."
+ },
+ {
+  "item": 188,
+  "text_A": "Under no circumstances should secret material appear in diagnostic output.",
+  "text_B": "Never log the raw API key."
+ },
+ {
+  "item": 189,
+  "text_A": "The client should wait and then try the request with a new slot and sequence value. Some examples of scenarios that might lead to this situation: o A server that supports hierarchical storage receives a request to process a file that had been migrated. o An operation requires a delegation recall to proceed, and waiting for this delegation recall makes processing this request in a timely fashion impossible. In such cases, the error NFS4ERR_DELAY allows these preparatory operations to proceed without holding up client resources such as a session slot. After delaying for period of time, the client can then re-send the operation in question (but not with the same slot ID and sequence ID; one or both MUST be different on the re-send). Note that without the ability to return NFS4ERR_DELAY and the client's willingness to re-send when receiving it, deadlock might result.",
+  "text_B": "The requester should wait and then try the request with a new slot and sequence value. Some examples of scenarios that might lead to this situation: o A server that supports hierarchical storage receives a request to process a file that had been migrated. o An operation requires a delegation recall to proceed, and waiting for this delegation recall makes processing this request in a timely fashion impossible. In such cases, the error NFS4ERR_DELAY allows these preparatory operations to proceed without holding up requester resources such as a session slot. After delaying for period of time, the requester can then re-send the operation in question. If the operation that returned NFS4ERR_DELAY was not a Sequence operation, the initial, preceding Sequence operation of the Compound request MUST NOT be re-sent with same slot ID and sequence ID; one or both MUST be different on the re-send. If the operation that returned NFS4ERR_DELAY was a Sequence operation, then the Sequence MUST be re-sent with the same slot ID and sequence ID. Note that without the ability to return NFS4ERR_DELAY and the requester's willingness to re-send when receiving it, deadlock might result."
+ },
+ {
+  "item": 190,
+  "text_A": "o Otherwise, if the entity corresponding to the lock-owner (e.g., a process) sending the I/O has a byte-range lock stateid for the associated open file, then the byte-range lock stateid for that lock-owner and open file SHOULD be used.",
+  "text_B": "* Otherwise, if the entity corresponding to the lock-owner (e.g., a process) sending the I/O has a byte-range lock stateid for the associated open file, then the byte-range lock stateid for that lock-owner and open file SHOULD be used."
+ },
+ {
+  "item": 191,
+  "text_A": "If the algorithm used to encrypt the payload requires cryptographic synchronization data, e.g., an Initialization Vector (IV), then this data is carried explicitly in the Payload field, but it is not called out as a separate field in ESP, i.e., the transmission of an explicit IV is invisible to ESP.",
+  "text_B": "If the algorithm used to encrypt the payload requires cryptographic synchronization data, e.g., an Initialization Vector (IV), then this data MAY be carried explicitly in the Payload field."
+ },
+ {
+  "item": 192,
+  "text_A": "Retry the request at most three attempts.",
+  "text_B": "Retry the request at most three times."
+ },
+ {
+  "item": 193,
+  "text_A": "byte SSH_MSG_KEY_DH_GEX_REQUEST",
+  "text_B": "byte SSH_MSG_KEX_DH_GEX_REQUEST"
+ },
+ {
+  "item": 194,
+  "text_A": "Cap concurrent workers at eight.",
+  "text_B": "Parallelism is unbounded and governed only by available memory."
+ },
+ {
+  "item": 195,
+  "text_A": "realm = [realm \".\"] label",
+  "text_B": "nai = username / ( username \"@\" realm ) username = dot-string realm = realm \".\" label"
+ },
+ {
+  "item": 196,
+  "text_A": "Merge the feature branch into main.",
+  "text_B": "Bring the trunk's changes down into the topic branch instead."
+ },
+ {
+  "item": 197,
+  "text_A": "The token must be rotated every 24 hrs.",
+  "text_B": "The token must be rotated every 24 hours."
+ },
+ {
+  "item": 198,
+  "text_A": "Otherwise, on link layers that have addresses this option MUST be included in multicast solicitations and SHOULD be included in unicast solicitations.",
+  "text_B": "On link layers that have addresses this option MUST be included in multicast solicitations and SHOULD be included in unicast solicitations."
+ },
+ {
+  "item": 199,
+  "text_A": "A router looks at the RS- Flag to detect if a neighbor is restarting. From the restarting router's perspective, if a neighboring router detects the RS- Flag is set, the neighboring router will maintain the adjacency with the restarting router. The restarting router will set the RS-Flag in its UPDATE packet to indicate it is performing a soft restart.",
+  "text_B": "The router looks at the RS- Flag to detect if a neighbor is restarting. From the restarting routers perspective, if a neighboring router detects the RS-Flag set, it will maintain the adjacency, and will set the RS-Flag in its UPDATE packet to indicated it is doing a soft restart."
+ },
+ {
+  "item": 200,
+  "text_A": "Deny the request if identity verification cannot be reached.",
+  "text_B": "Fail closed if the auth service is unreachable."
+ },
+ {
+  "item": 201,
+  "text_A": "The presence of a prefix is indicated with a single leading ASCII colon character (':', 0x3b), which MUST be the first character of the ^^^^ message itself.",
+  "text_B": "The presence of a prefix is indicated with a single leading ASCII colon character (':', 0x3a), which MUST be the first character of the ^^^^ message itself."
+ },
+ {
+  "item": 202,
+  "text_A": "In the case of the DS RRset, this is the parent zone.",
+  "text_B": "This KEY RR MUST be identified by a DS RR in a signed DS RRset in the parent zone."
+ },
+ {
+  "item": 203,
+  "text_A": "Rarely log the raw API key.",
+  "text_B": "Never log the raw API key."
+ },
+ {
+  "item": 204,
+  "text_A": "If the value of the \"Subscription-State\" header field is \"active\" or \"pending\", the notifier MUST also include in the \"Subscription-State\" header field an \"expires\" parameter that indicates the time remaining on the subscription.",
+  "text_B": "If the value of the \"Subscription-State\" header is \"active\" or \"pending\", the notifier SHOULD also include in the \"Subscription- State\" header an \"expires\" parameter which indicates the time remaining on the subscription."
+ },
+ {
+  "item": 205,
+  "text_A": "Schedule bulk processing ahead of the overnight replication.",
+  "text_B": "Run the batch job before the nightly sync."
+ },
+ {
+  "item": 206,
+  "text_A": "Object Classes Servers SHOULD recognize all the names of standard classes from section 7 of [12].",
+  "text_B": "Servers SHOULD recognize all the names of attribute types and object classes defined in Section 3 and 4, respectively, of [RFC4519]."
+ },
+ {
+  "item": 207,
+  "text_A": "Requirements Language The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"NOT RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here.",
+  "text_B": "Requirements Language The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in RFC 2119 [RFC2119]."
+ },
+ {
+  "item": 208,
+  "text_A": "Although it was not designed as an exterior gateway protocol, RIP (described in Appendix F.2) is sometimes used for inter-AS routing.",
+  "text_B": "Although it was not designed as an exterior gateway protocol, RIP (described in Section [7.2.4]) is sometimes used for inter-AS routing."
+ },
+ {
+  "item": 209,
+  "text_A": "Only admins may approve the deploy.",
+  "text_B": "Release sign-off is restricted to users holding administrator rights."
+ },
+ {
+  "item": 210,
+  "text_A": "Subject Identifier Formats",
+  "text_B": "Security Event Identifier Formats"
+ },
+ {
+  "item": 211,
+  "text_A": "Alert if latency exceeds 200ms.",
+  "text_B": "Notify the on-call engineer only when response time passes two full seconds."
+ },
+ {
+  "item": 212,
+  "text_A": "Feedback logic: In the NC state, the decompressor should send a STATIC-NACK if a packet of a type other than IR is received, or if decompression of an IR packet has failed, subject to the feedback rate limitation as described in Section 5.3.2.",
+  "text_B": "Feedback logic: In the NC state, the decompressor should send a STATIC-NACK if a packet of a type other than IR is received, or if decompression of an IR packet has failed, subject to the feedback rate limitation as described in Section 5.3.2 Once a packet has been validated and decompressed correctly, the decompressor MUST transit to the FC state."
+ },
+ {
+  "item": 213,
+  "text_A": "Encrypt the backup after uploading it.",
+  "text_B": "Encrypt the backup before uploading it."
+ },
+ {
+  "item": 214,
+  "text_A": "Authors MUST check the web page at the URL listed above in case there is a more recent version available.",
+  "text_B": "Authors MUST check the webpage at the URL listed above in case there is a more recent version available."
+ },
+ {
+  "item": 215,
+  "text_A": "This ordering is intended to help lawyers review CPs, CPSs, and other documents adhering to this framework.",
+  "text_B": "This ordering is intended help lawyers review CPs, CPSs, and other documents adhering to this framework."
+ },
+ {
+  "item": 216,
+  "text_A": "The Server Name Indication (SNI) extension [RFC6066] defines a mechanism for a client to tell a (D)TLS server the name of the server it wants to contact.",
+  "text_B": "The Server Name Indication (SNI) extension [RFC6066] i defines a mechanism for a client to tell a (D)TLS server the name of the server it wants to contact."
+ },
+ {
+  "item": 217,
+  "text_A": "All writes must go through the transaction wrapper.",
+  "text_B": "Direct database access is acceptable for performance-critical paths."
+ },
+ {
+  "item": 218,
+  "text_A": "A certificate using system MUST reject the certificate if it encounters a critical extension it does not recognize; however, a non-critical extension may be ignored if it is not recognized.",
+  "text_B": "A certificate using system MUST reject the certificate if it encounters a critical extension it does not recognize; however, a non-critical extension MAY be ignored if it is not recognized."
+ },
+ {
+  "item": 219,
+  "text_A": "SAs SHOULD be rekeyed proactively, i.e., the new SA should be established before the old one expires and becomes unusable.",
+  "text_B": "SAs should be rekeyed proactively, i.e., the new SA should be established before the old one expires and becomes unusable."
+ },
+ {
+  "item": 220,
+  "text_A": "Algorithms should be ordered by preference -- and grouped by type smimeCapabilities OBJECT IDENTIFIER ::= {iso(1) member-body(2) us(840) rsadsi(113549) pkcs(1) pkcs-9(9) 15} SMIMECapability ::= SEQUENCE { capabilityID OBJECT IDENTIFIER, parameters ANY DEFINED BY capabilityID OPTIONAL } SMIMECapabilities ::= SEQUENCE OF SMIMECapability -- Encryption Key Preference provides a method of broadcasting the -- preferred encryption certificate.",
+  "text_B": "Algorithms SHOULD be ordered by -- preference and grouped by type smimeCapabilities OBJECT IDENTIFIER ::= {iso(1) member-body(2) us(840) rsadsi(113549) pkcs(1) pkcs-9(9) 15} SMIMECapability ::= SEQUENCE { capabilityID OBJECT IDENTIFIER, parameters ANY DEFINED BY capabilityID OPTIONAL } SMIMECapabilities ::= SEQUENCE OF SMIMECapability -- Encryption Key Preference provides a method of broadcasting the -- preferred encryption certificate."
+ },
+ {
+  "item": 221,
+  "text_A": "Fail closed if the auth service is unreachable.",
+  "text_B": "Fail shut if the auth service is unreachable."
+ },
+ {
+  "item": 222,
+  "text_A": "That those pathnames all exist does not imply that the TVFS sever will necessarily grant any kind of access rights to the named paths, or that access to the same file via different pathnames will necessarily be granted equal rights.",
+  "text_B": "That those pathnames all exist does not imply that the TVFS server will necessarily grant any kind of access rights to the named paths, or that access to the same file via different pathnames will necessarily be granted equal rights."
+ },
+ {
+  "item": 223,
+  "text_A": "The token must be rotated every 24 hours.",
+  "text_B": "The token should be rotated every 24 hours."
+ },
+ {
+  "item": 224,
+  "text_A": "Bierman Cisco Systems, Inc.",
+  "text_B": "Bierman Category: Standards Track Cisco Systems, Inc."
+ },
+ {
+  "item": 225,
+  "text_A": "The Printer MAY validate the accessibility of the Document as part of the operation, or subsequently.",
+  "text_B": "The IPP Printer MAY validate the accessibility of the document as part of the operation or subsequently."
+ },
+ {
+  "item": 226,
+  "text_A": "preference = preference-parameter *( OWS \";\" [ OWS preference-parameter ] ) preference-parameter = parameter / token",
+  "text_B": "preference = token [ BWS \"=\" BWS word ] *( OWS \";\" [ OWS parameter ] ) parameter = token [ BWS \"=\" BWS word ]"
+ },
+ {
+  "item": 227,
+  "text_A": "All writes must go through the transaction helper.",
+  "text_B": "All writes must go through the transaction wrapper."
+ },
+ {
+  "item": 228,
+  "text_A": "Note that the file extension is not part of the draft, so in general it should end with the current draft number (\"-\", plus two digits).",
+  "text_B": "Note that the file extension is not part of the draft name, so in general it should end with the current draft number (\"-\", plus two digits)."
+ },
+ {
+  "item": 229,
+  "text_A": "This will allow for the Overload bit setting to propagate immediately, and remove the potential for an older version of the reloaded routers LSP to be used.",
+  "text_B": "This will allow for the Overload bit setting to propagate immediately, and remove the potential for an older version of the reloaded router's LSP to be used."
+ },
+ {
+  "item": 230,
+  "text_A": "# 6.4.1 property-tel = element tel { element parameters { param-altid, param-pid, param-pref, element type { element text { \"work\" | \"home\" | \"text\" | \"voice\" | \"fax\" | \"cell\" | \"video\" | \"pager\" | \"textphone\" | x-name | iana-token }+ }?, param-mediatype }?, (value-text | value-uri) }",
+  "text_B": "# 6.4.1 property-tel = element tel { element parameters { param-altid, param-pid, param-pref, element type { element text { \"work\" | \"home\" | \"text\" | \"voice\" | \"fax\" | \"cell\" | \"video\" | \"pager\" | \"textphone\" }+ }?, param-mediatype }?, (value-text | value-uri) }"
+ },
+ {
+  "item": 231,
+  "text_A": "'hold-new-jobs' Value 'hold-new-jobs': The operator has issued the Hold-New-Jobs operation (see section 3.3.1) or other means, but the output-device(s) are taking an appreciable time to stop. Later, when all output has stopped, the \"printer-state\" becomes 'stopped', and the 'paused' value replaces the 'moving-to-paused' value in the \"printer- state-reasons\" attribute. This value MUST be supported if the Hold-New-Jobs operation is supported and the implementation takes significant time to pause a device in certain circumstances.",
+  "text_B": "'hold-new-jobs' Value 'hold-new-jobs': The operator has issued the Hold-New-Jobs operation (see section 3.3.1) or has initiated the holding of new jobs by other means. This value indicates that all Jobs subsequently submitted to the Printer will be placed into the \u2018pending-held\u2019 state. Thus all newly accepted jobs will be automatically held by the Printer. This \u201cprinter-state-reasons\u201d value will be removed when the Operator issues the Release-Held-New-Jobs Operation or releases the holding of new jobs by other means."
+ },
+ {
+  "item": 232,
+  "text_A": "Secrets have to be replaced once per day without exception.",
+  "text_B": "The token must be rotated every 24 hours."
+ },
+ {
+  "item": 233,
+  "text_A": "The <domain:add> and <domain:rem> elements contain the following child elements: - An OPTIONAL <domain:ns> element that contains the fully qualified names of the delegated host objects or host attributes (name servers) associated with the domain object to provide resolution services for the domain; see section 1.1 for a description of the elements used to specify host objects or host attributes.",
+  "text_B": "The <domain:add> and <domain:rem> elements contain the following child elements: - An OPTIONAL <domain:ns> element that contains the fully qualified names of the delegated host objects or host attributes (name servers) associated with the domain object to provide resolution services for the domain; see Section 1.1 for a description of the elements used to specify host objects or host attributes."
+ },
+ {
+  "item": 234,
+  "text_A": "The time zone SHOULD be represented in a four-digit time zone offset, such as -0500 for North American Eastern Standard Time.",
+  "text_B": "The time zone MUST be present and SHOULD be represented in a four-digit Vaudreuil & Parsons Standards Track [Page 11] RFC 3801 VPIMv2 June 2004 time zone offset, such as -0500 for North American Eastern Standard Time."
+ },
+ {
+  "item": 235,
+  "text_A": "If the response includes the \"must-revalidate\" Cache-Control directive, the cache MAY use that response in replying to a subsequent request, but all caches MUST first revalidate it with the origin server, using the request-headers from the new request to allow the origin server to authenticate the new request.",
+  "text_B": "But if the response is stale, all caches MUST first revalidate it with the origin server, using the request-headers from the new request to allow the origin server to authenticate the new request."
+ },
+ {
+  "item": 236,
+  "text_A": "Step 3: The authentication service SHOULD ensure that any preexisting Date header in the request is accurate.",
+  "text_B": "The authentication service MUST ensure that any preexisting Date header field in the request is accurate."
+ },
+ {
+  "item": 237,
+  "text_A": "(O) \"A means of restricting access to objects based on the sensitivity (as represented by a label) of the information contained in the objects and the formal authorization (i.e., clearance) of subjects to access information of such sensitivity.\" [DoD1] $ manipulation detection code (D) Synonym for \"checksum\".",
+  "text_B": "(O) \"A means of restricting access to objects based on the sensitivity (as represented by a label) of the information contained in the objects and the formal authorization (i.e., clearance) of subjects to access information of such sensitivity.\" [DOD1] $ manipulation detection code (D) ISDs SHOULD NOT use this term as a synonym for \"checksum\" because the word \"manipulation\" implies protection against active attacks, which an ordinary checksum might not provide."
+ },
+ {
+  "item": 238,
+  "text_A": "When a 206 response is generated, the server MUST generate the following header fields, in addition to those required above, if the field would have been sent in a 200 (OK) response to the same request: Date, Cache-Control, ETag, Expires, Content-Location, and Vary.",
+  "text_B": "A server that generates a 206 response MUST generate the following header fields, in addition to those required in the subsections below, if the field would have been sent in a 200 (OK) response to the same request: Date, Cache-Control, ETag, Expires, Content-Location, and Vary."
+ },
+ {
+  "item": 239,
+  "text_A": "Increase the retry limit.",
+  "text_B": "Let a failed call die on its first attempt."
+ },
+ {
+  "item": 240,
+  "text_A": "It is further RECOMMENDED, that the IPP Printer generate \"job-id\" and \"job-uri\" values for such \"foreign jobs\", if possible, so that they may be targets of other IPP operations, such as Get-Job-Attributes and Cancel-Job.",
+  "text_B": "Sweet & McDonald Standards Track [Page 186] RFC 8011 IPP/1.1: Model and Semantics January 2017 IPP Printers SHOULD also generate \"job-id\" and \"job-uri\" values for such foreign Jobs, if possible, so that they can be targets of other IPP operations, such as Get-Job-Attributes and Cancel-Job."
+ },
+ {
+  "item": 241,
+  "text_A": "The analysis proves that DHKEM's AuthEncap()/AuthDecap() interface fulfills these notions for all Diffie-Hellman groups specified in this document.",
+  "text_B": "The analysis proves that DHKEM's AuthEncap()/AuthDecap() interface fulfills the notions of Outsider-CCA, Insider-CCA, and Outsider-Auth for all Diffie-Hellman groups specified in this document. It does not fulfill the notion of Insider-Auth defined in the paper."
+ },
+ {
+  "item": 242,
+  "text_A": "Therefore, it is RECOMMENDED that credit-control server implementations supporting the graceful service termination be configurable for sending the Restriction-Filter-Rule AVP, the Filter-Id AVP, or none of the above.",
+  "text_B": "Standards Track [Page 40] RFC 8506 Diameter Credit-Control Application March 2019 supporting graceful service termination be configurable for sending the Restriction-Filter-Rule AVP, the Filter-Rule AVP, the Filter-Id AVP, or none of the above."
+ },
+ {
+  "item": 243,
+  "text_A": "Whenever an implementation encounters a condition which is defined as a fatal alert, it MUST send the appropriate alert prior to closing the connection.",
+  "text_B": "Whenever an implementation encounters a fatal error condition, it SHOULD send an appropriate fatal alert and MUST close the connection without sending or receiving any additional data."
+ },
+ {
+  "item": 244,
+  "text_A": "As an any or final substring, the same input would result in \"foo<SPACE><SPACE>bar<SPACE>\".",
+  "text_B": "As an any or final substring, the same input would result in \"foo<SPACE>bar<SPACE>\"."
+ },
+ {
+  "item": 245,
+  "text_A": "It's value is defined below for Discovery",
+  "text_B": "Its value is defined below for Discovery"
+ },
+ {
+  "item": 246,
+  "text_A": "To Attribute An instant messaging client specifies an intended recipient for a message by providing the JID of the intended recipient in the 'to' attribute of the <message/> stanza.",
+  "text_B": "Specifying an Intended Recipient An instant messaging client SHOULD specify an intended recipient for a message by providing the JID of an entity other than the sender in the 'to' attribute of the <message/> stanza."
+ },
+ {
+  "item": 247,
+  "text_A": "Conformance and Document Conventions The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in BCP 14, [RFC2119] and indicate requirement levels for compliant implementations.",
+  "text_B": "Terminology The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"NOT RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here."
+ },
+ {
+  "item": 248,
+  "text_A": "The bootstrap service registry for the RDAP service provider space is based on the structure specified in Section 3 of RFC 7484 [RFC7484].",
+  "text_B": "The bootstrap service registry for the RDAP service provider space is represented using the structure specified in Section 3 of RFC 7484 [RFC7484]."
+ },
+ {
+  "item": 249,
+  "text_A": "Hence, the policy is instantiated in the packet header and does not requires any policy state in midpoints and tail-ends.",
+  "text_B": "Hence, the policy is instantiated in the packet header and does not require any policy state in midpoints and tail-ends."
+ },
+ {
+  "item": 250,
+  "text_A": "The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in BCP 14, RFC 2119 [RFC2119].",
+  "text_B": "1.2 Terminology The key words \"MUST\", \"MUST NOT\", \"SHOULD\", \"SHOULD NOT\", and \"MAY\" in this document are to be interpreted as described in BCP 14, RFC 2119 [RFC2119]."
+ },
+ {
+  "item": 251,
+  "text_A": "When in MLDv1 mode, the Querier MUST send periodic General Queries truncated at the Multicast Address field (i.e., 24 bytes long) and SHOULD also warn about receiving an MLDv2 Query (such warnings MUST be rate-limited).",
+  "text_B": "When in MLDv1 mode, the Querier MUST send periodic General Queries truncated at the Multicast Address field (i.e., 24 bytes long), and SHOULD also warn about receiving an MLDv2 Query (such warnings must be rate-limited)."
+ },
+ {
+  "item": 252,
+  "text_A": "Cap concurrent workers at eight.",
+  "text_B": "Cap concurrent workers at 8."
+ },
+ {
+  "item": 253,
+  "text_A": "Confine that identity to a read-only role.",
+  "text_B": "Grant the service account write access."
+ },
+ {
+  "item": 254,
+  "text_A": "If the cost of the path through the preferred parent and the worst parent is too large, a node MAY keep a smaller parent set than PARENT_SET_SIZE.",
+  "text_B": "If the difference in cost of the paths through the preferred parent and the worst parent is too large, a node MAY keep a smaller parent set than PARENT_SET_SIZE."
+ },
+ {
+  "item": 255,
+  "text_A": "IANA assigned a new bit flag as follows: | Bit Number Hex Name Reference | 23 0x000017 Path-Key (P-bit) [RFC5520]",
+  "text_B": "IANA assigned a new bit flag as follows: | Bit Number Name Reference | 23 Path-Key (P-bit) [RFC5520]"
+ },
+ {
+  "item": 256,
+  "text_A": "IP Source Address: - When registering on a foreign network with a co-located care-of address, the IP source address MUST be the care-of address.",
+  "text_B": "IP Source Address: o When registering on a foreign network with a co-located care-of address, the IP source address MUST be the care-of address."
+ },
+ {
+  "item": 257,
+  "text_A": "Y2 represents an audio/video phone that should only used when needed.",
+  "text_B": "Y2 represents an audio/video phone that should only be used when needed."
+ },
+ {
+  "item": 258,
+  "text_A": "definition has been retrieved, and parameter 3 is the short",
+  "text_B": "definition has been retrieved, and parameter 3 is the the short"
+ },
+ {
+  "item": 259,
+  "text_A": "In the case of messages delivered via [SMTP], this SHOULD be the date and time of final delivery of the message as defined by [SMTP].",
+  "text_B": "In the case of messages delivered via [SMTP], this is the date and time of final delivery of the message as defined by [SMTP]."
+ },
+ {
+  "item": 260,
+  "text_A": "The list of destination addresses MAY include the All_DHCP_Servers multicast address or other addresses selected by the network administrator.",
+  "text_B": "Relay Agent Behavior The relay agent MAY be configured to use a list of destination addresses, which MAY include unicast addresses, the All_DHCP_Servers multicast address, or other addresses selected by the network administrator."
+ },
+ {
+  "item": 261,
+  "text_A": "The 304 response MUST NOT contain a message-body, and thus is always terminated by the first empty line after the header fields.",
+  "text_B": "A 304 response cannot contain a message-body; it is always terminated by the first empty line after the header fields."
+ },
+ {
+  "item": 262,
+  "text_A": "subset = \"baseobject\" / \"oneLevel\" / \"wholeSubtree\"",
+  "text_B": "subset = \"baseObject\" / \"oneLevel\" / \"wholeSubtree\""
+ },
+ {
+  "item": 263,
+  "text_A": "Alert on error rates below two percent.",
+  "text_B": "Alert on error rates above two percent."
+ },
+ {
+  "item": 264,
+  "text_A": "This RFC represents the consensus of the <insert_name> Research Group of the Internet Research Task Force (IRTF).",
+  "text_B": "This RFC represents the consensus of the Information-Centric Networking Research Group (ICNRG) of the Internet Research Task Force (IRTF)."
+ },
+ {
+  "item": 265,
+  "text_A": "8.3 Message Body Length The body length in bytes SHOULD be given by the Content-Length header field.",
+  "text_B": "7.4.2 Message Body Length The body length in bytes is provided by the Content-Length header field."
+ },
+ {
+  "item": 266,
+  "text_A": "The <CODE BEGINS> convention MUST NOT be used for example modules.",
+  "text_B": "The \"<CODE BEGINS>\" convention MUST NOT be used for example modules."
+ },
+ {
+  "item": 267,
+  "text_A": "When identity checks are unavailable, allow the request through and log the gap.",
+  "text_B": "Fail closed if the auth service is unreachable."
+ },
+ {
+  "item": 268,
+  "text_A": "However, it is likely that an algorithm marked as SHOULD+ will be promoted at some future time to be a MUST.",
+  "text_B": "However, it is likely that an algorithm marked as SHOULD- will be deprecated to a MAY or worse in a future version of this document."
+ },
+ {
+  "item": 269,
+  "text_A": "4.1.1 Request Syntax OCSPRequest ::= SEQUENCE { tbsRequest TBSRequest, optionalSignature [0] EXPLICIT Signature OPTIONAL } TBSRequest ::= SEQUENCE { Myers, et al.",
+  "text_B": "ASN.1 Specification of the OCSP Request The ASN.1 structure corresponding to the OCSPRequest is: OCSPRequest ::= SEQUENCE { tbsRequest TBSRequest, optionalSignature [0] EXPLICIT Signature OPTIONAL } TBSRequest ::= SEQUENCE { version [0] EXPLICIT Version DEFAULT v1, requestorName [1] EXPLICIT GeneralName OPTIONAL, requestList SEQUENCE OF Request, requestExtensions [2] EXPLICIT Extensions OPTIONAL } Santesson, et al."
+ },
+ {
+  "item": 270,
+  "text_A": "LWS = [CRLF] 1*WSP ; linear whitespace",
+  "text_B": "LWS = [*WSP CRLF] 1*WSP ; linear whitespace"
+ },
+ {
+  "item": 271,
+  "text_A": "Conventions Used in This Document The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"NOT RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in BCP 14 [RFC2119] [RFC8174] when, and only when, they appear in all capitals, as shown here.",
+  "text_B": "The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in RFC 2119 [1]."
+ },
+ {
+  "item": 272,
+  "text_A": "Roll back onto schema v12.",
+  "text_B": "Roll back to schema v12."
+ },
+ {
+  "item": 273,
+  "text_A": "Take the deprecated route out of service.",
+  "text_B": "Remove the legacy endpoint."
+ },
+ {
+  "item": 274,
+  "text_A": "F11 CANCEL Proxy 1 -> Proxy 2 CANCEL sip:bob@biloxi.example.com SIP/2.0 Via: SIP/2.0/UDP ss1.atlanta.example.com:5060;branch=z9hG4bK2d4790.1 Max-Forwards: 70 From: Alice <sip:alice@atlanta.example.com>;tag=9fxced76sl To: Bob <sip:bob@biloxi.example.com> Call-ID: 2xTb9vxSit55XU7p8@atlanta.example.com CSeq: 1 CANCEL Content-Length: 0",
+  "text_B": "F11 CANCEL Proxy 1 -> Proxy 2 CANCEL sip:alice@atlanta.example.com SIP/2.0 Via: SIP/2.0/UDP ss1.atlanta.example.com:5060;branch=z9hG4bK2d4790.1 Max-Forwards: 70 From: Alice <sip:alice@atlanta.example.com>;tag=9fxced76sl To: Bob <sip:bob@biloxi.example.com> Call-ID: 2xTb9vxSit55XU7p8@atlanta.example.com CSeq: 1 CANCEL Content-Length: 0"
+ },
+ {
+  "item": 275,
+  "text_A": "[2] Harvest: A distributed Search System: <URL:http://harvest.sourceforge.net/>",
+  "text_B": "[2] The Harvest Information Discovery and Access System: <URL:http://harvest.transarc.com/>"
+ },
+ {
+  "item": 276,
+  "text_A": "Standards Track [Page 10] RFC 8229 TCP Encapsulation of IKE and IPsec Packets August 2017 Multiple IKE SAs MUST NOT share a single TCP connection, unless one is a rekey of an existing IKE SA, in which case there will temporarily be two IKE SAs on the same TCP connection.",
+  "text_B": "Multiple IKE SAs MUST NOT share a single TCP connection, unless one is a rekey of an existing IKE SA, in which case there will temporarily be two IKE SAs on the same TCP connection."
+ },
+ {
+  "item": 277,
+  "text_A": "privacy=full",
+  "text_B": "privacy=\"full\""
+ },
+ {
+  "item": 278,
+  "text_A": "Never log the raw API key.",
+  "text_B": "Verbose diagnostics may include credential material when troubleshooting."
+ },
+ {
+  "item": 279,
+  "text_A": "Merge the feature branch into main.",
+  "text_B": "Merge into main the feature branch."
+ },
+ {
+  "item": 280,
+  "text_A": "Terminology The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in RFC 2119 [RFC2119].",
+  "text_B": "Terminology The key words \"MUST\", \"MUST NOT\", \"REQUIRED\", \"SHALL\", \"SHALL NOT\", \"SHOULD\", \"SHOULD NOT\", \"RECOMMENDED\", \"MAY\", and \"OPTIONAL\" in this document are to be interpreted as described in RFC 2119 [5]."
+ },
+ {
+  "item": 281,
+  "text_A": "inPacketDeltaCount",
+  "text_B": "packetDeltaCount"
+ },
+ {
+  "item": 282,
+  "text_A": "By its very nature, a Diameter Server MUST support Diameter applications in addition to the base protocol.",
+  "text_B": "By its very nature, a Diameter server must support Diameter server applications in addition to the base protocol."
+ },
+ {
+  "item": 283,
+  "text_A": "The new attributes, AS4_PATH and AS4_AGGREGATOR, MUST NOT be carried in an UPDATE message between NEW BGP speakers.",
+  "text_B": "The new attributes, AS4_PATH and AS4_AGGREGATOR SHOULD NOT be carried in the UPDATE messages between NEW BGP peers."
+ },
+ {
+  "item": 284,
+  "text_A": "Therefore, Collector rate limiting SHOULD be used to protect TLS and DTLS (like limiting the number of new TLS or DTLS sessions per second to a sensible number).",
+  "text_B": "Therefore, Collector rate limiting SHOULD be used to protect TLS & DTLS (like limiting the number of new TLS or DTLS session per second to a sensible number)."
+ },
+ {
+  "item": 285,
+  "text_A": "Scratch data persists on disk once processing finishes.",
+  "text_B": "Delete the temp files after the job completes."
+ },
+ {
+  "item": 286,
+  "text_A": "o If no permanent, citable specification for the scheme definition is included, credible reasons for not providing it SHOULD be given. o The scheme definition SHOULD include clear security considerations (Section 3.7) or explain why a full security analysis is not available (e.g., in a third-party scheme registration). o If the scheme definition does not meet the guidelines laid out in Section 3, the differences and reasons SHOULD be noted.",
+  "text_B": "Submitters are also encouraged to provide the following information as appropriate: o If no permanent, citable specification for the scheme definition is included, credible reasons for not providing it. o Clear security considerations (cf. Section 3.7), or an explanation of why a security analysis is not available (e.g., in a third- party scheme registration). o A note of and reasons for any deviations from the guidelines for permanent registrations laid out in Section 3."
+ },
+ {
+  "item": 287,
+  "text_A": "IRI",
+  "text_B": "URI"
+ },
+ {
+  "item": 288,
+  "text_A": "Standards Track [Page 93] RFC 3015 Megaco Protocol Version 1.0 November 2000 } RequestedEvent ::= SEQUENCE { pkgdName PkgdName, streamID StreamID OPTIONAL, eventAction RequestedActions OPTIONAL, evParList SEQUENCE OF EventParameter, ...",
+  "text_B": "Standards Track [Page 104] RFC 3525 Gateway Control Protocol June 2003 streamID StreamID OPTIONAL, eventAction RequestedActions OPTIONAL, evParList SEQUENCE OF EventParameter, ..."
+ },
+ {
+  "item": 289,
+  "text_A": "It would be inappropriate and confusing if such additional licenses restricted the rights the IETF intends to grant | in the content of RFCs.",
+  "text_B": "It would be inappropriate and confusing if such additional licenses restricted the rights the IETF intends to grant | in the content of RFCS."
+ },
+ {
+  "item": 290,
+  "text_A": "The \"end-of-attributes-tag\" (value 0x03) MUST occur exactly once in an operation and MUST be the last \"delimiter-tag\".",
+  "text_B": "Standards Track [Page 13] RFC 2910 IPP/1.1: Encoding and Transport September 2000 The \"end-of-attributes-tag\" (value 0x03) MUST occur exactly once in an operation."
+ },
+ {
+  "item": 291,
+  "text_A": "It does not replace PMTUD [RFC8201], Packetization Layer Path MTU Discovery (PLPMTUD) [RFC4821], or Datagram Packetization Layer PMTU Discovery (DPLPMTUD) [RFC8899] but rather is designed to complement these methods.",
+  "text_B": "It does not replace PMTUD [RFC8201], Packetization Layer Path MTU Discovery (PLPMTUD) [RFC4821], or Datagram Packetization Layer PMTU Discovery (DPLPMTUD) [RFC8899] but rather is designed to compliment these methods."
+ },
+ {
+  "item": 292,
+  "text_A": "Although service provisioning is a policy matter, at a minimum, all implementations MUST provide the following tuning profiles: for authentication: http://iana.org/beep/SASL/DIGEST-MD5 for confidentiality: http://iana.org/beep/TLS (using the TLS_RSA_WITH_AES_EDE_CBC_SHA cipher) for both: http://iana.org/beep/TLS (using the TLS_RSA_WITH_AES_EDE_CBC_SHA cipher supporting client-side certificates)",
+  "text_B": "Although service provisioning is a policy matter, at a minimum, all implementations MUST provide the following tuning profiles: for authentication: http://iana.org/beep/SASL/DIGEST-MD5 for confidentiality: http://iana.org/beep/TLS (using the TLS_RSA_WITH_AES_128_CBC_SHA cipher) for both: http://iana.org/beep/TLS (using the TLS_RSA_WITH_AES_128_CBC_SHA cipher supporting client-side certificates)"
+ },
+ {
+  "item": 293,
+  "text_A": "If subject naming information is present only in the subjectAltName extension (e.g., a key bound only to an email address or URI), then the subject name MUST be an empty sequence and the subjectAltName extension MUST be critical.",
+  "text_B": "If subject naming information is present only in | the subjectAltName extension (e.g., a key bound only to an email | address or URI), then the subject name MUST be an empty sequence | and the subjectAltName extension MUST be critical."
+ },
+ {
+  "item": 294,
+  "text_A": "-- [[2: publicKey [1] BIT STRING (CONTAINING -- PUBLIC-KEY.&Params({PublicKeySet} -- {@privateKeyAlgorithm.algorithm}) -- OPTIONAL,",
+  "text_B": "-- [[2: publicKey [1] BIT STRING (CONTAINING -- PUBLIC-KEY.&Params({PublicKeySet} -- {@privateKeyAlgorithm.algorithm})) -- OPTIONAL ]],"
+ },
+ {
+  "item": 295,
+  "text_A": "Clean up scratch data once processing has finished.",
+  "text_B": "Delete the temp files after the job completes."
+ },
+ {
+  "item": 296,
+  "text_A": "Encrypt the backup before uploading it.",
+  "text_B": "Archives transfer in plaintext and are secured at rest by the provider."
+ },
+ {
+  "item": 297,
+  "text_A": "However, protocol behavior defined in this section MUST be exhibited by iSCSI implementations on an iSCSI session when they negotiate the TaskReporting (Section 13.23) key to \"FastAbort\" on that session.",
+  "text_B": "Protocol behavior defined in this section MUST be exhibited by iSCSI implementations on an iSCSI session when they negotiate the TaskReporting (Section 9.1) key to \"FastAbort\" on that session."
+ },
+ {
+  "item": 298,
+  "text_A": "| | RDATE | 0+ | | | RRULE | 0 or 1 | | | TZNAME | 0+ | |",
+  "text_B": "| | RDATE | 0+ | If present, RRULE MUST NOT be | | | | present | | RRULE | 0 or 1 | If present, RDATE MUST NOT be | | | | present | | TZNAME | 0+ | |"
+ },
+ {
+  "item": 299,
+  "text_A": "Thus, it is possible for a TCP to maintain a zero receive window while transmitting data and receiving ACKs.",
+  "text_B": "Thus, it is be possible for a TCP to maintain a zero receive window while transmitting data and receiving ACKs."
+ },
+ {
+  "item": 300,
+  "text_A": "However, implementations which need to support \"transparency\" of T.4-generated image data MAY include RTCs when writing TIFF files if the flag settings of the T4Options field are set for non-byte aligned data, i.e.",
+  "text_B": "However, implementations that need to support \"transparency\" of T.4-generated image data MAY include RTCs when writing TIFF files if the flag settings of the T4Options field are set for non byte aligned data, i.e., Bit 2 is 0."
+ },
+ {
+  "item": 301,
+  "text_A": "Servers and clients MUST be able to deal with embedded nulls.",
+  "text_B": "Servers and servers and clients MUST be able to deal with embedded nulls. ^^^^^^^^^^"
+ },
+ {
+  "item": 302,
+  "text_A": "When the short video header mode is used, the RTP payload format for H.263 SHOULD be used (the format defined in RFC 2429 is RECOMMENDED, but the RFC 2190 format MAY be used for compatibility with older implementations).",
+  "text_B": "When the short video header mode is used, the RTP payload format for H.263 SHOULD be used."
+ },
+ {
+  "item": 303,
+  "text_A": "If the retrieved sender policies used to evaluate SPF and Sender ID do not contain explicit provisions for authenticating the local-part (see Section 3.4.1 of [MAIL]) of an address, the \"pvalue\" reported along with results for these mechanisms SHOULD NOT include the local- part or the following \"@\" character.",
+  "text_B": "If the retrieved sender policies used to evaluate SPF do not contain explicit provisions for authenticating the local-part (see Section 3.4.1 of [MAIL]) of an address, the \"pvalue\" reported along with results for this mechanism SHOULD NOT include the local-part or the following \"@\" character."
+ },
+ {
+  "item": 304,
+  "text_A": "uses common-session-parms { when \"confirm-event != 'timeout'\"; } leaf confirm-event {",
+  "text_B": "uses common-session-parms { when \"../confirm-event != 'timeout'\"; } leaf confirm-event {"
+ },
+ {
+  "item": 305,
+  "text_A": "Delete the temp files before the job completes.",
+  "text_B": "Delete the temp files after the job completes."
+ },
+ {
+  "item": 306,
+  "text_A": "Content-Location: images/ietflogo2.gif ; Note - Relative Content-Location is resolved by base ; specified in the Multipart/Related Content-Location heading",
+  "text_B": "Content-Location: images/ietflogo2.gif Comments: Note - Relative Content-Location is resolved by base specified in the Multipart/Related Content-Location heading"
+ },
+ {
+  "item": 307,
+  "text_A": "The following SCTP Payload Protocol Identifier is registered: M3UA \"3\" The SCTP Payload Protocol Identifier value \"3\" SHOULD be included in each SCTP DATA chunk, to indicate that the SCTP is carrying the M3UA protocol.",
+  "text_B": "The following SCTP Payload Protocol Identifier has been registered: M3UA \"3\" The SCTP Payload Protocol Identifier value \"3\" SHOULD be included in each SCTP DATA chunk, to indicate that the SCTP is carrying the M3UA protocol."
+ },
+ {
+  "item": 308,
+  "text_A": "Cap concurrent workers at eight.",
+  "text_B": "Cap concurrent workers at eighty."
+ },
+ {
+  "item": 309,
+  "text_A": "However, one reasonable approach is: (a) If byte count is used, then the implementation SHOULD count the number of bytes to which the IPsec algorithm is applied.",
+  "text_B": "However, one reasonable approach is: (a) If byte count is used, then the implementation SHOULD count the number of bytes to which the IPsec cryptographic algorithm is applied."
+ },
+ {
+  "item": 310,
+  "text_A": "The Xcast4 header is format depicted in Figure 4.",
+  "text_B": "The Xcast4 header format is depicted in Figure 4."
+ },
+ {
+  "item": 311,
+  "text_A": "Only admins may approve the deploy.",
+  "text_B": "Only admins may authorise the deploy."
+ },
+ {
+  "item": 312,
+  "text_A": "Similarly, a state change MUST NOT occur as a result of a Disconnect-Request that is unsuccessful with respect to any of the matching sessions; a NAS MUST send a Disconnect-NAK in reply if any of the matching sessions cannot be successfully terminated.",
+  "text_B": "Similarly, a state change MUST NOT occur as a result of an unsuccessful Disconnect-Request; here a Disconnect-NAK MUST be sent."
+ },
+ {
+  "item": 313,
+  "text_A": "Alert if latency exceeds 2000ms.",
+  "text_B": "Alert if latency exceeds 200ms."
+ },
+ {
+  "item": 314,
+  "text_A": "The category URI might also be a URL that resolves to a human- readable document defining the category. Because domain ownership may change hands over time, implementations MUST NOT resolve the URI for any purpose. Resolution is purely for human documentation considerations. Even then, caution is advised when readers click on URIs shown in this specification, just as one domain has changed hands since its original publication.",
+  "text_B": "It is RECOMMENDED that http:-scheme or https:-scheme URIs are used; it is further RECOMMENDED that a category URI resolves to a human- readable document defining the category."
+ },
+ {
+  "item": 315,
+  "text_A": "o <msg-hop-limit> field, if present, contains the number of hops on which the message is allowed to travel before being discarded by a MANET router. The <msg-hop-limit> is set by the message originator and is used to prevent messages from endlessly circulating in a MANET. When forwarding a message, a MANET router should decrease the <msg-hop-limit> by 1, and the message should be discarded when <msg-hop-limit> reaches 0. o <msg-hop-count> field, if present, contains the number of hops on which the message has traveled across the MANET.",
+  "text_B": "o <msg-hop-limit> field, if present, contains the number of hops on which the packet is allowed to travel before being discarded by a MANET router. The <msg-hop-limit> is set by the message originator and is used to prevent messages from endlessly circulating in a MANET. When forwarding a message, a MANET router should decrease the <msg-hop-limit> by 1, and the message should be discarded when <msg-hop-limit> reaches 0. o <msg-hop-count> field, if present, contains the number of hops on which the packet has traveled across the MANET."
+ },
+ {
+  "item": 316,
+  "text_A": "Mandatory-to-Implement Cipher Suites In the absence of an application profile standard specifying otherwise: A TLS-compliant application MUST implement the TLS_AES_128_GCM_SHA256 [GCM] cipher suite and SHOULD implement the TLS_AES_256_GCM_SHA384 [GCM] and TLS_CHACHA20_POLY1305_SHA256 [RFC8439] cipher suites (see Appendix B.4).",
+  "text_B": "Mandatory Cipher Suites In the absence of an application profile standard specifying otherwise, a TLS-compliant application MUST implement the cipher suite TLS_RSA_WITH_AES_128_CBC_SHA (see Appendix A.5 for the definition)."
+ },
+ {
+  "item": 317,
+  "text_A": "id-aca OBJECT IDENTIFIER ::= { iso(1) identified-organization(3) dod(6) internet(1) security(5) mechanisms(5) pkix(7) 10 } id-aca-wlanSSID OBJECT IDENTIFIER ::= { id-aca 7 }",
+  "text_B": "id-aca OBJECT IDENTIFIER ::= { iso(1) identified-organization(3) dod(6) internet(1) security(5) mechanisms(5) pkix(7) 10 } id-aca-wlanSSID OBJECT IDENTIFIER ::= { id-aca 6 }"
+ },
+ {
+  "item": 318,
+  "text_A": "type-stmt = type-keyword sep identifier-ref-arg-str optsep (\";\" / \"{\" stmtsep type-body-stmts \"}\")",
+  "text_B": "type-stmt = type-keyword sep identifier-ref-arg-str optsep (\";\" / \"{\" stmtsep [ type-body-stmts ] \"}\")"
+ },
+ {
+  "item": 319,
+  "text_A": "If, for any reason, RR2 processes the withdraw generated in step 3 before processing the update generated in step 2, RR2 transiently suffers from unreachability for the affected prefix.",
+  "text_B": "If, for any reason, RR3 processes the withdraw generated in step 3 before processing the update generated in step 2, RR3 transiently suffers from unreachability for the affected prefix."
+ },
+ {
+  "item": 320,
+  "text_A": "In this case, the values within lispMapCacheEntry would be: lispMapCacheEidLength = 11 lispMapCacheEid = 16387, 7, 2, 101, 1, 192.0.2.0, 24 ... [skip] ... where 11 is the total length in octets of the next object (lispMapCacheEID of type LispAddressType). Then, the value 16387 indicates the LCAF AF (see the IANA-ADDRESS-FAMILY-NUMBERS-MIB), the value 7 indicates that the LCAF AF is 7 octets in length in this case, 2 indicates that LCAF Type 2 encoding is used (see the LCAF document), 101 gives the Instance ID, 1 gives the AFI (per the IANA-ADDRESS-FAMILY-NUMBERS-MIB) for an IPv4 address, 192.0.2.0 is the IPv4 address, and 24 is the mask-length in bits. Note that the lispMapCacheEidLength value of 11 octets is used to compute the length of the last field in lispMapCacheEid to be 1 octet -- as computed by 11 - (2 + 1 + 1 + 1 + 1 + 4) = 1.",
+  "text_B": "In this case, the values within lispMapCacheEntry would be: lispMapCacheEidLength = 14 lispMapCacheEid = 16387, 10, 2, 101, 1, 192.0.2.0, 24 ... [skip] ... where 14 is the total length in octets of the next object (lispMapCacheEID of type LispAddressType). Then, the value 16387 indicates the LCAF AF (see the IANA-ADDRESS-FAMILY-NUMBERS-MIB), the value 10 indicates that the LCAF AF is 10 octets in length in this case, 2 indicates that LCAF Type 2 encoding is used (see the LCAF document), 101 gives the Instance ID, 1 gives the AFI (per the IANA-ADDRESS-FAMILY-NUMBERS-MIB) for an IPv4 address, 192.0.2.0 is the IPv4 address, and 24 is the mask-length in bits. Note that the lispMapCacheEidLength value of 14 octets is used to compute the length of the last field in lispMapCacheEid to be 1 octet -- as computed by 14 - (2 + 1 + 1 + 3 + 2 + 4) = 1."
+ },
+ {
+  "item": 321,
+  "text_A": "If resulting encrypted filling N1 and N2 is the first 64-bit block of the running key Gc(1)=A(S), then this block is added bitwise modulo 2 with the first 64-bit block of plain text Tp(1) = (t1(1), t2(1), ..., t64(1)).",
+  "text_B": "The resulting encrypted filling N1 and N2 is the first 64-bit block of the running key Gc(1)=A(S), then this block is added bitwise modulo 2 in the adder CM5 with the first 64-bit block of plain text Tp(1) = (t1(1), t2(1), ..., t64(1))."
+ },
+ {
+  "item": 322,
+  "text_A": "For example, if one metadata server has a lease_time attribute of 20 seconds, and a second metadata server has a lease_time attribute of 10 seconds, then if both servers return layouts that refer to an EXCHGID4_FLAG_USE_PNFS_DS-only data server, the data server MUST renew a client's lease if the interval between two SEQUENCE operations on different COMPOUND requests is less than 20 seconds.",
+  "text_B": "Standards Track [Page 311] RFC 5661 NFSv4.1 January 2010 EXCHGID4_FLAG_USE_PNFS_DS-only data server, the data server MUST renew a client's lease if the interval between two SEQUENCE operations on different COMPOUND requests is less than 20 seconds."
+ },
+ {
+  "item": 323,
+  "text_A": "When the iSCSI layer at the initiator invokes the Send_Control Operational Primitive to request that the iSER layer at the initiator process a Task Management Function Request with the TASK REASSIGN function, besides allocating zero, one, or two STags, the iSER layer MUST invalidate the existing STags, if any, associated with the ITT.",
+  "text_B": "When the iSCSI layer at the initiator invokes the Send_Control Operational Primitive to request the iSER layer at the initiator to process a Task Management Function Request with the TASK REASSIGN function, besides allocating zero, one, or two STags, the iSER layer MUST invalidate the existing STags (if any) associated with the ITT."
+ },
+ {
+  "item": 324,
+  "text_A": "The EAP-Response packet sent by the peer may encapsulate a TLS ClientHello handshake message, in which case the TEAP server MAY allow the TEAP conversation to be restarted, or it MAY contain a TEAP response with a zero-length message, in which case the server MUST terminate the conversation with an EAP Failure packet.",
+  "text_B": "The EAP-Response packet sent by the peer SHOULD contain a TEAP response with a zero-length message."
+ },
+ {
+  "item": 325,
+  "text_A": "The output from the AEAD is twofold: o A ciphertext of the same length as the plaintext.",
+  "text_B": "The output from the AEAD is the concatenation of: o A ciphertext of the same length as the plaintext."
+ },
+ {
+  "item": 326,
+  "text_A": "Credential refresh is left to the operator's discretion.",
+  "text_B": "The token must be rotated every 24 hours."
+ },
+ {
+  "item": 327,
+  "text_A": "However, the zone_id [RFC4007] is not appropriate in this context; therefore, the corresponding syntax extension in RFC 6874 [RFC6874] MUST NOT be used, and servers are to ignore it if possible.",
+  "text_B": "However, the zone_id [RFC4007] is not appropriate in this context; therefore, the corresponding syntax extension in RFC 6874 [RFC6874] MUST NOT be used, and servers SHOULD ignore it."
+ },
+ {
+  "item": 328,
+  "text_A": "If a Neighbor Cache entry already exists, its IsRouter flag MUST NOT be modified.",
+  "text_B": "If a Neighbor Cache entry already exists its IsRouter flag MUST NOT be modified."
+ },
+ {
+  "item": 329,
+  "text_A": "If no valid Security Association exists for this session (for example, the receiver has no key), the receiver MUST discard the encrypted ESP and the failure MUST be recorded in the system log or audit log.",
+  "text_B": "If no valid Security Association exists for this session (for example, the receiver has no key), the receiver MUST discard the packet; this is an auditable event."
+ },
+ {
+  "item": 330,
+  "text_A": "At the end of the backoff time, the receiver SHALL generate a NORM_NACK message only if the following conditions are met: 1) The sender's current transmit position (in terms of objectId::fecPayloadId) exceeds the earliest repair position of the receiver.",
+  "text_B": "At the end of the backoff time, the receiver SHALL generate a NORM_NACK message only if the following conditions are met: Adamson, et al."
+ },
+ {
+  "item": 331,
+  "text_A": "For example, if the OPENPGPKEY RR query for hugh@example.com (8d57[...]b7._openpgpkey.example.com) yields a CNAME to 8d57[...]b7._openpgpkey.example.net, and an OPENPGPKEY RR for 8d57[...]b7._openpgpkey.example.net exists,",
+  "text_B": "For example, if the OPENPGPKEY RR query for hugh@example.com (c93f[...]d6._openpgpkey.example.com) yields a CNAME to c93f[...]d6._openpgpkey.example.net, and an OPENPGPKEY RR for c93f[...]d6._openpgpkey.example.net exists,"
+ },
+ {
+  "item": 332,
+  "text_A": "The value of this counter SHOULD be kept across system reboots and invocations of the HIP base exchange.",
+  "text_B": "The value of this counter SHOULD be preserved across system reboots and invocations of the HIP base exchange."
+ },
+ {
+  "item": 333,
+  "text_A": "Because the number of hash function applications executed by the client decreases by one each time, at some point the user must reinitialize the system of be unable to login again.",
+  "text_B": "Because the number of hash function applications executed by the client decreases by one each time, at some point the user must reinitialize the system or be unable to login again."
+ },
+ {
+  "item": 334,
+  "text_A": "If the incoming segment has an ACK field, the reset takes its sequence number from the ACK field of the segment, otherwise the reset has sequence number zero and the ACK field is set to the sum of the sequence number and segment length of the incoming segment.",
+  "text_B": "If the incoming segment has the ACK bit set, the reset takes its sequence number from the ACK field of the segment, otherwise the reset has sequence number zero and the ACK field is set to the sum of the sequence number and segment length of the incoming segment."
+ },
+ {
+  "item": 335,
+  "text_A": "The MDN specification also defines the Disposition-Notification-To | header, which is an address header and thus follows the same 8-bit | rules as other address headers such as \"From\" and \"To\" when used in a UTF-8 header message.",
+  "text_B": "The MDN specification also defines the Disposition-Notification-To | header field, which is an address header field and thus follows the | same 8-bit rules as other address header fields such as \"From\" and \"To\" when used in a UTF-8 header message."
+ },
+ {
+  "item": 336,
+  "text_A": "Mail Submission Agent (MSA) A Mail Submission Agent (MSA) accepts the message submitted by the aMUA and enforces the policies of the hosting ADMD and the requirements of Internet standards.",
+  "text_B": "Message Submission Agent (MSA) A Message Submission Agent (MSA) accepts the message submitted by the aMUA and enforces the policies of the hosting ADMD and the requirements of Internet standards."
+ },
+ {
+  "item": 337,
+  "text_A": "The receiver MUST also have an algorithm for advertising its receive window to avoid receiver silly window syndrome (SWS), as described in [RFC0813].",
+  "text_B": "The receiver MUST also have an algorithm for advertising its receive window to avoid receiver silly window syndrome (SWS), as described in [RFC1122]."
+ },
+ {
+  "item": 338,
+  "text_A": "Merge the feature branch into main.",
+  "text_B": "Merge main into the feature branch."
+ },
+ {
+  "item": 339,
+  "text_A": "Initialisation vector: initial values of plain parameters of a cryptographic transformation algorithm.",
+  "text_B": "Initialization vector: initial values of plain parameters of a cryptographic transformation algorithm."
+ },
+ {
+  "item": 340,
+  "text_A": "- An <svDate> element that contains the server's current date and | time in Coordinated Universal Time (UTC).",
+  "text_B": "- An <svDate> element that contains the server's current date and | time in Universal Coordinated Time (UTC)."
+ },
+ {
+  "item": 341,
+  "text_A": "All writes must go through the transaction wrapper.",
+  "text_B": "Some writes must go through the transaction wrapper."
+ },
+ {
+  "item": 342,
+  "text_A": "The Interface-ID value for an interface SHOULD be stable and remain unchanged, for example, after the relay agent is restarted; if the Interface-ID changes, a server will not be able to use it reliably in parameter assignment policies.",
+  "text_B": "The interface-id value for an interface SHOULD be stable and remain unchanged -- for example, after the relay agent is restarted; if the interface-id value changes, a server will not be able to use it reliably in parameter assignment policies."
+ },
+ {
+  "item": 343,
+  "text_A": "Give the service account write access.",
+  "text_B": "Grant the service account write access."
+ },
+ {
+  "item": 344,
+  "text_A": "Translating this to the packet-based congestion control of CCID 3, the initial CCID 3 sending rate is allowed to be at least two packets per RTT, and at most four packets per RTT, depending on the packet size. The initial rate is only allowed to be three or four packets per RTT when, in terms of segment size, that translates to at most 4380 bytes per RTT.",
+  "text_B": "Therefore, in contrast to [RFC3448], the initial CCID 3 sending rate is allowed to be at least two packets per RTT, and at most four packets per RTT, depending on the packet size. The initial rate is only allowed to be three or four packets per RTT when, in terms of segment size, that translates to at most 4380 bytes per RTT. This might be implemented, for example, by setting the initial sending rate to min(4*s, max(2*s, 4380 bytes)), where \"s\" as usual is the packet size in bytes."
+ },
+ {
+  "item": 345,
+  "text_A": "HARDWARE REQUIRED IBM PC compatible with ethernet network interface card, though does not work with 3Com 505 board.",
+  "text_B": "HARDWARE REQUIRED IBM PC compatible with ethernet network interface card; ethernet card supported through FTP spec packet driver."
+ },
+ {
+  "item": 346,
+  "text_A": "A value of 0 indicates that the Path Attributes field is not present in this UPDATE message.",
+  "text_B": "Total Path Attribute Length: This 2-octet unsigned integer indicates the total length of the Path Attributes field in octets. Its value must allow the length of the Network Layer Reachability field to be determined as specified below. A value of 0 indicates that no Network Layer Reachability Information field is present in this UPDATE message."
+ },
+ {
+  "item": 347,
+  "text_A": "Groups MAY be repeated in order to extend over the entire bit width of the path control field, but the order, including repeated groups, MUST be retained so that preference is properly communicated.",
+  "text_B": "Groups MAY be repeated in order to extend over the entire bit width of the patch control field, but the order, including repeated groups, MUST be retained so that preference is properly communicated."
+ },
+ {
+  "item": 348,
+  "text_A": "When using FLUTE for file delivery over ALC, the FEC Object Transmission Information MUST be delivered in-band within the file delivery session.",
+  "text_B": "When using FLUTE for file delivery over ALC the FEC Object Transmission Information MUST be delivered in-band within the file delivery session."
+ },
+ {
+  "item": 349,
+  "text_A": "ALERT RFC 3501 BADCHARSET RFC 3501",
+  "text_B": "HASCHILDREN RFC 3348 ALERT RFC 3501 BADCHARSET RFC 3501 CAPABILITY RFC 3501"
+ },
+ {
+  "item": 350,
+  "text_A": "A prerequisite for any such function is a means of labelling the information content with an identifier for the language in which is is written.",
+  "text_B": "A prerequisite for any such function is a means of labelling the information content with an identifier for the language in which it is written."
+ },
+ {
+  "item": 351,
+  "text_A": "The SMTP protocol allows a server to formally reject a mail session while still allowing the initial connection as follows: a 554 response MAY be given in the initial connection opening message instead of the 220.",
+  "text_B": "The SMTP protocol allows a server to formally reject a transaction while still allowing the initial connection as follows: a 554 response MAY be given in the initial connection opening message instead of the 220."
+ },
+ {
+  "item": 352,
+  "text_A": "The 416 (Range Not Satisfiable) status code indicates that none of the ranges in the request's Range header field (Section 3.1) overlap the current extent of the selected resource or that the set of ranges requested has been rejected due to invalid ranges or an excessive request of small or overlapping ranges.",
+  "text_B": "The 416 (Range Not Satisfiable) status code indicates that none of the ranges in the request's Range header field (Section 3.1) overlap the current extent of the selected representation or that the set of ranges requested has been rejected due to invalid ranges or an excessive request of small or overlapping ranges."
+ },
+ {
+  "item": 353,
+  "text_A": "Rand and Vixie created a DNS-based distribution scheme that quickly became more popular than the original BGP distribution.",
+  "text_B": "Eric Ziegast, who was a system administrator for Vixie Enterprises where the RBL was hosted, created a DNS-based distribution scheme that quickly became more popular than the original BGP distribution."
+ },
+ {
+  "item": 354,
+  "text_A": "Standards Track [Page 40] RFC 7143 iSCSI (Consolidated) April 2014 If the issuing session is a FastAbort session, the iSCSI target implementation is FastAbort-capable, and the third-party affected session is an RFC 3720 session, the iSCSI target layer MUST NOT send Asynchronous Message PDUs on the third-party session to prompt the FastAbort behavior.",
+  "text_B": "If the issuing session is a FastAbort session, the iSCSI target implementation is FastAbort-capable, and the third-party affected session is an RFC 3720 session, the following behavior MUST be exhibited by the iSCSI target layer: Asynchronous Message PDUs MUST NOT be sent on the third-party session to prompt the FastAbort behavior."
+ },
+ {
+  "item": 355,
+  "text_A": "An XML-unaware MIME processor SHOULD make no assumptions about the charset of the XML MIME entity.",
+  "text_B": "A conformant XML-unaware MIME processor should make no assumptions about the character encoding of the XML MIME entity."
+ },
+ {
+  "item": 356,
+  "text_A": "No change may touch storage outside a transaction.",
+  "text_B": "All writes must go through the transaction wrapper."
+ },
+ {
+  "item": 357,
+  "text_A": "(Source: X.521 [X.521]) ( 2.5.6.7 NAME 'organizationalPerson' SUP person STRUCTURAL MAY ( title $ x121Address $ registeredAddress $ destinationIndicator $ preferredDeliveryMethod $ telexNumber $ teletexTerminalIdentifier $ telephoneNumber $ internationalISDNNumber $ facsimileTelephoneNumber $ street $ postOfficeBox $ postalCode $ postalAddress $ physicalDeliveryOfficeName $ ou $ st $ l ) ) 3.10.",
+  "text_B": "residentialPerson ( 2.5.6.10 NAME 'residentialPerson' SUP person STRUCTURAL MUST l MAY ( businessCategory $ x121Address $ registeredAddress $ destinationIndicator $ preferredDeliveryMethod $ telexNumber $ teletexTerminalIdentifier $ telephoneNumber $ internationaliSDNNumber $ facsimileTelephoneNumber $ preferredDeliveryMethod $ street $ postOfficeBox $ postalCode $ postalAddress $ physicalDeliveryOfficeName $ st $ l ) ) 7.12."
+ },
+ {
+  "item": 358,
+  "text_A": "Retry the request at most three times.",
+  "text_B": "Give the call up to three attempts, then stop."
+ },
+ {
+  "item": 359,
+  "text_A": "Thus, the increase is actually from 33 to 51 bytes (roughly). o The minimum size of the data field of an Ethernet packet is 46 bytes [RFC0894]. Thus, the increase is no more than 5 bytes. When Ethernet headers are considered, the increase is less than 10 percent.",
+  "text_B": "Thus, the increase is actually from 33 to 60 bytes (roughly). o The minimum size of the data field of an Ethernet packet is 46 bytes [RFC0894]. Thus, the increase is no more than 14 bytes. When Ethernet headers are considered, the increase is less than 25 percent."
+ },
+ {
+  "item": 360,
+  "text_A": "Only admins may approve the deploy.",
+  "text_B": "Any team member with repository access can sign off on a release."
+ },
+ {
+  "item": 361,
+  "text_A": "An origin server MAY include multiple Set-Cookie2 headers in a response.",
+  "text_B": "An origin server can include multiple Set-Cookie header fields in a single response."
+ },
+ {
+  "item": 362,
+  "text_A": "controlType is 1.3.6.1.1.13.1 and whose the controlValue, an OCTET",
+  "text_B": "controlType is 1.3.6.1.1.13.1 and whose controlValue, an OCTET"
+ },
+ {
+  "item": 363,
+  "text_A": "Increase the retry limit.",
+  "text_B": "Decrease the retry limit."
+ },
+ {
+  "item": 364,
+  "text_A": "Enable caching for all read queries.",
+  "text_B": "Serve every request from origin with no intermediate storage."
+ },
+ {
+  "item": 365,
+  "text_A": "Keep the legacy endpoint.",
+  "text_B": "Remove the legacy endpoint."
+ },
+ {
+  "item": 366,
+  "text_A": "Enable caching for all read queries.",
+  "text_B": "Activate caching for all read queries."
+ },
+ {
+  "item": 367,
+  "text_A": "Each endpoint Kaufman Standards Track [Page 18] RFC 4306 IKEv2 December 2005 chooses one of the two SPIs and SHOULD choose them so as to be unique identifiers of an IKE_SA.",
+  "text_B": "Each endpoint chooses one of the two SPIs and MUST choose them so as to be unique identifiers of an IKE SA."
+ },
+ {
+  "item": 368,
+  "text_A": "All future RFCs that either explicitly or implicitly rely on IANA to register or otherwise manage namespace assignments MUST provide guidelines for managing the namespace.",
+  "text_B": "All future RFCs that either explicitly or implicitly rely on the IANA to register or otherwise manage assignments MUST provide guidelines for managing the name space."
+ },
+ {
+  "item": 369,
+  "text_A": "It is sent by either the LAC or the LNS to begin the tunnel establishment process.",
+  "text_B": "It is sent by either the LAC or the LNS to being the tunnel establishment process."
+ },
+ {
+  "item": 370,
+  "text_A": "Delete the legacy endpoint.",
+  "text_B": "Remove the legacy endpoint."
+ },
+ {
+  "item": 371,
+  "text_A": "In response to the request, the \"Delegate\" MUST send a \"REPLY\" method to the \"Organizer\" and optionally, to the \"Delegator\".",
+  "text_B": "In response to the request, the \"Delegate\" MUST send a \"REPLY\" method to the \"Organizer\", and optionally to the \"Delegator\"."
+ },
+ {
+  "item": 372,
+  "text_A": "In typical OAuth deployments, the authorization server is in a position to observe and track a significant amount of user and client behavior.",
+  "text_B": "In typical OAuth deployments the authorization sever is in a position to observe and track a significant amount of user and client behavior."
+ },
+ {
+  "item": 373,
+  "text_A": "Lite Implementation Procedures A lite implementation can free candidates that did not become selected candidates as soon as ICE processing has reached the Completed state for all ICE sessions using those candidates.",
+  "text_B": "Lite Implementation Procedures A lite implementation MAY free candidates not selected by ICE as soon as ICE processing has reached the Completed state for all peers for all media streams using those candidates."
+ },
+ {
+  "item": 374,
+  "text_A": "UDP Checksum: The 'UDP Checksum' field SHOULD be transmitted as zero by an ITR for either IPv4 [RFC0768] or IPv6 encapsulation [UDP-TUNNELS] [UDP-ZERO].",
+  "text_B": "UDP Checksum: The 'UDP Checksum' field SHOULD be transmitted as zero by an ITR for either IPv4 [RFC0768] or IPv6 encapsulation [RFC6935] [RFC6936]."
+ },
+ {
+  "item": 375,
+  "text_A": "o feature list: The name of each YANG feature supported by the server MUST be identified.",
+  "text_B": "o feature list: The name of each YANG feature supported by the server must be identified."
+ },
+ {
+  "item": 376,
+  "text_A": "Recovery Journal Chapter Inclusion Parameters The recovery journal chapter definitions (Appendices A-B) specify under what conditions a chapter MUST appear in the recovery journal.",
+  "text_B": "Recovery Journal Chapter Inclusion Parameters The recovery journal chapter definitions (Appendices A and B) specify under what conditions a chapter MUST appear in the recovery journal."
+ },
+ {
+  "item": 377,
+  "text_A": "A \"charset\" parameter MAY be used to indicate the charset of the body text for \"text\" subtypes, notably including the subtype \"text/plain\", which is a generic subtype for plain text defined in [RFC2046].",
+  "text_B": "Many subtypes of text, notably including the subtype \"text/plain\", which is a generic subtype for plain text defined in [RFC2046], define a \"charset\" parameter."
+ },
+ {
+  "item": 378,
+  "text_A": "This text must be removed because there are no Reserved bits exist in ABRO.",
+  "text_B": "Reserved: This field is unused. It MUST be initialized to zero by the sender and MUST be ignored by the receiver."
+ },
+ {
+  "item": 379,
+  "text_A": "On a Point-to-Point circuit, the restarting router SHOULD set the \"Adjacency Three-Way State\" to \"Init\", because the receipt of the acknowledging IIH (with RA set) MUST cause the adjacency to enter the UP state immediately.",
+  "text_B": "On a Point-to-Point circuit, the restarting router SHOULD set the \"Adjacency Three-Way State\" to \"Init\", because the receipt of the acknowledging IIH (with RA set) MUST cause the adjacency to enter the \"UP\" state immediately."
+ }
+]

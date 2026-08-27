@@ -1,0 +1,22 @@
+{
+ "config": "sentence-transformers/all-MiniLM-L6-v2",
+ "register": "errata_g2",
+ "n_texts": 5551,
+ "device": "mps",
+ "fp32_forced": false,
+ "runtime": {
+  "path": "sentence_transformers",
+  "sentence_transformers_version": "5.1.2",
+  "prefix": ""
+ },
+ "hostname": "lear",
+ "platform": "macOS-26.4.1-arm64-arm-64bit",
+ "sources": [
+  {
+   "path": "$WORKDIR/corpus/e1_errata/pairs_g1g2.jsonl",
+   "sha256": "5dcb31181be4b3e5982c24b67e185ea1653230a2adaa4cd56ebb873e98a880a8"
+  }
+ ],
+ "vector_dtype": "float16",
+ "created_utc": "2026-08-11T20:36:01Z"
+}

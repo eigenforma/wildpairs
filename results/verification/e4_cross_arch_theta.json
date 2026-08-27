@@ -1,0 +1,47 @@
+{
+ "computed": "2026-08-12, cross-architecture verification of the E4 scope-condition breach",
+ "why": "findings_e4 and prereg-e4 amendment A2 asserted 'cross-device verified' on the strength of a transient probe written to /tmp that was never frozen; the 2026-08-12 number-fidelity audit correctly flagged it UNSOURCED. Re-run and frozen here.",
+ "method": "same harness/e4/floor_survey.py, SWEEP_ONLY=minilm,mpnet, Forge CUDA fp32, vectors to /tmp/e4_xarch; theta_max recomputed in fp64 from both vector sets",
+ "cells": {
+  "sentence-transformers_all-MiniLM-L6-v2__condaqa": {
+   "lear_mps_theta_max_deg": 99.796,
+   "forge_cuda_theta_max_deg": 99.796,
+   "abs_delta_deg": 0.0,
+   "n_vectors": 5113
+  },
+  "sentence-transformers_all-MiniLM-L6-v2__e3": {
+   "lear_mps_theta_max_deg": 102.667,
+   "forge_cuda_theta_max_deg": 102.667,
+   "abs_delta_deg": 0.0,
+   "n_vectors": 28747
+  },
+  "sentence-transformers_all-MiniLM-L6-v2__errata_g2": {
+   "lear_mps_theta_max_deg": 92.305,
+   "forge_cuda_theta_max_deg": 92.305,
+   "abs_delta_deg": 0.0,
+   "n_vectors": 5551
+  },
+  "sentence-transformers_all-mpnet-base-v2__condaqa": {
+   "lear_mps_theta_max_deg": 93.56,
+   "forge_cuda_theta_max_deg": 93.56,
+   "abs_delta_deg": 0.0,
+   "n_vectors": 5113
+  },
+  "sentence-transformers_all-mpnet-base-v2__e3": {
+   "lear_mps_theta_max_deg": 106.321,
+   "forge_cuda_theta_max_deg": 106.321,
+   "abs_delta_deg": 0.0,
+   "n_vectors": 28747
+  },
+  "sentence-transformers_all-mpnet-base-v2__errata_g2": {
+   "lear_mps_theta_max_deg": 92.269,
+   "forge_cuda_theta_max_deg": 92.269,
+   "abs_delta_deg": 0.0,
+   "n_vectors": 5551
+  }
+ },
+ "max_abs_delta_deg": 0.0,
+ "verdict": "REPRODUCED across MPS and CUDA on all six cells",
+ "true_theta_max_across_all_cells_deg": 106.321,
+ "note_for_prose": "the widely quoted 99.796 deg is MiniLM on the CondaQA register only; the maximum over all breaching cells is 106.321 deg (mpnet on the E3 register). Six cells breach, not two."
+}

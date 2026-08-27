@@ -1,0 +1,20 @@
+{
+ "config": "nomic-embed-text-v1.5 MRL-256 [PRODUCTION PATH, search_document:]",
+ "register": "errata_g2",
+ "n_texts": 5551,
+ "device": "cpu",
+ "fp32_forced": false,
+ "runtime": {
+  "path": "intern.pipeline.embedding_router.MRLEmbeddingRouter"
+ },
+ "hostname": "Wu",
+ "platform": "Windows-11-10.0.26200-SP0",
+ "sources": [
+  {
+   "path": "C:\\Users\\poeti\\wildpairs\\corpus\\e1_errata\\pairs_g1g2.jsonl",
+   "sha256": "5dcb31181be4b3e5982c24b67e185ea1653230a2adaa4cd56ebb873e98a880a8"
+  }
+ ],
+ "vector_dtype": "float16",
+ "created_utc": "2026-08-11T20:35:18Z"
+}

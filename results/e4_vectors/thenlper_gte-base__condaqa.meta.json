@@ -1,0 +1,30 @@
+{
+ "config": "thenlper/gte-base",
+ "register": "condaqa",
+ "n_texts": 5113,
+ "device": "cuda",
+ "fp32_forced": true,
+ "runtime": {
+  "path": "sentence_transformers",
+  "sentence_transformers_version": "5.7.0",
+  "prefix": ""
+ },
+ "hostname": "forge",
+ "platform": "Linux-6.8.0-136-generic-x86_64-with-glibc2.39",
+ "sources": [
+  {
+   "path": "$WORKDIR/corpus/e2_dilution/condaqa_train.json",
+   "sha256": "f5f8a9d1b64a6c3b111b00d2e125f1d7f4da8b50acfdbc788d2901e2e43d79ec"
+  },
+  {
+   "path": "$WORKDIR/corpus/e2_dilution/condaqa_dev.json",
+   "sha256": "b9ec9ab7453fbdc61fbed988119c03f507341ac495f1f5f95b13b27f59e639a2"
+  },
+  {
+   "path": "$WORKDIR/corpus/e2_dilution/condaqa_test.json",
+   "sha256": "ffd7f4ad85689b2317283430a226cd759c3ccc40070e6a32652e7ae84ae90e8e"
+  }
+ ],
+ "vector_dtype": "float16",
+ "created_utc": "2026-08-11T20:41:11Z"
+}

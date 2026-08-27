@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this artifact, please cite the paper below."
+type: software
+title: "wildpairs: corpora, harness, and frozen results for 'The Gate Stopped Deciding: Embedding-Cosine Meaning Gates on Institutional Labels and at Deployment Length'"
+authors:
+  - family-names: Frias
+    given-names: Scott E.
+    affiliation: "Eigenforma · Freemind Labs"
+repository-code: "https://github.com/eigenforma/wildpairs"
+license: MIT
+date-released: "2026-08-24"
+notes: "Code is MIT. Authored corpora, annotations, and frozen measurement records are CC-BY-4.0; redistributed third-party text stays under its source terms — see LICENSE-DATA.md. arXiv ID and Zenodo DOI pending."
+preferred-citation:
+  type: article
+  title: "The Gate Stopped Deciding: Embedding-Cosine Meaning Gates on Institutional Labels and at Deployment Length"
+  authors:
+    - family-names: Frias
+      given-names: Scott E.
+      affiliation: "Eigenforma · Freemind Labs"
+  year: 2026
+  notes: "arXiv ID pending. Companion paper: arXiv:2608.10216."

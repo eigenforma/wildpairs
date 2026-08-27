@@ -281,8 +281,8 @@ def main(argv=None):
     ap = argparse.ArgumentParser(description="E1 five-class label cascade (R2)")
     ap.add_argument("--stage", required=True, choices=["bulk", "arbitrate"])
     ap.add_argument("--endpoint", required=True,
-                    help="bulk: Agora http://10.1.20.207:8080; arbitrate: Forge "
-                         "http://10.1.20.223:8080 (LAN IPs, never bare hostnames)")
+                    help="bulk: Agora http://⟨agora⟩:8080; arbitrate: Forge "
+                         "http://⟨forge⟩:8080 (LAN IPs, never bare hostnames)")
     ap.add_argument("--pairs", default=str(DEFAULT_PAIRS))
     ap.add_argument("--in", dest="bulk_in", default=None,
                     help="arbitrate: the completed bulk jsonl")

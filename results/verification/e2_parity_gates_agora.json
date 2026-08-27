@@ -1,0 +1,68 @@
+{
+ "tol": 1e-05,
+ "reference": "results\\verification\\e2_parity_ref.json",
+ "probe_sha256": "d9c794545c78ecede6a0c273c8a3e52b60ce9f6429d46e01f0d1fcf6ddac13f0",
+ "configs": {
+  "sentence-transformers/all-MiniLM-L6-v2": {
+   "target_host": "agora",
+   "target_device": null,
+   "max_abs_dcos": 2.0643053972452252e-07,
+   "by_bin": {
+    "64": 2.0643053972452252e-07,
+    "512": 1.3110471926060935e-07,
+    "4096": 1.6160629143224803e-07
+   },
+   "verdict": "PASS",
+   "note": ""
+  },
+  "sentence-transformers/all-mpnet-base-v2": {
+   "target_host": "agora",
+   "target_device": null,
+   "max_abs_dcos": 1.1601930351157197e-07,
+   "by_bin": {
+    "64": 1.0087814467096834e-07,
+    "512": 7.678417873746568e-08,
+    "4096": 1.1601930351157197e-07
+   },
+   "verdict": "PASS",
+   "note": ""
+  },
+  "thenlper/gte-base": {
+   "target_host": "agora",
+   "target_device": null,
+   "max_abs_dcos": 0.0003626374758831652,
+   "by_bin": {
+    "64": 0.0003626374758831652,
+    "512": 8.849926018283938e-05,
+    "4096": 0.00015411573531676215
+   },
+   "verdict": "FAIL",
+   "note": "GPU shard NOT admissible for this config (\u00a72); re-pin by dated amendment or run it on the reference path"
+  },
+  "mixedbread-ai/mxbai-embed-large-v1": {
+   "target_host": "agora",
+   "target_device": null,
+   "max_abs_dcos": 0.00044740332659543025,
+   "by_bin": {
+    "64": 0.00019387833187972658,
+    "512": 0.00044740332659543025,
+    "4096": 0.0002670257838931489
+   },
+   "verdict": "FAIL",
+   "note": "GPU shard NOT admissible for this config (\u00a72); re-pin by dated amendment or run it on the reference path"
+  }
+ },
+ "verdict": "FAIL",
+ "admission_rule_A1": {
+  "pinned-path configs (must PASS at 1e-5)": {
+   "sentence-transformers/all-MiniLM-L6-v2": "PASS",
+   "sentence-transformers/all-mpnet-base-v2": "PASS"
+  },
+  "fresh-numerics configs under amendment A1 (seam measured, not gated)": {
+   "thenlper/gte-base": 0.0003626374758831652,
+   "mixedbread-ai/mxbai-embed-large-v1": 0.00044740332659543025
+  },
+  "reading": "The overall FAIL is expected and is the amendment working as written: MiniLM and mpnet claim the Paper A/E1 pinned path and match it at ~1e-7, so their shards are admissible on parity. gte-base and mxbai-embed-large run under declared fresh fp32 GPU numerics (A1), so parity is not claimed for them; the gate instead MEASURES their seam against the pinned path \u2014 max |delta cos| 3.63e-04 (gte) and 4.47e-04 (mxbai), the fp16-native quantum documented in the H4 parity lesson. These two numbers are published beside every gte/mxbai figure and beside the L=64 bridge to Paper A, per A1.",
+  "admission": "ALL FOUR AGORA CONFIGS ADMISSIBLE: two on parity, two on the A1 declaration with the seam disclosed."
+ }
+}

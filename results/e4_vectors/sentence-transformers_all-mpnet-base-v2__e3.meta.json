@@ -1,0 +1,22 @@
+{
+ "config": "sentence-transformers/all-mpnet-base-v2",
+ "register": "e3",
+ "n_texts": 28747,
+ "device": "mps",
+ "fp32_forced": false,
+ "runtime": {
+  "path": "sentence_transformers",
+  "sentence_transformers_version": "5.1.2",
+  "prefix": ""
+ },
+ "hostname": "lear",
+ "platform": "macOS-26.4.1-arm64-arm-64bit",
+ "sources": [
+  {
+   "path": "$WORKDIR/corpus/e3_composed_sweep_sample.jsonl",
+   "sha256": "ceb307849323b1dd27e89a2b21ace89d84266ab8f37e30abd9c04047f5abc497"
+  }
+ ],
+ "vector_dtype": "float16",
+ "created_utc": "2026-08-11T20:37:29Z"
+}

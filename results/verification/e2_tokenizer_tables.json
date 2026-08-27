@@ -204,5 +204,6 @@
   }
  },
  "worst_p90_ratio": 2.133,
- "factor_verdict": "1.3 construction factor is EXCEEDED by worst p90 2.133 \u2014 realized tokens can overrun nominal bins for that register/config; disclosed, truncation flags carry it"
+ "factor_verdict": "1.3 construction factor is EXCEEDED by worst p90 2.133 \u2014 realized tokens can overrun nominal bins for that register/config; disclosed, truncation flags carry it",
+ "effective_window_correction_2026-08-11": "The windows tabled above derive from each tokenizer model_max_length (510 after specials). The OPERATIVE window is the sentence-transformers model max_seq_length the sweep actually enforces, read per config at load time and recorded in every shard meta and in results/verification/e2_parity_ref.json. They differ materially for at least all-MiniLM-L6-v2: ST max_seq_length = 256, not 512 \u2014 the deployed default truncates at 256 tokens (nominal L about 197 whitespace tokens), which moves that config truncation regime a full bin lower than the tokenizer table implies. Truncation flags, H3b, and the L=512 dual analysis all use the operative window; the paper cites the operative number."
 }
