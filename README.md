@@ -31,4 +31,4 @@ sentence sample — stays under its source terms, listed file by file in [LICENS
 Spliced RFC passages, Wikipedia host pools, and the PMC slice are not redistributed; they ship as
 checksums and regeneration routes.
 
-**Cite.** [CITATION.cff](CITATION.cff). The Zenodo DOI for this artifact is recorded here at release.
+**Cite.** [![DOI](https://zenodo.org/badge/1324314293.svg)](https://doi.org/10.5281/zenodo.22132407) [CITATION.cff](CITATION.cff). Version DOI for v1.0.0: [10.5281/zenodo.22132408](https://doi.org/10.5281/zenodo.22132408); concept DOI for all versions: [10.5281/zenodo.22132407](https://doi.org/10.5281/zenodo.22132407).

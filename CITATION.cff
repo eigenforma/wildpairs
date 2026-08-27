@@ -8,8 +8,16 @@ authors:
     affiliation: "Eigenforma · Freemind Labs"
 repository-code: "https://github.com/eigenforma/wildpairs"
 license: MIT
-date-released: "2026-08-24"
-notes: "Code is MIT. Authored corpora, annotations, and frozen measurement records are CC-BY-4.0; redistributed third-party text stays under its source terms — see LICENSE-DATA.md. arXiv ID and Zenodo DOI pending."
+version: "1.0.0"
+date-released: "2026-08-27"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22132408"
+    description: "Version DOI for v1.0.0"
+  - type: doi
+    value: "10.5281/zenodo.22132407"
+    description: "Concept DOI for all versions"
+notes: "Code is MIT. Authored corpora, annotations, and frozen measurement records are CC-BY-4.0; redistributed third-party text stays under its source terms — see LICENSE-DATA.md. arXiv ID pending."
 preferred-citation:
   type: article
   title: "The Gate Stopped Deciding: Embedding-Cosine Meaning Gates on Institutional Labels and at Deployment Length"
