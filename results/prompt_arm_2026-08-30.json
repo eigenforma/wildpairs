@@ -1,0 +1,221 @@
+{
+  "artifact": "prompt_arm_fixed_anchors",
+  "what": "per-length judge rates for one model under three fixed prompts on the frozen splice corpus, fixed anchor set, temperature zero, hosts rfc and enwiki",
+  "why": "Paper B section 5's limits paragraph cites the change in discrimination across the length range under each prompt. These rates are what those figures recompute from.",
+  "units": "separation is TPR minus FPR; discrimination is (TPR + TNR) / 2 = (separation + 1) / 2",
+  "prompts": {
+    "A": {
+      "description": "the prompt used in the manuscript's judge arm",
+      "judge": "forge/qwen3.8-27b",
+      "source_seal": "Falsifyer/experiments/paper_c_b3_ceiling/results/h7_merged_2026-08-30.json",
+      "source_sha256": "d5d27a9e47c44fc4d393df979d02d51c278b73431989377ef1c6ac70e7decb46",
+      "n_judgments": 16080,
+      "n_anchors_both_endpoints": 670,
+      "per_length": {
+        "64": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.997,
+          "false_block_rate": 0.303,
+          "separation": 0.694
+        },
+        "96": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.997,
+          "false_block_rate": 0.303,
+          "separation": 0.694
+        },
+        "128": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.997,
+          "false_block_rate": 0.3254,
+          "separation": 0.6716
+        },
+        "256": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.997,
+          "false_block_rate": 0.3448,
+          "separation": 0.6522
+        },
+        "512": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.997,
+          "false_block_rate": 0.4537,
+          "separation": 0.5433
+        },
+        "1024": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.997,
+          "false_block_rate": 0.5403,
+          "separation": 0.4567
+        },
+        "2048": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9955,
+          "false_block_rate": 0.597,
+          "separation": 0.3985
+        },
+        "4096": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9933,
+          "false_block_rate": 0.6269,
+          "separation": 0.3664
+        }
+      },
+      "separation_drop_64_to_4096": 0.3276,
+      "separation_drop_ci95": [
+        0.2865,
+        0.3657
+      ]
+    },
+    "B": {
+      "description": "a fact-check framing with the answer menu reversed",
+      "judge": "forge/qwen3.8-27b",
+      "source_seal": "Falsifyer/experiments/paper_c_b3_ceiling/results/h7_merged_2026-08-30_promptB.json",
+      "source_sha256": "ae2f08e5c31881782f14e613b8fe1bcb5bce203dfd113a5e2a68ab7784d4b946",
+      "n_judgments": 16080,
+      "n_anchors_both_endpoints": 670,
+      "per_length": {
+        "64": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9881,
+          "false_block_rate": 0.1522,
+          "separation": 0.8358
+        },
+        "96": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9903,
+          "false_block_rate": 0.1567,
+          "separation": 0.8336
+        },
+        "128": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9873,
+          "false_block_rate": 0.1657,
+          "separation": 0.8216
+        },
+        "256": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9866,
+          "false_block_rate": 0.1806,
+          "separation": 0.806
+        },
+        "512": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9866,
+          "false_block_rate": 0.2552,
+          "separation": 0.7313
+        },
+        "1024": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9851,
+          "false_block_rate": 0.291,
+          "separation": 0.694
+        },
+        "2048": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9799,
+          "false_block_rate": 0.3284,
+          "separation": 0.6515
+        },
+        "4096": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9761,
+          "false_block_rate": 0.3254,
+          "separation": 0.6507
+        }
+      },
+      "separation_drop_64_to_4096": 0.1851,
+      "separation_drop_ci95": [
+        0.1515,
+        0.2194
+      ]
+    },
+    "C": {
+      "description": "a minimal instruction, two passages and one question",
+      "judge": "forge/qwen3.8-27b",
+      "source_seal": "Falsifyer/experiments/paper_c_b3_ceiling/results/h7_merged_2026-08-30_promptC.json",
+      "source_sha256": "6c5d586152ba4517d1bdd91d3379903449daf6007370d6ff3ea4782189a87ba4",
+      "n_judgments": 16080,
+      "n_anchors_both_endpoints": 670,
+      "per_length": {
+        "64": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.997,
+          "false_block_rate": 0.4045,
+          "separation": 0.5925
+        },
+        "96": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9955,
+          "false_block_rate": 0.4239,
+          "separation": 0.5716
+        },
+        "128": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9963,
+          "false_block_rate": 0.4493,
+          "separation": 0.547
+        },
+        "256": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9843,
+          "false_block_rate": 0.4701,
+          "separation": 0.5142
+        },
+        "512": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9687,
+          "false_block_rate": 0.5403,
+          "separation": 0.4284
+        },
+        "1024": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9396,
+          "false_block_rate": 0.4493,
+          "separation": 0.4903
+        },
+        "2048": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.9127,
+          "false_block_rate": 0.2985,
+          "separation": 0.6142
+        },
+        "4096": {
+          "n_mutations": 1340,
+          "n_controls": 670,
+          "mutation_fire_rate": 0.8179,
+          "false_block_rate": 0.1537,
+          "separation": 0.6642
+        }
+      },
+      "separation_drop_64_to_4096": -0.0716,
+      "separation_drop_ci95": [
+        -0.1104,
+        -0.0306
+      ]
+    }
+  }
+}

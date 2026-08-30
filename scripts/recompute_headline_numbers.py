@@ -358,6 +358,28 @@ assert len(list(_figdir.glob("fig*.svg"))) == 5, "stray or missing figure in doc
 _cites = re.findall(r"Figure (\d)", md)
 check("every figure cited exactly once, in ascending order", _cites, ["1", "2", "3", "4", "5"], tol=0)
 
+# -- the prompt arm behind section 5's fourth limit ----------------------------------------
+# Three fixed prompts, one model, one fixed anchor set, on the frozen splice corpus. The
+# manuscript cites the change in discrimination across the length range under each. That change
+# is half the change in separation, because discrimination is (separation + 1) / 2.
+_pa = json.loads((R / "prompt_arm_2026-08-30.json").read_text(encoding="utf-8"))
+
+
+def _disc_change(variant):
+    _per = _pa["prompts"][variant]["per_length"]
+    return round((_per["4096"]["separation"] - _per["64"]["separation"]) / 2, 3)
+
+
+check("prompt arm: the manuscript's own prompt loses 0.164 of discrimination",
+      _disc_change("A"), -0.164)
+check("prompt arm: a second prompt loses 0.093", _disc_change("B"), -0.093)
+check("prompt arm: a minimal prompt gains 0.036", _disc_change("C"), 0.036)
+check("prompt arm: every prompt ran the same number of judgments",
+      sorted({_pa["prompts"][_v]["n_judgments"] for _v in ("A", "B", "C")}), [16080])
+check("prompt arm: the manuscript prints those three figures",
+      sorted(set(re.findall(r"\$0\.(?:164|093|036)\$", md))),
+      ["$0.036$", "$0.093$", "$0.164$"], tol=0)
+
 _expected = len(checks) + 1
 _b = re.search(r"recompute_headline_numbers\.py`, (\d+) of (\d+) PASS", md)
 check(f"manuscript banner states this harness's real check count ({_expected})",
